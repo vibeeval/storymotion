@@ -6,6 +6,7 @@ UI/session approval and live enablement belong to the caller, never this module.
 import contextlib
 import dataclasses
 import hashlib
+import http.client
 import json
 import re
 import socket
@@ -15,7 +16,7 @@ import urllib.error
 import urllib.request
 import uuid
 from urllib.parse import quote
-from typing import Optional
+from typing import Callable,Optional
 from .security import WorkflowError,canonical,digest,scan_bytes
 
 
@@ -153,6 +154,13 @@ class SecretBroker:
             raw=bytes(slot['raw'])
         try:yield raw
         finally:raw=b''
+    @contextlib.contextmanager
+    def send_lease(self,ref,provider,job,request_hash,allow_synthetic):
+        # Serialize explicit clear/expiry against the built-in send boundary.
+        # Ordinary response-processing leases remain immutable but unlocked.
+        with self._lock:
+            with self.lease(ref,provider,job,request_hash,allow_synthetic) as raw:
+                yield raw
     def contains_secret(self,raw):
         with self._lock:return any(bytes(s['raw']) in raw for s in self._slots.values() if s['raw'])
 
@@ -368,14 +376,75 @@ class Permit:
     estimate_microusd:int
     expires_at:float
     approved_by:str=dataclasses.field(repr=False)
+    # Stateful callers supply a final authorization context. It is RAM-only,
+    # excluded from repr/equality, and never part of a request or receipt.
+    send_gate:Optional[Callable]=dataclasses.field(default=None,repr=False,compare=False)
     def verify(self,plan,job):
         if self.request_hash!=plan.fingerprint or self.job!=job or self.expires_at<=time.time() or not self.approved_by.strip():raise ProviderError('APPROVAL_SCOPE_OR_EXPIRY')
         bounded_int(self.maximum_microusd,0,10000000000);bounded_int(self.estimate_microusd,0,10000000000)
         if self.maximum_microusd<self.estimate_microusd:raise ProviderError('BUDGET_TOO_SMALL')
+    def validate_wire(self,plan,job,method,url,encoded):
+        # This is called after transport preparation, at the last built-in send
+        # boundary. Recheck the bytes actually about to be submitted.
+        validate_plan(plan);self.verify(plan,job)
+        if method!='POST' or url!=plan.url or encoded!=canonical(plan.body).encode():
+            raise ProviderError('WIRE_REQUEST_CHANGED')
+    @contextlib.contextmanager
+    def wire(self,plan,job,method,url,encoded,key):
+        self.validate_wire(plan,job,method,url,encoded)
+        if self.send_gate is not None and not callable(self.send_gate):raise ProviderError('FINAL_SEND_GATE_REQUIRED')
+        gate=self.send_gate(plan,method,url,encoded,key) if self.send_gate is not None else contextlib.nullcontext()
+        with gate:yield
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):raise ProviderError('REDIRECT_BLOCKED')
+
+
+class _SendGatedHTTPSHandler(urllib.request.HTTPSHandler):
+    """Prepare TLS first; authorize only the connected, non-retrying POST write."""
+    def __init__(self,transport,plan,permit,job,key,deadline):
+        # Retain HTTPSHandler/HTTPSConnection's default verified SSL context.
+        super().__init__()
+        self.transport=transport;self.plan=plan;self.permit=permit;self.job=job;self.key=key;self.deadline=deadline
+    def https_open(self,request):
+        if request._tunnel_host:raise ProviderError('PROXY_TUNNEL_BLOCKED')
+        owner=self
+        class Connection(http.client.HTTPSConnection):
+            _wire_deadline=None
+            def request(self,method,url,body=None,headers=None,*,encode_chunked=False):
+                headers=headers or {}
+                actual={name.lower():value for name,value in headers.items()}
+                expected=request_headers(owner.plan.provider,owner.key)
+                if encode_chunked or any(actual.get(name.lower())!=value for name,value in expected.items()):
+                    raise ProviderError('WIRE_HEADERS_CHANGED')
+                # DNS, TCP and verified TLS happen before any credential/header
+                # write and outside the service/broker authorization locks.
+                self.connect()
+                if self.sock is None:raise ProviderError('TRANSPORT_CONNECTION_NOT_READY')
+                if time.monotonic()>=owner.deadline:raise ProviderError('TRANSPORT_PREPARATION_EXPIRED')
+                if owner.transport.allow_live is not True:raise ProviderError('LIVE_TRANSPORT_DISABLED')
+                previous=self.auto_open;self.auto_open=0
+                try:
+                    with owner.permit.wire(owner.plan,owner.job,method,request.full_url,body,owner.key):
+                        self._wire_deadline=owner.deadline
+                        super().request(method,url,body,headers,encode_chunked=encode_chunked)
+                finally:
+                    self._wire_deadline=None;self.auto_open=previous
+            def send(self,data):
+                if self._wire_deadline is None:raise ProviderError('FINAL_SEND_GATE_REQUIRED')
+                remaining=self._wire_deadline-time.monotonic()
+                if remaining<=0:raise ProviderError('TRANSPORT_OUTCOME_UNCERTAIN')
+                if self.sock is None:raise ProviderError('TRANSPORT_OUTCOME_UNCERTAIN')
+                # bytes-only canonical requests make each sendall obey the
+                # remaining absolute write budget, with no implicit reconnect.
+                self.sock.settimeout(remaining)
+                return super().send(data)
+        options={'context':self._context}
+        # Python 3.12 removed the older check_hostname constructor argument;
+        # use the same options as that interpreter's standard HTTPSHandler.
+        if hasattr(self,'_check_hostname'):options['check_hostname']=self._check_hostname
+        return self.do_open(Connection,request,**options)
 
 
 class HTTPSTransport:
@@ -390,10 +459,18 @@ class HTTPSTransport:
         key=validate_credential_provider(plan.provider,key)
         if key.startswith((b'FAKE_',b'TEST_ONLY_')):raise ProviderError('SYNTHETIC_KEY_CANNOT_GO_LIVE')
         request=urllib.request.Request(plan.url,data=canonical(plan.body).encode(),method='POST',headers=request_headers(plan.provider,key))
-        opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect())
+        deadline=time.monotonic()+self.timeout
+        opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect(),
+            _SendGatedHTTPSHandler(self,plan,permit,job,key,deadline))
         try:
-            deadline=time.monotonic()+self.timeout
-            with opener.open(request,timeout=self.timeout) as response:
+            if self.allow_live is not True:raise ProviderError('LIVE_TRANSPORT_DISABLED')
+            permit.validate_wire(plan,job,request.get_method(),request.full_url,request.data)
+            # The custom HTTPS connection performs the stateful gate after
+            # connect, around request writing only. Headers/body are read with
+            # no authorization locks held. Socket timeouts are not a claim of a
+            # total DNS/slow-response wall-clock bound.
+            response=opener.open(request,timeout=self.timeout)
+            with response:
                 if hasattr(response,'read1'):
                     chunks=[];size=0
                     while True:
@@ -420,7 +497,8 @@ class MockTransport:
     def __init__(self,response=None,error=None):self.response=response;self.error=error;self.calls=[]
     def exchange(self,plan,key,permit,job):
         validate_plan(plan);permit.verify(plan,job);opaque_key(key.decode())
-        self.calls.append(plan.public())
+        with permit.wire(plan,job,'POST',plan.url,canonical(plan.body).encode(),key):
+            self.calls.append(plan.public())
         if self.error:raise ProviderError(self.error)
         if not isinstance(self.response,Response):raise ProviderError('MOCK_RESPONSE_REQUIRED')
         return self.response

@@ -1,0 +1,3 @@
+# Registry, license and source-manifest pins require identical checkout bytes.
+# In particular, Windows core.autocrlf must not rewrite pinned source files.
+* -text

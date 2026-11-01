@@ -1,4 +1,9 @@
-"""Evidence-bound private fixture policy. Never customer or agreement approval."""
+"""Disabled historical private fixture profile in this source distribution.
+
+Its excluded CI policy/evidence and old license binding are not portable
+approvals. Detect old private namespaces and refuse them without falling back
+to the public runtime; public customer setup keeps its own gates.
+"""
 from contextlib import contextmanager
 from contextvars import ContextVar
 from dataclasses import dataclass
@@ -16,6 +21,8 @@ from .local_state import guard_control, guard_project_scope
 from .security import WorkflowError, canonical, digest, file_hash
 
 ROOT = Path(__file__).resolve().parents[1]
+PRIVATE_PROFILE_AVAILABLE = False
+PRIVATE_PROFILE_REASON = 'PRIVATE_PROFILE_NOT_DISTRIBUTED'
 POLICY_PATH = 'ci/hf-development-policy.json'
 POLICY_SHA = '5fb8ded307f2f111201a4e764c68668f839f8687db824250bfd0f3a6bf82faee'
 EVIDENCE_PATH = 'ci/hf-development-evidence.json'
@@ -30,6 +37,10 @@ MODE = '.runtime/development/mode.json'
 FLAGS = ('owner_eula_accepted','third_party_terms_accepted','customer_installation','native_acceptance',
          'customer_acceptance','creative_acceptance','publication_ready','commercial_clearance')
 _RUN = ContextVar('development_fixture_run', default=None)
+
+
+def require_private_profile():
+    raise WorkflowError(PRIVATE_PROFILE_REASON)
 
 
 def fail(code):
@@ -71,6 +82,7 @@ def development_mode(root=ROOT):
 
 
 def recipe(root=ROOT):
+    require_private_profile()
     value, sha = strict_json(root, RECIPE_PATH, 32768)
     if sha!=RECIPE_SHA or type(value) is not dict or value.get('provider')!=PROVIDER:fail('RECIPE_CHANGED')
     for name, expected in value['license_files'].items():
@@ -79,6 +91,7 @@ def recipe(root=ROOT):
 
 
 def policy(root=ROOT, engine='hyperframes', fixture=FIXTURE):
+    require_private_profile()
     root = Path(root).absolute()
     if root!=root.resolve():fail('ROOT_INVALID')
     guard_project_scope(root)
@@ -123,6 +136,7 @@ def policy(root=ROOT, engine='hyperframes', fixture=FIXTURE):
 
 
 def installation_artifacts(root):
+    require_private_profile()
     # npm installs compatible optional lock entries even when their parent
     # platform wrapper is omitted. Runtime reachability is not an inventory.
     evidence, evidence_sha = strict_json(root,EVIDENCE_PATH)
@@ -145,6 +159,7 @@ def installation_artifacts(root):
 
 
 def binding(root, value):
+    require_private_profile()
     # The validator/pure JS checker contain the policy digest; exclude that
     # self-reference from the policy, and bind their actual bytes in receipts.
     return digest({'policy':POLICY_SHA,'files':value['reviewed_files'],
@@ -170,6 +185,7 @@ class Approval:
 
 
 def authorize(root, operation, approved=False, approved_policy_sha256=None):
+    require_private_profile()
     value = policy(root)
     if operation not in value['allowed_operations']:fail('OPERATION_REFUSED')
     if approved is not True or approved_policy_sha256!=POLICY_SHA:fail('OPERATION_APPROVAL_REQUIRED')
@@ -177,6 +193,7 @@ def authorize(root, operation, approved=False, approved_policy_sha256=None):
 
 
 def require_approval(root, approval, operation):
+    require_private_profile()
     if not re.fullmatch(r'/[A-Za-z0-9_./-]+',str(Path(root).absolute())):fail('BUILD_ROOT_UNREVIEWED')
     value = policy(root)
     if (type(approval) is not Approval or approval.root!=str(Path(root).resolve())
@@ -186,6 +203,7 @@ def require_approval(root, approval, operation):
 
 
 def disk_preflight(root, approval, operation):
+    require_private_profile()
     value = require_approval(root,approval,operation)
     free = shutil.disk_usage(root).free
     if free<value['minimum_free_bytes']:fail('DISK_HEADROOM_REQUIRED')
@@ -194,6 +212,7 @@ def disk_preflight(root, approval, operation):
 
 @contextmanager
 def fixture_run(root, workspace, approval):
+    require_private_profile()
     if catalog_run_active():fail('CROSS_PROFILE_REFUSED')
     require_approval(root,approval,'render')
     workspace = Path(workspace)
@@ -218,6 +237,7 @@ def catalog_run_active():
 
 
 def assert_process_scope(root=ROOT):
+    if development_mode(root):require_private_profile()
     if catalog_run_active():
         from .catalog_test_policy import assert_process_scope as catalog_scope
         catalog_scope(root);return
@@ -228,6 +248,7 @@ def assert_process_scope(root=ROOT):
 
 
 def assert_job_scope(engine, job, until):
+    if development_mode(ROOT):require_private_profile()
     if catalog_run_active():
         from .catalog_test_policy import assert_job_scope as catalog_scope
         catalog_scope(engine,job,until);return

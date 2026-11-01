@@ -24,14 +24,29 @@ def parser():
     a=sub.add_parser('reconcile');a.add_argument('request');a.add_argument('receipt')
     a=sub.add_parser('scan');a.add_argument('path',nargs='?',default='.')
     a=sub.add_parser('doctor');a.add_argument('--engine',choices=['hyperframes','remotion','all'],default='hyperframes');a.add_argument('--strict',action='store_true')
-    a=sub.add_parser('setup');a.add_argument('--engine',choices=['hyperframes','remotion','all'],default='hyperframes');a.add_argument('--skip-npm',action='store_true',help='Requires a completed matching engine/lock npm receipt and pinned packages')
+    a=sub.add_parser('setup',help='Install through the source/license and explicit download gates')
+    a.add_argument('--engine',choices=['hyperframes','remotion','all'],default='hyperframes')
+    a.add_argument('--skip-npm',action='store_true',help='Requires a completed matching engine/lock npm receipt and pinned packages')
+    a.add_argument('--allow-downloads',action='store_true')
+    a.add_argument('--license-sha256','--accept-eula-sha256',dest='license_sha256',metavar='LICENSE_SHA256',help='Exact SHA256 of the reviewed source LICENSE; the older flag is a compatibility alias, not an additional contract')
     a=sub.add_parser('workflow-status',help='Read-only source/code/test scope and open acceptance gates');a.add_argument('--account',choices=list(ACCOUNTS))
     a=sub.add_parser('edit-plan',help='Compile bounded scene/object/camera/assets plan; no DB, network or media render');a.add_argument('brief');a.add_argument('--engine',choices=['hyperframes','remotion'],required=True)
     return p
 
 
-def main():
-    args=parser().parse_args()
+def main(argv=None):
+    args=parser().parse_args(argv)
+    if args.command=='setup':
+        # Keep every public installation command behind the same manifest,
+        # source-license, download and dependency checks. Failed setup must not
+        # create a job workspace before those checks run.
+        from tools.first_run import main as install_main
+        install_args=['install','--engine',args.engine]
+        if args.skip_npm:install_args.append('--skip-npm')
+        if args.allow_downloads:install_args.append('--allow-downloads')
+        if args.license_sha256 is not None:
+            install_args.extend(['--license-sha256',args.license_sha256])
+        return install_main(install_args)
     e=Engine(args.workspace,args.hf)
     try:
         c=args.command
@@ -51,9 +66,6 @@ def main():
         elif c=='doctor':
             from .runtime import doctor
             result=doctor(args.engine)
-        elif c=='setup':
-            from .runtime import setup
-            result=setup(args.skip_npm,engine=args.engine)
         elif c=='workflow-status':
             from .workflow_state import workflow_status
             result=workflow_status(args.account)

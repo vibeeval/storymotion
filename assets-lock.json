@@ -8,15 +8,30 @@
     },
     {
       "path": "vendor/gsap.min.js",
-      "commercial_terms": "GSAP visual-animation-builder applicability remains under review; see THIRD-PARTY-NOTICES.md."
+      "commercial_terms": "GSAP Standard License retained; bounded video-template interface facts and applicability limits documented in docs/GSAP-SCOPE.md; no blanket visual-builder clearance or MIT relicensing"
     },
     {
       "path": "renderers/neutral-rig.json",
-      "commercial_terms": "Commercial authorization for this neutral vector rig remains pending; no clearance is asserted."
+      "commercial_terms": "Original project programmatic vector source; dated project declaration and exact bytes recorded; current original-source MIT grant applies",
+      "license": "MIT",
+      "provenance": "renderers/neutral-rig-origin.json"
     },
     {
       "path": "fixtures/synthetic-voice-contract.mp3",
-      "commercial_terms": "New silent zero-PCM test fixture; no speaker or external audio. Provenance recorded; commercial review remains pending.",
+      "commercial_terms": "Fresh zero-input generated silent technical fixture; exact generation and independent zero-PCM decode recorded; no external audio or voice",
+      "provenance": "fixtures/PROVENANCE.json",
+      "license": "MIT"
+    },
+    {
+      "path": "fixtures/raster/neutral-shapes.png",
+      "license": "MIT",
+      "commercial_terms": "Fresh original zero-input technical fixture generated from the project recipe; no external media input; current generation recorded",
+      "provenance": "fixtures/PROVENANCE.json"
+    },
+    {
+      "path": "fixtures/audio-retime/synthetic-20s.wav",
+      "license": "MIT",
+      "commercial_terms": "Fresh original zero-input technical fixture generated from the project recipe; no external media input; current generation recorded",
       "provenance": "fixtures/PROVENANCE.json"
     }
   ]

@@ -64,7 +64,7 @@ def require_ready(engine='hyperframes'):
     return state
 
 
-def install(allow_downloads=False,engine='hyperframes',accepted_eula_sha256=None):
+def install(allow_downloads=False,engine='hyperframes',accepted_eula_sha256=None,*,skip_npm=False):
     from storymotion.install_policy import dependency_plan,require_owner_terms
     state=preflight(engine)
     if not state['prerequisites']['ok']:return state
@@ -74,7 +74,7 @@ def install(allow_downloads=False,engine='hyperframes',accepted_eula_sha256=None
     if not plan['dependency_graph_ready']:raise ValueError('DEPENDENCY_PLAN_BLOCKED: '+','.join(plan['blockers']))
     if state['ok']:return {'ok':True,'action':'reuse_ready_runtime','network':False,'provider_calls':0,'owner_terms':consent,'install_plan':plan}
     from storymotion.runtime import setup
-    result=setup(if_needed=True,engine=engine)
+    result=setup(if_needed=True,engine=engine,**({'skip_npm':True} if skip_npm else {}))
     return {'ok':result['ok'],'action':result['setup'],'provider_calls':0,'owner_terms':consent,'install_plan':plan,
             'resume':'npm stage reused only with matching successful npm receipt and pinned package checks'}
 
@@ -122,6 +122,7 @@ def main(argv=None):
     for name in ('preflight','install','smoke','start'):
         commands[name]=sub.add_parser(name);commands[name].add_argument('--engine',choices=ENGINES,default='hyperframes')
     commands['install'].add_argument('--allow-downloads',action='store_true')
+    commands['install'].add_argument('--skip-npm',action='store_true',help='Requires the existing matching completed graph receipt and pinned packages; never skips source/license or download checks')
     commands['install'].add_argument('--license-sha256','--accept-eula-sha256',dest='accept_eula_sha256',metavar='LICENSE_SHA256',help='Provide the exact SHA256 of the reviewed source LICENSE. This checks the license file identity, not acceptance of an additional contract. --accept-eula-sha256 is a compatibility alias; source-integrity and separate download gates remain enforced.')
     commands['smoke'].add_argument('--prepare-only',action='store_true');commands['start'].add_argument('--port',type=int,default=4402)
     args=parser.parse_args(argv)
@@ -129,7 +130,7 @@ def main(argv=None):
         if args.command=='start':
             if not 1024<=args.port<=65535:raise ValueError('PORT_RANGE: 1024–65535 arasında boş port seçin; başka süreci durdurmayın.')
             start(args.port,args.engine);return 0
-        value=preflight(args.engine) if args.command=='preflight' else install(args.allow_downloads,args.engine,args.accept_eula_sha256) if args.command=='install' else smoke(args.prepare_only,args.engine)
+        value=preflight(args.engine) if args.command=='preflight' else install(args.allow_downloads,args.engine,args.accept_eula_sha256,**({'skip_npm':True} if args.skip_npm else {})) if args.command=='install' else smoke(args.prepare_only,args.engine)
         print(json.dumps(value,ensure_ascii=False,indent=2));return 0 if value['ok'] else 2
     except KeyboardInterrupt:
         print(json.dumps({'ok':False,'error':'INTERRUPTED: Aynı komuttan önce tamamlanmış kurulum/iş durumunu kontrol edin.'},ensure_ascii=False));return 130

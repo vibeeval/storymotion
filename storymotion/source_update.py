@@ -19,6 +19,8 @@ MAX_ZIP_BYTES=136*1024*1024
 MUTABLE={'.git','.runtime','node_modules','work','.env','.local-tools.json'}
 CODE_FOLDERS={'storymotion','dashboard','catalog','fixtures','renderers','knowledge','vendor','accountpacks','tools','docs'}
 OPTIONAL_SOURCE_FILES={'optional/remotion/package.json','optional/remotion/package-lock.json'}
+PUBLIC_TEST_SUFFIXES={'.py','.mjs','.json'}
+PRIVATE_TEST_PARTS={'private','internal','secrets','credentials','archives','backups','logs','evidence'}
 
 
 def _fail(code='UPDATE_SOURCE_INVALID'):raise WorkflowError(code)
@@ -40,7 +42,10 @@ def _relative(name):
             or re.search(r'[\x00-\x1f\x7f]',name) or any(p in ('','.','..') for p in name.split('/'))):_fail()
     parts=name.split('/')
     folded=[p.casefold() for p in parts]
-    if (any(p in MUTABLE for p in folded) or (len(parts)>1 and parts[0] not in CODE_FOLDERS and name not in OPTIONAL_SOURCE_FILES)
+    public_test=(len(parts)>1 and parts[0]=='tests')
+    if public_test and (len(parts)>12 or Path(parts[-1]).suffix not in PUBLIC_TEST_SUFFIXES
+                        or any(p in PRIVATE_TEST_PARTS or p.startswith('.') for p in folded[1:])):_fail()
+    if (any(p in MUTABLE for p in folded) or (len(parts)>1 and parts[0] not in CODE_FOLDERS and name not in OPTIONAL_SOURCE_FILES and not public_test)
             or any(re.search(r'\.(?:key|pem|sqlite3|db)(?:-(?:wal|shm|journal))?$',p) for p in folded)
             or any(p.startswith('.env.') and p!='.env.example' for p in folded)):_fail()
     return name
@@ -114,7 +119,7 @@ def stage_update(archive,destination,expected_sha256,*,active_root=ROOT,protecte
     return {'ok':True,'status':'staged_no_execution','source_directory':str(target/prefix),
             'archive_sha256':expected_sha256.lower(),'files_verified':len(files),
             'downloads':False,'provider_calls':0,'eula_accepted':False,'old_source_or_work_modified':False,
-            'next':'Read the new source EULA, then run its preflight explicitly. Staging does not accept terms or launch a process.'}
+            'next':'Review the new source LICENSE and third-party notices, then run its preflight explicitly. Staging does not accept terms or launch a process.'}
 
 
 def verify_update(archive,destination,expected_sha256,*,active_root=ROOT,protected_workspaces=()):

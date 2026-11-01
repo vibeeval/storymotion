@@ -1,0 +1,11 @@
+StoryMotion first-party MIT scope
+
+The accompanying StoryMotion-MIT.txt applies only to original StoryMotion code
+and original project documentation licensed by StoryMotion contributors.
+It does not license the whole exported project or caller-supplied content.
+
+Bundled third-party code, fonts, runtime components, adaptations, media and
+caller inputs retain their separate terms and rights. Keep their existing
+notices and license files unchanged, including the Vincentwei1021 MIT notice,
+Schibsted font OFL notice, GSAP notice and optional Remotion terms where applicable.
+No external film, prompt, voice or media rights are granted by this notice.

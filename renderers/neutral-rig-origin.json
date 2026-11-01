@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "path": "renderers/neutral-rig.json",
+  "sha256": "d4ccb1ed7a9bf7ba2d7fa50f845435d8e91b264a1e7d8dcd130fa91fafbc8221",
+  "scope": "Original project programmatic vector source; existing original_project_vectors internal identifier retained",
+  "license": "MIT",
+  "licensor": "StoryMotion contributors",
+  "archived_project_record": {
+    "path": "stable-0.14.1/docs/NEUTRAL-RIG-0.14.0.md",
+    "sha256": "4a725f87172fa4c94e0f2493924c673f67dcfea450e855fba99e11f636efc418",
+    "first_tracked_commit": "c2b3ecf7c81c8ae82ca8e9ba699be9753c319eba",
+    "date": "2026-10-22T01:14:20+03:00",
+    "declaration": "The project uses its own drawn neutral-presenter-1 geometry.",
+    "candidate_vector_bytes_match_recorded_source": true,
+    "repository_role": "Separate archived project backup Git repository; not the current distribution repository",
+    "git_blob_oid": "a4acdb1f7c1aeb354ab808872283027a24d0c8cb",
+    "rig_commit_path": "stable-0.14.1/renderers/neutral-rig.json",
+    "rig_git_blob_oid": "42fa3d892e2321b87217612a50c3475f81f52fd6",
+    "commit_is_initial_archive_checkpoint": true,
+    "global_first_creation_date_claimed": false
+  },
+  "separate_historical_human_creator_claimed": false,
+  "third_party_artwork_rights_claimed": false,
+  "voice_or_speaker_rights_granted": false,
+  "native_or_phonetic_acceptance": false
+}

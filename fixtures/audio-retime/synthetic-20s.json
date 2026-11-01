@@ -1,9 +1,12 @@
 {
-  "kind": "original synthetic silence, not speech",
+  "kind": "fresh original generated zero-PCM silence, not speech",
   "duration_seconds": 20,
   "sample_rate": 8000,
   "channels": 1,
   "sha256": "3a4075165eae03a178af902902dce747dcf642caa4538bca578e0a02a84fa017",
-  "rights": "Original generated test bytes; no person, voice clone or third-party audio",
-  "alignment": "Contract fixtures only; no acoustic alignment/quality acceptance"
+  "rights": "Fresh original test fixture under the project MIT grant; no person, voice clone, recording or third-party audio",
+  "alignment": "Contract fixtures only; no acoustic alignment/quality acceptance",
+  "generation_receipt": "fixtures/GENERATION.json",
+  "generation_receipt_sha256": "5323c9227923fbd67e79b7a127d34aac85c04e4c5db6849645b1e18b23a4d08e",
+  "generated_at_utc": "2026-11-01T21:18:14.836304Z"
 }

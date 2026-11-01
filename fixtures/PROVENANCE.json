@@ -1,56 +1,78 @@
 {
   "schema_version": 1,
-  "purpose": "current factual fixture provenance; no new license grant",
-  "original_code_license": "MIT applies to original StoryMotion code and project documentation; third-party and input/asset rights remain separate",
+  "purpose": "Current fresh original technical-fixture generation record; historical authorship is not inferred",
+  "original_code_license": "MIT applies to original StoryMotion source and the freshly generated original technical fixtures recorded here; third-party runtime and caller-media rights remain separate",
   "legacy_raster_record": {
     "path": "fixtures/raster/RIGHTS.md",
-    "sha256": "eaceefa12b130664ad8baeaa837fe067f674bafea4d6498c0e261933f01f43d8",
-    "status": "current technical sample rights description",
-    "correction": "The original-code EULA does not independently prove asset authorship or publication rights. Fixture publication and commercial authorization review remain pending."
+    "sha256": "a53af3432ec2a5a905eca69088c3746ea3ea6792aeae906a8c2a7aedfaa83510",
+    "status": "Current fresh-generation technical sample rights description",
+    "correction": "Current generation is documented directly; matching older bytes is not a historical authorship claim. Third-party and caller-media scope stays separate."
   },
   "assets": [
     {
       "path": "fixtures/raster/neutral-shapes.png",
       "sha256": "b10a05a310337da64a68826daaf54fe8e1f1d234271e7e0489421c63bbd1df0a",
-      "declaration": "Original project software test fixture: three neutral geometric shapes, as declared in the retained raster RIGHTS record.",
-      "verification": "Current stdlib geometry recipe reproduced the existing 800x600 RGBA PNG bytes on Python 3.9.6 and zlib 1.2.12; exact compression can vary across zlib versions. This does not identify the historical creator.",
+      "declaration": "Fresh 800x600 geometric test image calculated by the project stdlib recipe; no image, font, photograph or other media input",
+      "verification": "Fresh generated PNG bytes match the candidate bytes; raw scanline SHA256 is recorded in fixtures/GENERATION.json",
       "generator_record": "fixtures/recipes/generate_neutral_shapes.py",
-      "first_product_commit": "5277212a1039466d9c4b6552569a32395c3663dd",
       "use": "technical contract example; not voice quality, caller-media or creative acceptance",
-      "publication_clearance": "pending provenance/asset authorization review",
-      "historical_generator_record": "not located in tracked source",
+      "publication_clearance": "Fresh original zero-input generation recorded under the project MIT grant; no historical media ownership or third-party clearance is asserted",
       "generator_sha256": "9fa3bb27c52d891e125899802260dcc29094794f259736cdad8e570d7120d230",
-      "recipe_authored_date": "2026-10-29",
-      "historical_authorship_claimed": false
+      "historical_authorship_claimed": false,
+      "historical_record": {
+        "first_product_commit": "5277212a1039466d9c4b6552569a32395c3663dd",
+        "historical_generator_record": "not located in tracked source",
+        "recipe_authored_date": "2026-10-29",
+        "previous_candidate_sha256": "b10a05a310337da64a68826daaf54fe8e1f1d234271e7e0489421c63bbd1df0a",
+        "historical_creator_identified": false
+      },
+      "original_input_media_used": false,
+      "generation": {
+        "receipt": "fixtures/GENERATION.json",
+        "receipt_sha256": "5323c9227923fbd67e79b7a127d34aac85c04e4c5db6849645b1e18b23a4d08e",
+        "generated_at_utc": "2026-11-01T21:18:14.836304Z",
+        "run_id": "20261101T211814Z"
+      },
+      "license": "MIT",
+      "license_scope": "Fresh original technical fixture generated for this project, not a grant for external media or encoder/runtime software"
     },
     {
       "path": "fixtures/audio-retime/synthetic-20s.wav",
       "sha256": "3a4075165eae03a178af902902dce747dcf642caa4538bca578e0a02a84fa017",
-      "declaration": "Original synthetic silence, not speech, as declared by its companion JSON.",
-      "verification": "Current stdlib recipe reproduced the existing mono 8kHz 16-bit 160000-sample zero PCM WAV. This does not identify the historical creator.",
+      "declaration": "Fresh mono 8kHz 16-bit WAV containing exactly 160000 zero PCM samples; no speaker, recording or external audio input",
+      "verification": "Fresh generated WAV fully parsed with stdlib wave; all 160000 samples are zero and bytes match the candidate fixture",
       "generator_record": "fixtures/recipes/generate_silence.py",
-      "first_product_commit": "5277212a1039466d9c4b6552569a32395c3663dd",
       "use": "technical contract example; not voice quality, caller-media or creative acceptance",
-      "publication_clearance": "pending provenance/asset authorization review",
-      "historical_generator_record": "not located in tracked source",
+      "publication_clearance": "Fresh original zero-input generation recorded under the project MIT grant; no historical media ownership or third-party clearance is asserted",
       "generator_sha256": "50ac3f36400cd172b3fb4511ce66a569cc8f4f968336fdee0245fbba643b249c",
-      "recipe_authored_date": "2026-10-29",
-      "historical_authorship_claimed": false
+      "historical_authorship_claimed": false,
+      "historical_record": {
+        "first_product_commit": "5277212a1039466d9c4b6552569a32395c3663dd",
+        "historical_generator_record": "not located in tracked source",
+        "recipe_authored_date": "2026-10-29",
+        "previous_candidate_sha256": "3a4075165eae03a178af902902dce747dcf642caa4538bca578e0a02a84fa017",
+        "historical_creator_identified": false
+      },
+      "original_input_media_used": false,
+      "generation": {
+        "receipt": "fixtures/GENERATION.json",
+        "receipt_sha256": "5323c9227923fbd67e79b7a127d34aac85c04e4c5db6849645b1e18b23a4d08e",
+        "generated_at_utc": "2026-11-01T21:18:14.836304Z",
+        "run_id": "20261101T211814Z"
+      },
+      "license": "MIT",
+      "license_scope": "Fresh original technical fixture generated for this project, not a grant for external media or encoder/runtime software"
     },
     {
       "path": "fixtures/synthetic-voice-contract.mp3",
       "sha256": "2a9bdbda14791cbcf6a0cd772fea4aad7219c5f1f6e669514ef5def1c04ce3f7",
-      "declaration": "New four-second silent MP3 contract fixture, generated from zero PCM; no speaker, speech or external audio input.",
-      "verification": "Repeat encoding matched; independent full decode yielded 176400 zero mono PCM samples at 44100 Hz.",
+      "declaration": "Fresh four-second MP3 encoded from newly generated zero PCM using existing LAME; no speaker, speech or external audio input",
+      "verification": "Fresh encoding matched the candidate bytes; independent full FFmpeg decode returned exactly 176400 zero mono PCM samples at 44100 Hz",
       "generator_record": "fixtures/recipes/generate_silence.py",
       "use": "technical contract example; not voice quality, caller-media or creative acceptance",
-      "publication_clearance": "pending provenance/asset authorization review",
-      "historical_generator_record": "not located in tracked source",
+      "publication_clearance": "Fresh original zero-input generation recorded under the project MIT grant; no historical media ownership or third-party clearance is asserted",
       "generator_sha256": "50ac3f36400cd172b3fb4511ce66a569cc8f4f968336fdee0245fbba643b249c",
-      "recipe_authored_date": "2026-10-29",
       "historical_authorship_claimed": false,
-      "historical_fixture_sha256": "6958daac649ccc369ee4e73a2ce3d8f192ded3306688da95bb5ea19f771d0aa5",
-      "historical_first_product_commit": "5277212a1039466d9c4b6552569a32395c3663dd",
       "encoder": {
         "name": "LAME",
         "version": "3.100",
@@ -76,10 +98,49 @@
         "sample_rate": 44100,
         "channels": 1,
         "duration_seconds": 4
-      }
+      },
+      "historical_record": {
+        "historical_generator_record": "not located in tracked source",
+        "recipe_authored_date": "2026-10-29",
+        "historical_fixture_sha256": "6958daac649ccc369ee4e73a2ce3d8f192ded3306688da95bb5ea19f771d0aa5",
+        "historical_first_product_commit": "5277212a1039466d9c4b6552569a32395c3663dd",
+        "previous_candidate_sha256": "2a9bdbda14791cbcf6a0cd772fea4aad7219c5f1f6e669514ef5def1c04ce3f7",
+        "historical_creator_identified": false
+      },
+      "original_input_media_used": false,
+      "generation": {
+        "receipt": "fixtures/GENERATION.json",
+        "receipt_sha256": "5323c9227923fbd67e79b7a127d34aac85c04e4c5db6849645b1e18b23a4d08e",
+        "generated_at_utc": "2026-11-01T21:18:14.836304Z",
+        "run_id": "20261101T211814Z"
+      },
+      "license": "MIT",
+      "license_scope": "Fresh original technical fixture generated for this project, not a grant for external media or encoder/runtime software",
+      "encoder_generation": {
+        "name": "LAME",
+        "version": "LAME 64bits version 3.100 (http://lame.sf.net)",
+        "binary_sha256": "2527c6b42d409ae5636914b76bef817917876c8a6e403fbc529a1c9bfd372c48",
+        "arguments": [
+          "--silent",
+          "--noreplaygain",
+          "--cbr",
+          "-b",
+          "128",
+          "--resample",
+          "44.1",
+          "-m",
+          "m",
+          "-q",
+          "2"
+        ],
+        "input_wav_sha256": "f863d98220a9f1aa76e43170f4948f0888b2028fcf6b0aae497fde768efca380",
+        "input_pcm_sha256": "19f0212a2c85ff556ebeb0e7ec8d5ac64299145a606f207ac650c4aab24bf73c",
+        "binary_distributed": false
+      },
+      "encoding_recipe": "fixtures/recipes/README.md; zero-PCM WAV from generator_record followed by the recorded existing LAME invocation"
     }
   ],
   "customer_release_ready": false,
   "native_acceptance": false,
-  "commercial_clearance": "pending"
+  "commercial_clearance": "Scoped fresh original fixture generation recorded; separate third-party software/runtime conditions remain unchanged"
 }

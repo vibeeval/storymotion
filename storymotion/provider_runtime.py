@@ -3,6 +3,9 @@
 All tests use MockTransport. Live receipt retrieval/account validation is not claimed.
 """
 import datetime
+import contextlib
+import dataclasses
+import hmac
 import json
 import sqlite3
 import time
@@ -47,9 +50,11 @@ class ProviderRuntime:
         safe_public_json(payload,self.broker)
         ref=digest({'job':job,'request_hash':plan.fingerprint})
         with self.store.lock():
-            old=self.store.db.execute('SELECT payload FROM provider_requests WHERE id=?',(ref,)).fetchone()
+            old=self.store.db.execute('SELECT payload,status FROM provider_requests WHERE id=?',(ref,)).fetchone()
             if old and old[0]!=canonical(payload):raise ProviderError('REQUEST_ALREADY_QUOTED_NO_REKEY')
             self.store.db.execute('INSERT OR IGNORE INTO provider_requests(id,job,payload,status) VALUES(?,?,?,?)',(ref,job,canonical(payload),'awaiting_budget'))
+            if old and old['status']=='blocked_before_dispatch':
+                self.store.db.execute('UPDATE provider_requests SET status=?,cap=NULL,approver=NULL,expires=NULL,error=NULL WHERE id=?',('awaiting_budget',ref))
             self.store.db.commit();self.store.event(job,'provider','request_prepared',{'request':ref,'provider':plan.provider,'live_default':False})
         return {'request':ref,'plan':plan.public(),'status':self.row(ref)['status'],'estimated_microusd':estimate}
     def row(self,ref):
@@ -73,6 +78,21 @@ class ProviderRuntime:
         if p['request_hash']!=plan.fingerprint:raise ProviderError('PINNED_PLAN_MISMATCH')
         permit=Permit(plan.fingerprint,row['job'],row['cap'] if row['cap'] is not None else -1,p['estimate_microusd'],row['expires'] or 0,row['approver'] or '')
         permit.verify(plan,row['job']);return plan,permit
+    @contextlib.contextmanager
+    def _wire_gate(self,ref,claimed,slot,permit,plan,method,url,encoded,key,attempt):
+        # run() retains the existing workspace lock through the transport. Do
+        # not acquire a second flock on the same workspace from this callback.
+        current=self.row(ref);self.registered_job(current['job'])
+        if current['status']!='dispatching' or any(current[k]!=claimed[k] for k in ('job','payload','cap','approver','expires')):
+            raise ProviderError('PROVIDER_WIRE_CLAIM_INVALIDATED')
+        fresh,approved=self.plan_and_permit(current)
+        if (fresh.fingerprint!=plan.fingerprint or method!='POST' or url!=fresh.url
+                or encoded!=canonical(fresh.body).encode()):raise ProviderError('WIRE_REQUEST_CHANGED')
+        permit.verify(plan,current['job']);approved.verify(fresh,current['job'])
+        with self.broker.send_lease(slot,plan.provider,current['job'],plan.fingerprint,self.transport.synthetic) as fresh_key:
+            if not hmac.compare_digest(fresh_key,key):raise ProviderError('CREDENTIAL_SCOPE_MISMATCH')
+            attempt['sent']=True
+            yield
     def run(self,ref,slot):
         with self.store.lock():
             row=self.row(ref)
@@ -89,14 +109,24 @@ class ProviderRuntime:
             with self.broker.lease(slot,plan.provider,row['job'],plan.fingerprint,self.transport.synthetic):pass
             self.store.db.execute('UPDATE provider_requests SET status=?,synthetic=? WHERE id=?',('dispatching',int(self.transport.synthetic),ref));self.store.db.commit()
             self.store.event(row['job'],'provider','dispatch_intent_saved',{'request':ref,'synthetic':self.transport.synthetic})
+            attempt={'sent':False}
+            permit=dataclasses.replace(permit,send_gate=lambda actual,method,url,encoded,key:self._wire_gate(ref,row,slot,permit,actual,method,url,encoded,key,attempt))
             try:
+                def consume(result,key):
+                    if not attempt['sent']:raise ProviderError('FINAL_SEND_GATE_NOT_CONSUMED')
+                    return self._commit_result(row,result,self.transport.synthetic,active_key=key)
                 receipt=execute(plan,self.broker,slot,permit,self.transport,row['job'],
-                    consume=lambda result,key:self._commit_result(row,result,self.transport.synthetic,active_key=key))
+                    consume=consume)
                 return {'status':'complete_mock' if self.transport.synthetic else 'complete_live_unpriced','receipt':receipt}
             except Exception as error:
                 code=error.code if isinstance(error,ProviderError) else 'OUTCOME_UNCERTAIN'
-                self.store.db.execute('UPDATE provider_requests SET status=?,error=? WHERE id=?',('uncertain',code,ref));self.store.db.commit()
-                self.store.event(row['job'],'provider','outcome_uncertain',{'request':ref,'code':code})
+                status='uncertain' if attempt['sent'] else 'blocked_before_dispatch'
+                if attempt['sent']:
+                    self.store.db.execute('UPDATE provider_requests SET status=?,error=? WHERE id=?',(status,code,ref))
+                else:
+                    self.store.db.execute('UPDATE provider_requests SET status=?,cap=NULL,approver=NULL,expires=NULL,error=? WHERE id=?',(status,code,ref))
+                self.store.db.commit()
+                self.store.event(row['job'],'provider','outcome_uncertain' if attempt['sent'] else 'blocked_before_dispatch',{'request':ref,'code':code})
                 raise ProviderError(code) from None
     def _commit_result(self,row,result,synthetic,active_key=None):
         if self.broker.contains_secret(result.data):raise ProviderError('CREDENTIAL_ECHO_BLOCKED')

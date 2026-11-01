@@ -3,7 +3,7 @@
   "input_version": "1.0.0",
   "development_manifest_sha256": "5becc0ef36ca0e8fab176e8b43e0adeb164072b6147288cb67a60f4349c910d1",
   "baseline_sources": {
-    "storymotion/template_families.py": "2179eabf7e8c5689e252a133318f4976b097deb6ad9aa4d68fb7013d680dbff1",
+    "storymotion/template_families.py": "8bb86ae6ab6e6a6bf72c535ddf0c1e7c52e0b145ff283a603ec5a1ad992a7d6a",
     "storymotion/style_templates.py": "d64c921f8633c52a9d324e3a2a8915aca28280e9d354866584add7bc30506c47"
   },
   "declarations": {

@@ -6,6 +6,7 @@ executed or copied. Captions use caller-supplied timing, not inferred speech.
 """
 from .local_state import private_directory, write_private
 import copy
+import hashlib
 import html
 import json
 import math
@@ -282,7 +283,7 @@ def adapter_catalog():
              'strategy':f['adaptation'].get('strategy','bounded_source_code_adaptation'),
              'original_implementation':f['adaptation'].get('original_implementation',False),
              'source_license':f['adaptation'].get('source_license',f['adaptation']['license']),
-             'implementation_license':f['adaptation'].get('implementation_license','existing_private_product_terms'),
+             'implementation_license':f['adaptation'].get('implementation_license','MIT'),
              'scope':f['adaptation']['scope'],'engines':f['engines'],
              'preview_url':f['preview_url']}
             for f in capabilities()['families'] if f['adaptation']]
@@ -548,6 +549,27 @@ def svg_markup(scene,seconds=None,*,cover=False):
     return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920" role="img" aria-label="Parametrik şablon sahnesi">'+''.join(element(n) for n in scene['nodes'])+'</svg>'
 
 
+def _export_license(package_root):
+    """Carry the first-party grant without relabeling bundled third-party work."""
+    from .local_state import guard_control
+    root=Path(package_root)
+    notice='notices/StoryMotion-MIT.txt';scope_notice='notices/StoryMotion-MIT-SCOPE.txt'
+    try:
+        source=guard_control(root,'LICENSE').read_bytes()
+        licensed=guard_control(root,'vendor/'+notice).read_bytes()
+        scope=guard_control(root,'vendor/'+scope_notice).read_bytes()
+        if source!=licensed or not source.startswith(b'MIT License\n') or not scope:
+            invalid('StoryMotion MIT notice missing or different from the current source LICENSE')
+        text=licensed.decode('utf-8');scope_text=scope.decode('utf-8')
+    except (OSError,UnicodeError):
+        invalid('StoryMotion MIT notice missing or different from the current source LICENSE')
+    return ({'spdx':'MIT','scope':'StoryMotion_original_code_and_documentation_only',
+             'notice_path':'assets/'+notice,'notice_sha256':hashlib.sha256(licensed).hexdigest(),
+             'scope_notice_path':'assets/'+scope_notice,'scope_notice_sha256':hashlib.sha256(scope).hexdigest(),
+             'third_party_terms':'Separate third-party notices and licenses remain under assets; no grant to third-party code, fonts, runtime components or caller media.'},
+            text,scope_text)
+
+
 def build(payload,out,package_root):
     brief=payload['brief'];scene=compile_scene(brief);out=Path(out);assets=out/'assets'
     controlled=['index.html','cover.html','cover.svg','template-motion.mjs','template-scene.json','template-selection.json',
@@ -559,6 +581,7 @@ def build(payload,out,package_root):
         guard_control(out,path.relative_to(out),'dir' if path.is_dir() else 'file')
     if assets.is_symlink() or any(p.is_symlink() for p in assets.rglob('*')) or any((out/n).is_symlink() or (out/(n+'.tmp')).is_symlink() for n in controlled):
         invalid('şablon çıktı yolu bağlantılı; dosya yazılmadı')
+    licensing,license_text,license_scope=_export_license(package_root)
     assets.mkdir(parents=True,exist_ok=True)
     shutil.copytree(package_root/'vendor',assets,dirs_exist_ok=True)
     from .edit_plan import verify_staged_assets
@@ -568,7 +591,7 @@ def build(payload,out,package_root):
     family=brief['template_family']['id'];adaptation=style_templates.adaptation(family)
     write_json(out/'template-scene.json',scene);write_json(out/'template-selection.json',{'template_family':brief['template_family'],'source_context':brief['template_context'],'subject':brief.get('template_subject'),
         'render_adapter':payload.get('render_engine','hyperframes'),'source_styles_implemented':style_templates.implemented_sources(family),
-        'style_adaptation':adaptation,'audio_sha256':payload.get('audio_sha256'),'publication_acceptance':'pending','caller_media_status':'proxy_only_not_decoded' if scene.get('module') and development_templates.requires_media(family) else 'not_applicable'})
+        'style_adaptation':adaptation,'storymotion_license':licensing,'audio_sha256':payload.get('audio_sha256'),'publication_acceptance':'pending','caller_media_status':'proxy_only_not_decoded' if scene.get('module') and development_templates.requires_media(family) else 'not_applicable'})
     bindings=[]
     def visit(n):
         if n.get('id') and n.get('motion'):
@@ -626,5 +649,8 @@ def build(payload,out,package_root):
         if adaptation.get('original_implementation'):
             note='\nOriginal archived implementation; source reference ID: '+adaptation['source_item_id']+'\n'+adaptation['scope']+'\nNative, caller-media and commercial acceptance pending.\n'
         else:note='\n\n'+adaptation['repository']+'/tree/'+adaptation['commit']+'\n'+adaptation['scope']+'\n'+adaptation['copyright']+' · MIT\nLicense: assets/notices/mg-styles-15-MIT.txt\n'
-    write_private(out/'BRIEF.md','# '+brief['title']+'\n\nGenerated by StoryMotion '+__version__+' (local deterministic templates, no model call).\n\n'+brief['brief']+'\n\n'+brief['script']+'\n\nYerel parametrik şablon; sağlayıcı çağrısı yok. İnsan/yayın kabulü bekliyor.\n'+note)
+    # A space after a line-ending colon preserves the complete notice text
+    # without looking like a Windows drive path to the existing privacy gate.
+    license_note='\n\n## StoryMotion original-code license\n\n'+license_scope+'\nNotice: '+licensing['notice_path']+'\n\n'+license_text.replace(':\n',': \n')
+    write_private(out/'BRIEF.md','# '+brief['title']+'\n\nGenerated by StoryMotion '+__version__+' (local deterministic templates, no model call).\n\n'+brief['brief']+'\n\n'+brief['script']+'\n\nYerel parametrik şablon; sağlayıcı çağrısı yok. İnsan/yayın kabulü bekliyor.\n'+note+license_note)
     return ['index.html','hyperframes.json','index.motion.json','timeline.json','profile.json','cover.svg','cover.html','caption.txt','subtitles.srt','BRIEF.md','template-motion.mjs','template-scene.json','template-selection.json']+module_files+[p.relative_to(out).as_posix() for p in sorted(assets.rglob('*')) if p.is_file()]

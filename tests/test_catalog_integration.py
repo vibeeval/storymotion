@@ -174,8 +174,11 @@ class CatalogIntegrationTests(PackFixtureCase):
             return original(*args,**kwargs)
         with patch.object(self.d.llm,'_endpoint',side_effect=endpoint):
             self.d.llm.execute(ref,request,False)
-        self.assertEqual(len(calls),3);self.assertEqual(self.d.llm.get(request)['status'],'uncertain')
-        self.assertEqual(self.d.llm.get(request)['dispatch_count'],1);self.assertFalse(self.d.llm.transport.calls)
+        result=self.d.llm.get(request)
+        self.assertEqual(len(calls),3);self.assertEqual(result['status'],'blocked_before_dispatch')
+        self.assertEqual(result['dispatch_count'],0);self.assertIsNone(result['approval']);self.assertIsNone(result['approved_until'])
+        self.assertFalse(self.d.llm.transport.calls)
+        with self.assertRaises(ProviderError):self.d.llm.execute(ref,request,False)
     def test_tampered_native_post_endpoint_cannot_reach_claim_or_wire(self):
         ref,_,preview=self.preview('gemini');request=preview['request'];self.approve(ref,request)
         row=self.d.llm.row(request);payload=json.loads(row['payload']);payload['plan']['url']='https://api.openai.com/v1/responses'

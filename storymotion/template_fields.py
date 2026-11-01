@@ -14,7 +14,7 @@ from .account_packs import load_pack
 from .local_state import guard_control
 from .security import WorkflowError, canonical, digest, file_hash
 
-CONTRACT_SHA256 = 'e7a6dc385d63325d145bd3b6d91d87ffe50f36cb6937d5bd72afda1add586d11'
+CONTRACT_SHA256 = '99238a198a50c147d3215aef5fae9547c733345bc4f40e3aeac4786e7cff5067'
 BASE_EXAMPLES_SHA256 = 'd572948af9ce89c07a6e405e9b7043213d8fabaed83e4c49e0c8114a848ff74d'
 UNSAFE_KEYS = {'__proto__', 'prototype', 'constructor'}
 MAX_SAFE_INTEGER = 9007199254740991

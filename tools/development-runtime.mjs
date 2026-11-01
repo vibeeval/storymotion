@@ -3,6 +3,10 @@ import {readFileSync,lstatSync,realpathSync,readdirSync,existsSync,accessSync,co
 import {resolve,relative,join,dirname,isAbsolute} from 'node:path';
 import {createHash} from 'node:crypto';
 
+// Historical private CI approvals are excluded from this source distribution.
+export const PRIVATE_PROFILE_AVAILABLE=false;
+export const PRIVATE_PROFILE_REASON='PRIVATE_PROFILE_NOT_DISTRIBUTED';
+export function requirePrivateProfile(){throw new Error(PRIVATE_PROFILE_REASON);}
 export const POLICY_SHA='5fb8ded307f2f111201a4e764c68668f839f8687db824250bfd0f3a6bf82faee';
 export const EVIDENCE_SHA='d132d5b9675daf93e006fd8a7621d5142e8f222f116b27e44f85bed44039d0ed';
 export const RECIPE_SHA='9a64dae21b2115e46158520fcb983705bc784970480fbec304840fb423bd67bb';
@@ -80,6 +84,7 @@ export function developmentMode(root) {
   return false;
 }
 export function processEnvironment(root,source=process.env) {
+  requirePrivateProfile();
   if(realpathSync(root)!==root)fail();
   const base=join(root,PROCESS_BASE),dirs=['',...new Set([...Object.values(PROCESS_PATHS),'home/.cache/hyperframes/history','home/.hyperframes/running'])];
   for(const name of dirs){
@@ -99,6 +104,7 @@ export function processEnvironment(root,source=process.env) {
     ...Object.fromEntries(Object.entries(PROCESS_PATHS).map(([k,v])=>[k,join(base,v)])),...PROCESS_CONTROLS};
 }
 export function policy(root,engine='hyperframes') {
+  requirePrivateProfile();
   if(engine!=='hyperframes'||process.platform!=='darwin'||process.arch!=='arm64')fail();
   if(realpathSync(root)!==root)fail();
   if(fileSha(root,'ci/hf-development-policy.json',512*1024)!==POLICY_SHA)fail();
@@ -115,15 +121,18 @@ export function policy(root,engine='hyperframes') {
   sourceRecipe(root);return value;
 }
 export function sourceBinding(root,value) {
+  requirePrivateProfile();
   return hash(stable({policy:POLICY_SHA,files:value.reviewed_files,validator:fileSha(root,'storymotion/development_policy.py'),js_validator:fileSha(root,'tools/development-runtime.mjs')}));
 }
 export function sourceRecipe(root) {
+  requirePrivateProfile();
   if(fileSha(root,'renderers/ffmpeg-source.json',32768)!==RECIPE_SHA)fail();
   const value=readJSON(root,'renderers/ffmpeg-source.json',32768);
   for(const [name,sha]of Object.entries(value.license_files))if(fileSha(root,name)!==sha)fail();
   return value;
 }
 export function mode(root) {
+  requirePrivateProfile();
   const value=readJSON(root,'.runtime/development/mode.json',32768),p=policy(root);
   if(!record(value)||!same(Object.keys(value).sort(),['schema_version','mode_id','policy_sha256','source_binding','root_sha256','provider','fixture_sha256','node'].sort())
     ||value.schema_version!==1||typeof value.mode_id!=='string'||!(/^[a-f0-9]{32}$/).test(value.mode_id)
@@ -135,6 +144,7 @@ export function mode(root) {
   return value;
 }
 export function installationArtifacts(root) {
+  requirePrivateProfile();
   if(fileSha(root,'ci/hf-development-evidence.json')!==EVIDENCE_SHA)fail();
   const evidence=readJSON(root,'ci/hf-development-evidence.json'),rows=evidence.artifacts;
   if(fileSha(root,'package-lock.json')!==evidence.package_lock_sha256||!record(rows)||Object.keys(rows).length!==94)fail();
@@ -149,6 +159,7 @@ export function installationArtifacts(root) {
   return rows;
 }
 export function installedPackages(root) {
+  requirePrivateProfile();
   const expected=installationArtifacts(root),actual=[];
   function visit(folder){
     if(!existsSync(folder))return;
@@ -170,6 +181,7 @@ export function installedPackages(root) {
   return actual.sort();
 }
 export function installedTree(root) {
+  requirePrivateProfile();
   const base=join(root,'node_modules'),rows={};let total=0;
   if(realpathSync(base)!==base)fail();
   function visit(folder){
@@ -190,6 +202,7 @@ export function installedTree(root) {
   visit(base);return hash(stable(rows));
 }
 export function npmReceiptMatches(receipt,m,lockSha,packageSha,treeSha,packages) {
+  requirePrivateProfile();
   const expected={schema_version:4,graph:'core',npm_ci:'complete_ignored_scripts',npm_mode:'ignore_scripts',lifecycle_allowlist:[],provider:PROVIDER,
     policy_sha256:POLICY_SHA,source_binding:m.source_binding,mode_id:m.mode_id,package_lock_sha256:lockSha,package_json_sha256:packageSha,
     installed_tree_sha256:treeSha,installed_packages:packages};
@@ -197,6 +210,7 @@ export function npmReceiptMatches(receipt,m,lockSha,packageSha,treeSha,packages)
   return record(receipt)&&same(receipt,expected);
 }
 export function npmReady(root) {
+  requirePrivateProfile();
   try{return npmReceiptMatches(readJSON(root,'.runtime/npm-core.json',32768),mode(root),fileSha(root,'package-lock.json'),fileSha(root,'package.json'),installedTree(root),installedPackages(root));}catch{return false;}
 }
 function toolchainMatches(value) {
@@ -211,6 +225,7 @@ function toolchainMatches(value) {
   }catch{return false;}
 }
 export function sourceFFmpeg(root) {
+  requirePrivateProfile();
   const r=sourceRecipe(root),base={ready:false,provider:PROVIDER,path:r.binary,reason:'SOURCE_FFMPEG_NOT_READY'};
   try{
     const v=readJSON(root,r.receipt,65536),m=mode(root),keys=['schema_version','provider','policy_sha256','source_binding','recipe_sha256','platform','architecture','binary','binary_sha256','sources','toolchain','configuration_files','license_files','capabilities','capabilities_sha256'];
@@ -250,6 +265,7 @@ export const PROBE_RECIPE_SHA='2354151b834791ba3b00d29301c15b0d03236ca0b4f6a4b1b
 export const WAV_SHA='643f8a8dc8bd9c19225afffad2becfec5426180b3749cb208abdf1a6c8354efc';
 const probeValidation={profile:PROBE_PROFILE,codec:'pcm_s16le',sample_rate:16000,channels:1,bits_per_sample:16,duration_microseconds:1000000,format:'wav',stream_count:1};
 export function probeReceiptMatches(root,v,m,tools) {
+  requirePrivateProfile();
   try{
     if(!record(v)||typeof v.stage!=='string'||!(/^\.runtime\/development\/probe\/stages\/[a-f0-9]{32}$/).test(v.stage))return false;
     const stage=v.stage,build=stage+'/ffmpeg-source',s=sourceRecipe(root).sources.ffmpeg;
@@ -276,6 +292,7 @@ export function probeReceiptMatches(root,v,m,tools) {
   }catch{return false;}
 }
 export function privateProbe(root) {
+  requirePrivateProfile();
   const base={ready:false,provider:PROBE_PROVIDER,profile:PROBE_PROFILE,path:PROBE_BASE+'/ffprobe',version:'8.1.3',reason:'DEVELOPMENT_PROBE_NOT_READY'};
   try{
     policy(root);const v=readJSON(root,PROBE_BASE+'/receipt.json',32768),m=mode(root);
@@ -290,6 +307,7 @@ export function privateProbe(root) {
   }catch{return base;}
 }
 export function inspectDevelopment(root,engine,probe,requireCompletion=true) {
+  requirePrivateProfile();
   const base={ok:false,requested_engine:engine,engines:{hyperframes:{ready:false},remotion:{ready:false}},packages:{hyperframes:{ok:false},'ffmpeg-static':{ok:false}},
     network_during_inspection:false,runtime_scope:'fixed private silent fixture only',provider_calls:0,...Object.fromEntries(FLAGS.map(k=>[k,false]))};
   try{

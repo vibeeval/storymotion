@@ -87,10 +87,10 @@ def examples(key):
     return pinned_json('fixtures/development-templates/'+key+'.json',row['fixture_sha256'])['cases']
 
 def _adaptation(row):
-    return {'source_item_id':row['source_id'],'source_name':row['name'],'license':'original_archived_implementation',
+    return {'source_item_id':row['source_id'],'source_name':row['name'],'license':'MIT',
             'strategy':'original_implementation_not_source_code_port','original_implementation':True,
-            'source_license':'metadata_reference_not_a_code_grant','implementation_license':'original_product_terms',
-            'scope':'Original archived bounded module; external source films, prompts and assets are not included.',
+            'source_license':'metadata_reference_not_a_code_grant','implementation_license':'MIT',
+            'scope':'MIT covers original StoryMotion code and documentation only; external source films, prompts and assets are not included.',
             'commercial_acceptance':'pending','requires_caller_media':row['requires_caller_media']}
 
 def stage(package_root,out):

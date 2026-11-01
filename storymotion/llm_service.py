@@ -8,6 +8,7 @@ from .local_state import private_directory, private_database, write_private
 from .local_state import guard_workspace
 import contextlib
 import copy
+import hmac
 import json
 import math
 import re
@@ -26,6 +27,10 @@ from .provider_catalog import CapabilityRegistry,ConnectionBinding,build_registr
 ROOT=Path(__file__).resolve().parents[1]
 from .account_packs import ACCOUNTS, sample_brief
 TERMINAL={'completed','received_after_cancel_review','received_invalid_review','failed_known_no_retry','uncertain'}
+
+
+class TextWireInvalidated(ProviderError):
+    """Authorization failed before the built-in transport submitted anything."""
 
 
 def creative_api():
@@ -115,7 +120,7 @@ class LLMService:
             raise ProviderError('TRANSPORT_MODE_MISMATCH')
         if not isinstance(self.transport,(MockTransport,HTTPSTransport)):raise ProviderError('UNTRUSTED_TRANSPORT')
         self.broker=SecretBroker(real_intake_enabled=mode=='live',ttl_seconds=ttl)
-        self.connections={};self.bindings={};self.timers={};self.threads={};self.lock=threading.RLock()
+        self.connections={};self.bindings={};self.timers={};self.threads={};self.lock=threading.RLock();self._active_claim=threading.local()
         with self.db() as db:
             db.executescript('''CREATE TABLE IF NOT EXISTS llm_requests(
               id TEXT PRIMARY KEY,job TEXT NOT NULL,payload TEXT NOT NULL,status TEXT NOT NULL,
@@ -126,7 +131,11 @@ class LLMService:
               script_sha256 TEXT,visual_signature TEXT,context_sha256 TEXT,proposal_sha256 TEXT,created REAL);''')
             if 'completion_audit_error' not in {r[1] for r in db.execute('PRAGMA table_info(llm_requests)')}:
                 db.execute('ALTER TABLE llm_requests ADD COLUMN completion_audit_error TEXT')
-            db.execute("UPDATE llm_requests SET status='uncertain',error_code='EXPIRED_DISPATCH_LEASE' WHERE status='dispatching' AND deadline<?",(time.time(),))
+            if 'claim_sha256' not in {r[1] for r in db.execute('PRAGMA table_info(llm_requests)')}:
+                db.execute('ALTER TABLE llm_requests ADD COLUMN claim_sha256 TEXT')
+            if 'claim_nonce' not in {r[1] for r in db.execute('PRAGMA table_info(llm_requests)')}:
+                db.execute('ALTER TABLE llm_requests ADD COLUMN claim_nonce TEXT')
+            db.execute("UPDATE llm_requests SET status=CASE WHEN dispatch_count=0 THEN 'blocked_before_dispatch' ELSE 'uncertain' END,approval=CASE WHEN dispatch_count=0 THEN NULL ELSE approval END,approved_until=CASE WHEN dispatch_count=0 THEN NULL ELSE approved_until END,error_code='EXPIRED_DISPATCH_LEASE' WHERE status='dispatching' AND deadline<?",(time.time(),))
         from .writing_context import WritingContexts
         self.contexts=WritingContexts(self.db,self.lock,self._safe)
     @contextlib.contextmanager
@@ -249,7 +258,7 @@ class LLMService:
     def row(self,request):
         if not isinstance(request,str) or not re.fullmatch('[a-f0-9]{32}',request):raise ProviderError('INVALID_LLM_REQUEST')
         with self.db() as db:
-            db.execute("UPDATE llm_requests SET status='uncertain',error_code='EXPIRED_DISPATCH_LEASE',updated=? WHERE id=? AND status='dispatching' AND deadline<?",(time.time(),request,time.time()))
+            db.execute("UPDATE llm_requests SET status=CASE WHEN dispatch_count=0 THEN 'blocked_before_dispatch' ELSE 'uncertain' END,approval=CASE WHEN dispatch_count=0 THEN NULL ELSE approval END,approved_until=CASE WHEN dispatch_count=0 THEN NULL ELSE approved_until END,error_code='EXPIRED_DISPATCH_LEASE',updated=? WHERE id=? AND status='dispatching' AND deadline<?",(time.time(),request,time.time()))
             row=db.execute('SELECT * FROM llm_requests WHERE id=?',(request,)).fetchone()
         if not row:raise ProviderError('LLM_REQUEST_NOT_FOUND')
         return dict(row)
@@ -302,6 +311,68 @@ class LLMService:
         if contract!=p['contract'] or current_execution()!=p['execution']:raise ProviderError('WRITING_CONTRACT_CHANGED_NEW_PREVIEW_REQUIRED')
         self.contexts.assert_current(p['context']['account'],p.get('writing_context'))
         return pack
+    def _claim_hash(self,row):
+        return digest({key:row[key] for key in ('id','job','payload','approval','approved_until','binding_scope','owner','deadline','claim_nonce')})
+    @contextlib.contextmanager
+    def _wire_gate(self,ref,request,claimed,p,permit,plan,method,url,encoded,key,attempt):
+        # App-level and broker invalidations serialize with the connected HTTP
+        # request write. DNS/TLS preparation and response headers/body hold no
+        # authorization lock. This does not claim an overall DNS/response bound.
+        with self.lock,contextlib.ExitStack() as held:
+            try:
+                if self.mode not in {'demo','live'} or self.transport.synthetic!=(self.mode=='demo'):
+                    raise ProviderError('LLM_DISABLED_START_DEMO_OR_EXPLICIT_LIVE_MODE')
+                if not self.transport.synthetic and self.transport.allow_live is not True:raise ProviderError('LIVE_TRANSPORT_DISABLED')
+                c=self.connections.get(ref)
+                if not c or c['expires']<=time.monotonic():raise ProviderError('CONNECTION_EXPIRED')
+                if not c['metadata'] or c['metadata_until']<=time.monotonic():raise ProviderError('REFRESH_METADATA_BEFORE_APPROVAL')
+                if c['metadata'].get('provider')!=p['provider']:raise ProviderError('INVALID_MODEL_LIST')
+                scope=digest({'service_session':self.owner,'connection':ref,'provider':c['provider']})
+                self._registration(p['provider'])
+                self.registry.assert_connection(p['provider'],'text',ConnectionBinding(c['provider'],'text',c['capability_scope'],ref))
+                self.registry.validate_endpoint(p['provider'],'text',method,url)
+                with self.db() as db:
+                    db.execute('BEGIN IMMEDIATE');row=db.execute('SELECT * FROM llm_requests WHERE id=?',(request,)).fetchone()
+                    if not row or row['status']!='dispatching' or row['owner']!=self.owner or row['dispatch_count']!=0:
+                        raise ProviderError('LLM_WIRE_CLAIM_INVALIDATED')
+                    if not row['approved_until'] or row['approved_until']<=time.time() or not row['deadline'] or row['deadline']<=time.time():
+                        raise ProviderError('APPROVAL_SCOPE_OR_EXPIRY')
+                    if self.bindings.get(request)!=ref or row['binding_scope']!=scope:raise ProviderError('LLM_APPROVAL_SCOPE_MISMATCH')
+                    current=json.loads(row['payload']);approval=json.loads(row['approval']) if row['approval'] else {}
+                    if (not row['claim_sha256'] or row['claim_sha256']!=claimed['claim_sha256']
+                            or row['claim_sha256']!=self._claim_hash(row) or canonical(current)!=canonical(p)
+                            or row['job']!=current['job']):raise ProviderError('LLM_CLAIM_BINDING_INVALIDATED')
+                    self._verify_payload(current)
+                    selected=next((m for m in c['metadata']['models'] if m['id']==current['model']),None)
+                    if not selected:raise ProviderError('MODEL_NOT_IN_CURRENT_CONNECTION_LIST')
+                    limit=selected.get('max_output_tokens')
+                    if type(limit) is int and current['max_output_tokens']>limit:raise ProviderError('MODEL_OUTPUT_LIMIT_EXCEEDED')
+                    expected={'connection_scope':scope,'provider':current['provider'],'model':current['model'],
+                              'plan_hash':current['plan']['hash'],'maximum_output_tokens':current['max_output_tokens']}
+                    if (any(approval.get(k)!=v for k,v in expected.items()) or approval.get('ack_unknown_cost') is not True
+                            or approval.get('rights_confirmed') is not True):raise ProviderError('LLM_APPROVAL_SCOPE_MISMATCH')
+                    budget=approval.get('budget')
+                    if (not isinstance(budget,dict) or type(budget.get('maximum_microusd')) is not int
+                            or type(budget.get('estimate_microusd')) is not int
+                            or permit.maximum_microusd!=budget['maximum_microusd']
+                            or permit.estimate_microusd!=budget['estimate_microusd']):raise ProviderError('LLM_APPROVAL_SCOPE_MISMATCH')
+                    if (plan.provider!=current['provider'] or plan.model!=current['model']
+                            or plan.fingerprint!=current['plan']['hash'] or method!='POST'
+                            or url!=current['plan']['url'] or encoded!=canonical(current['plan']['body']).encode()):
+                        raise ProviderError('LLM_WIRE_BODY_INVALIDATED')
+                    fresh=held.enter_context(self.broker.send_lease(c['slot'],p['provider'],ref,ref,self.transport.synthetic))
+                    if not hmac.compare_digest(fresh,key):raise ProviderError('CREDENTIAL_SCOPE_MISMATCH')
+                    permit.verify(plan,current['job'])
+                    if c['expires']<=time.monotonic() or c['metadata_until']<=time.monotonic() or row['deadline']<=time.time():
+                        raise ProviderError('APPROVAL_SCOPE_OR_EXPIRY')
+                    db.execute('UPDATE llm_requests SET dispatch_count=1,updated=? WHERE id=?',(time.time(),request))
+                    db.execute('INSERT INTO llm_events(request,event,actual_microusd,created) VALUES(?,?,?,?)',
+                        (request,'dispatch_intent_committed',0 if self.transport.synthetic else None,time.time()))
+            except Exception as error:
+                code=error.code if isinstance(error,ProviderError) else 'LLM_WIRE_STATE_INVALIDATED'
+                raise TextWireInvalidated(code) from None
+            attempt['sent']=True
+            yield
     def approve(self,ref,request,maximum_output_tokens,ack_unknown_cost,rights_confirmed,budget=None):
         with self._session_lease(ref) as (c,key):
             row=self.row(request);p=json.loads(row['payload']);self._verify_payload(p)
@@ -334,20 +405,33 @@ class LLMService:
             if approval.get('connection_scope')!=scope or approval.get('plan_hash')!=p['plan']['hash']:raise ProviderError('LLM_APPROVAL_SCOPE_MISMATCH')
             if db.execute("SELECT count(*) FROM llm_requests WHERE status IN ('dispatching','uncertain','received_after_cancel_review')").fetchone()[0]:
                 raise ProviderError('ANOTHER_LLM_REQUEST_OR_UNCERTAIN_HOLD')
-            db.execute("UPDATE llm_requests SET status='dispatching',owner=?,deadline=?,updated=? WHERE id=?",(self.owner,time.time()+90,time.time(),request))
-        return True
+            db.execute("UPDATE llm_requests SET status='dispatching',owner=?,deadline=?,updated=?,claim_nonce=? WHERE id=?",(self.owner,time.time()+90,time.time(),uuid.uuid4().hex,request))
+            claimed=db.execute('SELECT * FROM llm_requests WHERE id=?',(request,)).fetchone()
+            token=self._claim_hash(claimed)
+            db.execute('UPDATE llm_requests SET claim_sha256=? WHERE id=?',(token,request))
+        return token
     def execute(self,ref,request,asynchronous=True):
-        if not self._claim(ref,request):return self.get(request)
+        token=self._claim(ref,request)
+        if not token:return self.get(request)
         if asynchronous:
-            thread=threading.Thread(target=self._work,args=(ref,request),daemon=True)
+            thread=threading.Thread(target=self._run_claim,args=(ref,request,token),daemon=True)
             with self.lock:self.threads[request]=thread
             thread.start();return self.get(request)
-        self._work(ref,request);return self.get(request)
+        self._run_claim(ref,request,token);return self.get(request)
+    def _run_claim(self,ref,request,token):
+        # Preserve the two-argument worker seam while binding its original
+        # durable claim, even if a cancelled intent is approved again.
+        previous=getattr(self._active_claim,'token',None);self._active_claim.token=token
+        try:self._work(ref,request)
+        finally:self._active_claim.token=previous
     def _work(self,ref,request):
-        attempted=False;active_key=b''
+        attempt={'sent':False};active_key=b'';token=getattr(self._active_claim,'token',None)
+        if not token:return
         try:
             with self._session_lease(ref) as (c,active_key):
-                row=self.row(request);p=json.loads(row['payload']);self._verify_payload(p)
+                row=self.row(request)
+                if row['claim_sha256']!=token:return
+                p=json.loads(row['payload']);self._verify_payload(p)
                 from types import SimpleNamespace
                 pinned=SimpleNamespace(provider=p['provider'],body=p['plan']['body'])
                 plan=ADAPTERS[p['provider']].build(p['model'],plan_prompt(pinned),p['max_output_tokens'])
@@ -356,23 +440,28 @@ class LLMService:
                 self._selected_model(ref,p['model'],p['max_output_tokens'])
                 with self.lock,self.db() as db:
                     scope=self._scope(ref);db.execute('BEGIN IMMEDIATE');row=db.execute('SELECT * FROM llm_requests WHERE id=?',(request,)).fetchone()
-                    if row['status']!='dispatching' or row['owner']!=self.owner:return
+                    if row['status']!='dispatching' or row['owner']!=self.owner or row['claim_sha256']!=token:return
                     approval=json.loads(row['approval']) if row['approval'] else {}
                     if row['binding_scope']!=scope or approval.get('connection_scope')!=scope or approval.get('plan_hash')!=plan.fingerprint:
                         raise ProviderError('LLM_APPROVAL_SCOPE_MISMATCH')
                     if row['approved_until']<=time.time():raise ProviderError('APPROVAL_SCOPE_OR_EXPIRY')
-                    db.execute('UPDATE llm_requests SET dispatch_count=1,updated=? WHERE id=?',(time.time(),request))
-                attempted=True;self.event(request,'dispatch_intent_committed')
-                permit=Permit(plan.fingerprint,p['job'],approval['budget']['maximum_microusd'],approval['budget']['estimate_microusd'],row['approved_until'],'connection-scope:'+scope)
+                    claimed=dict(row)
+                permit=Permit(plan.fingerprint,p['job'],approval['budget']['maximum_microusd'],approval['budget']['estimate_microusd'],row['approved_until'],'connection-scope:'+scope,
+                    send_gate=lambda actual,method,url,encoded,key:self._wire_gate(ref,request,claimed,p,permit,actual,method,url,encoded,key,attempt))
                 held=_RequestLease(self.broker,active_key,p['provider'],p['job'],plan.fingerprint,wire_check=lambda:self._endpoint(p['provider'],plan.url,ref))
-                execute(plan,held,'active-lease',permit,self.transport,p['job'],consume=lambda result,key:self._commit(request,p,result,key))
+                def consume(result,key):
+                    if not attempt['sent']:raise ProviderError('LLM_WIRE_GATE_NOT_CONSUMED')
+                    return self._commit(request,p,result,key)
+                execute(plan,held,'active-lease',permit,self.transport,p['job'],consume=consume)
         except Exception as ex:
             code=self._code(ex,active_key)
             known=code.startswith('HTTP_4') or code in {'AUTH_REJECTED','RATE_LIMITED'}
             invalid=code in {'INVALID_CREATIVE_PROPOSAL','INVALID_PROPOSAL_JSON'}
-            status='blocked_before_dispatch' if not attempted else 'failed_known_no_retry' if known else 'received_invalid_review' if invalid else 'uncertain'
-            with self.db() as db:
-                db.execute('BEGIN IMMEDIATE');current=db.execute('SELECT status,artifact,completion_audit_error FROM llm_requests WHERE id=?',(request,)).fetchone()
+            with self.lock,self.db() as db:
+                db.execute('BEGIN IMMEDIATE');current=db.execute('SELECT status,dispatch_count,artifact,completion_audit_error,claim_sha256 FROM llm_requests WHERE id=?',(request,)).fetchone()
+                if not current or current['claim_sha256']!=token:return
+                spent=attempt['sent'] or bool(current and current['dispatch_count'])
+                status='blocked_before_dispatch' if not spent else 'failed_known_no_retry' if known else 'received_invalid_review' if invalid else 'uncertain'
                 committed=bool(current and current['artifact'] and current['status'] in {'completed','received_after_cancel_review'}
                     and current['completion_audit_error']=='COMPLETION_AUDIT_PENDING')
                 if committed:
@@ -380,13 +469,17 @@ class LLMService:
                     # write/finalization failed. Preserve result/cancel truth and
                     # expose an independent warning, never a paid-outcome hold.
                     db.execute('UPDATE llm_requests SET completion_audit_error=?,updated=? WHERE id=?',('COMPLETION_AUDIT_WRITE_FAILED',time.time(),request))
+                elif not spent and current and current['status']=='cancelled':pass
+                elif not spent:
+                    db.execute('UPDATE llm_requests SET status=?,approval=NULL,approved_until=NULL,error_code=?,updated=? WHERE id=?',(status,code,time.time(),request))
                 else:db.execute('UPDATE llm_requests SET status=?,error_code=?,updated=? WHERE id=?',(status,code,time.time(),request))
             if committed:return # do not recursively retry the broken event sink
             self.event(request,code)
             if code in {'HTTP_401','HTTP_403','AUTH_REJECTED'}:self.disconnect(ref)
         finally:
             active_key=b''
-            with self.lock:self.threads.pop(request,None)
+            with self.lock:
+                if self.threads.get(request) is threading.current_thread():self.threads.pop(request,None)
     def _commit(self,request,p,result,key):
         self._safe(result.public(),key)
         def unique_pairs(pairs):
@@ -432,7 +525,7 @@ class LLMService:
         return artifact
     def cancel(self,request):
         self.row(request)
-        with self.db() as db:
+        with self.lock,self.db() as db:
             db.execute('BEGIN IMMEDIATE');row=db.execute('SELECT * FROM llm_requests WHERE id=?',(request,)).fetchone()
             if row['status'] in {'preview','approved'} or row['status']=='dispatching' and row['dispatch_count']==0:
                 db.execute("UPDATE llm_requests SET status='cancelled',updated=? WHERE id=?",(time.time(),request))

@@ -10,7 +10,7 @@ from .security import WorkflowError, digest, file_hash, scan_bytes
 
 PINS = {
     'catalog/source-catalog.json': '1edb8c3ff19bf8bf490729303bcca13e1328b426fe9db912d60134a53d82aac9',
-    'catalog/style-gallery.json': 'cf147995916884f7f22a24d97094424c144d501afe7e4af8943f7f0c8113a4c3',
+    'catalog/style-gallery.json': 'e8db3cfcdb1eb6cee77a5f969b502d2bbd371d04c257c2a2917bc3f381d56bb4',
     'catalog/style-adapters.json': '9e6e53341c54c52d4d3f4449747336c2a403c6c4eda2c729c1ff9e0c377e3958',
 }
 COLORS = {'background', 'ink', 'muted', 'accent'}
@@ -88,7 +88,7 @@ def metadata(kind):
                             'preview_state', 'compatibility', 'planning_mapping', 'excluded_family_ids'}
                     or row['kind'] != 'palette' or row['origin_family'] not in
                     {'kinetic-grid', 'causal-path', 'exploded-blueprint', 'isometric-process'}
-                    or row['license_scope'] != 'original_product_terms' or row['preview_url'] is not None
+                    or row['license_scope'] != 'MIT_original_StoryMotion_palette_only' or row['preview_url'] is not None
                     or row['preview_state'] != 'palette_values_only' or row['planning_mapping'] is not None
                     or row['compatibility'] != 'development_common_palette'
                     or type(row['excluded_family_ids']) is not list

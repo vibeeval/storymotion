@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-11-01T21:18:14.836304Z",
+  "run_id": "20261101T211814Z",
+  "scope": "Fresh zero-input technical fixtures generated for the MIT original-source candidate; no historical authorship claim or third-party clearance",
+  "original_input_media_used": false,
+  "provider_calls": 0,
+  "downloads": false,
+  "python_version": "3.9.6",
+  "zlib_version": "1.2.12",
+  "generators": {
+    "fixtures/recipes/generate_neutral_shapes.py": "9fa3bb27c52d891e125899802260dcc29094794f259736cdad8e570d7120d230",
+    "fixtures/recipes/generate_silence.py": "50ac3f36400cd172b3fb4511ce66a569cc8f4f968336fdee0245fbba643b249c"
+  },
+  "encoder": {
+    "name": "LAME",
+    "version": "LAME 64bits version 3.100 (http://lame.sf.net)",
+    "binary_sha256": "2527c6b42d409ae5636914b76bef817917876c8a6e403fbc529a1c9bfd372c48",
+    "arguments": [
+      "--silent",
+      "--noreplaygain",
+      "--cbr",
+      "-b",
+      "128",
+      "--resample",
+      "44.1",
+      "-m",
+      "m",
+      "-q",
+      "2"
+    ],
+    "input_wav_sha256": "f863d98220a9f1aa76e43170f4948f0888b2028fcf6b0aae497fde768efca380",
+    "input_pcm_sha256": "19f0212a2c85ff556ebeb0e7ec8d5ac64299145a606f207ac650c4aab24bf73c",
+    "binary_distributed": false
+  },
+  "independent_decoder": {
+    "name": "FFmpeg",
+    "version": "ffmpeg version 8.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "binary_sha256": "e88d7b5f23040dc44b8194bbd670010ef815a19938662ed2a91d66daa4e3d1c7",
+    "binary_distributed": false
+  },
+  "outputs": [
+    {
+      "path": "fixtures/raster/neutral-shapes.png",
+      "sha256": "b10a05a310337da64a68826daaf54fe8e1f1d234271e7e0489421c63bbd1df0a",
+      "bytes": 12280,
+      "previous_candidate_sha256": "b10a05a310337da64a68826daaf54fe8e1f1d234271e7e0489421c63bbd1df0a",
+      "matches_previous_bytes": true,
+      "input_media": "none; deterministic geometry or zero PCM",
+      "width": 800,
+      "height": 600,
+      "scanlines_sha256": "0411a42d3ac75e562925f87bee78e68ca544e83f7ad7a42896a23c0a2ed8066f"
+    },
+    {
+      "path": "fixtures/audio-retime/synthetic-20s.wav",
+      "sha256": "3a4075165eae03a178af902902dce747dcf642caa4538bca578e0a02a84fa017",
+      "bytes": 320044,
+      "previous_candidate_sha256": "3a4075165eae03a178af902902dce747dcf642caa4538bca578e0a02a84fa017",
+      "matches_previous_bytes": true,
+      "input_media": "none; deterministic geometry or zero PCM",
+      "sample_rate": 8000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "samples": 160000,
+      "all_pcm_samples_zero": true
+    },
+    {
+      "path": "fixtures/synthetic-voice-contract.mp3",
+      "sha256": "2a9bdbda14791cbcf6a0cd772fea4aad7219c5f1f6e669514ef5def1c04ce3f7",
+      "bytes": 65200,
+      "previous_candidate_sha256": "2a9bdbda14791cbcf6a0cd772fea4aad7219c5f1f6e669514ef5def1c04ce3f7",
+      "matches_previous_bytes": true,
+      "input_media": "none; deterministic geometry or zero PCM",
+      "sample_rate": 44100,
+      "channels": 1,
+      "decoded_samples": 176400,
+      "all_decoded_pcm_samples_zero": true,
+      "full_decode": "pass"
+    }
+  ],
+  "customer_release_ready": false,
+  "native_acceptance": false,
+  "publication_ready": false
+}

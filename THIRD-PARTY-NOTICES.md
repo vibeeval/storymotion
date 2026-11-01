@@ -49,7 +49,9 @@ The pinned optional Remotion 4.0.537 [root license](vendor/licenses/remotion-4.0
 
 ## Technical fixture provenance
 
-[fixtures/PROVENANCE.json](fixtures/PROVENANCE.json) records the geometric raster, silent WAV and MP3 contract sample. New reproducible recipes independently reproduce the existing raster and WAV without claiming their historical creator; the replacement MP3 is four seconds of generated silence, with no speaker or external audio input. Its documented LAME encoder was used separately and is not bundled. The raster RIGHTS file describes the technical sample; the code EULA does not independently establish asset authorship or publication rights. Fixture publication and commercial review remain pending. Silence is not speech/voice acceptance, and technical RGB proxies are not rights-cleared caller media.
+[fixtures/PROVENANCE.json](fixtures/PROVENANCE.json) and the current [generation receipt](fixtures/GENERATION.json) record fresh zero-input production of the geometric PNG, silent WAV and silent MP3. The actual project geometry/PCM recipes were used, followed by existing LAME encoding for the MP3 and independent full zero-PCM decode. All three fresh outputs match the earlier candidate bytes; matching does not identify the earlier historical creator. These current original technical fixtures are under the project MIT grant, with no external image, speaker, recording or caller-media input. The LAME and decoder executables are not bundled; their software terms remain separate. Silence is not natural-speech or voice acceptance.
+
+The neutral rig's programmatic vector source is bound to a dated own-project declaration and exact source hash in [neutral-rig-origin.json](renderers/neutral-rig-origin.json). The current original-source MIT grant resolves the earlier public-license-selection placeholder for that original source; it grants no third-party artwork, personal-voice or caller-media rights. Technical RGB proxies in media templates are not caller-media clearance.
 
 ## Bounded template adaptations
 
@@ -58,3 +60,7 @@ The liquid-merge, bauhaus-modules and pixel-journey numerical techniques adapt M
 ## Windows install-time media package
 
 Windows x64 uses the publisher’s FFmpeg/ffprobe 9.0.2 essentials build, separately pinned in [windows-media.json](renderers/windows-media.json). [Publisher build information](https://www.gyan.dev/ffmpeg/builds/) identifies these builds as 64-bit, Windows 10 or later and GPLv3. The [versioned checksum](https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.0.2-essentials_build.zip.sha256) binds the install-time archive. The archive and its actual license are retained locally after authorized download; this source ZIP redistributes neither executable. These Windows binaries are distinct from the macOS LGPL probe recipe and from the ffmpeg-static npm wrapper. No third-party agreement is accepted, redistribution clearance asserted, or native Windows execution claimed.
+
+## Disabled historical private profile
+
+The excluded CI/private-build approvals are not distributed or transferred to this candidate. Python and JavaScript private entry points fail with `PRIVATE_PROFILE_NOT_DISTRIBUTED`; existing private runtime namespaces remain detectable to prevent fallback. The retained historical `ffmpeg-source.json` recipe references the exact [x264 GPLv2 notice](vendor/licenses/x264-b35605a-COPYING.GPLv2), copied without changes to match its recorded SHA256. This supplies the referenced notice and enables no private build, download, binary conveyance or acceptance.

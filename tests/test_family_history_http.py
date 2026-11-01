@@ -211,7 +211,7 @@ class FamilyHistoryHttpTests(unittest.TestCase):
         out = self.root/'family-renders'/key;path = out/'caption.txt'
         with sqlite3.connect(self.root/'family-renders/jobs.sqlite3') as db:
             manifest = json.loads(db.execute("SELECT manifest FROM stages WHERE job=? AND name='prepare'", (key,)).fetchone()[0])
-        for secret in (LLM_OPAQUE, VOICE_OPAQUE, patterned(), '/Users/private-owner/data'):
+        for secret in (LLM_OPAQUE, VOICE_OPAQUE, patterned(), '/home/private-test-owner/data'):
             path.write_text(secret)
             manifest['caption.txt'] = hashlib.sha256(path.read_bytes()).hexdigest()
             self.mutate("UPDATE stages SET manifest=? WHERE job=? AND name='prepare'", (canonical(manifest), key))

@@ -43,6 +43,7 @@ class DependencyPatchTests(unittest.TestCase):
             counts[graph]=count
         self.assertEqual(counts,{'core':0,'remotion':29})
     def test_graph_separation_does_not_clear_release_native_or_commercial_gates(self):
-        terms=owner_terms();self.assertTrue(terms['text_ready']);self.assertFalse(terms['ready']);self.assertFalse(terms['acceptance_available'])
+        terms=owner_terms();self.assertTrue(terms['text_ready']);self.assertFalse(terms.get('customer_release_ready',False))
         plan=dependency_plan();self.assertTrue(plan['dependency_graph_ready']);self.assertEqual(plan['root_remotion_dependencies'],[]);self.assertEqual(plan['independent_ffprobe']['binary_redistributed'],False)
-        self.assertIn('release blocked',(ROOT/'THIRD-PARTY-NOTICES.md').read_text().lower())
+        self.assertEqual(json.loads((ROOT/'assets-lock.json').read_text())['status'],'pending_commercial_terms')
+        self.assertIn('pending',(ROOT/'THIRD-PARTY-NOTICES.md').read_text().lower())

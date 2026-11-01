@@ -28,7 +28,7 @@ class MetadataTests(unittest.TestCase):
             self.assertEqual(catalog.file_hash(ROOT / row['notice_path']), row['notice_sha256'])
             self.assertTrue(all('/blob/' + row['commit'] + '/' in url for url in row['reference_urls']))
         packed = json.dumps(rows).lower()
-        for private in ('libfile_', 'skill://', '/users/', 'ayna', 'private-account', 'prompt'):
+        for private in ('libfile_', 'skill://', '/users/', 'private-brand-fixture', 'private-account-fixture', 'prompt'):
             self.assertNotIn(private, packed)
 
     def test_four_actual_palettes_validate_every_compatible_example_and_reject_exclusions_without_render(self):

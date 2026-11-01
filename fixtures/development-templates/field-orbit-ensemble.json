@@ -1,0 +1,101 @@
+{
+  "family_id": "field-orbit-ensemble",
+  "source_id": "src-athemeroy-style-generative-abstract",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "field-orbit-ensemble",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Şehir içindeki akış görünmeyen çekim merkezlerine göre düzenlenir",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "field_seed": 18,
+          "attractors": [
+            {
+              "x": 440,
+              "y": 900,
+              "strength": 1
+            },
+            {
+              "x": 680,
+              "y": 1080,
+              "strength": 1.3
+            }
+          ],
+          "particle_count": 48,
+          "band_width": 32
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "field-orbit-ensemble",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "İki yön arasında başlayan hareket, üçüncü çekim merkeziyle yeni bir düzen kurar",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "field_seed": 217,
+          "attractors": [
+            {
+              "x": 390,
+              "y": 1060,
+              "strength": 0.7
+            },
+            {
+              "x": 560,
+              "y": 860,
+              "strength": 1.9
+            },
+            {
+              "x": 700,
+              "y": 1110,
+              "strength": 1.1
+            }
+          ],
+          "particle_count": 60,
+          "band_width": 42
+        }
+      }
+    }
+  ]
+}

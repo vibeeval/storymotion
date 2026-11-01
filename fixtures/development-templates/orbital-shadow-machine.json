@@ -1,0 +1,102 @@
+{
+  "family_id": "orbital-shadow-machine",
+  "source_id": "src-athemeroy-style-3d-render",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "orbital-shadow-machine",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bağlı parçaların dengesi ışığın yerde bıraktığı izden okunabilir",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "link_lengths": [
+            140,
+            130,
+            110
+          ],
+          "joint_angles": [
+            -22,
+            45,
+            -15
+          ],
+          "light_pose": {
+            "x": -280,
+            "y": -300,
+            "z": 800
+          },
+          "camera_path": [
+            -0.2,
+            0.35
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "orbital-shadow-machine",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Işığın izlediği mekanizma: kamera dönse de bağlantıların uzunluğu korunur",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "link_lengths": [
+            160,
+            150
+          ],
+          "joint_angles": [
+            50,
+            -45
+          ],
+          "light_pose": {
+            "x": 350,
+            "y": -420,
+            "z": 650
+          },
+          "camera_path": [
+            0.45,
+            -0.4
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "family_id": "geometric-proof-transform",
+  "source_id": "src-athemeroy-style-math-diagram",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "geometric-proof-transform",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Üçgenin yeri değişirken uzunluklarının neden sabit kaldığını görelim",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "points": [
+            {
+              "x": 380,
+              "y": 1100
+            },
+            {
+              "x": 690,
+              "y": 1130
+            },
+            {
+              "x": 540,
+              "y": 850
+            }
+          ],
+          "constraints": [
+            "lengths",
+            "area"
+          ],
+          "transformation": {
+            "rotation": 95,
+            "translate_x": 35,
+            "translate_y": -20
+          },
+          "measurement_labels": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "geometric-proof-transform",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Dönen biçimin kanıtı: aynı üçgen farklı konumda da aynı alanı korur",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "points": [
+            {
+              "x": 380,
+              "y": 1080
+            },
+            {
+              "x": 640,
+              "y": 1180
+            },
+            {
+              "x": 670,
+              "y": 850
+            }
+          ],
+          "constraints": [
+            "area",
+            "lengths"
+          ],
+          "transformation": {
+            "rotation": -60,
+            "translate_x": -65,
+            "translate_y": 30
+          },
+          "measurement_labels": [
+            "uzun",
+            "orta",
+            "kısa"
+          ]
+        }
+      }
+    }
+  ]
+}

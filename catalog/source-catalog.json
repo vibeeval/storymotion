@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "references": [
+    {
+      "id": "source-mg-style-07-liquid",
+      "name": "Liquid Motion",
+      "kind": "technique_reference",
+      "repository_url": "https://github.com/Vincentwei1021/mg-styles-15",
+      "reference_urls": [
+        "https://github.com/Vincentwei1021/mg-styles-15/blob/49052d80bfaf9fa8412cc9710530e5e95a3b8d8c/demos/07-liquid/js/scene.js",
+        "https://github.com/Vincentwei1021/mg-styles-15/blob/49052d80bfaf9fa8412cc9710530e5e95a3b8d8c/demos/07-liquid/js/shaders.js"
+      ],
+      "commit": "49052d80bfaf9fa8412cc9710530e5e95a3b8d8c",
+      "license": "MIT",
+      "attribution": "Copyright (c) 2026 Vincentwei1021",
+      "notice_path": "vendor/notices/mg-styles-15-MIT.txt",
+      "notice_sha256": "7f03fee9299a401615e13e2c636ead0394f47395da4f816ae60b35ed2d91a932",
+      "license_scope": "bounded_code_only",
+      "asset_rights": "not_assessed",
+      "reference_only": true,
+      "preview_url": null,
+      "preview_state": "missing_preview",
+      "family_ids": [
+        "liquid-merge"
+      ],
+      "planning_mapping": null
+    },
+    {
+      "id": "source-mg-style-09-bauhaus",
+      "name": "Geometric Bauhaus",
+      "kind": "technique_reference",
+      "repository_url": "https://github.com/Vincentwei1021/mg-styles-15",
+      "reference_urls": [
+        "https://github.com/Vincentwei1021/mg-styles-15/blob/49052d80bfaf9fa8412cc9710530e5e95a3b8d8c/demos/09-bauhaus/film.js"
+      ],
+      "commit": "49052d80bfaf9fa8412cc9710530e5e95a3b8d8c",
+      "license": "MIT",
+      "attribution": "Copyright (c) 2026 Vincentwei1021",
+      "notice_path": "vendor/notices/mg-styles-15-MIT.txt",
+      "notice_sha256": "7f03fee9299a401615e13e2c636ead0394f47395da4f816ae60b35ed2d91a932",
+      "license_scope": "bounded_code_only",
+      "asset_rights": "not_assessed",
+      "reference_only": true,
+      "preview_url": null,
+      "preview_state": "missing_preview",
+      "family_ids": [
+        "bauhaus-modules"
+      ],
+      "planning_mapping": null
+    },
+    {
+      "id": "source-mg-style-20-pixel",
+      "name": "Pixel Art",
+      "kind": "technique_reference",
+      "repository_url": "https://github.com/Vincentwei1021/mg-styles-15",
+      "reference_urls": [
+        "https://github.com/Vincentwei1021/mg-styles-15/blob/49052d80bfaf9fa8412cc9710530e5e95a3b8d8c/demos/20-pixel/film.js"
+      ],
+      "commit": "49052d80bfaf9fa8412cc9710530e5e95a3b8d8c",
+      "license": "MIT",
+      "attribution": "Copyright (c) 2026 Vincentwei1021",
+      "notice_path": "vendor/notices/mg-styles-15-MIT.txt",
+      "notice_sha256": "7f03fee9299a401615e13e2c636ead0394f47395da4f816ae60b35ed2d91a932",
+      "license_scope": "bounded_code_only",
+      "asset_rights": "not_assessed",
+      "reference_only": true,
+      "preview_url": null,
+      "preview_state": "missing_preview",
+      "family_ids": [
+        "pixel-journey"
+      ],
+      "planning_mapping": null
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "family_id": "cel-pose-camera",
+  "source_id": "source-lemo-style-cel-anime-80s",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "cel-pose-camera",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Tutulan karakter pozları ile bağımsız ağız işaretleri ve çok katmanlı kamera yaklaşımı",
+          "duration": 6,
+          "narration": "Pozlar kare aralıklarında tutulur; ağız şekilleri kendi zaman çizelgesini izler. Kamera yaklaşırken üç katman derinliğe göre ayrılır; son çizim ve kadraj korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Pozlar kare aralıklarında tutulur; ağız şekilleri kendi zaman çizelgesini izler."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Kamera yaklaşırken üç katman derinliğe göre ayrılır; son çizim ve kadraj korunur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "pose_order": [
+            "ready",
+            "reach",
+            "resolve"
+          ],
+          "hold_frames": 4,
+          "push": 0.14,
+          "plane_depths": [
+            0.15,
+            0.5,
+            0.9
+          ],
+          "mouth_cues": [
+            {
+              "start": 0,
+              "end": 0.3,
+              "shape": "open"
+            },
+            {
+              "start": 0.4,
+              "end": 0.7,
+              "shape": "wide"
+            },
+            {
+              "start": 0.8,
+              "end": 1,
+              "shape": "closed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "cel-pose-camera",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Tutulan karakter pozları ile bağımsız ağız işaretleri ve çok katmanlı kamera yaklaşımı İkinci düzen.",
+          "duration": 6,
+          "narration": "Pozlar kare aralıklarında tutulur; ağız şekilleri kendi zaman çizelgesini izler. Kamera yaklaşırken üç katman derinliğe göre ayrılır; son çizim ve kadraj korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Pozlar kare aralıklarında tutulur; ağız şekilleri kendi zaman çizelgesini izler."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Kamera yaklaşırken üç katman derinliğe göre ayrılır; son çizim ve kadraj korunur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "pose_order": [
+            "guard",
+            "ready",
+            "reach",
+            "resolve"
+          ],
+          "hold_frames": 8,
+          "push": 0.27,
+          "plane_depths": [
+            0.25,
+            0.6,
+            1
+          ],
+          "mouth_cues": [
+            {
+              "start": 0,
+              "end": 0.2,
+              "shape": "wide"
+            },
+            {
+              "start": 0.25,
+              "end": 0.45,
+              "shape": "closed"
+            },
+            {
+              "start": 0.5,
+              "end": 0.8,
+              "shape": "open"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

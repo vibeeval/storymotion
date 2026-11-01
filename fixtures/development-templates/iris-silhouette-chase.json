@@ -1,0 +1,117 @@
+{
+  "family_id": "iris-silhouette-chase",
+  "source_id": "source-lemo-style-spy-titles",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "iris-silhouette-chase",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Soyut bir izin peşinden giden açıklık, her geçişte başka bir cümleye yer açıyor.",
+          "duration": 8,
+          "narration": "İris, açılı maskenin içinden geçen şekli izliyor. Son geçiş bittiğinde açıklık son söze yer bırakıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "İris, açılı maskenin içinden geçen şekli izliyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Son geçiş bittiğinde açıklık son söze yer bırakıyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "silhouette_paths": [
+            "spindle",
+            "wedge"
+          ],
+          "iris_targets": [
+            {
+              "x": 0.3,
+              "y": 0.3
+            },
+            {
+              "x": 0.7,
+              "y": 0.65
+            }
+          ],
+          "mask_angles": [
+            -25,
+            20
+          ],
+          "title_cues": [
+            "Bir iz, dar açıklığın içinden geçiyor.",
+            "Bakış son söze yer açıyor."
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "iris-silhouette-chase",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Soyut bir izin peşinden giden açıklık, her geçişte başka bir cümleye yer açıyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Son geçiş bittiğinde açıklık son söze yer bırakıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Son geçiş bittiğinde açıklık son söze yer bırakıyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "silhouette_paths": [
+            "lozenge",
+            "spindle",
+            "wedge"
+          ],
+          "iris_targets": [
+            {
+              "x": 0.75,
+              "y": 0.2
+            },
+            {
+              "x": 0.25,
+              "y": 0.7
+            },
+            {
+              "x": 0.6,
+              "y": 0.45
+            }
+          ],
+          "mask_angles": [
+            30,
+            -30,
+            10
+          ],
+          "title_cues": [
+            "Önce çerçevenin yönü değişir.",
+            "Sonra yeni iz görüşe girer.",
+            "Son açıklık cümleyi tamamlar."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "family_id": "rubber-limb-cycle",
+  "source_id": "source-lemo-style-rubber-hose",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "rubber-limb-cycle",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Zemine basan ayak, esnek uzuv ve gövde sıkışması özgün bir yürüyüş ritmini nasıl kurar?",
+          "duration": 6,
+          "narration": "Temas ayağı zemindeki noktasını korur; diğer ayak eğri uzuvla ileri salınır. Gövde sıkışırken alanını korur; tamamlanan adımlar kapalı bir son temasla durur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Temas ayağı zemindeki noktasını korur; diğer ayak eğri uzuvla ileri salınır."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Gövde sıkışırken alanını korur; tamamlanan adımlar kapalı bir son temasla durur."
+            }
+          ],
+          "palette": {
+            "background": "#F3F2E9",
+            "ink": "#202F35",
+            "muted": "#526169",
+            "accent": "#80522F"
+          },
+          "stride": 70,
+          "limb_curvature": 0.35,
+          "contact_cues": [
+            0,
+            0.5,
+            1
+          ],
+          "cycles": 2,
+          "squash_amount": 0.12
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "rubber-limb-cycle",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Zemine basan ayak, esnek uzuv ve gövde sıkışması özgün bir yürüyüş ritmini nasıl kurar? İkinci düzen.",
+          "duration": 6,
+          "narration": "Temas ayağı zemindeki noktasını korur; diğer ayak eğri uzuvla ileri salınır. Gövde sıkışırken alanını korur; tamamlanan adımlar kapalı bir son temasla durur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Temas ayağı zemindeki noktasını korur; diğer ayak eğri uzuvla ileri salınır."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Gövde sıkışırken alanını korur; tamamlanan adımlar kapalı bir son temasla durur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "stride": 105,
+          "limb_curvature": 0.66,
+          "contact_cues": [
+            0,
+            0.35,
+            1
+          ],
+          "cycles": 3,
+          "squash_amount": 0.2
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "base": "479cb43815fb6cf4840618b5d8869cfd6bd3e16d",
+  "module_sha256": "ba62f1527daa8bdbe3357156f293e3827273d84aca1ec8c626c6d5e5fa0e78da",
+  "render_sha256": [
+    [
+      "660559414ef0c7431eb5d5302ebfe90d6955d4aec665a628a1a4972a788839eb",
+      "4986ff74967d603db8d71034b5a0181afbb43794b588fb1ba8d3284e8d602ec8"
+    ],
+    [
+      "64c75bf0fba73087ecea063329e0b171131864a4146bcca783a762c9f7c7b4d1",
+      "1dcafe7052a9f50efc9824ed4d86a22a0c6dfcec4ce28c0f60b64b9c434c7cee"
+    ]
+  ]
+}

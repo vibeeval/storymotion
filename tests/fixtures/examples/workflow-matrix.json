@@ -1,0 +1,1216 @@
+{
+  "schema_version": 1,
+  "scope": [
+    "sample-flow",
+    "sample-mechanism",
+    "sample-reflection",
+    "sample-series"
+  ],
+  "ready_for_publication": false,
+  "profiles": [
+    {
+      "account": "sample-flow",
+      "topic": "Sample Flow",
+      "pack_version": "1.0.0",
+      "source_revision": "neutral-technical-fixture-1",
+      "publication_ready": false,
+      "product_acceptance": "incomplete",
+      "stages": [
+        {
+          "id": "brand",
+          "label": "brand",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "continuity",
+          "label": "continuity",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "cover",
+          "label": "cover",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "edit",
+          "label": "edit",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "export",
+          "label": "export",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "qa",
+          "label": "qa",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "scenes",
+          "label": "scenes",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "script",
+          "label": "script",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "sources",
+          "label": "sources",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "timing",
+          "label": "timing",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "viseme",
+          "label": "viseme",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "voice",
+          "label": "voice",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        }
+      ]
+    },
+    {
+      "account": "sample-mechanism",
+      "topic": "Sample Mechanism",
+      "pack_version": "1.0.0",
+      "source_revision": "neutral-technical-fixture-1",
+      "publication_ready": false,
+      "product_acceptance": "incomplete",
+      "stages": [
+        {
+          "id": "brand",
+          "label": "brand",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "continuity",
+          "label": "continuity",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "cover",
+          "label": "cover",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "edit",
+          "label": "edit",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "export",
+          "label": "export",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "qa",
+          "label": "qa",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "scenes",
+          "label": "scenes",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "script",
+          "label": "script",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "sources",
+          "label": "sources",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "timing",
+          "label": "timing",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "viseme",
+          "label": "viseme",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "voice",
+          "label": "voice",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        }
+      ]
+    },
+    {
+      "account": "sample-reflection",
+      "topic": "Sample Reflection",
+      "pack_version": "1.0.0",
+      "source_revision": "neutral-technical-fixture-1",
+      "publication_ready": false,
+      "product_acceptance": "incomplete",
+      "stages": [
+        {
+          "id": "brand",
+          "label": "brand",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "continuity",
+          "label": "continuity",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "cover",
+          "label": "cover",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "edit",
+          "label": "edit",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "export",
+          "label": "export",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "qa",
+          "label": "qa",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "scenes",
+          "label": "scenes",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "script",
+          "label": "script",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "sources",
+          "label": "sources",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "timing",
+          "label": "timing",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "viseme",
+          "label": "viseme",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "voice",
+          "label": "voice",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        }
+      ]
+    },
+    {
+      "account": "sample-series",
+      "topic": "Sample Series",
+      "pack_version": "1.0.0",
+      "source_revision": "neutral-technical-fixture-1",
+      "publication_ready": false,
+      "product_acceptance": "incomplete",
+      "stages": [
+        {
+          "id": "brand",
+          "label": "brand",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "continuity",
+          "label": "continuity",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "cover",
+          "label": "cover",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "edit",
+          "label": "edit",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "export",
+          "label": "export",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "qa",
+          "label": "qa",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "scenes",
+          "label": "scenes",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "script",
+          "label": "script",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "sources",
+          "label": "sources",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "timing",
+          "label": "timing",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "viseme",
+          "label": "viseme",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        },
+        {
+          "id": "voice",
+          "label": "voice",
+          "status": "missing",
+          "next_phase": 1,
+          "implemented_scope": "Technical fixture only; owner-authored production method is TODO.",
+          "remaining": "Human review and native acceptance remain incomplete.",
+          "code": [
+            "storymotion/account_packs.py"
+          ],
+          "tests": [
+            "tests/test_accountpacks.py"
+          ],
+          "sources": [
+            "OWNER_METHOD_TODO"
+          ],
+          "rules": [
+            "CORE-01"
+          ],
+          "acceptance": [
+            "pending"
+          ],
+          "native_evidence_scope": "none"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "OWNER_METHOD_TODO",
+      "raw_distributed": false
+    }
+  ],
+  "phase_plan": "docs/PLAN.md",
+  "matrix_version": "neutral-technical-1",
+  "baseline": {
+    "execution_fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "rule_tracking_limit": "Technical fixture only; owner method and human acceptance are pending."
+}

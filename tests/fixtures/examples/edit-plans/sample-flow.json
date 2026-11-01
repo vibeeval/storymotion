@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "brand": "sample-flow",
+  "title": "Bir iş neden onay kapısında durur?",
+  "brief": "Özgün sentetik edit provası; mevcut sınırlı görsel aile kullanılır. Gerçek konu videosu veya accepted bölüm değildir.",
+  "demo": true,
+  "language": "tr",
+  "script": "Bu şemada istek kapıya gelir. Onay kapıyı açınca aynı istek ilerler. Sonuç, aynı kayda geri bağlanır.",
+  "caption": "Bu özgün çizim, kurgu sözleşmesini incelemek için hazırlanmış sessiz bir provadır.",
+  "duration": 12,
+  "alignment": "provisional_silent",
+  "audio": null,
+  "claims": [
+    {
+      "text": "Bu şemada istek kapıya gelir.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+    },
+    {
+      "text": "Onay kapıyı açınca aynı istek ilerler.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+    },
+    {
+      "text": "Sonuç, aynı kayda geri bağlanır.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+    }
+  ],
+  "continuity": null,
+  "scenes": [
+    {
+      "id": "beat-1",
+      "start": 0,
+      "end": 4,
+      "heading": "Aynı istek geliyor.",
+      "action": "request-route",
+      "information": "Bu şemada istek kapıya gelir.",
+      "object_before": "İstek girişte; kapı kapalı.",
+      "object_after": "İstek kapının önünde; kapı kapalı.",
+      "object_id": "request-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "VIB-01"
+      ],
+      "state_before": "input-closed",
+      "state_after": "waiting-closed"
+    },
+    {
+      "id": "beat-2",
+      "start": 4,
+      "end": 8,
+      "heading": "Onay olmadan geçmez.",
+      "action": "approval-gate",
+      "information": "Onay kapıyı açınca aynı istek ilerler.",
+      "object_before": "İstek kapının önünde; kapı kapalı.",
+      "object_after": "İstek işlenmiş; sonuç hazır.",
+      "object_id": "request-01",
+      "character_id": null,
+      "camera": "push-in",
+      "rule_ids": [
+        "CORE-01",
+        "VIB-01"
+      ],
+      "state_before": "waiting-closed",
+      "state_after": "processed-open"
+    },
+    {
+      "id": "beat-3",
+      "start": 8,
+      "end": 12,
+      "heading": "Sonuç yeniden kullanılır.",
+      "action": "receipt-reuse",
+      "information": "Sonuç, aynı kayda geri bağlanır.",
+      "object_before": "İstek işlenmiş; sonuç hazır.",
+      "object_after": "Önceki sonuç korunmuş; yeniden kullanılıyor.",
+      "object_id": "request-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "VIB-01"
+      ],
+      "state_before": "processed-open",
+      "state_after": "reused-open"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.9,
+      "text": "Bu şemada istek kapıya gelir."
+    },
+    {
+      "start": 4,
+      "end": 7.9,
+      "text": "Onay kapıyı açınca aynı istek ilerler."
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "text": "Sonuç, aynı kayda geri bağlanır."
+    }
+  ],
+  "creative": {
+    "pack_version": "1.0.0",
+    "topic_id": "authored-edit-sample-flow",
+    "visual_motif": "owned edit rehearsal: sample-flow",
+    "canon_status": "standalone",
+    "characters": [],
+    "asset_policy": "original_vectors_only"
+  },
+  "production_context": {
+    "schema_version": 1,
+    "account": "sample-flow",
+    "sources": {
+      "kind": "sources",
+      "account": "sample-flow",
+      "parent": null,
+      "data": {
+        "owned-drawing": {
+          "url": "https://example.org/storymotion-synthetic-drawing",
+          "title": "Özgün sentetik edit çizimi; gerçek araştırma kaynağı değildir",
+          "locator": "Bu örneğin sahne çizimi",
+          "excerpt": "Bu paket için hazırlanmış özgün sentetik vektör gösterimidir.",
+          "rights_note": "Original demonstration text and vector code; no private rig, PDF or voice"
+        }
+      },
+      "revision": "28e95c0564c9a27d3fdfcf74060856a18d9131bd689e0d836163b2d8daf35634"
+    },
+    "canon": null,
+    "binding_sha256": "e3e651b35180f7a56247e65a208485ba44e4fc168fdb5cf61f8a8d30b8c2e7d1"
+  }
+}

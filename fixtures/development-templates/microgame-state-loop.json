@@ -1,0 +1,126 @@
+{
+  "family_id": "microgame-state-loop",
+  "source_id": "source-lemo-style-microgame",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "microgame-state-loop",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kısa bir oyunda engel, çarpışma kuralı ve hedef aynı rotanın sonucunu nasıl değiştirir?",
+          "duration": 6,
+          "narration": "Yol ile engelin kesişimi kare aralığından bağımsız hesaplanır; çarpışma atlanmaz. Seçilen kural turu durdurur ya da puanı azaltır; sonuçtan sonra avatar başlangıca döner.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Yol ile engelin kesişimi kare aralığından bağımsız hesaplanır; çarpışma atlanmaz."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Seçilen kural turu durdurur ya da puanı azaltır; sonuçtan sonra avatar başlangıca döner."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "avatar_radius": 0.03,
+          "collision_rules": "block",
+          "goal_state": "finish",
+          "goal": {
+            "x": 0.9,
+            "y": 0.5
+          },
+          "avatar_route": [
+            {
+              "x": 0.1,
+              "y": 0.5
+            },
+            {
+              "x": 0.9,
+              "y": 0.5
+            }
+          ],
+          "obstacle_layout": [
+            {
+              "x": 0.4,
+              "y": 0.4,
+              "width": 0.15,
+              "height": 0.2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "microgame-state-loop",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kısa bir oyunda engel, çarpışma kuralı ve hedef aynı rotanın sonucunu nasıl değiştirir? İkinci düzen.",
+          "duration": 6,
+          "narration": "Yol ile engelin kesişimi kare aralığından bağımsız hesaplanır; çarpışma atlanmaz. Seçilen kural turu durdurur ya da puanı azaltır; sonuçtan sonra avatar başlangıca döner.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Yol ile engelin kesişimi kare aralığından bağımsız hesaplanır; çarpışma atlanmaz."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Seçilen kural turu durdurur ya da puanı azaltır; sonuçtan sonra avatar başlangıca döner."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "avatar_radius": 0.04,
+          "collision_rules": "penalty",
+          "goal_state": "finish",
+          "goal": {
+            "x": 0.9,
+            "y": 0.8
+          },
+          "avatar_route": [
+            {
+              "x": 0.1,
+              "y": 0.5
+            },
+            {
+              "x": 0.9,
+              "y": 0.5
+            },
+            {
+              "x": 0.9,
+              "y": 0.8
+            }
+          ],
+          "obstacle_layout": [
+            {
+              "x": 0.4,
+              "y": 0.4,
+              "width": 0.15,
+              "height": 0.2
+            },
+            {
+              "x": 0.65,
+              "y": 0.1,
+              "width": 0.12,
+              "height": 0.12
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

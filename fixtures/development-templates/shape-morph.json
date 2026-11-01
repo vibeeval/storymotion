@@ -1,0 +1,109 @@
+{
+  "family_id": "shape-morph",
+  "source_id": "source-mg-style-08-morph",
+  "cases": [
+    {
+      "name": "short-silent",
+      "spec": {
+        "id": "shape-morph",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Çemberden yıldız biçimine giderken her kontur noktası aynı sırasını koruyor",
+          "duration": 3.2,
+          "narration": "Çember önce köşeleri yuvarlatılmış kareye dönüşüyor. Aynı kontur bu kez üçgenin üç köşesini oluşturuyor. Son dönüşümde beş köşeli yıldız görünür oluyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 1.066666666667,
+              "text": "Çember önce köşeleri yuvarlatılmış kareye dönüşüyor."
+            },
+            {
+              "start": 1.066666666667,
+              "end": 2.133333333333,
+              "text": "Aynı kontur bu kez üçgenin üç köşesini oluşturuyor."
+            },
+            {
+              "start": 2.133333333333,
+              "end": 3.2,
+              "text": "Son dönüşümde beş köşeli yıldız görünür oluyor."
+            }
+          ],
+          "palette": {
+            "background": "#F0EDF7",
+            "ink": "#30264B",
+            "muted": "#726687",
+            "accent": "#9160CF"
+          },
+          "shapes": [
+            {
+              "shape": "circle",
+              "label": "Çember: eşit uzaklıktaki noktalar"
+            },
+            {
+              "shape": "rounded-square",
+              "label": "Köşeleri yuvarlatılmış kare: genişleyen yan yüzler"
+            },
+            {
+              "shape": "triangle",
+              "label": "Üçgen: üç ana köşe"
+            },
+            {
+              "shape": "star",
+              "label": "Yıldız: beş dış ve beş iç köşe"
+            }
+          ],
+          "radius": 250,
+          "star_inner": 0.46,
+          "squareness": 5,
+          "rotation": 0,
+          "hold_fraction": 0.2
+        }
+      }
+    },
+    {
+      "name": "long-timed",
+      "spec": {
+        "id": "shape-morph",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Dar iç köşeli yıldız, döndürülmüş bir düzlemde daha küçük bir çembere dönüşüyor",
+          "duration": 4,
+          "narration": "Dönüşüm başlamadan önce yıldızın sivri köşeleri kısa süre korunuyor. Kontur noktaları sırayı bozmadan çember üzerinde birleşiyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 1.833333333333,
+              "text": "Dönüşüm başlamadan önce yıldızın sivri köşeleri kısa süre korunuyor."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Kontur noktaları sırayı bozmadan çember üzerinde birleşiyor."
+            }
+          ],
+          "palette": {
+            "background": "#F5F3E9",
+            "ink": "#29483B",
+            "muted": "#596D5C",
+            "accent": "#4C8B69"
+          },
+          "shapes": [
+            {
+              "shape": "star",
+              "label": "İç yarıçapı daraltılmış özgün yıldız konturu"
+            },
+            {
+              "shape": "circle",
+              "label": "Aynı sıralı 120 noktayla oluşturulan çember"
+            }
+          ],
+          "radius": 190,
+          "star_inner": 0.32,
+          "squareness": 7,
+          "rotation": -27,
+          "hold_fraction": 0.35
+        }
+      }
+    }
+  ]
+}

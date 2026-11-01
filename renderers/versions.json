@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "hyperframes": "0.8.181",
+  "remotion": "4.0.537",
+  "react": "19.0.0",
+  "ffmpeg_static": "5.3.0",
+  "chrome_headless_shell": "152.0.7977.30",
+  "browser_source": "Google Chrome for Testing via @puppeteer/browsers; explicit setup only"
+}

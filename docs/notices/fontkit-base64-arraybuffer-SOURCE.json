@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "scope": "Inherited helper notice only; not fontkit-wide MIT clearance",
+  "package": "fontkit",
+  "version": "2.0.4",
+  "package_git_head": "fbf3b9ef21eebd219eb73e666faed573af0fba09",
+  "code_attribution": {
+    "path": "package/src/utils.js",
+    "lines": "30-62",
+    "sha256": "3924250ad3044efdb5f0d3c07b8061a95b4ffea99b024b66ff4dcf643d824aef",
+    "statement": "Based on https://github.com/niklasvh/base64-arraybuffer. MIT license."
+  },
+  "upstream_license": {
+    "url": "https://github.com/niklasvh/base64-arraybuffer/blob/2ca97dbfd80752b081531f1080498891b2523a54/LICENSE",
+    "commit": "2ca97dbfd80752b081531f1080498891b2523a54",
+    "license_file_history_commit_date": "2021-08-10",
+    "path": "docs/notices/fontkit-base64-arraybuffer-LICENSE.txt",
+    "bytes": 1062,
+    "sha256": "f3eca6ff762533fa5a77caf954a143e48afa204668cf97dce758c45a9e006be3",
+    "git_blob_sha1": "ed27b41b252ac2adbbbb3dfd6606a32c972948e9",
+    "expected_upstream_git_blob_sha1": "ed27b41b252ac2adbbbb3dfd6606a32c972948e9",
+    "copyright": "Copyright (c) 2012 Niklas von Hertzen"
+  },
+  "upstream_package_version_claimed": false,
+  "fontkit_package_wide_notice_complete": false,
+  "commercial_clearance": "pending",
+  "customer_release_ready": false,
+  "runtime_binary_distributed": false,
+  "terms_accepted": false,
+  "notes": [
+    "Fontkit names the upstream repository but pins no helper version. This record does not invent one.",
+    "The retained LICENSE blob is unchanged between its 2021 introduction and the inspected upstream head.",
+    "Unmerged fontkit PR 300 copied a proposed license from another project; it is not used as release authority."
+  ]
+}

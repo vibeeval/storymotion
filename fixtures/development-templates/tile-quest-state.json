@@ -1,0 +1,183 @@
+{
+  "family_id": "tile-quest-state",
+  "source_id": "source-lemo-style-pixel-rpg",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "tile-quest-state",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Karo haritasında açık yol, anahtar ve kapı sırası birlikte okunabilir bir göreve dönüşür",
+          "duration": 6,
+          "narration": "Duvarlar geçilemez; karakter yalnız bitişik açık hücrelerden anahtara doğru ilerler. Anahtar kapıdan önce toplanır; görev son hücrede tamamlanıp açık biçimde gösterilir.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Duvarlar geçilemez; karakter yalnız bitişik açık hücrelerden anahtara doğru ilerler."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Anahtar kapıdan önce toplanır; görev son hücrede tamamlanıp açık biçimde gösterilir."
+            }
+          ],
+          "palette": {
+            "background": "#F3F2E9",
+            "ink": "#202F35",
+            "muted": "#526169",
+            "accent": "#80522F"
+          },
+          "tile_map": [
+            "....",
+            ".#..",
+            ".#..",
+            "...."
+          ],
+          "avatar_route": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 1,
+              "y": 0
+            },
+            {
+              "x": 2,
+              "y": 0
+            },
+            {
+              "x": 3,
+              "y": 0
+            },
+            {
+              "x": 3,
+              "y": 1
+            },
+            {
+              "x": 3,
+              "y": 2
+            },
+            {
+              "x": 3,
+              "y": 3
+            }
+          ],
+          "quest_order": {
+            "key_at": 2,
+            "door_at": 5
+          },
+          "dialogue_cues": [
+            {
+              "at": 0,
+              "text": "Dar geçide girmeden önce açık hücrelerden anahtara uzanan yolu seç."
+            },
+            {
+              "at": 3,
+              "text": "Anahtar çantada; şimdi kapının bulunduğu alt koridora güvenle ilerle."
+            },
+            {
+              "at": 6,
+              "text": "Kapı açıldı ve hedefe ulaşıldı; yolculuğun son durumu ekranda kalır."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "tile-quest-state",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Karo haritasında açık yol, anahtar ve kapı sırası birlikte okunabilir bir göreve dönüşür İkinci düzen.",
+          "duration": 6,
+          "narration": "Duvarlar geçilemez; karakter yalnız bitişik açık hücrelerden anahtara doğru ilerler. Anahtar kapıdan önce toplanır; görev son hücrede tamamlanıp açık biçimde gösterilir.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Duvarlar geçilemez; karakter yalnız bitişik açık hücrelerden anahtara doğru ilerler."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Anahtar kapıdan önce toplanır; görev son hücrede tamamlanıp açık biçimde gösterilir."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "tile_map": [
+            ".....",
+            ".###.",
+            ".....",
+            ".###.",
+            "....."
+          ],
+          "avatar_route": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 1
+            },
+            {
+              "x": 0,
+              "y": 2
+            },
+            {
+              "x": 1,
+              "y": 2
+            },
+            {
+              "x": 2,
+              "y": 2
+            },
+            {
+              "x": 3,
+              "y": 2
+            },
+            {
+              "x": 4,
+              "y": 2
+            },
+            {
+              "x": 4,
+              "y": 3
+            },
+            {
+              "x": 4,
+              "y": 4
+            }
+          ],
+          "quest_order": {
+            "key_at": 3,
+            "door_at": 7
+          },
+          "dialogue_cues": [
+            {
+              "at": 0,
+              "text": "Bu kez duvarlar rotayı değiştiriyor; orta geçidi bul ve anahtarı al."
+            },
+            {
+              "at": 4,
+              "text": "Orta geçitten sağ kıyıya ilerle; anahtar kapının kilidi için hazır."
+            },
+            {
+              "at": 8,
+              "text": "Son hücreye ulaştın; görev sırası ve engeller yeniden kurulabilir."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "scene_actions": [
+    "envelope-place",
+    "envelope-inspect",
+    "envelope-match"
+  ],
+  "visual_family": "envelope-clue",
+  "duration_range_seconds": [
+    1,
+    90
+  ],
+  "wardrobe": "cream-shirt",
+  "scene_contract": {
+    "envelope-place": {
+      "state_before": "hand-fixed-nick",
+      "state_after": "table-fixed-nick"
+    },
+    "envelope-inspect": {
+      "state_before": "table-fixed-nick",
+      "state_after": "inspect-fixed-nick"
+    },
+    "envelope-match": {
+      "state_before": "inspect-fixed-nick",
+      "state_after": "inspect-fixed-nick"
+    }
+  },
+  "initial_state": "hand-fixed-nick",
+  "final_state": "inspect-fixed-nick",
+  "id": "sample-series",
+  "display_name": "Sample Series",
+  "niche": "Neutral technical fixture",
+  "procedures": [
+    {
+      "id": "owner-method",
+      "status": "TODO",
+      "instruction": "Owner must supply an original method from dated production notes."
+    }
+  ],
+  "visual_families": [
+    "envelope-clue"
+  ],
+  "scene_vocab": [
+    "envelope-place",
+    "envelope-inspect",
+    "envelope-match"
+  ],
+  "series_rules": {
+    "enabled": true,
+    "fictional": true
+  },
+  "voice_defaults": {
+    "provider": "off",
+    "voice_id": null
+  },
+  "profile": {
+    "id": "sample-series",
+    "name": "sample-series",
+    "format": "serial-2d",
+    "palette": {
+      "background": "#0B1E29",
+      "ink": "#FAECD0",
+      "muted": "#DAC9A6",
+      "accent": "#8EC6D4"
+    },
+    "font": "Schibsted",
+    "handle": "",
+    "title_size": 76,
+    "subtitle_size": 47,
+    "subtitle_top": 1518,
+    "subtitle_width": 810,
+    "handle_left": 80,
+    "handle_bottom": 172,
+    "handle_size": 25,
+    "top_brand": true,
+    "avatar": false,
+    "sentence_case": true,
+    "continuity_required": true,
+    "visual_family": "envelope-clue",
+    "assets": "Bundled neutral vector fixture; commercial terms pending owner review."
+  },
+  "formats": [
+    "account-video",
+    "serial-2d"
+  ],
+  "language": "tr",
+  "category": "story",
+  "capabilities": {
+    "legacy_fixture": true,
+    "raster": false,
+    "manual_scene_kinds": [
+      "clue-inspect",
+      "canon-board"
+    ],
+    "rig_mode": "serial-courier",
+    "certainty_guard": false
+  },
+  "rule_ids": [
+    "CORE-01",
+    "CORE-02",
+    "CORE-03",
+    "CORE-04",
+    "YAR-01",
+    "YAR-02"
+  ],
+  "rules": [
+    {
+      "id": "CORE-01",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-02",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-03",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-04",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "YAR-01",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "YAR-02",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    }
+  ],
+  "source_revision": "neutral-technical-fixture-1",
+  "asset_policy": {
+    "allowed": "original_project_vectors",
+    "commercial_transfer": "pending owner terms"
+  },
+  "acceptance": {
+    "publication_ready": false,
+    "source_truth": "pending_human_review",
+    "creative": "pending_human_review"
+  },
+  "workflow": [
+    "TODO: owner authored method"
+  ],
+  "production_workflow": [],
+  "revision_policy": {},
+  "repeat_policy": {},
+  "brand": {
+    "palette": {
+      "background": "#0B1E29",
+      "ink": "#FAECD0",
+      "muted": "#DAC9A6",
+      "accent": "#8EC6D4"
+    }
+  },
+  "fixture": {
+    "schema_version": 1,
+    "brand": "sample-series",
+    "title": "Zarfın aynı köşesine döndüm",
+    "brief": "Özgün vektörlerle sessiz golden teknik prova; gerçek kullanıcı/sağlayıcı sonucu, tanı veya yeni kanon bölümü değildir.",
+    "demo": true,
+    "language": "tr",
+    "script": "Zarfı masaya bıraktım. Köşesindeki izi ışığa tuttum. Aynı zarfın aynı izine yeniden baktım.",
+    "caption": "Zarfın aynı köşesine döndüm Bu sessiz teknik prova, kaynaklı üretim sözleşmesinin gözden geçirilmesi içindir.",
+    "duration": 12,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [],
+    "continuity": {
+      "object_id": "envelope-01",
+      "previous": "Zarf elimde; köşe izi sabit.",
+      "next": "Aynı zarf ve köşe izi doğrulama bekliyor."
+    },
+    "scenes": [
+      {
+        "id": "beat-1",
+        "start": 0,
+        "end": 4,
+        "heading": "Zarfı masaya bıraktım.",
+        "action": "envelope-place",
+        "information": "Zarfı masaya bıraktım.",
+        "object_before": "Zarf elimde; köşe izi sabit.",
+        "object_after": "Zarf masada; köşe izi sabit.",
+        "object_id": "envelope-01",
+        "character_id": "courier-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "YAR-01"
+        ],
+        "state_before": "hand-fixed-nick",
+        "state_after": "table-fixed-nick"
+      },
+      {
+        "id": "beat-2",
+        "start": 4,
+        "end": 8,
+        "heading": "Köşedeki izi inceledim.",
+        "action": "envelope-inspect",
+        "information": "Köşesindeki izi ışığa tuttum.",
+        "object_before": "Zarf masada; köşe izi sabit.",
+        "object_after": "Zarf inceleme konumunda; köşe izi sabit.",
+        "object_id": "envelope-01",
+        "character_id": "courier-01",
+        "camera": "push-in",
+        "rule_ids": [
+          "CORE-01",
+          "YAR-01"
+        ],
+        "state_before": "table-fixed-nick",
+        "state_after": "inspect-fixed-nick"
+      },
+      {
+        "id": "beat-3",
+        "start": 8,
+        "end": 12,
+        "heading": "Aynı zarf, aynı iz.",
+        "action": "envelope-match",
+        "information": "Aynı zarfın aynı izine yeniden baktım.",
+        "object_before": "Zarf inceleme konumunda; köşe izi sabit.",
+        "object_after": "Aynı zarf ve köşe izi doğrulama bekliyor.",
+        "object_id": "envelope-01",
+        "character_id": "courier-01",
+        "camera": "follow-object",
+        "rule_ids": [
+          "CORE-01",
+          "YAR-01"
+        ],
+        "state_before": "inspect-fixed-nick",
+        "state_after": "inspect-fixed-nick"
+      }
+    ],
+    "cues": [
+      {
+        "start": 0,
+        "end": 3.9,
+        "text": "Zarfı masaya bıraktım."
+      },
+      {
+        "start": 4,
+        "end": 7.9,
+        "text": "Köşesindeki izi ışığa tuttum."
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "text": "Aynı zarfın aynı izine yeniden baktım."
+      }
+    ],
+    "creative": {
+      "pack_version": "1.0.0",
+      "topic_id": "golden-sample-series-01",
+      "visual_motif": "envelope-corner-continuity",
+      "canon_status": "noncanonical_fixture",
+      "characters": [
+        {
+          "id": "courier-01",
+          "wardrobe": "cream-shirt",
+          "asset_license": "original_project_vectors"
+        }
+      ],
+      "asset_policy": "original_vectors_only"
+    }
+  },
+  "legacy_fixture": {
+    "schema_version": 1,
+    "brand": "sample-series",
+    "title": "Aynı kutu, aynı iz",
+    "brief": "Dört saniyelik sessiz devamlılık fixture'ı. Yeni bölüm değildir; Deniz rig'i kullanılmaz.",
+    "demo": true,
+    "script": "Kutu açılıyor. Mavi taş yeniden görünüyor.",
+    "caption": "Aynı kutu, aynı mavi taş. Seri örneği için sessiz teknik demo; hikâyenin yeni bölümü değildir.",
+    "duration": 4,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [],
+    "continuity": {
+      "object_id": "ring-blue-01",
+      "previous": "Kutu kapalı, yüzük içinde.",
+      "next": "Aynı yüzük görünür; kimlik veya sahiplik iddiası yok."
+    },
+    "scenes": [
+      {
+        "id": "open",
+        "start": 0,
+        "end": 2,
+        "heading": "Kutu açılıyor.",
+        "action": "open",
+        "information": "Sahne boyunca aynı kutu korunur.",
+        "object_before": "Kutu kapalı.",
+        "object_after": "Kutu açık."
+      },
+      {
+        "id": "reveal",
+        "start": 2,
+        "end": 4,
+        "heading": "Mavi taş yeniden görünür.",
+        "action": "reveal",
+        "information": "Aynı nesne kimliği sürer.",
+        "object_before": "Yüzük kutunun içinde.",
+        "object_after": "Mavi taş görünür."
+      }
+    ],
+    "cues": [
+      {
+        "start": 0,
+        "end": 1.9,
+        "text": "Kutu açılıyor."
+      },
+      {
+        "start": 2,
+        "end": 4,
+        "text": "Mavi taş yeniden görünüyor."
+      }
+    ]
+  }
+}

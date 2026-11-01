@@ -1,0 +1,86 @@
+{
+  "family_id": "cel-contour-boil",
+  "source_id": "source-mg-style-05-cel-boil",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "cel-contour-boil",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Çaydanlığın biçimi aynı kalırken iki kare tutulan çizgiler küçük farklılıklar taşıyor",
+          "duration": 4,
+          "narration": "Çizim iki kare boyunca tutuluyor, sonra yeni cel açılıyor. Nesne kısa bir eğilmeden sonra kendi duruşuna dönüyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Çizim iki kare boyunca tutuluyor, sonra yeni cel açılıyor."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Nesne kısa bir eğilmeden sonra kendi duruşuna dönüyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E5",
+            "ink": "#3A332D",
+            "muted": "#696051",
+            "accent": "#53613E"
+          },
+          "object": "kettle",
+          "label": "Gövde, kapak, ağız ve tutamak tek nesnenin anatomisini koruyor.",
+          "hold_frames": 2,
+          "boil_amount": 1.6,
+          "stroke_width": 5,
+          "tilt_degrees": -12,
+          "action_window": [
+            0.12,
+            0.88
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "cel-contour-boil",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Sulama kabının çizgileri üçer kare tutuluyor; daha belirgin mürekkep hareketi okunuyor",
+          "duration": 4.8,
+          "narration": "Üç karelik tutma süresi çizimin ritmini daha açık duyuruyor. Küçük kontur farkları kabı başka bir şekle dönüştürmüyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.4,
+              "text": "Üç karelik tutma süresi çizimin ritmini daha açık duyuruyor."
+            },
+            {
+              "start": 2.4,
+              "end": 4.8,
+              "text": "Küçük kontur farkları kabı başka bir şekle dönüştürmüyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E5",
+            "ink": "#3A332D",
+            "muted": "#696051",
+            "accent": "#53613E"
+          },
+          "object": "watering-can",
+          "label": "Daha uzun ağız ve üst tutamak, yeni nesneyi kendi parçalarıyla tanımlıyor.",
+          "hold_frames": 3,
+          "boil_amount": 2.7,
+          "stroke_width": 4,
+          "tilt_degrees": 15,
+          "action_window": [
+            0.08,
+            0.9
+          ]
+        }
+      }
+    }
+  ]
+}

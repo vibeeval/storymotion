@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "brand": "sample-mechanism",
+  "title": "Kapak açıkken mandal nerede kalır?",
+  "brief": "Özgün sentetik edit provası; mevcut sınırlı görsel aile kullanılır. Gerçek konu videosu veya accepted bölüm değildir.",
+  "demo": true,
+  "language": "tr",
+  "script": "Bu çizimde mandal temastan ayrılır. Kapak o temasın ardından döner. Son karede aynı mandalı ve kapağı birlikte izleriz.",
+  "caption": "Bu özgün çizim, kurgu sözleşmesini incelemek için hazırlanmış sessiz bir provadır.",
+  "duration": 12,
+  "alignment": "provisional_silent",
+  "audio": null,
+  "claims": [
+    {
+      "text": "Bu çizimde mandal temastan ayrılır.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+    },
+    {
+      "text": "Kapak o temasın ardından döner.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+    },
+    {
+      "text": "Son karede aynı mandalı ve kapağı birlikte izleriz.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+    }
+  ],
+  "continuity": null,
+  "scenes": [
+    {
+      "id": "beat-1",
+      "start": 0,
+      "end": 4,
+      "heading": "Önce mandal ayrılır.",
+      "action": "latch-release",
+      "information": "Bu çizimde mandal temastan ayrılır.",
+      "object_before": "Mandal temas ediyor; kapak kapalı.",
+      "object_after": "Mandal ayrılmış; kapak kapalı.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "contact-closed",
+      "state_after": "released-closed"
+    },
+    {
+      "id": "beat-2",
+      "start": 4,
+      "end": 8,
+      "heading": "Sonra kapak yükselir.",
+      "action": "lid-rise",
+      "information": "Kapak o temasın ardından döner.",
+      "object_before": "Mandal ayrılmış; kapak kapalı.",
+      "object_after": "Mandal ayrılmış; kapak açık.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "push-in",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "released-closed",
+      "state_after": "released-open"
+    },
+    {
+      "id": "beat-3",
+      "start": 8,
+      "end": 12,
+      "heading": "Aynı mekanizmaya dön.",
+      "action": "mechanism-return",
+      "information": "Son karede aynı mandalı ve kapağı birlikte izleriz.",
+      "object_before": "Mandal ayrılmış; kapak açık.",
+      "object_after": "Aynı mandal ve açık kapak görünür.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "released-open",
+      "state_after": "released-open"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.9,
+      "text": "Bu çizimde mandal temastan ayrılır."
+    },
+    {
+      "start": 4,
+      "end": 7.9,
+      "text": "Kapak o temasın ardından döner."
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "text": "Son karede aynı mandalı ve kapağı birlikte izleriz."
+    }
+  ],
+  "creative": {
+    "pack_version": "1.0.0",
+    "topic_id": "authored-edit-sample-mechanism",
+    "visual_motif": "owned edit rehearsal: sample-mechanism",
+    "canon_status": "standalone",
+    "characters": [],
+    "asset_policy": "original_vectors_only"
+  },
+  "production_context": {
+    "schema_version": 1,
+    "account": "sample-mechanism",
+    "sources": {
+      "kind": "sources",
+      "account": "sample-mechanism",
+      "parent": null,
+      "data": {
+        "owned-drawing": {
+          "url": "https://example.org/storymotion-synthetic-drawing",
+          "title": "Özgün sentetik edit çizimi; gerçek araştırma kaynağı değildir",
+          "locator": "Bu örneğin sahne çizimi",
+          "excerpt": "Bu paket için hazırlanmış özgün sentetik vektör gösterimidir.",
+          "rights_note": "Original demonstration text and vector code; no private rig, PDF or voice"
+        }
+      },
+      "revision": "7a4da540c91f1b498cf5d9d16adeed31ffdd642217467b719349e05a01d1606a"
+    },
+    "canon": null,
+    "binding_sha256": "0325dec047566f64a46946a21393fb2e4a266852c85ad3de75cb3109df470eed"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "family_id": "baseline-type-reflow",
+  "source_id": "source-lemo-style-swiss-motion",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "baseline-type-reflow",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Sütunlar birleşirken ölçek değişiyor, fakat okuma sırası ve ortak başlangıç korunuyor.",
+          "duration": 8,
+          "narration": "Sözcüklerin konumu iki ayrı yerleşimde ölçülüyor. Sütunlar birleştiğinde bütün sözcükler aynı metni koruyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Sözcüklerin konumu iki ayrı yerleşimde ölçülüyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Sütunlar birleştiğinde bütün sözcükler aynı metni koruyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "copy": "İyi bir düzen, hangi sözcüğün önce okunacağını açık eder. Sütunlar birleşirken cümlenin bütün sözcükleri ve ilk dayanağı korunur.",
+          "column_ratios": [
+            0.4,
+            0.6
+          ],
+          "baseline_step": 70,
+          "type_scale": 1,
+          "tracking_curve": [
+            1.2,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "baseline-type-reflow",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Sütunlar birleşirken ölçek değişiyor, fakat okuma sırası ve ortak başlangıç korunuyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Sütunlar birleştiğinde bütün sözcükler aynı metni koruyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Sütunlar birleştiğinde bütün sözcükler aynı metni koruyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "copy": "Aynı metin daha geniş bir alana taşınabilir. Harf aralığı ve ölçek birlikte değişse de okuma sırası ve ortak başlangıç kaybolmaz.",
+          "column_ratios": [
+            0.6,
+            0.4
+          ],
+          "baseline_step": 72,
+          "type_scale": 1.1,
+          "tracking_curve": [
+            -0.3,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

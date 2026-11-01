@@ -1,0 +1,17 @@
+import {DARK,N,A,O,schema,parameters,metadata,unit,ensure,svg,headline,caption,label,box,segment,fmt,esc} from './41ce440d7bb8-common.mjs';
+export const ID='ascii-wave-buffer';
+export const SOURCE_ID='src-athemeroy-style-retro-terminal-ascii';
+export const DEFAULT_PALETTE=DARK;
+const F={density_field:O({frequency_x:N(0.5,4),frequency_y:N(0.5,3),phase_speed:N(0.3,2)}),character_ramp:{type:'string',format:'ascii-ramp',maxLength:12},update_regions:A(O({x:N(0,27,true),y:N(0,17,true),width:N(5,32,true),height:N(3,20,true)}),1,3),tear_cadence:N(0.2,0.8)};
+export const PARAMETER_SCHEMA=schema(F);
+export const METADATA=metadata('ASCII dalga tamponu','cursor-addressed-terminal','region row write → wave density → deterministic raster tear → stopped buffer',['monospace title','fixed character buffer','write address and region key']);
+function validatedParameters(spec){const p=parameters(spec,ID,F,DEFAULT_PALETTE);ensure(p.update_regions.every(r=>r.x+r.width<=32&&r.y+r.height<=20),'update_regions: buffer overflow');return p;}
+export function density(x,y,t,f){return Math.max(0,Math.min(1,0.5+0.27*Math.sin(x/32*Math.PI*2*f.frequency_x+t*f.phase_speed)+0.22*Math.cos(y/20*Math.PI*2*f.frequency_y-t*f.phase_speed*0.7)));}
+export function sample(spec,seconds){const p=validatedParameters(spec),tick=Math.floor((unit(p,seconds)*(p.duration-0.8)+1e-8)/p.tear_cadence),buffer=Array(640).fill(p.character_ramp[0]);let cursor={x:p.update_regions[0].x,y:p.update_regions[0].y},last_write={region:0,row:cursor.y,tear:0};for(let k=0;k<=tick;k++){const ri=k%p.update_regions.length,r=p.update_regions[ri],row=r.y+(Math.floor(k/p.update_regions.length)%r.height),time=k*p.tear_cadence;for(let x=r.x;x<r.x+r.width;x++)buffer[row*32+x]=p.character_ramp[Math.min(p.character_ramp.length-1,Math.floor(density(x,row,time,p.density_field)*p.character_ramp.length))];const tear=k>0&&k%3===0?(k%2?2:-2):0;if(tear){const old=buffer.slice(row*32,(row+1)*32);for(let x=0;x<32;x++)buffer[row*32+x]=old[(x-tear+32)%32];}cursor={x:r.x+((k+1)%r.width),y:row};last_write={region:ri,row,tear};}return{tick,buffer,rows:Array.from({length:20},(_,y)=>buffer.slice(y*32,(y+1)*32).join('')),cursor,last_write,columns:32,height:20};}
+export function render(spec,seconds){const p=validatedParameters(spec),s=sample(spec,seconds),c=p.palette;let b=label('BUFFER://YEREL-07',90,130,c.accent,25)+headline(p,{y:230,maximum:52})+segment({x:90,y:520},{x:990,y:520},c.muted,2)+label(`WRITE ${String(s.cursor.y).padStart(2,'0')}:${String(s.cursor.x).padStart(2,'0')}`,90,580,c.ink,29)+label(`TICK ${String(s.tick).padStart(3,'0')}`,760,580,c.muted,27)+box(108,630,864,710,c.background,`stroke="${c.muted}" stroke-width="2"`);
+ // Assign every character its buffer-cell origin. Letter spacing alone adds
+ // proportional glyph advances and lets wide ramps escape the fixed panel.
+ const columns=Array.from({length:s.columns},(_,x)=>124+x*26).join(' ');
+ s.rows.forEach((row,y)=>{b+=`<text data-motion-role="buffer-row" x="${columns}" y="${670+y*32}" fill="${c.accent}" font-size="26" xml:space="preserve">${esc(row)}</text>`;});b+=box(122+s.cursor.x*26,645+s.cursor.y*32,25,30,'none',`stroke="${c.ink}" stroke-width="2"`);p.update_regions.forEach((r,i)=>b+=label(`R${i+1} [${r.x},${r.y}] ${r.width}×${r.height}`,100,1410+i*48,c.muted,25));b+=label(`SATIR KAYMASI ${s.last_write.tear}`,620,1540,c.ink,26)+caption(p,seconds);return svg(ID,p,seconds,b,'monospace');}
+
+export function validateSpec(spec){return{id:ID,version:'1.0.0',parameters:validatedParameters(spec)};}

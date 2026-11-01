@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "brand": "sample-mechanism",
+  "title": "Bir görsel, üç ayrı bakış.",
+  "brief": "Bu proje için yazılmış nötr geometrik raster fixture. Gerçek konu veya mekanizma iddiası yok; eski bounded kaynak eylemleri yalnız kaynak kaydı, raster sahne ailesi bunları çalıştırmaz.",
+  "demo": true,
+  "language": "tr",
+  "script": "Bu görselde farklı renklerde üç şekil var. Kırmızı dairenin çevresine yakından bakıyoruz. Sonra mavi kareyi işaretli alanda izliyoruz.",
+  "caption": "Kendi görselinizle kırpma, işaretleme ve kamera incelemesi. Özgün sentetik demo.",
+  "duration": 6,
+  "alignment": "provisional_silent",
+  "audio": null,
+  "claims": [
+    {
+      "text": "Bu görselde farklı renklerde üç şekil var.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün geometrik raster fixture; doğruluk/insan kabulü ayrıca incelenir"
+    },
+    {
+      "text": "Kırmızı dairenin çevresine yakından bakıyoruz.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün geometrik raster fixture; doğruluk/insan kabulü ayrıca incelenir"
+    },
+    {
+      "text": "Sonra mavi kareyi işaretli alanda izliyoruz.",
+      "source": "owned-drawing",
+      "scope": "Yalnız bu özgün geometrik raster fixture; doğruluk/insan kabulü ayrıca incelenir"
+    }
+  ],
+  "continuity": null,
+  "scenes": [
+    {
+      "id": "beat-1",
+      "start": 0,
+      "end": 2,
+      "heading": "Üç şekli birlikte görelim.",
+      "action": "latch-release",
+      "information": "Bu görselde farklı renklerde üç şekil var.",
+      "object_before": "Mandal temas ediyor; kapak kapalı.",
+      "object_after": "Mandal ayrılmış; kapak kapalı.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "contact-closed",
+      "state_after": "released-closed"
+    },
+    {
+      "id": "beat-2",
+      "start": 2,
+      "end": 4,
+      "heading": "Kırmızı daireye yakından.",
+      "action": "lid-rise",
+      "information": "Kırmızı dairenin çevresine yakından bakıyoruz.",
+      "object_before": "Mandal ayrılmış; kapak kapalı.",
+      "object_after": "Mandal ayrılmış; kapak açık.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "released-closed",
+      "state_after": "released-open"
+    },
+    {
+      "id": "beat-3",
+      "start": 4,
+      "end": 6,
+      "heading": "Mavi kareyi izleyelim.",
+      "action": "mechanism-return",
+      "information": "Sonra mavi kareyi işaretli alanda izliyoruz.",
+      "object_before": "Mandal ayrılmış; kapak açık.",
+      "object_after": "Aynı mandal ve açık kapak görünür.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "released-open",
+      "state_after": "released-open"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2,
+      "text": "Bu görselde farklı renklerde üç şekil var."
+    },
+    {
+      "start": 2,
+      "end": 4,
+      "text": "Kırmızı dairenin çevresine yakından bakıyoruz."
+    },
+    {
+      "start": 4,
+      "end": 6,
+      "text": "Sonra mavi kareyi işaretli alanda izliyoruz."
+    }
+  ],
+  "creative": {
+    "pack_version": "1.0.0",
+    "topic_id": "authored-edit-sample-mechanism",
+    "visual_motif": "owned edit rehearsal: sample-mechanism",
+    "canon_status": "standalone",
+    "characters": [],
+    "asset_policy": "original_vectors_only"
+  },
+  "production_context": {
+    "schema_version": 1,
+    "account": "sample-mechanism",
+    "sources": {
+      "kind": "sources",
+      "account": "sample-mechanism",
+      "parent": null,
+      "data": {
+        "owned-drawing": {
+          "url": "https://example.org/storymotion-synthetic-drawing",
+          "title": "Özgün sentetik edit çizimi; gerçek araştırma kaynağı değildir",
+          "locator": "Bu örneğin sahne çizimi",
+          "excerpt": "Bu paket için hazırlanmış özgün sentetik vektör gösterimidir.",
+          "rights_note": "Original demonstration text and vector code; no private rig, PDF or voice"
+        }
+      },
+      "revision": "7a4da540c91f1b498cf5d9d16adeed31ffdd642217467b719349e05a01d1606a"
+    },
+    "canon": null,
+    "binding_sha256": "0325dec047566f64a46946a21393fb2e4a266852c85ad3de75cb3109df470eed"
+  },
+  "brand_identity": {
+    "name": "",
+    "handle": ""
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "family_id": "rigid-body-lightstage",
+  "source_id": "source-mg-style-04-3d-render",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "rigid-body-lightstage",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "İki özgün blok zemine otururken gölgesi değişiyor",
+          "duration": 4,
+          "narration": "Özgün geometri adım adım kurulur. Son ölçü sabit konumda okunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Özgün geometri adım adım kurulur."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Son ölçü sabit konumda okunur."
+            }
+          ],
+          "palette": {
+            "background": "#EEECE7",
+            "ink": "#313C43",
+            "muted": "#57656D",
+            "accent": "#8B422A"
+          },
+          "bodies": [
+            {
+              "label": "Birinci ölçüm bloğu",
+              "width": 1.1,
+              "height": 1.2,
+              "depth": 0.8,
+              "drop_height": 1.6
+            },
+            {
+              "label": "İkinci ölçüm bloğu",
+              "width": 0.8,
+              "height": 0.9,
+              "depth": 1.1,
+              "drop_height": 2
+            }
+          ],
+          "restitution": 0.35,
+          "light_angle": 25,
+          "yaw_degrees": 18
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "rigid-body-lightstage",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Üç farklı kalıbın teması ve yönlü ışık izdüşümü",
+          "duration": 5,
+          "narration": "Uzun Türkçe açıklama değişen parametreleri görünür kılar. Son durum açık ve dengeli biçimde bekler.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.5,
+              "text": "Uzun Türkçe açıklama değişen parametreleri görünür kılar."
+            },
+            {
+              "start": 2.5,
+              "end": 5,
+              "text": "Son durum açık ve dengeli biçimde bekler."
+            }
+          ],
+          "palette": {
+            "background": "#EEECE7",
+            "ink": "#313C43",
+            "muted": "#57656D",
+            "accent": "#8B422A"
+          },
+          "bodies": [
+            {
+              "label": "Dar ve yüksek kalıp",
+              "width": 0.7,
+              "height": 1.4,
+              "depth": 0.7,
+              "drop_height": 2.3
+            },
+            {
+              "label": "Geniş orta kalıp",
+              "width": 1.3,
+              "height": 0.7,
+              "depth": 1.2,
+              "drop_height": 1.3
+            },
+            {
+              "label": "Kısa üçüncü kalıp",
+              "width": 0.9,
+              "height": 0.8,
+              "depth": 0.9,
+              "drop_height": 0.9
+            }
+          ],
+          "restitution": 0.48,
+          "light_angle": -30,
+          "yaw_degrees": -22
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "family_id": "screenprint-layer-pull",
+  "source_id": "source-lemo-style-silkscreen-poster",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "screenprint-layer-pull",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Baskı çerçevesindeki stencil, çekiş çubuğunun arkasında rengi nasıl aktarır?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F4EEDD",
+            "ink": "#1D3839",
+            "muted": "#455D53",
+            "accent": "#925026"
+          },
+          "stencil_shapes": [
+            {
+              "shape": "sun",
+              "center": [
+                0.5,
+                0.35
+              ],
+              "size": [
+                0.24,
+                0.2
+              ],
+              "label": "Yükselen ışık"
+            },
+            {
+              "shape": "arch",
+              "center": [
+                0.5,
+                0.6
+              ],
+              "size": [
+                0.3,
+                0.22
+              ],
+              "label": "Geçidin çerçevesi"
+            }
+          ],
+          "spot_colors": [
+            "#AD6431",
+            "#376B6C"
+          ],
+          "pass_order": [
+            0,
+            1
+          ],
+          "pull_direction": "up"
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "screenprint-layer-pull",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Her renk yalnız kendi maskesinden geçer; baskının yönü dolan alanı belirler.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F4EEDD",
+            "ink": "#1D3839",
+            "muted": "#455D53",
+            "accent": "#925026"
+          },
+          "stencil_shapes": [
+            {
+              "shape": "ridge",
+              "center": [
+                0.35,
+                0.65
+              ],
+              "size": [
+                0.3,
+                0.22
+              ],
+              "label": "Ufkun ilk çizgisi"
+            },
+            {
+              "shape": "sun",
+              "center": [
+                0.65,
+                0.25
+              ],
+              "size": [
+                0.16,
+                0.14
+              ],
+              "label": "Güneşin kısa izi"
+            },
+            {
+              "shape": "arch",
+              "center": [
+                0.6,
+                0.55
+              ],
+              "size": [
+                0.2,
+                0.3
+              ],
+              "label": "Uzun geçit"
+            }
+          ],
+          "spot_colors": [
+            "#416655",
+            "#B06935",
+            "#33627B"
+          ],
+          "pass_order": [
+            2,
+            0,
+            1
+          ],
+          "pull_direction": "right"
+        }
+      }
+    }
+  ]
+}

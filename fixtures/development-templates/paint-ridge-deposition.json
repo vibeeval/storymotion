@@ -1,0 +1,141 @@
+{
+  "family_id": "paint-ridge-deposition",
+  "source_id": "source-lemo-style-impasto",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "paint-ridge-deposition",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "İkinci fırça darbesi ilk boyanın üstüne geldiğinde yüzeyde hangi sırt oluşur?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F6F1E7",
+            "ink": "#2D3129",
+            "muted": "#58604F",
+            "accent": "#744930"
+          },
+          "dab_paths": [
+            [
+              [
+                0.2,
+                0.25
+              ],
+              [
+                0.5,
+                0.4
+              ],
+              [
+                0.75,
+                0.3
+              ]
+            ],
+            [
+              [
+                0.25,
+                0.65
+              ],
+              [
+                0.65,
+                0.72
+              ]
+            ]
+          ],
+          "paint_thickness": 7,
+          "light_angle": 45,
+          "layer_order": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "paint-ridge-deposition",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kalın şeritler ayrı ayrı birikir; yan ışığın yönü kabarık kenarı belirginleştirir.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F6F1E7",
+            "ink": "#2D3129",
+            "muted": "#58604F",
+            "accent": "#744930"
+          },
+          "dab_paths": [
+            [
+              [
+                0.15,
+                0.3
+              ],
+              [
+                0.7,
+                0.22
+              ]
+            ],
+            [
+              [
+                0.2,
+                0.55
+              ],
+              [
+                0.45,
+                0.7
+              ],
+              [
+                0.8,
+                0.6
+              ]
+            ],
+            [
+              [
+                0.25,
+                0.8
+              ],
+              [
+                0.65,
+                0.4
+              ]
+            ]
+          ],
+          "paint_thickness": 18,
+          "light_angle": 205,
+          "layer_order": [
+            2,
+            0,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

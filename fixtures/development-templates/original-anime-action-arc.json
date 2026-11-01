@@ -1,0 +1,113 @@
+{
+  "family_id": "original-anime-action-arc",
+  "source_id": "src-athemeroy-style-anime",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "original-anime-action-arc",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Cesaretin kısa sıçrayışı hazırlık, hareket ve varışla anlatılır",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F9EFEA",
+            "ink": "#342A35",
+            "muted": "#6E5663",
+            "accent": "#92502E"
+          },
+          "pose_sequence": [
+            "coil",
+            "reach",
+            "brace"
+          ],
+          "impact_cues": [
+            0.72
+          ],
+          "arc_path": [
+            {
+              "x": 320,
+              "y": 1170
+            },
+            {
+              "x": 540,
+              "y": 770
+            },
+            {
+              "x": 780,
+              "y": 1130
+            }
+          ],
+          "speedline_density": 14
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "original-anime-action-arc",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kıyıya ulaşan özgün haberci, değiştirilmiş bir yay üzerinde yolunu tamamlar",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#F9EFEA",
+            "ink": "#342A35",
+            "muted": "#6E5663",
+            "accent": "#92502E"
+          },
+          "pose_sequence": [
+            "brace",
+            "coil",
+            "reach"
+          ],
+          "impact_cues": [
+            0.71,
+            0.8
+          ],
+          "arc_path": [
+            {
+              "x": 750,
+              "y": 1150
+            },
+            {
+              "x": 650,
+              "y": 800
+            },
+            {
+              "x": 310,
+              "y": 1070
+            }
+          ],
+          "speedline_density": 24
+        }
+      }
+    }
+  ]
+}

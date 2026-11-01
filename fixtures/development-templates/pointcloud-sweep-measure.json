@@ -1,0 +1,88 @@
+{
+  "family_id": "pointcloud-sweep-measure",
+  "source_id": "source-lemo-style-lidar-survey",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "pointcloud-sweep-measure",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Çatı kesitinin nokta bulutunda mesafeyi okumak",
+          "duration": 4,
+          "narration": "Özgün geometri adım adım kurulur. Son ölçü sabit konumda okunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Özgün geometri adım adım kurulur."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Son ölçü sabit konumda okunur."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F7",
+            "ink": "#1F3043",
+            "muted": "#52647A",
+            "accent": "#254F6D"
+          },
+          "columns": 8,
+          "rows": 5,
+          "span_x": 6,
+          "span_y": 4,
+          "ridge_height": 1.8,
+          "yaw_degrees": 18,
+          "measurement_pair": [
+            0,
+            39
+          ],
+          "survey_label": "Özgün çatı kesiti"
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "pointcloud-sweep-measure",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Köprünün daha geniş açıklığında değişen ölçüm noktaları",
+          "duration": 5,
+          "narration": "Uzun Türkçe açıklama değişen parametreleri görünür kılar. Son durum açık ve dengeli biçimde bekler.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.5,
+              "text": "Uzun Türkçe açıklama değişen parametreleri görünür kılar."
+            },
+            {
+              "start": 2.5,
+              "end": 5,
+              "text": "Son durum açık ve dengeli biçimde bekler."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F7",
+            "ink": "#1F3043",
+            "muted": "#52647A",
+            "accent": "#254F6D"
+          },
+          "columns": 12,
+          "rows": 7,
+          "span_x": 8.5,
+          "span_y": 5.5,
+          "ridge_height": 2.6,
+          "yaw_degrees": -25,
+          "measurement_pair": [
+            11,
+            72
+          ],
+          "survey_label": "Küçük köprü açıklığı"
+        }
+      }
+    }
+  ]
+}

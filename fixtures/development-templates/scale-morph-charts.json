@@ -1,0 +1,107 @@
+{
+  "family_id": "scale-morph-charts",
+  "source_id": "source-lemo-style-dataviz",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "scale-morph-charts",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Aynı veri noktaları çizgiye ve alana dönüşürken ölçüm eksenleri yerinde kalıyor.",
+          "duration": 8,
+          "narration": "Her değer aynı sayısal aralık içinde bir noktaya bağlanıyor. Çizim biçimi değişse de noktanın temsil ettiği değer değişmiyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Her değer aynı sayısal aralık içinde bir noktaya bağlanıyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Çizim biçimi değişse de noktanın temsil ettiği değer değişmiyor."
+            }
+          ],
+          "palette": {
+            "background": "#EAF0F4",
+            "ink": "#253D50",
+            "muted": "#526875",
+            "accent": "#315D87"
+          },
+          "domain_bounds": [
+            0,
+            100
+          ],
+          "series_values": [
+            18,
+            36,
+            29,
+            62,
+            76
+          ],
+          "chart_sequence": [
+            "dots",
+            "line",
+            "area"
+          ],
+          "axis_labels": [
+            "Gözlenen değer",
+            "Ölçüm sırası"
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "scale-morph-charts",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Aynı veri noktaları çizgiye ve alana dönüşürken ölçüm eksenleri yerinde kalıyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Çizim biçimi değişse de noktanın temsil ettiği değer değişmiyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Çizim biçimi değişse de noktanın temsil ettiği değer değişmiyor."
+            }
+          ],
+          "palette": {
+            "background": "#EAF0F4",
+            "ink": "#253D50",
+            "muted": "#526875",
+            "accent": "#315D87"
+          },
+          "domain_bounds": [
+            20,
+            120
+          ],
+          "series_values": [
+            28,
+            46,
+            34,
+            72,
+            84,
+            65
+          ],
+          "chart_sequence": [
+            "dots",
+            "area",
+            "line"
+          ],
+          "axis_labels": [
+            "Karşılaştırma puanı",
+            "İkinci gözlem dizisi"
+          ]
+        }
+      }
+    }
+  ]
+}

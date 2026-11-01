@@ -1,0 +1,138 @@
+{
+  "family_id": "toon-dialogue-blocking",
+  "source_id": "source-lemo-style-scifi-toon",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "toon-dialogue-blocking",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "İki özgün karakterin konuşma sırası, bakış yönü ve kadrajı ortak bir nesnede buluşur",
+          "duration": 6,
+          "narration": "Her turda yalnız bir karakter konuşur; dinleyenin bakışı karşısındaki kişiye yönelir. Kadraj ve jest konuşma sırasını izler; iki özgün karakterin son ilişkisi korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Her turda yalnız bir karakter konuşur; dinleyenin bakışı karşısındaki kişiye yönelir."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Kadraj ve jest konuşma sırasını izler; iki özgün karakterin son ilişkisi korunur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "speaker_turns": [
+            {
+              "speaker": "a",
+              "line": "Bu düzenekte küçük bir hareketin sonucu neden iki yüzeyde farklı görünüyor?",
+              "expression": "curious"
+            },
+            {
+              "speaker": "b",
+              "line": "Bakışı ve kamerayı ayırınca aynı nesnenin farklı ilişkilerini görebiliyoruz.",
+              "expression": "calm"
+            },
+            {
+              "speaker": "a",
+              "line": "O halde nesneye birlikte bakıp nedeni açıkça gösterebiliriz.",
+              "expression": "amused"
+            }
+          ],
+          "gaze_targets": [
+            "partner",
+            "prop",
+            "viewer"
+          ],
+          "pose_cues": [
+            "open",
+            "point",
+            "rest"
+          ],
+          "camera_slots": [
+            "wide",
+            "b-close",
+            "a-close"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "toon-dialogue-blocking",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "İki özgün karakterin konuşma sırası, bakış yönü ve kadrajı ortak bir nesnede buluşur İkinci düzen.",
+          "duration": 6,
+          "narration": "Her turda yalnız bir karakter konuşur; dinleyenin bakışı karşısındaki kişiye yönelir. Kadraj ve jest konuşma sırasını izler; iki özgün karakterin son ilişkisi korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Her turda yalnız bir karakter konuşur; dinleyenin bakışı karşısındaki kişiye yönelir."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Kadraj ve jest konuşma sırasını izler; iki özgün karakterin son ilişkisi korunur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "speaker_turns": [
+            {
+              "speaker": "b",
+              "line": "Önce bu parçayı inceleyelim; konuşma sırası hareketin anlamını belirliyor.",
+              "expression": "calm"
+            },
+            {
+              "speaker": "a",
+              "line": "Şimdi sana dönüyorum; nesnenin konumu iki bakışı aynı noktada buluşturuyor.",
+              "expression": "curious"
+            },
+            {
+              "speaker": "b",
+              "line": "Son söz bende; geniş kadraj iki özgün karakterin ilişkisini koruyor.",
+              "expression": "amused"
+            },
+            {
+              "speaker": "a",
+              "line": "Konuyu kısa bir durakla tamamlayıp son sahneyi okunabilir bırakıyoruz.",
+              "expression": "calm"
+            }
+          ],
+          "gaze_targets": [
+            "prop",
+            "partner",
+            "viewer",
+            "partner"
+          ],
+          "pose_cues": [
+            "point",
+            "open",
+            "rest",
+            "point"
+          ],
+          "camera_slots": [
+            "b-close",
+            "a-close",
+            "wide",
+            "wide"
+          ]
+        }
+      }
+    }
+  ]
+}

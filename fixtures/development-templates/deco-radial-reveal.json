@@ -1,0 +1,76 @@
+{
+  "family_id": "deco-radial-reveal",
+  "source_id": "source-lemo-style-art-deco",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "deco-radial-reveal",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Aynı eksene bağlanan çizgiler, başlığın çevresinde dengeli bir buluşma alanı kuruyor.",
+          "duration": 8,
+          "narration": "Işın çiftleri ortak eksenden simetrik olarak açılıyor. Son çizgi durulduğunda başlığın çerçevesi tamamlanıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Işın çiftleri ortak eksenden simetrik olarak açılıyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Son çizgi durulduğunda başlığın çerçevesi tamamlanıyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "ray_count": 16,
+          "fan_angle": 130,
+          "frame_inset": 125,
+          "reveal_order": "center-out",
+          "headline": "Bir koleksiyon, ortak bir eksen çevresinde açılıyor."
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "deco-radial-reveal",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Aynı eksene bağlanan çizgiler, başlığın çevresinde dengeli bir buluşma alanı kuruyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Son çizgi durulduğunda başlığın çerçevesi tamamlanıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Son çizgi durulduğunda başlığın çerçevesi tamamlanıyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "ray_count": 10,
+          "fan_angle": 155,
+          "frame_inset": 155,
+          "reveal_order": "edge-in",
+          "headline": "Daha az çizgiyle başka bir buluşma alanı kur."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "scene_id": "beat-1",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    "highlight": null,
+    "label": "Özgün geometrik fixture",
+    "camera": "locked"
+  },
+  {
+    "scene_id": "beat-2",
+    "crop": {
+      "x": 0.05,
+      "y": 0.05,
+      "width": 0.5,
+      "height": 0.65
+    },
+    "highlight": {
+      "x": 0.16,
+      "y": 0.22,
+      "width": 0.2,
+      "height": 0.3
+    },
+    "label": "Kırmızı daire",
+    "camera": "push-in"
+  },
+  {
+    "scene_id": "beat-3",
+    "crop": {
+      "x": 0.45,
+      "y": 0.1,
+      "width": 0.5,
+      "height": 0.65
+    },
+    "highlight": {
+      "x": 0.62,
+      "y": 0.2,
+      "width": 0.23,
+      "height": 0.32
+    },
+    "label": "Mavi kare",
+    "camera": "follow-object"
+  }
+]

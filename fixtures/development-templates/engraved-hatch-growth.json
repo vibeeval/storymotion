@@ -1,0 +1,114 @@
+{
+  "family_id": "engraved-hatch-growth",
+  "source_id": "source-lemo-style-engraving",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "engraved-hatch-growth",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Çizgilerin yoğunluğu, yaprağın ışık ve gölgeyle kurduğu ilişkiyi nasıl görünür kılar?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F5EAD6",
+            "ink": "#2A2B26",
+            "muted": "#5B5147",
+            "accent": "#724833"
+          },
+          "shape_set": [
+            {
+              "shape": "oval",
+              "value": 65,
+              "label": "Yaprağın gölgesi"
+            },
+            {
+              "shape": "vessel",
+              "value": 28,
+              "label": "Suyun ölçüsü"
+            }
+          ],
+          "hatch_density": 10,
+          "crosshatch_angle": 30,
+          "reveal_order": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "engraved-hatch-growth",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Oyulan yüzeyde her çizgi, küçük bir ölçüm farkının ağırlaşan izini taşır.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F5EAD6",
+            "ink": "#2A2B26",
+            "muted": "#5B5147",
+            "accent": "#724833"
+          },
+          "shape_set": [
+            {
+              "shape": "leaf",
+              "value": 80,
+              "label": "Güneşe bakan yüzey"
+            },
+            {
+              "shape": "oval",
+              "value": 45,
+              "label": "Gölgeye geçen tohum"
+            },
+            {
+              "shape": "vessel",
+              "value": 32,
+              "label": "Toprağın tuttuğu nem"
+            },
+            {
+              "shape": "leaf",
+              "value": 92,
+              "label": "Yoğunlaşan çizgi izi"
+            }
+          ],
+          "hatch_density": 18,
+          "crosshatch_angle": 66,
+          "reveal_order": [
+            3,
+            1,
+            0,
+            2
+          ]
+        }
+      }
+    }
+  ]
+}

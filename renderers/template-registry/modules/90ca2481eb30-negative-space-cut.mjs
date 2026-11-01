@@ -1,0 +1,13 @@
+import {base,schema,N,A,E,O,P,L,C,arr,pt,pts,nums,order,words,colors,color,label,keys,number,choice,clock,phase,lerp,fmt,esc,xy,line,path,poly,circ,rect,captionLabel,shell,polar} from './9d0e9a74193b-shared.mjs';
+export const ID="negative-space-cut";
+export const SOURCE_ID="source-lemo-style-papercut-red";
+export const DEFAULT_PALETTE=Object.freeze({"background": "#FFF4E3", "ink": "#422E2F", "muted": "#6A4A48", "accent": "#9B282E"});
+export const METADATA=Object.freeze({"name": "Negatif alanda simetri", "kind": "folded_negative_cut", "layout_id": "cutting-sheet", "motion_grammar": "bounded symmetric holes cut into a connected sheet then unfold in mirrored sectors", "typographic_hierarchy": "Yan kenara yaslı başlık ve tek kırmızı kesim levhası", "original_implementation": true, "native_verified": false, "independent_accepted": false, "ui_verified": false, "implementation_strategy": "original_implementation_not_source_code_port"});
+export const PARAMETER_SCHEMA=schema({cut_paths:A(A(P,3,6),2,5),fold_count:N(1,4,true),unfold_angle:N(60,180),sheet_thickness:N(2,12)});
+
+function validateParameters(spec){const p=base(spec,ID,['cut_paths','fold_count','unfold_angle','sheet_thickness'],DEFAULT_PALETTE),q=spec.parameters;p.cut_paths=arr(q.cut_paths,'cut_paths',2,5).map(v=>pts(v,'cut path',3,6));p.fold_count=number(q.fold_count,'fold_count',1,4,true);p.unfold_angle=number(q.unfold_angle,'unfold_angle',60,180);p.sheet_thickness=number(q.sheet_thickness,'sheet_thickness',2,12);return p;}
+function state(p,u){const cut=phase(u,0,.5),unfold=phase(u,.35,.95),cuts=[];for(let sector=0;sector<p.fold_count*2;sector++){const a=((sector/(p.fold_count*2-1)-.5)*p.unfold_angle*unfold)*Math.PI/180,mirror=sector%2?-1:1;for(let k=0;k<p.cut_paths.length;k++){const polygon=p.cut_paths[k].map(([x,y])=>{const xx=(35+x*190)*mirror*cut,yy=(y-.5)*160*cut;return [540+xx*Math.cos(a)-yy*Math.sin(a),955+xx*Math.sin(a)+yy*Math.cos(a)];});cuts.push({sector,path_index:k,angle:a,mirror,polygon});}}return {progress:u,cut,unfold,cuts,copies:p.fold_count*2,border_connected:true};}
+export function sample(spec,seconds){const p=validateParameters(spec);return state(p,clock(p,seconds));}
+export function render(spec,seconds){const p=validateParameters(spec),s=state(p,clock(p,seconds)),c=p.palette;return shell(ID,p,seconds,`<defs><mask id="negative-sheet">${rect(190,575,700,785,'#FFFFFF')}${s.cuts.map(v=>poly(v.polygon,'#000000')).join('')}</mask></defs>${rect(190+p.sheet_thickness,575+p.sheet_thickness,700,785,c.muted)}<g mask="url(#negative-sheet)">${rect(190,575,700,785,c.accent)}</g>`,'side');}
+
+export function validateSpec(spec){return {id:ID,version:'1.0.0',parameters:validateParameters(spec)};}

@@ -1,0 +1,180 @@
+{
+  "family_id": "halftone-evidence-lens",
+  "source_id": "source-lemo-style-halftone-dossier",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "halftone-evidence-lens",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Uzakta yalnız nokta görünen bir kanıt, merceğin altında hangi ayrıntıyı açığa çıkarır?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F2EBDD",
+            "ink": "#242323",
+            "muted": "#5D524B",
+            "accent": "#8E3028"
+          },
+          "dot_pitch": 42,
+          "evidence_regions": [
+            {
+              "center": [
+                0.25,
+                0.25
+              ],
+              "size": [
+                0.32,
+                0.28
+              ],
+              "focus": [
+                0.5,
+                0.45
+              ],
+              "label": "Birinci gözlemin kaydı"
+            },
+            {
+              "center": [
+                0.7,
+                0.7
+              ],
+              "size": [
+                0.3,
+                0.28
+              ],
+              "focus": [
+                0.4,
+                0.6
+              ],
+              "label": "İkinci gözlemin kaydı"
+            }
+          ],
+          "lens_path": [
+            [
+              0.2,
+              0.2
+            ],
+            [
+              0.7,
+              0.7
+            ]
+          ],
+          "connection_order": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "halftone-evidence-lens",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Mercek daha küçük noktaları görünür kılar; bağlantı işaretleri kayıtlı odağa bağlanır.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F2EBDD",
+            "ink": "#242323",
+            "muted": "#5D524B",
+            "accent": "#8E3028"
+          },
+          "dot_pitch": 29,
+          "evidence_regions": [
+            {
+              "center": [
+                0.22,
+                0.24
+              ],
+              "size": [
+                0.3,
+                0.28
+              ],
+              "focus": [
+                0.35,
+                0.5
+              ],
+              "label": "Ölçümün ilk ayrıntısı"
+            },
+            {
+              "center": [
+                0.7,
+                0.28
+              ],
+              "size": [
+                0.32,
+                0.26
+              ],
+              "focus": [
+                0.6,
+                0.4
+              ],
+              "label": "Beklenmeyen ikinci ayrıntı"
+            },
+            {
+              "center": [
+                0.5,
+                0.75
+              ],
+              "size": [
+                0.35,
+                0.3
+              ],
+              "focus": [
+                0.45,
+                0.55
+              ],
+              "label": "Son kıyas izi"
+            }
+          ],
+          "lens_path": [
+            [
+              0.75,
+              0.2
+            ],
+            [
+              0.2,
+              0.3
+            ],
+            [
+              0.5,
+              0.75
+            ]
+          ],
+          "connection_order": [
+            1,
+            0,
+            2
+          ]
+        }
+      }
+    }
+  ]
+}

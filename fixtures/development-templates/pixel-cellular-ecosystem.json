@@ -1,0 +1,145 @@
+{
+  "family_id": "pixel-cellular-ecosystem",
+  "source_id": "src-athemeroy-style-pixel-art",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "pixel-cellular-ecosystem",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Mahallede yayılan yeşil, yalnız yakın komşuların kararından doğar",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "initial_cells": [
+            {
+              "x": 7,
+              "y": 7,
+              "state": 1
+            },
+            {
+              "x": 8,
+              "y": 7,
+              "state": 1
+            },
+            {
+              "x": 7,
+              "y": 8,
+              "state": 1
+            }
+          ],
+          "transition_rules": {
+            "birth_neighbors": 1,
+            "mature_after": 3,
+            "decay_after": 6
+          },
+          "grid_size": {
+            "columns": 16,
+            "rows": 16
+          },
+          "tick_cadence": 0.4
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "pixel-cellular-ecosystem",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Küçük kıyı ekosisteminde aynı yerel kural farklı bir yaşam deseni kurar",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "initial_cells": [
+            {
+              "x": 3,
+              "y": 3,
+              "state": 1
+            },
+            {
+              "x": 3,
+              "y": 4,
+              "state": 1
+            },
+            {
+              "x": 4,
+              "y": 3,
+              "state": 1
+            },
+            {
+              "x": 4,
+              "y": 4,
+              "state": 1
+            },
+            {
+              "x": 13,
+              "y": 7,
+              "state": 1
+            },
+            {
+              "x": 13,
+              "y": 8,
+              "state": 1
+            },
+            {
+              "x": 14,
+              "y": 7,
+              "state": 1
+            },
+            {
+              "x": 14,
+              "y": 8,
+              "state": 1
+            }
+          ],
+          "transition_rules": {
+            "birth_neighbors": 2,
+            "mature_after": 2,
+            "decay_after": 5
+          },
+          "grid_size": {
+            "columns": 20,
+            "rows": 12
+          },
+          "tick_cadence": 0.3
+        }
+      }
+    }
+  ]
+}

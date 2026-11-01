@@ -1,0 +1,123 @@
+{
+  "family_id": "bead-transfer-counts",
+  "source_id": "source-lemo-style-data-physical",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "bead-transfer-counts",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir hazneden diğerine giden her tane, toplamdan eksilmeden yeni yerine yerleşiyor.",
+          "duration": 8,
+          "narration": "Kaynakta ayrılan taneler geçici olarak yolda sayılıyor. Hedefe yerleşen her tane aynı toplamın içindeki yerini değiştiriyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Kaynakta ayrılan taneler geçici olarak yolda sayılıyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Hedefe yerleşen her tane aynı toplamın içindeki yerini değiştiriyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "bin_values": [
+            {
+              "label": "Kaynak stoku",
+              "count": 6
+            },
+            {
+              "label": "Hedef stoku",
+              "count": 2
+            }
+          ],
+          "transfer_order": [
+            {
+              "from": 0,
+              "to": 1,
+              "count": 3
+            },
+            {
+              "from": 1,
+              "to": 0,
+              "count": 1
+            }
+          ],
+          "bead_unit": 10,
+          "settle_duration": 0.35
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "bead-transfer-counts",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir hazneden diğerine giden her tane, toplamdan eksilmeden yeni yerine yerleşiyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Hedefe yerleşen her tane aynı toplamın içindeki yerini değiştiriyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Hedefe yerleşen her tane aynı toplamın içindeki yerini değiştiriyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "bin_values": [
+            {
+              "label": "İlk hazne",
+              "count": 4
+            },
+            {
+              "label": "İkinci hazne",
+              "count": 3
+            },
+            {
+              "label": "Üçüncü hazne",
+              "count": 2
+            }
+          ],
+          "transfer_order": [
+            {
+              "from": 0,
+              "to": 2,
+              "count": 2
+            },
+            {
+              "from": 1,
+              "to": 0,
+              "count": 1
+            },
+            {
+              "from": 2,
+              "to": 1,
+              "count": 2
+            }
+          ],
+          "bead_unit": 25,
+          "settle_duration": 0.5
+        }
+      }
+    }
+  ]
+}

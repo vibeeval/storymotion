@@ -1,0 +1,129 @@
+{
+  "family_id": "stud-lock-assembly",
+  "source_id": "source-lemo-style-brick-toy",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "stud-lock-assembly",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Destek sırası değişince geçmeli blokların birlikte kurduğu küçük yapı nasıl ayakta kalır?",
+          "duration": 6,
+          "narration": "Önce taşıyıcı parçalar yerleşir; üstteki her blok daha önce kurulmuş desteğe oturur. Temas anındaki kısa sıkışma sona erer; tamamlanan yapı ölçülerini koruyarak durur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Önce taşıyıcı parçalar yerleşir; üstteki her blok daha önce kurulmuş desteğe oturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Temas anındaki kısa sıkışma sona erer; tamamlanan yapı ölçülerini koruyarak durur."
+            }
+          ],
+          "palette": {
+            "background": "#F3F2E9",
+            "ink": "#202F35",
+            "muted": "#526169",
+            "accent": "#80522F"
+          },
+          "stud_grid": 3,
+          "contact_compression": 0.08,
+          "snap_height": 150,
+          "blocks": [
+            {
+              "slot": 0,
+              "level": 0,
+              "span": 2,
+              "label": "Temel taşı"
+            },
+            {
+              "slot": 2,
+              "level": 0,
+              "span": 1,
+              "label": "Yan destek"
+            },
+            {
+              "slot": 0,
+              "level": 1,
+              "span": 2,
+              "label": "İkinci kat"
+            }
+          ],
+          "assembly_order": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "stud-lock-assembly",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Destek sırası değişince geçmeli blokların birlikte kurduğu küçük yapı nasıl ayakta kalır? İkinci düzen.",
+          "duration": 6,
+          "narration": "Önce taşıyıcı parçalar yerleşir; üstteki her blok daha önce kurulmuş desteğe oturur. Temas anındaki kısa sıkışma sona erer; tamamlanan yapı ölçülerini koruyarak durur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Önce taşıyıcı parçalar yerleşir; üstteki her blok daha önce kurulmuş desteğe oturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Temas anındaki kısa sıkışma sona erer; tamamlanan yapı ölçülerini koruyarak durur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "stud_grid": 4,
+          "contact_compression": 0.13,
+          "snap_height": 195,
+          "blocks": [
+            {
+              "slot": 0,
+              "level": 0,
+              "span": 1,
+              "label": "Sol ayak"
+            },
+            {
+              "slot": 1,
+              "level": 0,
+              "span": 2,
+              "label": "Orta ayak"
+            },
+            {
+              "slot": 0,
+              "level": 1,
+              "span": 2,
+              "label": "Köprü parçası"
+            },
+            {
+              "slot": 0,
+              "level": 2,
+              "span": 1,
+              "label": "Üst işaret"
+            }
+          ],
+          "assembly_order": [
+            1,
+            0,
+            2,
+            3
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "styles": [
+    {
+      "id": "warm-editorial",
+      "name": "Sıcak editoryal / Warm editorial",
+      "kind": "palette",
+      "palette": {
+        "background": "#F5F1E8",
+        "ink": "#17202D",
+        "muted": "#4B5968",
+        "accent": "#B63B22"
+      },
+      "origin_family": "kinetic-grid",
+      "license_scope": "original_product_terms",
+      "preview_url": null,
+      "preview_state": "palette_values_only",
+      "compatibility": "development_common_palette",
+      "planning_mapping": null,
+      "excluded_family_ids": []
+    },
+    {
+      "id": "green-diagram",
+      "name": "Yeşil diyagram / Green diagram",
+      "kind": "palette",
+      "palette": {
+        "background": "#FBFCFA",
+        "ink": "#17332E",
+        "muted": "#48665F",
+        "accent": "#087F65"
+      },
+      "origin_family": "causal-path",
+      "license_scope": "original_product_terms",
+      "preview_url": null,
+      "preview_state": "palette_values_only",
+      "compatibility": "development_common_palette",
+      "planning_mapping": null,
+      "excluded_family_ids": []
+    },
+    {
+      "id": "night-blueprint",
+      "name": "Gece planı / Night blueprint",
+      "kind": "palette",
+      "palette": {
+        "background": "#0C2438",
+        "ink": "#ECF3F8",
+        "muted": "#9DB8CA",
+        "accent": "#FFCC64"
+      },
+      "origin_family": "exploded-blueprint",
+      "license_scope": "original_product_terms",
+      "preview_url": null,
+      "preview_state": "palette_values_only",
+      "compatibility": "development_common_palette",
+      "planning_mapping": null,
+      "excluded_family_ids": [
+        "torn-edge-layer-transfer"
+      ]
+    },
+    {
+      "id": "violet-process",
+      "name": "Mor süreç / Violet process",
+      "kind": "palette",
+      "palette": {
+        "background": "#F2F5F7",
+        "ink": "#1E2E48",
+        "muted": "#4F617A",
+        "accent": "#5843AF"
+      },
+      "origin_family": "isometric-process",
+      "license_scope": "original_product_terms",
+      "preview_url": null,
+      "preview_state": "palette_values_only",
+      "compatibility": "development_common_palette",
+      "planning_mapping": null,
+      "excluded_family_ids": []
+    }
+  ]
+}

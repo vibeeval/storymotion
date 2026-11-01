@@ -1,0 +1,78 @@
+{
+  "family_id": "facet-terrain-growth",
+  "source_id": "source-lemo-style-lowpoly-island",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "facet-terrain-growth",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Yağmurdan sonra suyun üstünde kalan ada yüzeyi",
+          "duration": 4,
+          "narration": "Özgün geometri adım adım kurulur. Son ölçü sabit konumda okunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Özgün geometri adım adım kurulur."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Son ölçü sabit konumda okunur."
+            }
+          ],
+          "palette": {
+            "background": "#F1F5EE",
+            "ink": "#203835",
+            "muted": "#51625B",
+            "accent": "#7D3E31"
+          },
+          "grid_size": 5,
+          "peak_height": 2.2,
+          "water_level": 0.5,
+          "ridge_bias": 0.1,
+          "yaw_degrees": 20,
+          "site_label": "Özgün ada yüksekliği"
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "facet-terrain-growth",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kıyı yükseltisinin su çizgisinde beliren yeni yüzleri",
+          "duration": 5,
+          "narration": "Uzun Türkçe açıklama değişen parametreleri görünür kılar. Son durum açık ve dengeli biçimde bekler.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.5,
+              "text": "Uzun Türkçe açıklama değişen parametreleri görünür kılar."
+            },
+            {
+              "start": 2.5,
+              "end": 5,
+              "text": "Son durum açık ve dengeli biçimde bekler."
+            }
+          ],
+          "palette": {
+            "background": "#F1F5EE",
+            "ink": "#203835",
+            "muted": "#51625B",
+            "accent": "#7D3E31"
+          },
+          "grid_size": 8,
+          "peak_height": 3.2,
+          "water_level": 0.9,
+          "ridge_bias": -0.35,
+          "yaw_degrees": -20,
+          "site_label": "Kıyı çizgisinin ikinci ölçümü"
+        }
+      }
+    }
+  ]
+}

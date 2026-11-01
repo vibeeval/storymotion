@@ -1,0 +1,151 @@
+{
+  "family_id": "iso-transport-network",
+  "source_id": "source-lemo-style-iso-infographic",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "iso-transport-network",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kanallardan ayrılan paketler, her kavşakta sayılarak iki kola dağılıyor.",
+          "duration": 8,
+          "narration": "Paketler derinlik sırası olan kanallarda ilerliyor. Dallarda kalanlar ve yolda olanlar aynı toplamı koruyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Paketler derinlik sırası olan kanallarda ilerliyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Dallarda kalanlar ve yolda olanlar aynı toplamı koruyor."
+            }
+          ],
+          "palette": {
+            "background": "#EAF0F4",
+            "ink": "#253D50",
+            "muted": "#526875",
+            "accent": "#315D87"
+          },
+          "node_positions": [
+            {
+              "x": 0.15,
+              "y": 0.15,
+              "label": "Ana kaynak"
+            },
+            {
+              "x": 0.85,
+              "y": 0.15,
+              "label": "Doğu kolu"
+            },
+            {
+              "x": 0.15,
+              "y": 0.85,
+              "label": "Batı kolu"
+            }
+          ],
+          "flow_values": [
+            {
+              "from": 0,
+              "to": 1,
+              "packets": 3
+            },
+            {
+              "from": 0,
+              "to": 2,
+              "packets": 2
+            }
+          ],
+          "route_order": [
+            0,
+            1
+          ],
+          "packet_unit": 10
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "iso-transport-network",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kanallardan ayrılan paketler, her kavşakta sayılarak iki kola dağılıyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Dallarda kalanlar ve yolda olanlar aynı toplamı koruyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Dallarda kalanlar ve yolda olanlar aynı toplamı koruyor."
+            }
+          ],
+          "palette": {
+            "background": "#EAF0F4",
+            "ink": "#253D50",
+            "muted": "#526875",
+            "accent": "#315D87"
+          },
+          "node_positions": [
+            {
+              "x": 0.15,
+              "y": 0.15,
+              "label": "Başlangıç"
+            },
+            {
+              "x": 0.8,
+              "y": 0.15,
+              "label": "Üst kol"
+            },
+            {
+              "x": 0.15,
+              "y": 0.8,
+              "label": "Alt kol"
+            },
+            {
+              "x": 0.8,
+              "y": 0.8,
+              "label": "Birleşim"
+            }
+          ],
+          "flow_values": [
+            {
+              "from": 0,
+              "to": 1,
+              "packets": 4
+            },
+            {
+              "from": 0,
+              "to": 2,
+              "packets": 2
+            },
+            {
+              "from": 1,
+              "to": 3,
+              "packets": 3
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "packets": 1
+            }
+          ],
+          "route_order": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "packet_unit": 25
+        }
+      }
+    }
+  ]
+}

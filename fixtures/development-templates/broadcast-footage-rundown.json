@@ -1,0 +1,348 @@
+{
+  "family_id": "broadcast-footage-rundown",
+  "source_id": "source-lemo-style-news-package",
+  "cases": [
+    {
+      "name": "A · ilk teknik içerik",
+      "spec": {
+        "id": "broadcast-footage-rundown",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Üretim hattı: ölçüm sırası, kaynak zamanı ve kadraj birlikte nasıl inceleniyor?",
+          "duration": 6,
+          "narration": "Ölçüm sırası değişirken kaynak zamanı ve kadraj birlikte korunur. İkinci kontrol, bulgunun yalnız renkten değil hareketten geldiğini gösterir.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Ölçüm sırası değişirken kaynak zamanı ve kadraj birlikte korunur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "İkinci kontrol, bulgunun yalnız renkten değil hareketten geldiğini gösterir."
+            }
+          ],
+          "palette": {
+            "background": "#101B24",
+            "ink": "#F4F3E9",
+            "muted": "#BBCBD3",
+            "accent": "#8CD8EF"
+          },
+          "media": [
+            {
+              "id": "proxy_a",
+              "kind": "video",
+              "local_path": "fixtures/proxies/grid-a.json",
+              "sha256": "3730b619797e08b9781d36565857e0a81281a9774292b2915fbd48fa66c4df42",
+              "material_class": "original_rgb_proxy",
+              "width": 3,
+              "height": 3,
+              "duration": 30,
+              "rights": {
+                "owner": "Özgün teknik fixture / bu çalışma",
+                "license": "Original RGB-grid proxy only; no real media license claimed",
+                "proof": "evidence/MATERIALS.json",
+                "verification": "proxy_original"
+              },
+              "proxy": {
+                "width": 3,
+                "height": 3,
+                "pixels": [
+                  "#263A65",
+                  "#D8A647",
+                  "#D9785F",
+                  "#5E9A89",
+                  "#38668D",
+                  "#D9D7B3",
+                  "#7A4993",
+                  "#8FB9C4",
+                  "#F1EAC6"
+                ]
+              }
+            },
+            {
+              "id": "proxy_b",
+              "kind": "video",
+              "local_path": "fixtures/proxies/grid-b.json",
+              "sha256": "be3f157c3fda5f304556c34459f3c717b1fc35a832bae8628b30d306f3d85e3d",
+              "material_class": "original_rgb_proxy",
+              "width": 3,
+              "height": 3,
+              "duration": 30,
+              "rights": {
+                "owner": "Özgün teknik fixture / bu çalışma",
+                "license": "Original RGB-grid proxy only; no real media license claimed",
+                "proof": "evidence/MATERIALS.json",
+                "verification": "proxy_original"
+              },
+              "proxy": {
+                "width": 3,
+                "height": 3,
+                "pixels": [
+                  "#B35146",
+                  "#3B8198",
+                  "#E3C878",
+                  "#556E43",
+                  "#9C5F81",
+                  "#5979A9",
+                  "#F0D6B1",
+                  "#488E83",
+                  "#793D5E"
+                ]
+              }
+            },
+            {
+              "id": "proxy_c",
+              "kind": "video",
+              "local_path": "fixtures/proxies/grid-c.json",
+              "sha256": "e10116a4ed3f0fe548f5e349eeaa90ea0e41e45cbf4e567b2cee98ea05866c8f",
+              "material_class": "original_rgb_proxy",
+              "width": 3,
+              "height": 3,
+              "duration": 30,
+              "rights": {
+                "owner": "Özgün teknik fixture / bu çalışma",
+                "license": "Original RGB-grid proxy only; no real media license claimed",
+                "proof": "evidence/MATERIALS.json",
+                "verification": "proxy_original"
+              },
+              "proxy": {
+                "width": 3,
+                "height": 3,
+                "pixels": [
+                  "#1A1A1A",
+                  "#4A4A4A",
+                  "#727272",
+                  "#999999",
+                  "#BBBBBB",
+                  "#E3E3E3",
+                  "#454545",
+                  "#888888",
+                  "#DDDDDD"
+                ]
+              }
+            }
+          ],
+          "clip_paths": [
+            "proxy_a",
+            "proxy_b"
+          ],
+          "rundown": [
+            {
+              "clip": "proxy_a",
+              "start": 0,
+              "end": 1.6,
+              "role": "presenter",
+              "topic": "Giriş"
+            },
+            {
+              "clip": "proxy_b",
+              "start": 1.6,
+              "end": 4.2,
+              "role": "field",
+              "topic": "Saha"
+            },
+            {
+              "clip": "proxy_a",
+              "start": 4.2,
+              "end": 6,
+              "role": "presenter",
+              "topic": "Sonuç"
+            }
+          ],
+          "return_cues": [
+            4.2
+          ],
+          "lower_thirds": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Teknik kontrol · ölçüm ekibi"
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Sonuç kaydı · bağımsız medya kabulü bekliyor"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "B · farklı geometri ve zamanlama",
+      "spec": {
+        "id": "broadcast-footage-rundown",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Arıtma raporu: farklı kaynak sırası, zamanlama ve kadraj teknik sonucu nasıl değiştiriyor?",
+          "duration": 7.2,
+          "narration": "Yeni düzende odak bölgesi ve kesme zamanı aynı teknik kayda bağlıdır. Türkçe açıklama, farklı geometriyle son karede okunabilir biçimde durur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni düzende odak bölgesi ve kesme zamanı aynı teknik kayda bağlıdır."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "Türkçe açıklama, farklı geometriyle son karede okunabilir biçimde durur."
+            }
+          ],
+          "palette": {
+            "background": "#101B24",
+            "ink": "#F4F3E9",
+            "muted": "#BBCBD3",
+            "accent": "#8CD8EF"
+          },
+          "media": [
+            {
+              "id": "proxy_a",
+              "kind": "video",
+              "local_path": "fixtures/proxies/grid-d.json",
+              "sha256": "30ca1054f62dcfec3c5446fbf307aea2b9e759c903018180680c18f0dd823684",
+              "material_class": "original_rgb_proxy",
+              "width": 3,
+              "height": 3,
+              "duration": 30,
+              "rights": {
+                "owner": "Özgün teknik fixture / bu çalışma",
+                "license": "Original RGB-grid proxy only; no real media license claimed",
+                "proof": "evidence/MATERIALS.json",
+                "verification": "proxy_original"
+              },
+              "proxy": {
+                "width": 3,
+                "height": 3,
+                "pixels": [
+                  "#234745",
+                  "#BD7356",
+                  "#AFCBDA",
+                  "#5E3D7A",
+                  "#DCCB67",
+                  "#408593",
+                  "#C94F68",
+                  "#A9B65A",
+                  "#EDE8D5"
+                ]
+              }
+            },
+            {
+              "id": "proxy_b",
+              "kind": "video",
+              "local_path": "fixtures/proxies/grid-e.json",
+              "sha256": "867879182d3a8dbe4c6c4ccef52250c86f1e0cd27ac8a6a0ca4f4fdf098be155",
+              "material_class": "original_rgb_proxy",
+              "width": 3,
+              "height": 3,
+              "duration": 30,
+              "rights": {
+                "owner": "Özgün teknik fixture / bu çalışma",
+                "license": "Original RGB-grid proxy only; no real media license claimed",
+                "proof": "evidence/MATERIALS.json",
+                "verification": "proxy_original"
+              },
+              "proxy": {
+                "width": 3,
+                "height": 3,
+                "pixels": [
+                  "#62523C",
+                  "#D1A6BD",
+                  "#3E778E",
+                  "#A0C25A",
+                  "#8756A9",
+                  "#E2BC65",
+                  "#4A667D",
+                  "#D97760",
+                  "#B8D1C4"
+                ]
+              }
+            },
+            {
+              "id": "proxy_c",
+              "kind": "video",
+              "local_path": "fixtures/proxies/grid-f.json",
+              "sha256": "8c5fcb9da587dba8a3be488c3ee052089480c525796b8540643013a3a83a6bc0",
+              "material_class": "original_rgb_proxy",
+              "width": 3,
+              "height": 3,
+              "duration": 30,
+              "rights": {
+                "owner": "Özgün teknik fixture / bu çalışma",
+                "license": "Original RGB-grid proxy only; no real media license claimed",
+                "proof": "evidence/MATERIALS.json",
+                "verification": "proxy_original"
+              },
+              "proxy": {
+                "width": 3,
+                "height": 3,
+                "pixels": [
+                  "#ECECEC",
+                  "#B9B9B9",
+                  "#838383",
+                  "#535353",
+                  "#232323",
+                  "#D0D0D0",
+                  "#AAAAAA",
+                  "#686868",
+                  "#363636"
+                ]
+              }
+            }
+          ],
+          "clip_paths": [
+            "proxy_c",
+            "proxy_a",
+            "proxy_b"
+          ],
+          "rundown": [
+            {
+              "clip": "proxy_c",
+              "start": 0,
+              "end": 1.5,
+              "role": "presenter",
+              "topic": "Giriş"
+            },
+            {
+              "clip": "proxy_a",
+              "start": 1.5,
+              "end": 3.4,
+              "role": "field",
+              "topic": "Ölçüm"
+            },
+            {
+              "clip": "proxy_b",
+              "start": 3.4,
+              "end": 5.2,
+              "role": "detail",
+              "topic": "Kontrol"
+            },
+            {
+              "clip": "proxy_c",
+              "start": 5.2,
+              "end": 7.2,
+              "role": "presenter",
+              "topic": "Sonuç"
+            }
+          ],
+          "return_cues": [
+            5.2
+          ],
+          "lower_thirds": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Teknik kontrol · ölçüm ekibi"
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "Sonuç kaydı · bağımsız medya kabulü bekliyor"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

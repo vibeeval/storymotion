@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "path": "vendor/gsap.min.js",
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "role": "animation-runtime",
+      "rights": "GSAP standard license; commercial builder terms pending"
+    },
+    {
+      "path": "vendor/fonts/schibsted-grotesk-latin-ext-wght-normal.woff2",
+      "sha256": "ee9eeb232cc1fe7979dad813a570f4b19f1eb4496daf56c94ec9de63abdb2936",
+      "role": "turkish-font",
+      "rights": "OFL-1.1; bundled license required"
+    },
+    {
+      "path": "vendor/fonts/schibsted-grotesk-latin-wght-normal.woff2",
+      "sha256": "4c8b93f431d462c696e12b9d6a033feb3394d36e66e781357c496b95d8a75e05",
+      "role": "latin-font",
+      "rights": "OFL-1.1; bundled license required"
+    },
+    {
+      "path": "vendor/fonts/LICENSE-OFL-schibsted-grotesk.txt",
+      "sha256": "15222412a95d70042e66e79bfb3b985653e0693e4d41703bc131bee9c5aa1aa7",
+      "role": "font-license",
+      "rights": "OFL-1.1 notice"
+    }
+  ],
+  "commercial_acceptance": "pending; availability is not transfer permission"
+}

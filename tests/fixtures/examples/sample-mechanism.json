@@ -1,0 +1,13 @@
+{
+  "schema_version":1, "brand":"sample-mechanism", "title":"Önce neden, sonra sonuç",
+  "brief":"Dört saniyelik sessiz teknik fixture: aynı kutunun kilidi açılır, kapak kalkar. Bilimsel iddia veya yeni ses üretimi yok.",
+  "demo":true, "script":"Kilit açılıyor. Ardından kapak kalkıyor.",
+  "caption":"Kilit açılıyor, ardından kapak kalkıyor. Bu kısa sahne, üretim hattının sessiz teknik demosudur.",
+  "duration":4, "alignment":"provisional_silent", "audio":null,
+  "claims":[],
+  "scenes":[
+    {"id":"cause","start":0,"end":2,"heading":"Kilit açılıyor.","action":"unlock","information":"Kapak hareketinden önce kilit ayrılır.","object_before":"Kilit kapalı.","object_after":"Kilit açık."},
+    {"id":"effect","start":2,"end":4,"heading":"Kapak kalkıyor.","action":"open","information":"Aynı kutunun kapağı açılır.","object_before":"Kilit açık, kapak kapalı.","object_after":"Kapak açık."}
+  ],
+  "cues":[{"start":0,"end":1.9,"text":"Kilit açılıyor."},{"start":2,"end":4,"text":"Ardından kapak kalkıyor."}]
+}

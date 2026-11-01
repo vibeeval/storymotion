@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "brand": "sample-mechanism",
+  "title": "Kapaktan önce hangi parça hareket eder?",
+  "brief": "Özgün vektörlerle sessiz golden teknik prova; gerçek kullanıcı/sağlayıcı sonucu, tanı veya yeni kanon bölümü değildir.",
+  "demo": true,
+  "language": "tr",
+  "script": "Bu çizimde önce mandal ayrılıyor. Sonra aynı kapak yükseliyor. Hareket sırası, nedeni görünür kılıyor.",
+  "caption": "Kapaktan önce hangi parça hareket eder? Bu sessiz teknik prova, kaynaklı üretim sözleşmesinin gözden geçirilmesi içindir.",
+  "duration": 12,
+  "alignment": "provisional_silent",
+  "audio": null,
+  "claims": [],
+  "continuity": null,
+  "scenes": [
+    {
+      "id": "beat-1",
+      "start": 0,
+      "end": 4,
+      "heading": "Önce mandal ayrılır.",
+      "action": "latch-release",
+      "information": "Bu çizimde önce mandal ayrılıyor.",
+      "object_before": "Mandal temas ediyor; kapak kapalı.",
+      "object_after": "Mandal ayrılmış; kapak kapalı.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "push-in",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "contact-closed",
+      "state_after": "released-closed"
+    },
+    {
+      "id": "beat-2",
+      "start": 4,
+      "end": 8,
+      "heading": "Sonra kapak yükselir.",
+      "action": "lid-rise",
+      "information": "Sonra aynı kapak yükseliyor.",
+      "object_before": "Mandal ayrılmış; kapak kapalı.",
+      "object_after": "Mandal ayrılmış; kapak açık.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "released-closed",
+      "state_after": "released-open"
+    },
+    {
+      "id": "beat-3",
+      "start": 8,
+      "end": 12,
+      "heading": "Aynı mekanizmaya dön.",
+      "action": "mechanism-return",
+      "information": "Hareket sırası, nedeni görünür kılıyor.",
+      "object_before": "Mandal ayrılmış; kapak açık.",
+      "object_after": "Aynı mandal ve açık kapak görünür.",
+      "object_id": "hinge-model-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "ALT-01"
+      ],
+      "state_before": "released-open",
+      "state_after": "released-open"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.9,
+      "text": "Bu çizimde önce mandal ayrılıyor."
+    },
+    {
+      "start": 4,
+      "end": 7.9,
+      "text": "Sonra aynı kapak yükseliyor."
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "text": "Hareket sırası, nedeni görünür kılıyor."
+    }
+  ],
+  "creative": {
+    "pack_version": "1.0.0",
+    "topic_id": "golden-sample-mechanism-01",
+    "visual_motif": "hinged-latch",
+    "canon_status": "standalone",
+    "characters": [],
+    "asset_policy": "original_vectors_only"
+  }
+}

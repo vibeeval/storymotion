@@ -1,0 +1,140 @@
+{
+  "family_id": "spotlight-product-reveal",
+  "source_id": "source-lemo-style-dark-keynote",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "spotlight-product-reveal",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Dar bir açıklık, özgün nesnenin gövdesini tarayıp ardından ölçülerin yerini gösteriyor.",
+          "duration": 8,
+          "narration": "Hareketli açıklık önce nesnenin yalnız bir bölümünü açıyor. Tam gövde görünür olduğunda ölçüler kendi noktalarına bağlanıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Hareketli açıklık önce nesnenin yalnız bir bölümünü açıyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Tam gövde görünür olduğunda ölçüler kendi noktalarına bağlanıyor."
+            }
+          ],
+          "palette": {
+            "background": "#111D29",
+            "ink": "#F2EFE7",
+            "muted": "#B5C6D2",
+            "accent": "#F0AF95"
+          },
+          "silhouette": {
+            "kind": "vessel",
+            "width": 340,
+            "height": 420
+          },
+          "spotlight_path": [
+            {
+              "x": 0.1,
+              "y": 0.2
+            },
+            {
+              "x": 0.8,
+              "y": 0.4
+            },
+            {
+              "x": 0.5,
+              "y": 0.9
+            }
+          ],
+          "metric_regions": [
+            {
+              "x": 0.5,
+              "y": 0.25,
+              "label": "Üst açıklık",
+              "value": "32 mm"
+            },
+            {
+              "x": 0.7,
+              "y": 0.7,
+              "label": "Ana gövde",
+              "value": "420 ml"
+            }
+          ],
+          "reveal_duration": 2
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "spotlight-product-reveal",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Dar bir açıklık, özgün nesnenin gövdesini tarayıp ardından ölçülerin yerini gösteriyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Tam gövde görünür olduğunda ölçüler kendi noktalarına bağlanıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Tam gövde görünür olduğunda ölçüler kendi noktalarına bağlanıyor."
+            }
+          ],
+          "palette": {
+            "background": "#111D29",
+            "ink": "#F2EFE7",
+            "muted": "#B5C6D2",
+            "accent": "#F0AF95"
+          },
+          "silhouette": {
+            "kind": "console",
+            "width": 480,
+            "height": 340
+          },
+          "spotlight_path": [
+            {
+              "x": 0.9,
+              "y": 0.8
+            },
+            {
+              "x": 0.2,
+              "y": 0.7
+            },
+            {
+              "x": 0.5,
+              "y": 0.1
+            }
+          ],
+          "metric_regions": [
+            {
+              "x": 0.3,
+              "y": 0.3,
+              "label": "Kontrol bölgesi",
+              "value": "3 alan"
+            },
+            {
+              "x": 0.7,
+              "y": 0.75,
+              "label": "Taşıyıcı yüzey",
+              "value": "480 mm"
+            },
+            {
+              "x": 0.5,
+              "y": 0.5,
+              "label": "Ortak merkez",
+              "value": "1 eksen"
+            }
+          ],
+          "reveal_duration": 2.7
+        }
+      }
+    }
+  ]
+}

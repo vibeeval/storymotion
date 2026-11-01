@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "brand": "sample-series",
+  "title": "Zarfın aynı köşesine döndüm",
+  "brief": "Özgün vektörlerle sessiz golden teknik prova; gerçek kullanıcı/sağlayıcı sonucu, tanı veya yeni kanon bölümü değildir.",
+  "demo": true,
+  "language": "tr",
+  "script": "Zarfı masaya bıraktım. Köşesindeki izi ışığa tuttum. Aynı zarfın aynı izine yeniden baktım.",
+  "caption": "Zarfın aynı köşesine döndüm Bu sessiz teknik prova, kaynaklı üretim sözleşmesinin gözden geçirilmesi içindir.",
+  "duration": 12,
+  "alignment": "provisional_silent",
+  "audio": null,
+  "claims": [],
+  "continuity": {
+    "object_id": "envelope-01",
+    "previous": "Zarf elimde; köşe izi sabit.",
+    "next": "Aynı zarf ve köşe izi doğrulama bekliyor."
+  },
+  "scenes": [
+    {
+      "id": "beat-1",
+      "start": 0,
+      "end": 4,
+      "heading": "Zarfı masaya bıraktım.",
+      "action": "envelope-place",
+      "information": "Zarfı masaya bıraktım.",
+      "object_before": "Zarf elimde; köşe izi sabit.",
+      "object_after": "Zarf masada; köşe izi sabit.",
+      "object_id": "envelope-01",
+      "character_id": "courier-01",
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "YAR-01"
+      ],
+      "state_before": "hand-fixed-nick",
+      "state_after": "table-fixed-nick"
+    },
+    {
+      "id": "beat-2",
+      "start": 4,
+      "end": 8,
+      "heading": "Köşedeki izi inceledim.",
+      "action": "envelope-inspect",
+      "information": "Köşesindeki izi ışığa tuttum.",
+      "object_before": "Zarf masada; köşe izi sabit.",
+      "object_after": "Zarf inceleme konumunda; köşe izi sabit.",
+      "object_id": "envelope-01",
+      "character_id": "courier-01",
+      "camera": "push-in",
+      "rule_ids": [
+        "CORE-01",
+        "YAR-01"
+      ],
+      "state_before": "table-fixed-nick",
+      "state_after": "inspect-fixed-nick"
+    },
+    {
+      "id": "beat-3",
+      "start": 8,
+      "end": 12,
+      "heading": "Aynı zarf, aynı iz.",
+      "action": "envelope-match",
+      "information": "Aynı zarfın aynı izine yeniden baktım.",
+      "object_before": "Zarf inceleme konumunda; köşe izi sabit.",
+      "object_after": "Aynı zarf ve köşe izi doğrulama bekliyor.",
+      "object_id": "envelope-01",
+      "character_id": "courier-01",
+      "camera": "follow-object",
+      "rule_ids": [
+        "CORE-01",
+        "YAR-01"
+      ],
+      "state_before": "inspect-fixed-nick",
+      "state_after": "inspect-fixed-nick"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.9,
+      "text": "Zarfı masaya bıraktım."
+    },
+    {
+      "start": 4,
+      "end": 7.9,
+      "text": "Köşesindeki izi ışığa tuttum."
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "text": "Aynı zarfın aynı izine yeniden baktım."
+    }
+  ],
+  "creative": {
+    "pack_version": "1.0.0",
+    "topic_id": "golden-sample-series-01",
+    "visual_motif": "envelope-corner-continuity",
+    "canon_status": "noncanonical_fixture",
+    "characters": [
+      {
+        "id": "courier-01",
+        "wardrobe": "cream-shirt",
+        "asset_license": "original_project_vectors"
+      }
+    ],
+    "asset_policy": "original_vectors_only"
+  }
+}

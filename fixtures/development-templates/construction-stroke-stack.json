@@ -1,0 +1,173 @@
+{
+  "family_id": "construction-stroke-stack",
+  "source_id": "src-athemeroy-style-hand-drawn-sketch",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "construction-stroke-stack",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Köprü taslağı, saklanan ara çizgilerle adım adım açıklığa kavuşur",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F4F1E8",
+            "ink": "#1B2530",
+            "muted": "#56606B",
+            "accent": "#77512E"
+          },
+          "construction_lines": [
+            {
+              "a": {
+                "x": 300,
+                "y": 1200
+              },
+              "b": {
+                "x": 540,
+                "y": 800
+              }
+            },
+            {
+              "a": {
+                "x": 540,
+                "y": 800
+              },
+              "b": {
+                "x": 790,
+                "y": 1200
+              }
+            },
+            {
+              "a": {
+                "x": 300,
+                "y": 1200
+              },
+              "b": {
+                "x": 790,
+                "y": 1200
+              }
+            }
+          ],
+          "correction_regions": [
+            {
+              "x": 540,
+              "y": 800,
+              "radius": 65
+            }
+          ],
+          "stroke_variants": 2,
+          "convergence_time": 0.72
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "construction-stroke-stack",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Çatının son geometrisi, önceki kararların üstünde görünür hâle gelir",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#F4F1E8",
+            "ink": "#1B2530",
+            "muted": "#56606B",
+            "accent": "#77512E"
+          },
+          "construction_lines": [
+            {
+              "a": {
+                "x": 280,
+                "y": 1190
+              },
+              "b": {
+                "x": 280,
+                "y": 920
+              }
+            },
+            {
+              "a": {
+                "x": 280,
+                "y": 920
+              },
+              "b": {
+                "x": 540,
+                "y": 770
+              }
+            },
+            {
+              "a": {
+                "x": 540,
+                "y": 770
+              },
+              "b": {
+                "x": 800,
+                "y": 920
+              }
+            },
+            {
+              "a": {
+                "x": 800,
+                "y": 920
+              },
+              "b": {
+                "x": 800,
+                "y": 1190
+              }
+            },
+            {
+              "a": {
+                "x": 280,
+                "y": 1190
+              },
+              "b": {
+                "x": 800,
+                "y": 1190
+              }
+            }
+          ],
+          "correction_regions": [
+            {
+              "x": 280,
+              "y": 920,
+              "radius": 55
+            },
+            {
+              "x": 800,
+              "y": 920,
+              "radius": 75
+            }
+          ],
+          "stroke_variants": 3,
+          "convergence_time": 0.85
+        }
+      }
+    }
+  ]
+}

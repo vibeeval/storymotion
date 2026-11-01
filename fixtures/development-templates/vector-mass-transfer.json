@@ -1,0 +1,102 @@
+{
+  "family_id": "vector-mass-transfer",
+  "source_id": "source-mg-style-01-flat-vector",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "vector-mass-transfer",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir miktar yer değiştirirken toplamın ve görünür alanın nasıl korunduğunu izle",
+          "duration": 4,
+          "narration": "Kaynakta azalan miktar, yoldaki paketin alanına dönüşüyor. Paket hedefe katıldığında toplam miktar aynı kalıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Kaynakta azalan miktar, yoldaki paketin alanına dönüşüyor."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Paket hedefe katıldığında toplam miktar aynı kalıyor."
+            }
+          ],
+          "palette": {
+            "background": "#F5F1E8",
+            "ink": "#243D3C",
+            "muted": "#596761",
+            "accent": "#9B4431"
+          },
+          "stores": [
+            {
+              "label": "Başlangıç kaynağı",
+              "amount": 120
+            },
+            {
+              "label": "Aktarımın hedefi",
+              "amount": 30
+            }
+          ],
+          "transfer_amount": 72,
+          "unit": "birim",
+          "batches": 3,
+          "lift": 110,
+          "transfer_window": [
+            0.14,
+            0.84
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "vector-mass-transfer",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Daha çok parti ve daha alçak bir yol, aynı miktar korunumunu başka ritimle gösteriyor",
+          "duration": 4.8,
+          "narration": "Beş küçük parti kaynak ile hedef arasındaki yolu paylaşıyor. Her anda hazneler ve yoldaki paket aynı bütçeyi koruyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.4,
+              "text": "Beş küçük parti kaynak ile hedef arasındaki yolu paylaşıyor."
+            },
+            {
+              "start": 2.4,
+              "end": 4.8,
+              "text": "Her anda hazneler ve yoldaki paket aynı bütçeyi koruyor."
+            }
+          ],
+          "palette": {
+            "background": "#F5F1E8",
+            "ink": "#243D3C",
+            "muted": "#596761",
+            "accent": "#9B4431"
+          },
+          "stores": [
+            {
+              "label": "Paylaştırılan kapasite",
+              "amount": 240
+            },
+            {
+              "label": "Mevcut hedef payı",
+              "amount": 80
+            }
+          ],
+          "transfer_amount": 160,
+          "unit": "pay",
+          "batches": 5,
+          "lift": 65,
+          "transfer_window": [
+            0.08,
+            0.9
+          ]
+        }
+      }
+    }
+  ]
+}

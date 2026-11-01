@@ -1,0 +1,110 @@
+{
+  "family_id": "ink-drum-misregister",
+  "source_id": "source-lemo-style-risograph",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "ink-drum-misregister",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "İki renk aynı kâğıda ayrı geçişlerde basıldığında küçük kayıt hatası neyi değiştirir?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#FFF3DF",
+            "ink": "#242337",
+            "muted": "#5A4B57",
+            "accent": "#863940"
+          },
+          "spot_colors": [
+            "#A63B41",
+            "#245A80"
+          ],
+          "registration_offsets": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              -3
+            ]
+          ],
+          "dot_frequency": 10,
+          "print_order": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "ink-drum-misregister",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Her drum kendi nokta ekranını bırakır; sapmalar katmanların sınırını görünür kılar.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#FFF3DF",
+            "ink": "#242337",
+            "muted": "#5A4B57",
+            "accent": "#863940"
+          },
+          "spot_colors": [
+            "#9D3150",
+            "#247878",
+            "#BF7C2F"
+          ],
+          "registration_offsets": [
+            [
+              -10,
+              6
+            ],
+            [
+              12,
+              -8
+            ],
+            [
+              3,
+              10
+            ]
+          ],
+          "dot_frequency": 16,
+          "print_order": [
+            2,
+            0,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

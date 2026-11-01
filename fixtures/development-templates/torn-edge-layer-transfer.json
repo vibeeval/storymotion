@@ -1,0 +1,186 @@
+{
+  "family_id": "torn-edge-layer-transfer",
+  "source_id": "src-athemeroy-style-paper-cutout-collage",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "torn-edge-layer-transfer",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Parçalar yeni bir bütün kurarken yırtık kenarlarının izini korur",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F4F1E8",
+            "ink": "#1B2530",
+            "muted": "#56606B",
+            "accent": "#77512E"
+          },
+          "tear_paths": [
+            [
+              0,
+              12,
+              -9,
+              16,
+              -6
+            ],
+            [
+              5,
+              -12,
+              14,
+              -10,
+              6,
+              0
+            ]
+          ],
+          "layer_order": [
+            0,
+            1
+          ],
+          "pattern_palette": [
+            "#E4D1B4",
+            "#C5D9D3"
+          ],
+          "transfer_paths": [
+            {
+              "from": {
+                "x": 340,
+                "y": 930
+              },
+              "to": {
+                "x": 710,
+                "y": 900
+              },
+              "lift": 110
+            },
+            {
+              "from": {
+                "x": 410,
+                "y": 1160
+              },
+              "to": {
+                "x": 720,
+                "y": 1210
+              },
+              "lift": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "torn-edge-layer-transfer",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Katmanların ikinci yerleşimi, aynı parçaları başka bir derinlik sırasına taşır",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#F4F1E8",
+            "ink": "#1B2530",
+            "muted": "#56606B",
+            "accent": "#77512E"
+          },
+          "tear_paths": [
+            [
+              12,
+              -8,
+              16,
+              -14,
+              6,
+              0
+            ],
+            [
+              -10,
+              17,
+              -6,
+              13,
+              -16
+            ],
+            [
+              5,
+              11,
+              -15,
+              9,
+              -7,
+              15,
+              0
+            ]
+          ],
+          "layer_order": [
+            2,
+            0,
+            1
+          ],
+          "pattern_palette": [
+            "#DACDE5",
+            "#E4D8BA",
+            "#C2DBDE"
+          ],
+          "transfer_paths": [
+            {
+              "from": {
+                "x": 300,
+                "y": 920
+              },
+              "to": {
+                "x": 690,
+                "y": 1210
+              },
+              "lift": 120
+            },
+            {
+              "from": {
+                "x": 510,
+                "y": 1180
+              },
+              "to": {
+                "x": 360,
+                "y": 920
+              },
+              "lift": 90
+            },
+            {
+              "from": {
+                "x": 750,
+                "y": 960
+              },
+              "to": {
+                "x": 740,
+                "y": 850
+              },
+              "lift": 70
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

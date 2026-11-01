@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "inventory_complete": false,
+  "inventory_note": "Katalog format seçeneklerini listeler; bir kayıt, hesap erişimi veya tamamlanmış üretim adaptörü sağlamaz.",
+  "categories": [
+    {
+      "id": "explainer",
+      "name": "Açıklayıcı video"
+    },
+    {
+      "id": "story",
+      "name": "Hikâye ve psikoloji"
+    }
+  ],
+  "accounts": [],
+  "formats": [
+    {
+      "id": "account-video",
+      "name": "Özgün vektör sahne taslağı",
+      "adapter": "account-pack",
+      "state": "versioned_bounded_creative_animatic",
+      "description": "Sürümlü konu prosedürü ve izinli özgün vektör hareket aileleri. Sessiz, insan incelemesi bekleyen animatik; her konuya sınırsız yaratıcı üretim veya gerçek ses/kanon kabulü değildir.",
+      "allowed_tasks": [
+        "text",
+        "animation",
+        "voice"
+      ],
+      "production_stages": [
+        "script",
+        "scene_contract",
+        "source_review",
+        "voice_optional",
+        "fresh_timing_review",
+        "render_review"
+      ]
+    },
+    {
+      "id": "video-script",
+      "name": "Video senaryosu taslağı",
+      "adapter": "manual-text",
+      "state": "implemented_local_manual_only",
+      "description": "Kullanıcının yazdığı senaryoyu ve kaynak notunu paketler. Model yazımı veya tam video üretimi değildir.",
+      "allowed_tasks": [
+        "text"
+      ],
+      "production_stages": [
+        "script",
+        "voice_optional",
+        "fresh_timing_review",
+        "render_review"
+      ]
+    },
+    {
+      "id": "short-explainer",
+      "name": "Dikey açıklayıcı",
+      "adapter": "hyperframes-fixture",
+      "state": "two_engine_bounded_cli_and_dashboard_render",
+      "description": "Sınırlı unlock/open/reveal/flow teknik animatiği. CLI ve dashboard motor seçimi, gerçek MP4, iptal, resume ve hash indirmesi var; tam kapsamlı yaratıcı üretim değildir.",
+      "allowed_tasks": [
+        "animation",
+        "text",
+        "voice"
+      ],
+      "production_stages": [
+        "script",
+        "voice_optional",
+        "fresh_timing_review",
+        "render_review"
+      ]
+    },
+    {
+      "id": "serial-2d",
+      "name": "2D devamlı hikâye",
+      "adapter": "hyperframes-fixture",
+      "state": "two_engine_bounded_cli_and_dashboard_render",
+      "description": "Sınırlı unlock/open/reveal/flow teknik animatiği. CLI ve dashboard motor seçimi, gerçek MP4, iptal, resume ve hash indirmesi var; tam kapsamlı yaratıcı üretim değildir.",
+      "allowed_tasks": [
+        "animation",
+        "text",
+        "voice"
+      ],
+      "production_stages": [
+        "script",
+        "voice_optional",
+        "fresh_timing_review",
+        "render_review"
+      ]
+    },
+    {
+      "id": "psychology-animation",
+      "name": "Psikoloji animasyonu",
+      "adapter": "plan-only",
+      "state": "adapter_pending",
+      "description": "Brief ve storyboard devir paketi; mevcut kaynak ayrı, üretim adaptörü henüz yok.",
+      "allowed_tasks": [
+        "plan",
+        "text",
+        "voice",
+        "image",
+        "video"
+      ],
+      "production_stages": [
+        "script",
+        "voice_optional",
+        "fresh_timing_review",
+        "render_review"
+      ]
+    },
+    {
+      "id": "video-brief",
+      "name": "Video brief'i",
+      "adapter": "plan-only",
+      "state": "adapter_pending",
+      "description": "Kaynak/senaryo/motion brief'i; otomatik üretim yok.",
+      "allowed_tasks": [
+        "plan",
+        "text",
+        "voice",
+        "image",
+        "video"
+      ],
+      "production_stages": [
+        "script",
+        "voice_optional",
+        "fresh_timing_review",
+        "render_review"
+      ]
+    }
+  ],
+  "unassigned_candidates": [],
+  "scope_version": "data-driven-accountpacks-1"
+}

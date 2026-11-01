@@ -1,0 +1,96 @@
+{
+  "family_id": "perspective-neon-run",
+  "source_id": "source-mg-style-10-synthwave",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "perspective-neon-run",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Derinlik çizgileri ilerlerken ufuktaki aralıklar düzenli bir akışı tarif ediyor.",
+          "duration": 8,
+          "narration": "Yaklaşan çizgiler aynı perspektif eksenine bağlı kalıyor. Vuruşlar ufuktaki sınırı kısa süre genişletiyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Yaklaşan çizgiler aynı perspektif eksenine bağlı kalıyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Vuruşlar ufuktaki sınırı kısa süre genişletiyor."
+            }
+          ],
+          "palette": {
+            "background": "#111D29",
+            "ink": "#F2EFE7",
+            "muted": "#B5C6D2",
+            "accent": "#F0AF95"
+          },
+          "grid_speed": 1.1,
+          "horizon_height": 700,
+          "neon_width": 3,
+          "pulse_cues": [
+            {
+              "at": 0.2,
+              "strength": 0.7
+            },
+            {
+              "at": 0.55,
+              "strength": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "perspective-neon-run",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Derinlik çizgileri ilerlerken ufuktaki aralıklar düzenli bir akışı tarif ediyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Vuruşlar ufuktaki sınırı kısa süre genişletiyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Vuruşlar ufuktaki sınırı kısa süre genişletiyor."
+            }
+          ],
+          "palette": {
+            "background": "#111D29",
+            "ink": "#F2EFE7",
+            "muted": "#B5C6D2",
+            "accent": "#F0AF95"
+          },
+          "grid_speed": 0.55,
+          "horizon_height": 800,
+          "neon_width": 5,
+          "pulse_cues": [
+            {
+              "at": 0.12,
+              "strength": 1
+            },
+            {
+              "at": 0.4,
+              "strength": 0.5
+            },
+            {
+              "at": 0.73,
+              "strength": 0.8
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

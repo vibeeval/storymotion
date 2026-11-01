@@ -1,0 +1,94 @@
+{
+  "family_id": "projection-surface-register",
+  "source_id": "source-lemo-style-white-model",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "projection-surface-register",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kamera dönerken desenin özgün model yüzeyleri ve ortak kenarlar üzerinde kayıtlı kalması",
+          "duration": 6,
+          "narration": "Desen çizgileri model koordinatlarında tanımlıdır; kameranın dönüşü onları kaydırmaz. Ortak kenarda buluşan kesitler tek noktayı paylaşır; son kadrajda kayıt korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Desen çizgileri model koordinatlarında tanımlıdır; kameranın dönüşü onları kaydırmaz."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Ortak kenarda buluşan kesitler tek noktayı paylaşır; son kadrajda kayıt korunur."
+            }
+          ],
+          "palette": {
+            "background": "#F3F2E9",
+            "ink": "#202F35",
+            "muted": "#526169",
+            "accent": "#80522F"
+          },
+          "model_geometry": "box",
+          "width": 350,
+          "depth": 220,
+          "height": 390,
+          "band_count": 5,
+          "projection_pattern": "crossgrid",
+          "camera_orbit": [
+            -25,
+            28
+          ],
+          "projector_pose": {
+            "yaw": 20,
+            "offset": 10
+          }
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "projection-surface-register",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kamera dönerken desenin özgün model yüzeyleri ve ortak kenarlar üzerinde kayıtlı kalması İkinci düzen.",
+          "duration": 6,
+          "narration": "Desen çizgileri model koordinatlarında tanımlıdır; kameranın dönüşü onları kaydırmaz. Ortak kenarda buluşan kesitler tek noktayı paylaşır; son kadrajda kayıt korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Desen çizgileri model koordinatlarında tanımlıdır; kameranın dönüşü onları kaydırmaz."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Ortak kenarda buluşan kesitler tek noktayı paylaşır; son kadrajda kayıt korunur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "model_geometry": "pedestal",
+          "width": 395,
+          "depth": 295,
+          "height": 470,
+          "band_count": 7,
+          "projection_pattern": "bands",
+          "camera_orbit": [
+            34,
+            -30
+          ],
+          "projector_pose": {
+            "yaw": -35,
+            "offset": -40
+          }
+        }
+      }
+    }
+  ]
+}

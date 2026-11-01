@@ -1,0 +1,21 @@
+{
+  "name": "storymotion-remotion-runtime",
+  "version": "0.14.1",
+  "private": true,
+  "description": "Local dual-engine bounded scene/edit review candidate; session approval gates remain.",
+  "engines": {
+    "node": ">=22.23.2 <23"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.537",
+    "@remotion/cli": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.537"
+  },
+  "license": "MIT",
+  "overrides": {
+    "zod": "4.6.7"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "platform": "win32",
+  "architecture": "x64",
+  "minimum_windows": "10",
+  "version": "9.0.2",
+  "archive_url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.0.2-essentials_build.zip",
+  "archive_sha256": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba",
+  "checksum_source": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.0.2-essentials_build.zip.sha256",
+  "publisher": "Gyan Doshi",
+  "license": "GPL-3.0-or-later",
+  "binary_redistributed": false,
+  "native_acceptance": "unverified"
+}

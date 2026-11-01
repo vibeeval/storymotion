@@ -1,0 +1,92 @@
+{
+  "family_id": "vector-puppet-cause",
+  "source_id": "src-athemeroy-style-flat-vector-cartoon",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "vector-puppet-cause",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Ortak işte küçük bir kuvvet büyük bir değişimi nasıl başlatır?",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F4F1E8",
+            "ink": "#1B2530",
+            "muted": "#56606B",
+            "accent": "#77512E"
+          },
+          "joint_limits": [
+            25,
+            150
+          ],
+          "prop_targets": {
+            "x": 660,
+            "y": 1080
+          },
+          "contact_cues": [
+            0.12,
+            0.25
+          ],
+          "reaction_delay": 0.18
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "vector-puppet-cause",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Atölyede gecikmeli tepki: birbirine temas eden eller işi birlikte ilerletir",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#F4F1E8",
+            "ink": "#1B2530",
+            "muted": "#56606B",
+            "accent": "#77512E"
+          },
+          "joint_limits": [
+            20,
+            165
+          ],
+          "prop_targets": {
+            "x": 730,
+            "y": 1020
+          },
+          "contact_cues": [
+            0.18,
+            0.34
+          ],
+          "reaction_delay": 0.6
+        }
+      }
+    }
+  ]
+}

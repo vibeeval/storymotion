@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-20",
+  "scope": "Representative extensible capability catalog; documentation is not adapter, account access, price, retention or live verification. JSON never grants dispatch authority.",
+  "providers": [
+    {
+      "provider": "openai",
+      "name": "OpenAI",
+      "capability": "text",
+      "category": "text",
+      "execution": "remote",
+      "status": "implemented_contract_tested_live_unverified",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Responses API",
+          "url": "https://developers.openai.com/api/reference/resources/responses/methods/create"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "anthropic",
+      "name": "Anthropic",
+      "capability": "text",
+      "category": "text",
+      "execution": "remote",
+      "status": "implemented_contract_tested_live_unverified",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Messages API",
+          "url": "https://docs.anthropic.com/en/api/messages"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "gemini",
+      "name": "Google Gemini",
+      "capability": "text",
+      "category": "text",
+      "execution": "remote",
+      "status": "implemented_contract_tested_live_unverified",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "openrouter",
+      "name": "OpenRouter",
+      "capability": "text",
+      "category": "text",
+      "execution": "remote",
+      "status": "implemented_contract_tested_live_unverified",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Chat completion API",
+          "url": "https://openrouter.ai/docs/api-reference/chat-completion"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "elevenlabs",
+      "name": "ElevenLabs",
+      "capability": "voice",
+      "category": "audio",
+      "execution": "remote",
+      "status": "implemented_contract_tested_live_unverified",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Text to speech",
+          "url": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "openai",
+      "name": "OpenAI",
+      "capability": "image_generation",
+      "category": "image",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Image generation",
+          "url": "https://developers.openai.com/api/docs/guides/image-generation"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "gemini",
+      "name": "Google Gemini",
+      "capability": "image_generation",
+      "category": "image",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Gemini image generation",
+          "url": "https://ai.google.dev/gemini-api/docs/image-generation"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "gemini",
+      "name": "Google Gemini",
+      "capability": "video_generation",
+      "category": "video",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Gemini video and Veo",
+          "url": "https://ai.google.dev/gemini-api/docs/video"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "runway",
+      "name": "Runway",
+      "capability": "video_generation",
+      "category": "video",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Runway API getting started",
+          "url": "https://docs.dev.runwayml.com/guides/using-the-api/"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "luma",
+      "name": "Luma",
+      "capability": "video_generation",
+      "category": "video",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Luma API documentation",
+          "url": "https://docs.lumalabs.ai/docs/video-generation"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "bfl",
+      "name": "Black Forest Labs",
+      "capability": "image_generation",
+      "category": "image",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "BFL image API",
+          "url": "https://docs.bfl.ai/quick_start/generating_images"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "ideogram",
+      "name": "Ideogram",
+      "capability": "image_generation",
+      "category": "image",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Ideogram API overview",
+          "url": "https://developer.ideogram.ai/ideogram-api/api-overview"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "elevenlabs",
+      "name": "ElevenLabs",
+      "capability": "sound_effects",
+      "category": "audio",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Sound effects API",
+          "url": "https://elevenlabs.io/docs/overview/capabilities/sound-effects"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "elevenlabs",
+      "name": "ElevenLabs",
+      "capability": "music",
+      "category": "audio",
+      "execution": "remote",
+      "status": "planned",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Music API",
+          "url": "https://elevenlabs.io/docs/overview/capabilities/music"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    }
+  ],
+  "local_renderers": [
+    {
+      "provider": "hyperframes",
+      "name": "HyperFrames",
+      "capability": "animation_render",
+      "category": "video",
+      "execution": "local",
+      "status": "implemented_local_runtime_unverified",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "HyperFrames official repository",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    },
+    {
+      "provider": "remotion",
+      "name": "Remotion",
+      "capability": "animation_render",
+      "category": "video",
+      "execution": "local",
+      "status": "implemented_local_runtime_unverified",
+      "enabled": false,
+      "documentation": [
+        {
+          "title": "Remotion docs",
+          "url": "https://www.remotion.dev/docs/"
+        }
+      ],
+      "limits": null,
+      "retention": "unknown_not_verified"
+    }
+  ]
+}

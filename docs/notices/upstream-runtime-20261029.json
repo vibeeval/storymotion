@@ -1,0 +1,685 @@
+{
+  "schema_version": 1,
+  "purpose": "Immutable upstream notice text supplement; historical package-local gaps remain separate",
+  "collected_utc": "2026-10-29T08:02:38.824369+00:00",
+  "source_baseline_commit": "9ee0add5cee9b742f498fcd371491dd921cbaef0",
+  "historical_supplement": "docs/notices/hf-runtime-sources.json",
+  "historical_supplement_baseline_sha256": "10700d1f2730c732a75bcc68784a0ec1a2439582cfe5044d2b3f93e1760b10d1",
+  "package_lock_sha256": "504437a68fbd0ebc3a2b89f9d80668a7a9629af81421ad5923530daa11a81919",
+  "customer_release_ready": false,
+  "commercial_clearance": "pending",
+  "native_acceptance": false,
+  "runtime_binaries_distributed": false,
+  "all_package_notices_complete": false,
+  "packages": [
+    {
+      "name": "@img/sharp-wasm32",
+      "version": "0.35.5",
+      "git_head": "51a990faa26ade5586a4934ac9673c98d8893326",
+      "official_tarball": "https://registry.npmjs.org/@img/sharp-wasm32/-/sharp-wasm32-0.35.5.tgz",
+      "integrity": "sha512-Ptsga1su4tQx+LLF1ECS9U6nz5kmrXKo6XVbtR48Ke3ZRxxgaWBu7IDtEe1quo8hiupwm6WFqxVlXaSf7IINGQ==",
+      "tarball_sha256": "c68abdf53e1ad2d7b27b53385a3862e16d4bde02ce6d121892ee36f0bfe5bb38",
+      "sri_verified": true,
+      "declared_component_count": 19,
+      "primary_component_texts_collected": 19,
+      "component_versions_sha256": "36e4e862aac3ac2dd037ff116627e0106ac67688b368282981962b920d8221d5",
+      "complete_notices": false,
+      "commercial_clearance": "pending",
+      "remaining": "Primary license texts collected for all 19 version-declared components. Transitive/compiled object inventory, all copyright notices, README-only libnsgif identity and corresponding-source/relink design remain unverified."
+    },
+    {
+      "name": "dfa",
+      "version": "1.2.0",
+      "official_tarball": "https://registry.npmjs.org/dfa/-/dfa-1.2.0.tgz",
+      "integrity": "sha512-ED3jP8saaweFTjeGX8HQPjeC1YYyZs98jGNZx6IiBvxW7JG5v492kamAQB3m2wop07CvU/RQmzcKr6bgcC5D/Q==",
+      "tarball_sha256": "d781eb3a307ab6aa2d97028f695b17dbeadf6fd27788c333b1fb96d18d2a23ad",
+      "sri_verified": true,
+      "git_head": "3f5e603e5082caedabefefdf53e8a6ca3111e966",
+      "source_tree": "https://github.com/foliojs/dfa/tree/3f5e603e5082caedabefefdf53e8a6ca3111e966",
+      "publisher_declared_license": "MIT",
+      "published_license_members": [],
+      "upstream_license_named_paths": [],
+      "package_wide_license_text_located": false,
+      "complete_notices": false,
+      "commercial_clearance": "pending",
+      "remaining": "Publisher declares MIT but exact release/package-wide copyright and permission text were not located. Do not substitute generic MIT text or infer copyright from author metadata."
+    },
+    {
+      "name": "fontkit",
+      "version": "2.0.4",
+      "official_tarball": "https://registry.npmjs.org/fontkit/-/fontkit-2.0.4.tgz",
+      "integrity": "sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==",
+      "tarball_sha256": "f686a9515af33fce16ab4bffe50570728197e53165068548c6f75a1793797a08",
+      "sri_verified": true,
+      "git_head": "fbf3b9ef21eebd219eb73e666faed573af0fba09",
+      "source_tree": "https://github.com/foliojs/fontkit/tree/fbf3b9ef21eebd219eb73e666faed573af0fba09",
+      "publisher_declared_license": "MIT",
+      "published_license_members": [],
+      "upstream_license_named_paths": [
+        "test/data/NotoSans/LICENSE.txt",
+        "test/data/OpenSans/LICENSE.txt",
+        "test/data/fonttest/LICENSE.txt"
+      ],
+      "package_wide_license_text_located": false,
+      "complete_notices": false,
+      "commercial_clearance": "pending",
+      "remaining": "Publisher declares MIT but exact release/package-wide copyright and permission text were not located. Do not substitute generic MIT text or infer copyright from author metadata.",
+      "upstream_license_file_scope": "Only three test/data font LICENSE.txt files exist; test fonts are not included by the package files whitelist and do not provide fontkit-wide MIT text."
+    },
+    {
+      "name": "brotli",
+      "version": "1.3.3",
+      "official_tarball": "https://registry.npmjs.org/brotli/-/brotli-1.3.3.tgz",
+      "integrity": "sha512-oTKjJdShmDuGW94SyyaoQvAjf30dZaHnjJ8uAF+u2/vGJkJbJPJAT1gDiOJP5v1Zb6f9KEyW/1HpuaWIXtGHPg==",
+      "tarball_sha256": "3c7c260f6263df95fee49a9119e9fd21227d628b6c9d99080a75edfd9e2bdb24",
+      "sri_verified": true,
+      "git_head": "e36051345f6d27a56e5f39ea70d2f789b8574046",
+      "source_tree": "https://github.com/foliojs/brotli.js/tree/e36051345f6d27a56e5f39ea70d2f789b8574046",
+      "publisher_declared_license": "MIT",
+      "published_license_members": [],
+      "upstream_license_named_paths": [],
+      "package_wide_license_text_located": false,
+      "complete_notices": false,
+      "commercial_clearance": "pending",
+      "remaining": "Exact upstream C++ MIT text now retained; wrapper/port MIT copyright/permission text remains missing. Existing Google decoder Apache notice and Apache license remain applicable evidence.",
+      "embedded_cpp_upstream_commit": "5ce9bf11b3fe0924d87b2a2d47eb7a53a76a4421",
+      "embedded_cpp_license_path": "docs/notices/upstream-runtime-20261029/brotli-1.3.3-embedded-upstream-MIT-LICENSE.txt"
+    }
+  ],
+  "sharp_declared_components": [
+    {
+      "name": "aom",
+      "upstream_project": "aom",
+      "version": "3.15.1",
+      "source_commit": "44d0a57786f432d933ff64b653347c66f4d0fa1d",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/aom-3.15.1-LICENSE.txt",
+        "docs/notices/upstream-runtime-20261029/aom-3.15.1-PATENTS.txt",
+        "docs/notices/upstream-runtime-20261029/aom-3.15.1-AUTHORS.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "cgif",
+      "upstream_project": "cgif",
+      "version": "0.5.4",
+      "source_commit": "2dfb49c22fbe3894e46731f7e3b6ffa84311e44e",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/cgif-0.5.4-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "emscripten",
+      "upstream_project": "emscripten",
+      "version": "6.0.10",
+      "source_commit": "d6c521a7f05449857c76bd99e396895583cf2083",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/emscripten-6.0.10-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "exif",
+      "upstream_project": "libexif",
+      "version": "0.6.26",
+      "source_commit": "b2edc5a8adf4d1b79ce9413a9c9d8f3ab871c082",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/exif-0.6.26-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "expat",
+      "upstream_project": "expat",
+      "version": "2.8.5",
+      "source_commit": "4b3f0b06f39fb5529cead381694f8929901bc273",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/expat-2.8.5-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "ffi",
+      "upstream_project": "libffi",
+      "version": "3.8.0",
+      "source_commit": "12ffd1f9dc56fcea79d2f742f424301ae668d663",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/ffi-3.8.0-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "glib",
+      "upstream_project": "glib",
+      "version": "2.90.0",
+      "source_commit": "436d47a723da97fbe67057f6b51dcf49a244fd4a",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/glib-2.90.0-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "heif",
+      "upstream_project": "libheif",
+      "version": "1.23.5",
+      "source_commit": "413e2a87e6a70b3eccc3a3adc5801179dd2d9e00",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/heif-1.23.5-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "highway",
+      "upstream_project": "highway",
+      "version": "1.4.0",
+      "source_commit": "2607d3b5b0113992fe84d3848859eae13b3b52c1",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/highway-1.4.0-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "imagequant",
+      "upstream_project": "libimagequant",
+      "version": "2.4.1",
+      "source_commit": "ce5fdeb1ccd9db288950faa21fd09c42c0a59bbb",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/imagequant-2.4.1-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "lcms",
+      "upstream_project": "lcms",
+      "version": "2.19.1",
+      "source_commit": "21c582a594fe5279f90c0b93437c398f93bf62b0",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/lcms-2.19.1-LICENSE-EXACT.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "mozjpeg",
+      "upstream_project": "mozjpeg",
+      "version": "0826579",
+      "source_commit": "08265790774cd0714832c9e675522acbe5581437",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/mozjpeg-0826579-LICENSE.txt",
+        "docs/notices/upstream-runtime-20261029/mozjpeg-0826579-IJG.txt",
+        "docs/notices/upstream-runtime-20261029/mozjpeg-0826579-turbojpeg.c-initial-license-comment.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "png",
+      "upstream_project": "libpng",
+      "version": "1.6.58",
+      "source_commit": "3061454d980de7d53608f594194cfac722721d2a",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/png-1.6.58-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "resvg",
+      "upstream_project": "resvg",
+      "version": "0.48.1",
+      "source_commit": "68b14c4c3bccdb60344c777406486b54c36ec1a4",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/resvg-0.48.1-LICENSE-MIT.txt",
+        "docs/notices/upstream-runtime-20261029/resvg-0.48.1-LICENSE-APACHE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "tiff",
+      "upstream_project": "libtiff",
+      "version": "4.7.2",
+      "source_commit": "d01a94be176f5f6a87f7ee1c0b32e65416aa2b4d",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/tiff-4.7.2-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "uhdr",
+      "upstream_project": "libultrahdr",
+      "version": "2.0.2",
+      "source_commit": "e5f5a022fe96fc4dc2ee35c19f733a50df807abe",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/uhdr-2.0.2-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "vips",
+      "upstream_project": "libvips",
+      "version": "8.18.7",
+      "source_commit": "24ad4d042940e6bf99a68871ba886ca8847c9c82",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/vips-8.18.7-LICENSE-EXACT.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "webp",
+      "upstream_project": "libwebp",
+      "version": "1.6.0",
+      "source_commit": "4fa21912338357f89e4fd51cf2368325b59e9bd9",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/webp-1.6.0-LICENSE.txt",
+        "docs/notices/upstream-runtime-20261029/webp-1.6.0-PATENTS.txt",
+        "docs/notices/upstream-runtime-20261029/webp-1.6.0-AUTHORS.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    },
+    {
+      "name": "zlib-ng",
+      "upstream_project": "zlib-ng",
+      "version": "2.3.3",
+      "source_commit": "12731092979c6d07f42da27da673a9f6c7b13586",
+      "retained_text_paths": [
+        "docs/notices/upstream-runtime-20261029/zlib-ng-2.3.3-LICENSE.txt"
+      ],
+      "all_transitive_notices_verified": false,
+      "combined_work_source_or_relink_acceptance": false
+    }
+  ],
+  "retained_texts": [
+    {
+      "component": "cgif",
+      "version": "0.5.4",
+      "path": "docs/notices/upstream-runtime-20261029/cgif-0.5.4-LICENSE.txt",
+      "bytes": 1099,
+      "sha256": "7264dede477abab4ac3fe8236beb8153845c04ccd33b18f281085087e219fc6d",
+      "source_url": "https://raw.githubusercontent.com/dloebl/cgif/2dfb49c22fbe3894e46731f7e3b6ffa84311e44e/LICENSE",
+      "source_commit": "2dfb49c22fbe3894e46731f7e3b6ffa84311e44e",
+      "source_bytes": 1099,
+      "source_sha256": "7264dede477abab4ac3fe8236beb8153845c04ccd33b18f281085087e219fc6d",
+      "source_git_blob_sha1": "752e9cbd026d24ab7c3eb917b493bb91d0e35e9a",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "emscripten",
+      "version": "6.0.10",
+      "path": "docs/notices/upstream-runtime-20261029/emscripten-6.0.10-LICENSE.txt",
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+      "source_url": "https://raw.githubusercontent.com/emscripten-core/emscripten/d6c521a7f05449857c76bd99e396895583cf2083/LICENSE",
+      "source_commit": "d6c521a7f05449857c76bd99e396895583cf2083",
+      "source_bytes": 5093,
+      "source_sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+      "source_git_blob_sha1": "70cabe388d27da221bd769c50b427a35354f4f1d",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "exif",
+      "version": "0.6.26",
+      "path": "docs/notices/upstream-runtime-20261029/exif-0.6.26-LICENSE.txt",
+      "bytes": 26434,
+      "sha256": "36b6d3fa47916943fd5fec313c584784946047ec1337a78b440e5992cb595f89",
+      "source_url": "https://raw.githubusercontent.com/libexif/libexif/b2edc5a8adf4d1b79ce9413a9c9d8f3ab871c082/COPYING",
+      "source_commit": "b2edc5a8adf4d1b79ce9413a9c9d8f3ab871c082",
+      "source_bytes": 26434,
+      "source_sha256": "36b6d3fa47916943fd5fec313c584784946047ec1337a78b440e5992cb595f89",
+      "source_git_blob_sha1": "602bfc94635ddf8f1bf2b00419a85ead645a5b67",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "expat",
+      "version": "2.8.5",
+      "path": "docs/notices/upstream-runtime-20261029/expat-2.8.5-LICENSE.txt",
+      "bytes": 1144,
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "source_url": "https://raw.githubusercontent.com/libexpat/libexpat/4b3f0b06f39fb5529cead381694f8929901bc273/expat/COPYING",
+      "source_commit": "4b3f0b06f39fb5529cead381694f8929901bc273",
+      "source_bytes": 1144,
+      "source_sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "source_git_blob_sha1": "c6d184a8aae845ce7bf4d195b214d8244d457f8f",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "ffi",
+      "version": "3.8.0",
+      "path": "docs/notices/upstream-runtime-20261029/ffi-3.8.0-LICENSE.txt",
+      "bytes": 1132,
+      "sha256": "17b64dc60f3b6897a60f971e288b973f655c2edcdf08b25f3c3dd5549857881c",
+      "source_url": "https://raw.githubusercontent.com/libffi/libffi/12ffd1f9dc56fcea79d2f742f424301ae668d663/LICENSE",
+      "source_commit": "12ffd1f9dc56fcea79d2f742f424301ae668d663",
+      "source_bytes": 1132,
+      "source_sha256": "17b64dc60f3b6897a60f971e288b973f655c2edcdf08b25f3c3dd5549857881c",
+      "source_git_blob_sha1": "90a8b230284e5cfbf02cbed3431116922bd84663",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "glib",
+      "version": "2.90.0",
+      "path": "docs/notices/upstream-runtime-20261029/glib-2.90.0-LICENSE.txt",
+      "bytes": 30,
+      "sha256": "65986a89240f59896ce42a3779bbe5ed486a0bca7df636a8eef030fd2e1a0984",
+      "source_url": "https://raw.githubusercontent.com/GNOME/glib/436d47a723da97fbe67057f6b51dcf49a244fd4a/COPYING",
+      "source_commit": "436d47a723da97fbe67057f6b51dcf49a244fd4a",
+      "source_bytes": 30,
+      "source_sha256": "65986a89240f59896ce42a3779bbe5ed486a0bca7df636a8eef030fd2e1a0984",
+      "source_git_blob_sha1": "e818e737a7833b56367e795cef6ee0d992c6e667",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "heif",
+      "version": "1.23.5",
+      "path": "docs/notices/upstream-runtime-20261029/heif-1.23.5-LICENSE.txt",
+      "bytes": 44366,
+      "sha256": "fa81ce652315b013359d6e8e4744335f31a50c7c192907176d3632f78a3b4596",
+      "source_url": "https://raw.githubusercontent.com/strukturag/libheif/413e2a87e6a70b3eccc3a3adc5801179dd2d9e00/COPYING",
+      "source_commit": "413e2a87e6a70b3eccc3a3adc5801179dd2d9e00",
+      "source_bytes": 44366,
+      "source_sha256": "fa81ce652315b013359d6e8e4744335f31a50c7c192907176d3632f78a3b4596",
+      "source_git_blob_sha1": "f80407e7d5827a93d97767679d3521991e62d8cb",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "highway",
+      "version": "1.4.0",
+      "path": "docs/notices/upstream-runtime-20261029/highway-1.4.0-LICENSE.txt",
+      "bytes": 20785,
+      "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af",
+      "source_url": "https://raw.githubusercontent.com/google/highway/2607d3b5b0113992fe84d3848859eae13b3b52c1/LICENSE",
+      "source_commit": "2607d3b5b0113992fe84d3848859eae13b3b52c1",
+      "source_bytes": 20785,
+      "source_sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af",
+      "source_git_blob_sha1": "1af4f15ca709c0e74e610c09fe91022f354aea58",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "imagequant",
+      "version": "2.4.1",
+      "path": "docs/notices/upstream-runtime-20261029/imagequant-2.4.1-LICENSE.txt",
+      "bytes": 1851,
+      "sha256": "7391bfbcde4404cefb9849553362c3ab436f929f5cc1abb57071ec045590ee99",
+      "source_url": "https://raw.githubusercontent.com/lovell/libimagequant/ce5fdeb1ccd9db288950faa21fd09c42c0a59bbb/COPYRIGHT",
+      "source_commit": "ce5fdeb1ccd9db288950faa21fd09c42c0a59bbb",
+      "source_bytes": 1851,
+      "source_sha256": "7391bfbcde4404cefb9849553362c3ab436f929f5cc1abb57071ec045590ee99",
+      "source_git_blob_sha1": "98de36b4d2678a2d9ae426033b14b8a012960c28",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "lcms",
+      "version": "2.19.1",
+      "path": "docs/notices/upstream-runtime-20261029/lcms-2.19.1-LICENSE-EXACT.txt",
+      "bytes": 1080,
+      "sha256": "6dbd60437f8ef91d8de1f08ad75882547fd4931bfcc3566a0735f28db1484d31",
+      "source_url": "https://raw.githubusercontent.com/mm2/Little-CMS/21c582a594fe5279f90c0b93437c398f93bf62b0/LICENSE",
+      "source_commit": "21c582a594fe5279f90c0b93437c398f93bf62b0",
+      "source_bytes": 1080,
+      "source_sha256": "6dbd60437f8ef91d8de1f08ad75882547fd4931bfcc3566a0735f28db1484d31",
+      "source_git_blob_sha1": "85480b50b0c5860b541dc3b0032084c55ca91dcd",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "mozjpeg",
+      "version": "0826579",
+      "path": "docs/notices/upstream-runtime-20261029/mozjpeg-0826579-LICENSE.txt",
+      "bytes": 5620,
+      "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+      "source_url": "https://raw.githubusercontent.com/mozilla/mozjpeg/08265790774cd0714832c9e675522acbe5581437/LICENSE.md",
+      "source_commit": "08265790774cd0714832c9e675522acbe5581437",
+      "source_bytes": 5620,
+      "source_sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+      "source_git_blob_sha1": "a785258bcdaeb20de639c6a060a7e3d5df17ae8f",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "mozjpeg",
+      "version": "0826579",
+      "path": "docs/notices/upstream-runtime-20261029/mozjpeg-0826579-IJG.txt",
+      "bytes": 12715,
+      "sha256": "f4a85f8677ca4e41b185c0a9f7c31a30ddb9ce43c561483ee92ef12db37c2a10",
+      "source_url": "https://raw.githubusercontent.com/mozilla/mozjpeg/08265790774cd0714832c9e675522acbe5581437/README.ijg",
+      "source_commit": "08265790774cd0714832c9e675522acbe5581437",
+      "source_bytes": 12715,
+      "source_sha256": "f4a85f8677ca4e41b185c0a9f7c31a30ddb9ce43c561483ee92ef12db37c2a10",
+      "source_git_blob_sha1": "1be35958cffeed8fe9637ac0cfca64aa9a48437b",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "mozjpeg",
+      "version": "0826579",
+      "path": "docs/notices/upstream-runtime-20261029/mozjpeg-0826579-turbojpeg.c-initial-license-comment.txt",
+      "bytes": 1687,
+      "sha256": "858c244c930fa515f8f77096b4360945f20dbcaa3ca1f4bc05aaccf781ffcc18",
+      "source_url": "https://raw.githubusercontent.com/mozilla/mozjpeg/08265790774cd0714832c9e675522acbe5581437/turbojpeg.c",
+      "source_commit": "08265790774cd0714832c9e675522acbe5581437",
+      "source_bytes": 95731,
+      "source_sha256": "a4fbd84898ed1798b1ad7a8165be12a1df85775ff4176afbcd164eb7b8a85441",
+      "source_git_blob_sha1": "4aa9603813bd48f4c8421b7a1a9fc373df4ebda8",
+      "evidence_scope": "Verbatim first copyright/license comment only, plus terminating newline; no C body. Full source hash is separately recorded."
+    },
+    {
+      "component": "png",
+      "version": "1.6.58",
+      "path": "docs/notices/upstream-runtime-20261029/png-1.6.58-LICENSE.txt",
+      "bytes": 5345,
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "source_url": "https://raw.githubusercontent.com/pnggroup/libpng/3061454d980de7d53608f594194cfac722721d2a/LICENSE",
+      "source_commit": "3061454d980de7d53608f594194cfac722721d2a",
+      "source_bytes": 5345,
+      "source_sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "source_git_blob_sha1": "1b765ae9f96abea77d3d9a88c543e3b5f4725813",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "resvg",
+      "version": "0.48.1",
+      "path": "docs/notices/upstream-runtime-20261029/resvg-0.48.1-LICENSE-MIT.txt",
+      "bytes": 1057,
+      "sha256": "f5d934dc281b44e0003ee461ac740b18b6629a454decd872c774d34e4ee0b21d",
+      "source_url": "https://raw.githubusercontent.com/linebender/resvg/68b14c4c3bccdb60344c777406486b54c36ec1a4/LICENSE-MIT",
+      "source_commit": "68b14c4c3bccdb60344c777406486b54c36ec1a4",
+      "source_bytes": 1057,
+      "source_sha256": "f5d934dc281b44e0003ee461ac740b18b6629a454decd872c774d34e4ee0b21d",
+      "source_git_blob_sha1": "6f7cc66b2d01d78765215a19f3673cbc5821d0dd",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "resvg",
+      "version": "0.48.1",
+      "path": "docs/notices/upstream-runtime-20261029/resvg-0.48.1-LICENSE-APACHE.txt",
+      "bytes": 10173,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "source_url": "https://raw.githubusercontent.com/linebender/resvg/68b14c4c3bccdb60344c777406486b54c36ec1a4/LICENSE-APACHE",
+      "source_commit": "68b14c4c3bccdb60344c777406486b54c36ec1a4",
+      "source_bytes": 10173,
+      "source_sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "source_git_blob_sha1": "d9a10c0d8e868ebf8da0b3dc95bb0be634c34bfe",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "uhdr",
+      "version": "2.0.2",
+      "path": "docs/notices/upstream-runtime-20261029/uhdr-2.0.2-LICENSE.txt",
+      "bytes": 12566,
+      "sha256": "c9247b5cb07866938643cc238292434e6f2af8642e1fce10771c0e4cc7909316",
+      "source_url": "https://raw.githubusercontent.com/google/libultrahdr/e5f5a022fe96fc4dc2ee35c19f733a50df807abe/LICENSE",
+      "source_commit": "e5f5a022fe96fc4dc2ee35c19f733a50df807abe",
+      "source_bytes": 12566,
+      "source_sha256": "c9247b5cb07866938643cc238292434e6f2af8642e1fce10771c0e4cc7909316",
+      "source_git_blob_sha1": "1299fcf3566f2c1f1912218f7e6ac8db325f16c1",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "vips",
+      "version": "8.18.7",
+      "path": "docs/notices/upstream-runtime-20261029/vips-8.18.7-LICENSE-EXACT.txt",
+      "bytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+      "source_url": "https://raw.githubusercontent.com/libvips/libvips/24ad4d042940e6bf99a68871ba886ca8847c9c82/LICENSE",
+      "source_commit": "24ad4d042940e6bf99a68871ba886ca8847c9c82",
+      "source_bytes": 26530,
+      "source_sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+      "source_git_blob_sha1": "4362b49151d7b34ef83b3067a8f9c9f877d72a0e",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "webp",
+      "version": "1.6.0",
+      "path": "docs/notices/upstream-runtime-20261029/webp-1.6.0-LICENSE.txt",
+      "bytes": 1496,
+      "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+      "source_url": "https://raw.githubusercontent.com/webmproject/libwebp/4fa21912338357f89e4fd51cf2368325b59e9bd9/COPYING",
+      "source_commit": "4fa21912338357f89e4fd51cf2368325b59e9bd9",
+      "source_bytes": 1496,
+      "source_sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+      "source_git_blob_sha1": "7a6f99547d4d6b4c5e6d5321acfaeba313e08de3",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "webp",
+      "version": "1.6.0",
+      "path": "docs/notices/upstream-runtime-20261029/webp-1.6.0-PATENTS.txt",
+      "bytes": 1436,
+      "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c",
+      "source_url": "https://raw.githubusercontent.com/webmproject/libwebp/4fa21912338357f89e4fd51cf2368325b59e9bd9/PATENTS",
+      "source_commit": "4fa21912338357f89e4fd51cf2368325b59e9bd9",
+      "source_bytes": 1436,
+      "source_sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c",
+      "source_git_blob_sha1": "caedf607e95ae4c3dc84d057fddcc301cd0e4863",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "webp",
+      "version": "1.6.0",
+      "path": "docs/notices/upstream-runtime-20261029/webp-1.6.0-AUTHORS.txt",
+      "bytes": 3279,
+      "sha256": "f251be89fd442bd9d701360730aea163cc8e2076ff03528f59267dc2c4f8b60a",
+      "source_url": "https://raw.githubusercontent.com/webmproject/libwebp/4fa21912338357f89e4fd51cf2368325b59e9bd9/AUTHORS",
+      "source_commit": "4fa21912338357f89e4fd51cf2368325b59e9bd9",
+      "source_bytes": 3279,
+      "source_sha256": "f251be89fd442bd9d701360730aea163cc8e2076ff03528f59267dc2c4f8b60a",
+      "source_git_blob_sha1": "6fe9552cd0e4b0b30e77ebd4d3620ca1ced95e03",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "zlib_ng",
+      "version": "2.3.3",
+      "path": "docs/notices/upstream-runtime-20261029/zlib-ng-2.3.3-LICENSE.txt",
+      "bytes": 867,
+      "sha256": "6c9f0d975b41afaa34d22f55bb8986ce69e5cb7ad327cb2b28820cd425edf5ee",
+      "source_url": "https://raw.githubusercontent.com/zlib-ng/zlib-ng/12731092979c6d07f42da27da673a9f6c7b13586/LICENSE.md",
+      "source_commit": "12731092979c6d07f42da27da673a9f6c7b13586",
+      "source_bytes": 867,
+      "source_sha256": "6c9f0d975b41afaa34d22f55bb8986ce69e5cb7ad327cb2b28820cd425edf5ee",
+      "source_git_blob_sha1": "e866d7ac18620a2229727e3a0512ab688176cbd8",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "aom",
+      "version": "3.15.1",
+      "path": "docs/notices/upstream-runtime-20261029/aom-3.15.1-LICENSE.txt",
+      "bytes": 1316,
+      "sha256": "4764a286d8b2faeaf42f4418e7d7a28d58fc8fd4d00a3d0a7f44b0a4099de7f2",
+      "source_url": "https://aomedia.googlesource.com/aom/+/44d0a57786f432d933ff64b653347c66f4d0fa1d/LICENSE?format=TEXT",
+      "source_commit": "44d0a57786f432d933ff64b653347c66f4d0fa1d",
+      "source_bytes": 1316,
+      "source_sha256": "4764a286d8b2faeaf42f4418e7d7a28d58fc8fd4d00a3d0a7f44b0a4099de7f2",
+      "source_git_blob_sha1": "fc340c37643472ced912d5acc4ec21a722505e30",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "aom",
+      "version": "3.15.1",
+      "path": "docs/notices/upstream-runtime-20261029/aom-3.15.1-PATENTS.txt",
+      "bytes": 5701,
+      "sha256": "661fb8e504744e95587b556b94a58343448300606a41bea8c7a9b97125696e61",
+      "source_url": "https://aomedia.googlesource.com/aom/+/44d0a57786f432d933ff64b653347c66f4d0fa1d/PATENTS?format=TEXT",
+      "source_commit": "44d0a57786f432d933ff64b653347c66f4d0fa1d",
+      "source_bytes": 5701,
+      "source_sha256": "661fb8e504744e95587b556b94a58343448300606a41bea8c7a9b97125696e61",
+      "source_git_blob_sha1": "fc4de9edf8952978e0a84b51cab0f1e37fc47ef7",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "aom",
+      "version": "3.15.1",
+      "path": "docs/notices/upstream-runtime-20261029/aom-3.15.1-AUTHORS.txt",
+      "bytes": 13178,
+      "sha256": "c31b80ca48fde06ca03aef2f3dec15413fe0c2661fe6b56e86ccd69dbc6f9a1d",
+      "source_url": "https://aomedia.googlesource.com/aom/+/44d0a57786f432d933ff64b653347c66f4d0fa1d/AUTHORS?format=TEXT",
+      "source_commit": "44d0a57786f432d933ff64b653347c66f4d0fa1d",
+      "source_bytes": 13178,
+      "source_sha256": "c31b80ca48fde06ca03aef2f3dec15413fe0c2661fe6b56e86ccd69dbc6f9a1d",
+      "source_git_blob_sha1": "0582a75a36ca34a14d5187d2dd2a6e97d58ac9be",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "tiff",
+      "version": "4.7.2",
+      "path": "docs/notices/upstream-runtime-20261029/tiff-4.7.2-LICENSE.txt",
+      "bytes": 2416,
+      "sha256": "0e27c2382d7b8147972bbb746e04059a1152c8d0fda9d03ef1399d1a433c4ade",
+      "source_url": "https://gitlab.com/libtiff/libtiff/-/raw/d01a94be176f5f6a87f7ee1c0b32e65416aa2b4d/LICENSE.md",
+      "source_commit": "d01a94be176f5f6a87f7ee1c0b32e65416aa2b4d",
+      "source_bytes": 2416,
+      "source_sha256": "0e27c2382d7b8147972bbb746e04059a1152c8d0fda9d03ef1399d1a433c4ade",
+      "source_git_blob_sha1": "12d5ef231021c5da19f3b5af44192fb6f4184542",
+      "evidence_scope": "Complete upstream file bytes from the immutable commit; not a package-local LICENSE or all transitive component notices."
+    },
+    {
+      "component": "brotli-embedded-cpp",
+      "version": "1.3.3",
+      "path": "docs/notices/upstream-runtime-20261029/brotli-1.3.3-embedded-upstream-MIT-LICENSE.txt",
+      "bytes": 1084,
+      "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94",
+      "source_url": "https://raw.githubusercontent.com/google/brotli/5ce9bf11b3fe0924d87b2a2d47eb7a53a76a4421/LICENSE",
+      "source_commit": "5ce9bf11b3fe0924d87b2a2d47eb7a53a76a4421",
+      "evidence_scope": "Complete MIT license of exact upstream C++ git submodule. Not proof that this copyright applies to every JavaScript wrapper/port file."
+    }
+  ],
+  "sharp_build_source_link": {
+    "sharp_version": "0.35.5",
+    "sharp_commit": "51a990faa26ade5586a4934ac9673c98d8893326",
+    "sharp_libvips_dev_wasm32_version": "1.3.4",
+    "sharp_libvips_commit": "ebb95f8add54eee8bed840e3fb587e4cbec857d7",
+    "recipe_url": "https://github.com/lovell/sharp-libvips/blob/ebb95f8add54eee8bed840e3fb587e4cbec857d7/build/wasm.sh",
+    "dispatcher_url": "https://github.com/lovell/sharp-libvips/blob/ebb95f8add54eee8bed840e3fb587e4cbec857d7/build.sh",
+    "finding": "Published dev-wasm32 dispatcher passes no wasm-vips revision; build/wasm.sh defaults to HEAD. Declared component versions do not prove the exact wasm-vips build snapshot, patches, Rust/LLVM transitive components or relink materials.",
+    "exact_wasm_vips_revision_verified": false
+  },
+  "gsap": {
+    "version": "3.15.0",
+    "upstream_commit": "13e2b790546426a1a2e0e9b409f3f8dc6d6611f2",
+    "official_license_url": "https://gsap.com/community/standard-license/",
+    "license_page_effective_date": "2025-04-30",
+    "license_page_last_modified": "2025-05-30",
+    "commercial_clearance": "pending",
+    "terms_accepted": false,
+    "remaining": "Inventory actual manual scene/object/camera/rig visual controls and marketed/exported scope before assessing the visual-builder restriction. No automatic new paid-license requirement."
+  },
+  "remotion": {
+    "version": "4.0.537",
+    "upstream_commit": "f8ab752182a802f76904f7343e0d70189a1dea0e",
+    "existing_license": "vendor/licenses/remotion-4.0.537-UPSTREAM-ROOT-LICENSE.md",
+    "commercial_clearance": "pending",
+    "terms_accepted": false,
+    "remaining": "Owner legal entity/headcount; technical derivative-code provenance and complete integration surface inventory; applicable derivative-resale scope. This supplement does not clear the eight absent package-local notices."
+  }
+}

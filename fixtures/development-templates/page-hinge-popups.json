@@ -1,0 +1,90 @@
+{
+  "family_id": "page-hinge-popups",
+  "source_id": "source-lemo-style-paper-popup",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "page-hinge-popups",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir sayfanın açılması, birbirine bağlı kağıt menteşeleri hangi sırayla yükseltir?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F8F0DB",
+            "ink": "#313F42",
+            "muted": "#545B51",
+            "accent": "#8A3B30"
+          },
+          "fold_angles": [
+            50,
+            65
+          ],
+          "page_angle": 105,
+          "hinge_links": [
+            -1,
+            0
+          ],
+          "popup_height": 220
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "page-hinge-popups",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Panel uzunluğu değişmez; çocuğun kökü her karede önceki panelin ucunda kalır.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F8F0DB",
+            "ink": "#313F42",
+            "muted": "#545B51",
+            "accent": "#8A3B30"
+          },
+          "fold_angles": [
+            35,
+            75,
+            65,
+            50
+          ],
+          "page_angle": 135,
+          "hinge_links": [
+            -1,
+            0,
+            0,
+            2
+          ],
+          "popup_height": 280
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "pending_commercial_terms",
+  "assets": [
+    {
+      "path": "vendor/fonts",
+      "license": "OFL-1.1",
+      "commercial_terms": "OFL-1.1 text retained in vendor/fonts; preserve font copyright/license, do not sell fonts by themselves"
+    },
+    {
+      "path": "vendor/gsap.min.js",
+      "commercial_terms": "GSAP visual-animation-builder applicability remains under review; see THIRD-PARTY-NOTICES.md."
+    },
+    {
+      "path": "renderers/neutral-rig.json",
+      "commercial_terms": "Commercial authorization for this neutral vector rig remains pending; no clearance is asserted."
+    },
+    {
+      "path": "fixtures/synthetic-voice-contract.mp3",
+      "commercial_terms": "New silent zero-PCM test fixture; no speaker or external audio. Provenance recorded; commercial review remains pending.",
+      "provenance": "fixtures/PROVENANCE.json"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "family_id": "negative-space-cut",
+  "source_id": "source-lemo-style-papercut-red",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "negative-space-cut",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Katlı kağıttan çıkarılan küçük bir parça, açılınca hangi simetrik boşluğu oluşturur?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#FFF4E3",
+            "ink": "#422E2F",
+            "muted": "#6A4A48",
+            "accent": "#9B282E"
+          },
+          "cut_paths": [
+            [
+              [
+                0.1,
+                0.2
+              ],
+              [
+                0.45,
+                0.5
+              ],
+              [
+                0.15,
+                0.8
+              ]
+            ],
+            [
+              [
+                0.55,
+                0.25
+              ],
+              [
+                0.9,
+                0.4
+              ],
+              [
+                0.65,
+                0.7
+              ]
+            ]
+          ],
+          "fold_count": 1,
+          "unfold_angle": 110,
+          "sheet_thickness": 5
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "negative-space-cut",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kesikler negatif alan olur; dış bordür bütünlüğünü korurken tekrarlar ayrılır.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#FFF4E3",
+            "ink": "#422E2F",
+            "muted": "#6A4A48",
+            "accent": "#9B282E"
+          },
+          "cut_paths": [
+            [
+              [
+                0.1,
+                0.15
+              ],
+              [
+                0.35,
+                0.35
+              ],
+              [
+                0.12,
+                0.6
+              ]
+            ],
+            [
+              [
+                0.4,
+                0.25
+              ],
+              [
+                0.6,
+                0.45
+              ],
+              [
+                0.45,
+                0.7
+              ]
+            ],
+            [
+              [
+                0.7,
+                0.1
+              ],
+              [
+                0.9,
+                0.3
+              ],
+              [
+                0.72,
+                0.6
+              ]
+            ],
+            [
+              [
+                0.25,
+                0.65
+              ],
+              [
+                0.55,
+                0.75
+              ],
+              [
+                0.35,
+                0.9
+              ]
+            ]
+          ],
+          "fold_count": 3,
+          "unfold_angle": 175,
+          "sheet_thickness": 10
+        }
+      }
+    }
+  ]
+}

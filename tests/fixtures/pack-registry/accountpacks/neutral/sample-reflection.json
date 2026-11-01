@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "scene_actions": [
+    "familiar-moment",
+    "inner-sentence",
+    "two-explanations",
+    "distinguish-question",
+    "observe-cue"
+  ],
+  "visual_family": "possibility-branches",
+  "duration_range_seconds": [
+    1,
+    90
+  ],
+  "wardrobe": "warm-shirt",
+  "scene_contract": {
+    "familiar-moment": {
+      "state_before": "table-no-reply",
+      "state_after": "held-no-reply"
+    },
+    "inner-sentence": {
+      "state_before": "held-no-reply",
+      "state_after": "held-inner-sentence"
+    },
+    "two-explanations": {
+      "state_before": "held-inner-sentence",
+      "state_after": "held-two-possibilities"
+    },
+    "distinguish-question": {
+      "state_before": "held-two-possibilities",
+      "state_after": "held-context-question"
+    },
+    "observe-cue": {
+      "state_before": "held-context-question",
+      "state_after": "table-observe-context"
+    }
+  },
+  "initial_state": "table-no-reply",
+  "final_state": "table-observe-context",
+  "id": "sample-reflection",
+  "display_name": "Sample Reflection",
+  "niche": "Neutral technical fixture",
+  "procedures": [
+    {
+      "id": "owner-method",
+      "status": "TODO",
+      "instruction": "Owner must supply an original method from dated production notes."
+    }
+  ],
+  "visual_families": [
+    "possibility-branches"
+  ],
+  "scene_vocab": [
+    "familiar-moment",
+    "inner-sentence",
+    "two-explanations",
+    "distinguish-question",
+    "observe-cue"
+  ],
+  "series_rules": {
+    "enabled": false,
+    "fictional": false
+  },
+  "voice_defaults": {
+    "provider": "off",
+    "voice_id": null
+  },
+  "profile": {
+    "id": "sample-reflection",
+    "name": "sample-reflection",
+    "format": "psychology-animation",
+    "palette": {
+      "background": "#F0E8DD",
+      "ink": "#3F3A36",
+      "muted": "#80756C",
+      "accent": "#B47F5E"
+    },
+    "font": "Schibsted",
+    "handle": "",
+    "title_size": 78,
+    "subtitle_size": 44,
+    "subtitle_top": 1570,
+    "subtitle_width": 908,
+    "handle_left": 88,
+    "handle_bottom": 172,
+    "handle_size": 27,
+    "top_brand": false,
+    "avatar": false,
+    "sentence_case": true,
+    "assets": "Bundled neutral vector fixture; commercial terms pending owner review.",
+    "visual_family": "possibility-branches"
+  },
+  "formats": [
+    "account-video",
+    "psychology-animation"
+  ],
+  "language": "tr",
+  "category": "story",
+  "capabilities": {
+    "legacy_fixture": false,
+    "raster": false,
+    "manual_scene_kinds": [
+      "possibility-branches",
+      "observation"
+    ],
+    "rig_mode": null,
+    "certainty_guard": true
+  },
+  "rule_ids": [
+    "CORE-01",
+    "CORE-02",
+    "CORE-03",
+    "CORE-04",
+    "BIR-01",
+    "BIR-02"
+  ],
+  "rules": [
+    {
+      "id": "CORE-01",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-02",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-03",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-04",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "BIR-01",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "BIR-02",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    }
+  ],
+  "source_revision": "neutral-technical-fixture-1",
+  "asset_policy": {
+    "allowed": "original_project_vectors",
+    "commercial_transfer": "pending owner terms"
+  },
+  "acceptance": {
+    "publication_ready": false,
+    "source_truth": "pending_human_review",
+    "creative": "pending_human_review"
+  },
+  "workflow": [
+    "TODO: owner authored method"
+  ],
+  "production_workflow": [],
+  "revision_policy": {},
+  "repeat_policy": {},
+  "brand": {
+    "palette": {
+      "background": "#F0E8DD",
+      "ink": "#3F3A36",
+      "muted": "#80756C",
+      "accent": "#B47F5E"
+    }
+  },
+  "fixture": {
+    "schema_version": 1,
+    "brand": "sample-reflection",
+    "title": "Yanıt gelmeyince aklımdan ne geçiyor?",
+    "brief": "Özgün vektörlerle sessiz golden teknik prova; gerçek kullanıcı/sağlayıcı sonucu, tanı veya yeni kanon bölümü değildir.",
+    "demo": true,
+    "language": "tr",
+    "script": "Mesajıma yanıt gelmedi. Aklımdan bir açıklama geçti. Yoğunluk da farklı bir iletişim ritmi de mümkün. Bunları hangi ipucu ayırt eder? Tek işaretten sonuç çıkarmadan bağlamı gözlemlerim.",
+    "caption": "Yanıt gelmeyince aklımdan ne geçiyor? Bu sessiz teknik prova, kaynaklı üretim sözleşmesinin gözden geçirilmesi içindir.",
+    "duration": 16.0,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [],
+    "continuity": null,
+    "scenes": [
+      {
+        "id": "beat-1",
+        "start": 0.0,
+        "end": 3.2,
+        "heading": "Yanıt henüz yok.",
+        "action": "familiar-moment",
+        "information": "Mesajıma yanıt gelmedi.",
+        "object_before": "Telefon masada; yanıt görünmüyor.",
+        "object_after": "Telefon elde; yanıt görünmüyor.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "table-no-reply",
+        "state_after": "held-no-reply"
+      },
+      {
+        "id": "beat-2",
+        "start": 3.2,
+        "end": 6.4,
+        "heading": "İlk iç cümlem ne?",
+        "action": "inner-sentence",
+        "information": "Aklımdan bir açıklama geçti.",
+        "object_before": "Telefon elde; yanıt görünmüyor.",
+        "object_after": "Telefon elde; tek açıklama düşünülüyor.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "push-in",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "held-no-reply",
+        "state_after": "held-inner-sentence"
+      },
+      {
+        "id": "beat-3",
+        "start": 6.4,
+        "end": 9.6,
+        "heading": "İki olasılık açık.",
+        "action": "two-explanations",
+        "information": "Yoğunluk da farklı bir iletişim ritmi de mümkün.",
+        "object_before": "Telefon elde; tek açıklama düşünülüyor.",
+        "object_after": "Telefon elde; iki olasılık açık.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "held-inner-sentence",
+        "state_after": "held-two-possibilities"
+      },
+      {
+        "id": "beat-4",
+        "start": 9.6,
+        "end": 12.8,
+        "heading": "Hangi ipucu ayırt eder?",
+        "action": "distinguish-question",
+        "information": "Bunları hangi ipucu ayırt eder?",
+        "object_before": "Telefon elde; iki olasılık açık.",
+        "object_after": "Telefon elde; ayırt edici ipucu aranıyor.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "held-two-possibilities",
+        "state_after": "held-context-question"
+      },
+      {
+        "id": "beat-5",
+        "start": 12.8,
+        "end": 16.0,
+        "heading": "Küçük bir gözlem bırak.",
+        "action": "observe-cue",
+        "information": "Tek işaretten sonuç çıkarmadan bağlamı gözlemlerim.",
+        "object_before": "Telefon elde; ayırt edici ipucu aranıyor.",
+        "object_after": "Telefon masada; bağlam gözlemi bekliyor.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "held-context-question",
+        "state_after": "table-observe-context"
+      }
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 3.1,
+        "text": "Mesajıma yanıt gelmedi."
+      },
+      {
+        "start": 3.2,
+        "end": 6.300000000000001,
+        "text": "Aklımdan bir açıklama geçti."
+      },
+      {
+        "start": 6.4,
+        "end": 9.5,
+        "text": "Yoğunluk da farklı bir iletişim ritmi de mümkün."
+      },
+      {
+        "start": 9.6,
+        "end": 12.700000000000001,
+        "text": "Bunları hangi ipucu ayırt eder?"
+      },
+      {
+        "start": 12.8,
+        "end": 16.0,
+        "text": "Tek işaretten sonuç çıkarmadan bağlamı gözlemlerim."
+      }
+    ],
+    "creative": {
+      "pack_version": "1.0.0",
+      "topic_id": "golden-sample-reflection-01",
+      "visual_motif": "phone-context-observation",
+      "canon_status": "standalone",
+      "characters": [
+        {
+          "id": "observer-01",
+          "wardrobe": "warm-shirt",
+          "asset_license": "original_project_vectors"
+        }
+      ],
+      "asset_policy": "original_vectors_only"
+    }
+  }
+}

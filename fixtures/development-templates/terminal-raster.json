@@ -1,0 +1,83 @@
+{
+  "family_id": "terminal-raster",
+  "source_id": "source-lemo-style-ascii-crt",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "terminal-raster",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir kayıt terminalinde satırlar eklenirken önceden yazılanların sırası korunuyor.",
+          "duration": 8,
+          "narration": "Harfler sabit hücrelere sıra ile yerleşiyor. Satır kayması tamamlanınca son kayıt okunur durumda kalıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Harfler sabit hücrelere sıra ile yerleşiyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Satır kayması tamamlanınca son kayıt okunur durumda kalıyor."
+            }
+          ],
+          "palette": {
+            "background": "#111D29",
+            "ink": "#F2EFE7",
+            "muted": "#B5C6D2",
+            "accent": "#F0AF95"
+          },
+          "lines": [
+            "Giriş kontrolü tamamlandı; kayıt yerinde.",
+            "Ölçüler karşılaştırıldı; sıra korundu."
+          ],
+          "columns": 28,
+          "typing_cadence": 0.025,
+          "scroll_rows": 0,
+          "scan_period": 0.8
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "terminal-raster",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir kayıt terminalinde satırlar eklenirken önceden yazılanların sırası korunuyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Satır kayması tamamlanınca son kayıt okunur durumda kalıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Satır kayması tamamlanınca son kayıt okunur durumda kalıyor."
+            }
+          ],
+          "palette": {
+            "background": "#111D29",
+            "ink": "#F2EFE7",
+            "muted": "#B5C6D2",
+            "accent": "#F0AF95"
+          },
+          "lines": [
+            "Önce güvenli bağlantıları tek tek denetle.",
+            "Sonra ölçüm sonuçlarını aynı sırada kaydet.",
+            "En son açık kalan satırları yeniden gözden geçir."
+          ],
+          "columns": 24,
+          "typing_cadence": 0.033,
+          "scroll_rows": 2,
+          "scan_period": 1.1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version":1, "brand":"sample-series", "title":"Aynı kutu, aynı iz",
+  "brief":"Dört saniyelik sessiz devamlılık fixture'ı. Yeni bölüm değildir; Deniz rig'i kullanılmaz.",
+  "demo":true, "script":"Kutu açılıyor. Mavi taş yeniden görünüyor.",
+  "caption":"Aynı kutu, aynı mavi taş. Seri örneği için sessiz teknik demo; hikâyenin yeni bölümü değildir.",
+  "duration":4, "alignment":"provisional_silent", "audio":null,
+  "claims":[], "continuity":{"object_id":"ring-blue-01","previous":"Kutu kapalı, yüzük içinde.","next":"Aynı yüzük görünür; kimlik veya sahiplik iddiası yok."},
+  "scenes":[
+    {"id":"open","start":0,"end":2,"heading":"Kutu açılıyor.","action":"open","information":"Sahne boyunca aynı kutu korunur.","object_before":"Kutu kapalı.","object_after":"Kutu açık."},
+    {"id":"reveal","start":2,"end":4,"heading":"Mavi taş yeniden görünür.","action":"reveal","information":"Aynı nesne kimliği sürer.","object_before":"Yüzük kutunun içinde.","object_after":"Mavi taş görünür."}
+  ],
+  "cues":[{"start":0,"end":1.9,"text":"Kutu açılıyor."},{"start":2,"end":4,"text":"Mavi taş yeniden görünüyor."}]
+}

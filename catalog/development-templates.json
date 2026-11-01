@@ -1,0 +1,1517 @@
+{
+  "schema_version": 1,
+  "families": [
+    {
+      "id": "contour-trace",
+      "name": "Contour Trace",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#FAF6EC",
+        "ink": "#263A30",
+        "muted": "#647165",
+        "accent": "#9C4D30"
+      },
+      "source_id": "source-mg-style-02-line-art",
+      "requires_caller_media": false,
+      "fixture_sha256": "6159f7ae593e82388fe38d33e42f34a62cc054eeae66410830073562f0caaee1",
+      "module_path": "renderers/template-registry/modules/ffc6796ae06a-contour-trace.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "shape-morph",
+      "name": "Shape Morph",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F0EDF7",
+        "ink": "#30264B",
+        "muted": "#726687",
+        "accent": "#9160CF"
+      },
+      "source_id": "source-mg-style-08-morph",
+      "requires_caller_media": false,
+      "fixture_sha256": "e06dfa9c2bc1cadc556624912653c6c78cad0d1ef19afe8b1b562e65adac990c",
+      "module_path": "renderers/template-registry/modules/bcf766fc13eb-shape-morph.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "scan-hud",
+      "name": "Scan Hud",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101E2A",
+        "ink": "#E6F4E9",
+        "muted": "#8EAEAC",
+        "accent": "#7FE7C4"
+      },
+      "source_id": "source-mg-style-22-hud",
+      "requires_caller_media": false,
+      "fixture_sha256": "d8fc39ff3395248265efd023a0409b7a49d9a86f59946ba8b32a68a8cdb3c177",
+      "module_path": "renderers/template-registry/modules/5d1ce3e8bcfd-scan-hud.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "vector-mass-transfer",
+      "name": "Vector Mass Transfer",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F5F1E8",
+        "ink": "#243D3C",
+        "muted": "#596761",
+        "accent": "#9B4431"
+      },
+      "source_id": "source-mg-style-01-flat-vector",
+      "requires_caller_media": false,
+      "fixture_sha256": "286945ccb3db6d25f6198ef78c050528f17e875f9917ac36b0472ee2205007de",
+      "module_path": "renderers/template-registry/modules/93fb574edcf4-vector-mass-transfer.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "cel-contour-boil",
+      "name": "Cel Contour Boil",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E5",
+        "ink": "#3A332D",
+        "muted": "#696051",
+        "accent": "#53613E"
+      },
+      "source_id": "source-mg-style-05-cel-boil",
+      "requires_caller_media": false,
+      "fixture_sha256": "145ca8ab932c4cd6928835b7c0376be748a07319734e2208ee6f006575047940",
+      "module_path": "renderers/template-registry/modules/b1d2640cfb89-cel-contour-boil.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "cutout-pin-assembly",
+      "name": "Cutout Pin Assembly",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4EDE2",
+        "ink": "#352F2C",
+        "muted": "#6D5E53",
+        "accent": "#93452E"
+      },
+      "source_id": "source-mg-style-06-collage",
+      "requires_caller_media": false,
+      "fixture_sha256": "7b8ee386a446e84db2c7a5b536d13974eca4d4fb8463b3a751195cbf6d944f03",
+      "module_path": "renderers/template-registry/modules/691f4dcd3ea2-cutout-pin-assembly.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "caption-impact-rig",
+      "name": "Caption Impact Rig",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F6F0E8",
+        "ink": "#352B2C",
+        "muted": "#6B5B5D",
+        "accent": "#A03838"
+      },
+      "source_id": "source-mg-style-18-hanazi",
+      "requires_caller_media": false,
+      "fixture_sha256": "64e5bfb33bd9dc190fbc1d16249a24e6370c212e7f57b7a778b6e94f5a691627",
+      "module_path": "renderers/template-registry/modules/e3d757d8a6a6-caption-impact-rig.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "sticker-peel-callout",
+      "name": "Sticker Peel Callout",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EDF1F3",
+        "ink": "#253643",
+        "muted": "#5A6771",
+        "accent": "#345C86"
+      },
+      "source_id": "source-mg-style-19-paperclip",
+      "requires_caller_media": false,
+      "fixture_sha256": "7ff4bc54ff6d8626760dd2484588129cab33d63741c306a98354cc8699ad93ad",
+      "module_path": "renderers/template-registry/modules/f5239a9fb835-sticker-peel-callout.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "iso-room-route",
+      "name": "Iso Room Route",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E7",
+        "ink": "#24343B",
+        "muted": "#59646B",
+        "accent": "#85432E"
+      },
+      "source_id": "source-mg-style-03-isometric",
+      "requires_caller_media": false,
+      "fixture_sha256": "a96e68df30579083f89db53288df585857e1eb01d328b7a05c95958e8b1b8696",
+      "module_path": "renderers/template-registry/modules/4ff5ac61f8ea-iso-room-route.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "perspective-neon-run",
+      "name": "Perspective Neon Run",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#111D29",
+        "ink": "#F2EFE7",
+        "muted": "#B5C6D2",
+        "accent": "#F0AF95"
+      },
+      "source_id": "source-mg-style-10-synthwave",
+      "requires_caller_media": false,
+      "fixture_sha256": "bdb0dba678fbe6d1060dc8cbed5d65e5d29d24235e5dcf807e05ab75cb344758",
+      "module_path": "renderers/template-registry/modules/85165292ba5d-perspective-neon-run.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "aurora-refraction-panels",
+      "name": "Aurora Refraction Panels",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EAF0F4",
+        "ink": "#253D50",
+        "muted": "#526875",
+        "accent": "#315D87"
+      },
+      "source_id": "source-mg-style-12-aurora-glass",
+      "requires_caller_media": false,
+      "fixture_sha256": "6d85a32cbb6a8837975e6cb24e641b1171669c63768bba47439b2058302072e9",
+      "module_path": "renderers/template-registry/modules/b205d5e0ed2f-aurora-refraction-panels.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "deco-radial-reveal",
+      "name": "Deco Radial Reveal",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E7",
+        "ink": "#24343B",
+        "muted": "#59646B",
+        "accent": "#85432E"
+      },
+      "source_id": "source-lemo-style-art-deco",
+      "requires_caller_media": false,
+      "fixture_sha256": "4c34665f3f6e7c6480ca7d59f270cda11724683e2d3468105abe1d2b88a3752a",
+      "module_path": "renderers/template-registry/modules/e55f7e8780df-deco-radial-reveal.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "terminal-raster",
+      "name": "Terminal Raster",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#111D29",
+        "ink": "#F2EFE7",
+        "muted": "#B5C6D2",
+        "accent": "#F0AF95"
+      },
+      "source_id": "source-lemo-style-ascii-crt",
+      "requires_caller_media": false,
+      "fixture_sha256": "9b43c450737ca2ea8e238b359dabcdd1ea6528e7615f49999c8750c7075f8ee0",
+      "module_path": "renderers/template-registry/modules/919eef0c64a3-terminal-raster.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "split-counter-flip",
+      "name": "Split Counter Flip",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E7",
+        "ink": "#24343B",
+        "muted": "#59646B",
+        "accent": "#85432E"
+      },
+      "source_id": "source-lemo-style-countdown",
+      "requires_caller_media": false,
+      "fixture_sha256": "e15f77246b7f6092352414991e9bd6febad04ca389425ad9357619aea5552c09",
+      "module_path": "renderers/template-registry/modules/3528802a33d8-split-counter-flip.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "spotlight-product-reveal",
+      "name": "Spotlight Product Reveal",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#111D29",
+        "ink": "#F2EFE7",
+        "muted": "#B5C6D2",
+        "accent": "#F0AF95"
+      },
+      "source_id": "source-lemo-style-dark-keynote",
+      "requires_caller_media": false,
+      "fixture_sha256": "f203a5d9eb6f273cb12f4bf676673137a33f83f642a12f475333b15bd0363d2e",
+      "module_path": "renderers/template-registry/modules/c346a4b44e9b-spotlight-product-reveal.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "iris-silhouette-chase",
+      "name": "Iris Silhouette Chase",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E7",
+        "ink": "#24343B",
+        "muted": "#59646B",
+        "accent": "#85432E"
+      },
+      "source_id": "source-lemo-style-spy-titles",
+      "requires_caller_media": false,
+      "fixture_sha256": "37e460a55c2b6d55783bb1a20471a2873f87b71d5663fb08ed24536dc28e7565",
+      "module_path": "renderers/template-registry/modules/d36dce2821fa-iris-silhouette-chase.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "baseline-type-reflow",
+      "name": "Baseline Type Reflow",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E7",
+        "ink": "#24343B",
+        "muted": "#59646B",
+        "accent": "#85432E"
+      },
+      "source_id": "source-lemo-style-swiss-motion",
+      "requires_caller_media": false,
+      "fixture_sha256": "49bb9c34af3c420c5183a2748725c369ef3a096a7a98c8dcd1dab23620598a89",
+      "module_path": "renderers/template-registry/modules/bc1bbb0f9f88-baseline-type-reflow.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "dimension-construction",
+      "name": "Dimension Construction",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EAF0F4",
+        "ink": "#253D50",
+        "muted": "#526875",
+        "accent": "#315D87"
+      },
+      "source_id": "source-lemo-style-blueprint",
+      "requires_caller_media": false,
+      "fixture_sha256": "465adf8943fac9bf69dfc5eb01f099f64791ef023c6bae8bb9555a6c89d0526c",
+      "module_path": "renderers/template-registry/modules/f3a7cd528c4a-dimension-construction.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "board-pin-routing",
+      "name": "Board Pin Routing",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E7",
+        "ink": "#24343B",
+        "muted": "#59646B",
+        "accent": "#85432E"
+      },
+      "source_id": "source-lemo-style-briefing-board",
+      "requires_caller_media": false,
+      "fixture_sha256": "90920294a2edf4a395d37d7bb3f47a89b27ed3348dc37b4f75f980bd4dba7923",
+      "module_path": "renderers/template-registry/modules/20995b5e308b-board-pin-routing.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "bead-transfer-counts",
+      "name": "Bead Transfer Counts",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E7",
+        "ink": "#24343B",
+        "muted": "#59646B",
+        "accent": "#85432E"
+      },
+      "source_id": "source-lemo-style-data-physical",
+      "requires_caller_media": false,
+      "fixture_sha256": "13618575ff7d4b1a35001b6efa7bf714905120e1298f8548f23ffb4ee916ffb2",
+      "module_path": "renderers/template-registry/modules/55d03e84a019-bead-transfer-counts.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "scale-morph-charts",
+      "name": "Scale Morph Charts",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EAF0F4",
+        "ink": "#253D50",
+        "muted": "#526875",
+        "accent": "#315D87"
+      },
+      "source_id": "source-lemo-style-dataviz",
+      "requires_caller_media": false,
+      "fixture_sha256": "21a9f95ecbfe4cc3574b1934b40fe5f8f648b984f26e6aa780c4ef756fba5684",
+      "module_path": "renderers/template-registry/modules/71dc1665fa7e-scale-morph-charts.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "iso-transport-network",
+      "name": "Iso Transport Network",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EAF0F4",
+        "ink": "#253D50",
+        "muted": "#526875",
+        "accent": "#315D87"
+      },
+      "source_id": "source-lemo-style-iso-infographic",
+      "requires_caller_media": false,
+      "fixture_sha256": "11f6b227b116dc23bdf6d1f7e94323961837def77430e226755e3755318add7d",
+      "module_path": "renderers/template-registry/modules/b37cccf12fab-iso-transport-network.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "constrained-part-section",
+      "name": "Constrained Part Section",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F0E7",
+        "ink": "#24343B",
+        "muted": "#59646B",
+        "accent": "#85432E"
+      },
+      "source_id": "source-lemo-style-teardown",
+      "requires_caller_media": false,
+      "fixture_sha256": "4abfe80812d4fab8b4e94febedb1281832c81029cb82229b3829d34f61db8e21",
+      "module_path": "renderers/template-registry/modules/97accaca81a3-constrained-part-section.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "engraved-hatch-growth",
+      "name": "Engraved Hatch Growth",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F5EAD6",
+        "ink": "#2A2B26",
+        "muted": "#5B5147",
+        "accent": "#724833"
+      },
+      "source_id": "source-lemo-style-engraving",
+      "requires_caller_media": false,
+      "fixture_sha256": "eb04da394d9c442a0c7fc2ae92fcd6998a7811f5ccc203e605bee15fb00e9a37",
+      "module_path": "renderers/template-registry/modules/f2c18f83429e-engraved-hatch-growth.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "single-path-identity",
+      "name": "Single Path Identity",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#FAF7F0",
+        "ink": "#1B292C",
+        "muted": "#495554",
+        "accent": "#176C67"
+      },
+      "source_id": "source-lemo-style-one-line",
+      "requires_caller_media": false,
+      "fixture_sha256": "565c8623d1a4800b76508eaa03fad5469681c2a23b22f9e2644aa9ee6a05eb53",
+      "module_path": "renderers/template-registry/modules/5c7b47b37de1-single-path-identity.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "pictogram-limb-transition",
+      "name": "Pictogram Limb Transition",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F6F3EB",
+        "ink": "#192B43",
+        "muted": "#485366",
+        "accent": "#8F2D43"
+      },
+      "source_id": "source-lemo-style-pictogram-motion",
+      "requires_caller_media": false,
+      "fixture_sha256": "a39bea7103d8fccdc15c2f2eec5eef506b60eb18ce81b173a7fcb3aeb1b5b6c9",
+      "module_path": "renderers/template-registry/modules/88d7125cd46e-pictogram-limb-transition.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "perspective-pen-wash",
+      "name": "Perspective Pen Wash",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F8F5EC",
+        "ink": "#25303D",
+        "muted": "#535A61",
+        "accent": "#386F82"
+      },
+      "source_id": "source-lemo-style-urban-sketch",
+      "requires_caller_media": false,
+      "fixture_sha256": "d8d3fecd7d0d2e32e74c5080d7c9e953de960e5bbdbd93cd9f192a2e545dd5d4",
+      "module_path": "renderers/template-registry/modules/79c39820654d-perspective-pen-wash.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "stroke-erase-explanation",
+      "name": "Stroke Erase Explanation",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F9FCF8",
+        "ink": "#1A3430",
+        "muted": "#4B5D54",
+        "accent": "#216A4E"
+      },
+      "source_id": "source-lemo-style-whiteboard",
+      "requires_caller_media": false,
+      "fixture_sha256": "83be6148a193c641eec5c78c2c9261df6b96887067b65336aca898f65c931b08",
+      "module_path": "renderers/template-registry/modules/a3cd84f26709-stroke-erase-explanation.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "crayon-stroke-fill",
+      "name": "Crayon Stroke Fill",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#FFF8E8",
+        "ink": "#342B37",
+        "muted": "#66534D",
+        "accent": "#B03831"
+      },
+      "source_id": "source-lemo-style-crayon-book",
+      "requires_caller_media": false,
+      "fixture_sha256": "5873202a47d8a8c2c1175f345e5c99d0c9051c3bea63b92d440f266ca8011bc3",
+      "module_path": "renderers/template-registry/modules/2089f297372a-crayon-stroke-fill.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "halftone-evidence-lens",
+      "name": "Halftone Evidence Lens",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F2EBDD",
+        "ink": "#242323",
+        "muted": "#5D524B",
+        "accent": "#8E3028"
+      },
+      "source_id": "source-lemo-style-halftone-dossier",
+      "requires_caller_media": false,
+      "fixture_sha256": "e6be1ed3aab54895559223128144f1fcb792f20ee998a3cfe3dcde744f811ee9",
+      "module_path": "renderers/template-registry/modules/d8086956379e-halftone-evidence-lens.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "paint-ridge-deposition",
+      "name": "Paint Ridge Deposition",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F6F1E7",
+        "ink": "#2D3129",
+        "muted": "#58604F",
+        "accent": "#744930"
+      },
+      "source_id": "source-lemo-style-impasto",
+      "requires_caller_media": false,
+      "fixture_sha256": "42c041cbf772a99372bc8edc9a04e7a7f37ba78011dc61fe0a7c133f2583875e",
+      "module_path": "renderers/template-registry/modules/48952e440b89-paint-ridge-deposition.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "ink-diffusion-front",
+      "name": "Ink Diffusion Front",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F5F5EC",
+        "ink": "#182625",
+        "muted": "#505E5A",
+        "accent": "#375C60"
+      },
+      "source_id": "source-lemo-style-ink-wash",
+      "requires_caller_media": false,
+      "fixture_sha256": "0439b53480abfe175610bcc33b2fac8f6d2bdaf5ff528c14811b01e984cd77e3",
+      "module_path": "renderers/template-registry/modules/6afde3da0ca7-ink-diffusion-front.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "ink-drum-misregister",
+      "name": "Ink Drum Misregister",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#FFF3DF",
+        "ink": "#242337",
+        "muted": "#5A4B57",
+        "accent": "#863940"
+      },
+      "source_id": "source-lemo-style-risograph",
+      "requires_caller_media": false,
+      "fixture_sha256": "9f9d53f4bc0ae0bb458e9d776df1190d48232a406c57111595c10e2172ecbcb5",
+      "module_path": "renderers/template-registry/modules/8feb6c9fcea1-ink-drum-misregister.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "pigment-pool-drying",
+      "name": "Pigment Pool Drying",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F2F5EB",
+        "ink": "#213B40",
+        "muted": "#4D5C57",
+        "accent": "#236875"
+      },
+      "source_id": "source-lemo-style-watercolor",
+      "requires_caller_media": false,
+      "fixture_sha256": "b87120d7166453abc40c37ef2b44ad29fc0d3cd1cec616c7046a1862f74e7cb0",
+      "module_path": "renderers/template-registry/modules/f694a6ac3510-pigment-pool-drying.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "paper-lightbox-parallax",
+      "name": "Paper Lightbox Parallax",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#162D38",
+        "ink": "#FFF4D8",
+        "muted": "#D4D8C9",
+        "accent": "#F3C36F"
+      },
+      "source_id": "source-lemo-style-paper-lantern",
+      "requires_caller_media": false,
+      "fixture_sha256": "d7bd303547cef3c4e6d2e65952114c090225a406c8d217eb705f339dd6f0e6b7",
+      "module_path": "renderers/template-registry/modules/9db6c476432e-paper-lightbox-parallax.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "page-hinge-popups",
+      "name": "Page Hinge Popups",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F8F0DB",
+        "ink": "#313F42",
+        "muted": "#545B51",
+        "accent": "#8A3B30"
+      },
+      "source_id": "source-lemo-style-paper-popup",
+      "requires_caller_media": false,
+      "fixture_sha256": "e26258bd6a491d8435bac851025014df2042a5432112453728f6b2a05deca947",
+      "module_path": "renderers/template-registry/modules/c59afdf2fe07-page-hinge-popups.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "negative-space-cut",
+      "name": "Negative Space Cut",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#FFF4E3",
+        "ink": "#422E2F",
+        "muted": "#6A4A48",
+        "accent": "#9B282E"
+      },
+      "source_id": "source-lemo-style-papercut-red",
+      "requires_caller_media": false,
+      "fixture_sha256": "b616f13e6556b258a39430f7a9fa2ff80b14c2ef6d12c4ac6fd3f61806be4b36",
+      "module_path": "renderers/template-registry/modules/90ca2481eb30-negative-space-cut.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "screenprint-layer-pull",
+      "name": "Screenprint Layer Pull",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4EEDD",
+        "ink": "#1D3839",
+        "muted": "#455D53",
+        "accent": "#925026"
+      },
+      "source_id": "source-lemo-style-silkscreen-poster",
+      "requires_caller_media": false,
+      "fixture_sha256": "dfdcb10e939d3a1a9a47c8710f43a7d0ae3b637535444bf1df54c25846e96137",
+      "module_path": "renderers/template-registry/modules/45c58325ff8c-screenprint-layer-pull.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "lead-cell-lightpass",
+      "name": "Lead Cell Lightpass",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#182633",
+        "ink": "#F9EACD",
+        "muted": "#C5CCCA",
+        "accent": "#E2B05F"
+      },
+      "source_id": "source-lemo-style-stained-glass",
+      "requires_caller_media": false,
+      "fixture_sha256": "64b7cf3a92900bd2425555872d4af1bb6f0d56b239ce8f63d0d5c03cf8fb0cdf",
+      "module_path": "renderers/template-registry/modules/98136c29def5-lead-cell-lightpass.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "woodblock-wave-layers",
+      "name": "Woodblock Wave Layers",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3EFDC",
+        "ink": "#173B4F",
+        "muted": "#4B5B61",
+        "accent": "#1C617C"
+      },
+      "source_id": "source-lemo-style-ukiyoe",
+      "requires_caller_media": false,
+      "fixture_sha256": "4ae784bce7198b534aaa19a04a273432aa007fd81147db662bae8035ba856a0c",
+      "module_path": "renderers/template-registry/modules/814534e3c09b-woodblock-wave-layers.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "carved-groove-print",
+      "name": "Carved Groove Print",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4E5C8",
+        "ink": "#332919",
+        "muted": "#62503B",
+        "accent": "#75452C"
+      },
+      "source_id": "source-lemo-style-woodcut",
+      "requires_caller_media": false,
+      "fixture_sha256": "69b9a45b0ae844d863e3e68b081cb02706ea906d857d86489f4fedcf49392fdc",
+      "module_path": "renderers/template-registry/modules/f1f65e5b2121-carved-groove-print.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "stud-lock-assembly",
+      "name": "Stud Lock Assembly",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3F2E9",
+        "ink": "#202F35",
+        "muted": "#526169",
+        "accent": "#80522F"
+      },
+      "source_id": "source-lemo-style-brick-toy",
+      "requires_caller_media": false,
+      "fixture_sha256": "4fb10f11d35ddda3d8265486ee17b7b2d3e37455d1e22491e92ebf372a32cf65",
+      "module_path": "renderers/template-registry/modules/b47c644108ee-stud-lock-assembly.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "pixel-depth-diorama",
+      "name": "Pixel Depth Diorama",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#17232D",
+        "ink": "#F2F2E5",
+        "muted": "#BACBCE",
+        "accent": "#EAC66E"
+      },
+      "source_id": "source-lemo-style-hd-2d",
+      "requires_caller_media": false,
+      "fixture_sha256": "13f6514e048a7ae9ca9115577e97f1785bb1a7158c5e8c8b8dbab6539ad227e8",
+      "module_path": "renderers/template-registry/modules/58bb7abca301-pixel-depth-diorama.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "microgame-state-loop",
+      "name": "Microgame State Loop",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#17232D",
+        "ink": "#F2F2E5",
+        "muted": "#BACBCE",
+        "accent": "#EAC66E"
+      },
+      "source_id": "source-lemo-style-microgame",
+      "requires_caller_media": false,
+      "fixture_sha256": "b4e1789adfb2500c0567451d648063347d0eb5c9a258c2338fbba0219c57d9b2",
+      "module_path": "renderers/template-registry/modules/bec6fd07b754-microgame-state-loop.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "limited-pose-acting",
+      "name": "Limited Pose Acting",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3F2E9",
+        "ink": "#202F35",
+        "muted": "#526169",
+        "accent": "#80522F"
+      },
+      "source_id": "source-lemo-style-midcentury-toon",
+      "requires_caller_media": false,
+      "fixture_sha256": "dd10b54e8c6d80b3d952ee312cad6449685112c43a52b183c523999dd9001608",
+      "module_path": "renderers/template-registry/modules/8c6cd87e211a-limited-pose-acting.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "tile-quest-state",
+      "name": "Tile Quest State",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3F2E9",
+        "ink": "#202F35",
+        "muted": "#526169",
+        "accent": "#80522F"
+      },
+      "source_id": "source-lemo-style-pixel-rpg",
+      "requires_caller_media": false,
+      "fixture_sha256": "39598324c67b79fbc10524bd6eb4e9e560156848d7b639bfc306adb5299070ee",
+      "module_path": "renderers/template-registry/modules/ef2e8afd0528-tile-quest-state.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "rubber-limb-cycle",
+      "name": "Rubber Limb Cycle",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3F2E9",
+        "ink": "#202F35",
+        "muted": "#526169",
+        "accent": "#80522F"
+      },
+      "source_id": "source-lemo-style-rubber-hose",
+      "requires_caller_media": false,
+      "fixture_sha256": "f06df18987062dfee87b11fa09cbe2b10e631b8d45af72c7c7b5e50f6c8f87f0",
+      "module_path": "renderers/template-registry/modules/1dcbc8bd22a1-rubber-limb-cycle.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "cel-pose-camera",
+      "name": "Cel Pose Camera",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#17232D",
+        "ink": "#F2F2E5",
+        "muted": "#BACBCE",
+        "accent": "#EAC66E"
+      },
+      "source_id": "source-lemo-style-cel-anime-80s",
+      "requires_caller_media": false,
+      "fixture_sha256": "907ea27b77e68cb372aef62a0a639389ef3fcb602bef7307c68b0db8adfa49e4",
+      "module_path": "renderers/template-registry/modules/c770ac3b9d21-cel-pose-camera.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "glass-section-orbit",
+      "name": "Glass Section Orbit",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3F2E9",
+        "ink": "#202F35",
+        "muted": "#526169",
+        "accent": "#80522F"
+      },
+      "source_id": "source-lemo-style-glass-product",
+      "requires_caller_media": false,
+      "fixture_sha256": "62434ed06fad1bfe02bdc5814365e1c8b9ae8c5ab72eff33bee37f9c60108be1",
+      "module_path": "renderers/template-registry/modules/7d6ed6f291f1-glass-section-orbit.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "toon-dialogue-blocking",
+      "name": "Toon Dialogue Blocking",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#17232D",
+        "ink": "#F2F2E5",
+        "muted": "#BACBCE",
+        "accent": "#EAC66E"
+      },
+      "source_id": "source-lemo-style-scifi-toon",
+      "requires_caller_media": false,
+      "fixture_sha256": "d0adfdda96e8f534d7463fd427e7d6f506b2a270b773dd2f915570b503c908d8",
+      "module_path": "renderers/template-registry/modules/31cfd3ebc00b-toon-dialogue-blocking.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "jointed-shadow-performance",
+      "name": "Jointed Shadow Performance",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3F2E9",
+        "ink": "#202F35",
+        "muted": "#526169",
+        "accent": "#80522F"
+      },
+      "source_id": "source-lemo-style-shadow-puppet",
+      "requires_caller_media": false,
+      "fixture_sha256": "61497f7e79632f8d7f3fb0b969c0258e5c7b13d8e6b902147b43e793a56c098a",
+      "module_path": "renderers/template-registry/modules/3037afd5f557-jointed-shadow-performance.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "projection-surface-register",
+      "name": "Projection Surface Register",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3F2E9",
+        "ink": "#202F35",
+        "muted": "#526169",
+        "accent": "#80522F"
+      },
+      "source_id": "source-lemo-style-white-model",
+      "requires_caller_media": false,
+      "fixture_sha256": "071164c1694c1c8885beef22dda231ed8943180b47a71c03c17f48b041f4323c",
+      "module_path": "renderers/template-registry/modules/3a3c669409e2-projection-surface-register.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "pointcloud-sweep-measure",
+      "name": "Pointcloud Sweep Measure",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EFF3F7",
+        "ink": "#1F3043",
+        "muted": "#52647A",
+        "accent": "#254F6D"
+      },
+      "source_id": "source-lemo-style-lidar-survey",
+      "requires_caller_media": false,
+      "fixture_sha256": "bf48daf5556598ddf80288b0787c3f565718dda1b37a7f1cfe38daf98c64cc01",
+      "module_path": "renderers/template-registry/modules/660a0c81c9b3-pointcloud-sweep-measure.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "facet-terrain-growth",
+      "name": "Facet Terrain Growth",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F1F5EE",
+        "ink": "#203835",
+        "muted": "#51625B",
+        "accent": "#7D3E31"
+      },
+      "source_id": "source-lemo-style-lowpoly-island",
+      "requires_caller_media": false,
+      "fixture_sha256": "12dd20d2d8de6be0b260027a6bf59880a9f3f57feb7611f953400dfcea175e3d",
+      "module_path": "renderers/template-registry/modules/ddc290dca210-facet-terrain-growth.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "cell-focus-section",
+      "name": "Cell Focus Section",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3F3E9",
+        "ink": "#263E31",
+        "muted": "#526450",
+        "accent": "#8A3E4D"
+      },
+      "source_id": "source-lemo-style-microscope",
+      "requires_caller_media": false,
+      "fixture_sha256": "f319e36c8872fcf9cb6368318bf0ea411763dfaaafcfbd6bfca4dd6dd133c533",
+      "module_path": "renderers/template-registry/modules/d86824fe5c34-cell-focus-section.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "rigid-body-lightstage",
+      "name": "Rigid Body Lightstage",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EEECE7",
+        "ink": "#313C43",
+        "muted": "#57656D",
+        "accent": "#8B422A"
+      },
+      "source_id": "source-mg-style-04-3d-render",
+      "requires_caller_media": false,
+      "fixture_sha256": "a94ebe435fcc150f8a6a85086de381ea8bb083d0a68bdd3a5782a7bca8f136c9",
+      "module_path": "renderers/template-registry/modules/03ab609394d1-rigid-body-lightstage.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "lighttable-register",
+      "name": "Lighttable Register",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F3EFE4",
+        "ink": "#34372D",
+        "muted": "#62654E",
+        "accent": "#8A3F2D"
+      },
+      "source_id": "source-lemo-style-archive-lighttable",
+      "requires_caller_media": false,
+      "fixture_sha256": "816e53f192ec759caa55317cd8076d2fa9499ffb29f2989777e2574cfbfae0b5",
+      "module_path": "renderers/template-registry/modules/1d17763cd66d-lighttable-register.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "score-reveal-wheel",
+      "name": "Score Reveal Wheel",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F8F1E8",
+        "ink": "#322C3A",
+        "muted": "#665767",
+        "accent": "#964032"
+      },
+      "source_id": "source-lemo-style-game-show",
+      "requires_caller_media": false,
+      "fixture_sha256": "216186be38ada2c27d5d6232dd71be2401ab8beb6704efd3be0350aba5e07ff2",
+      "module_path": "renderers/template-registry/modules/0787ab85d27f-score-reveal-wheel.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "hologram-slice-volume",
+      "name": "Hologram Slice Volume",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EFF1F4",
+        "ink": "#273749",
+        "muted": "#536376",
+        "accent": "#764441"
+      },
+      "source_id": "source-lemo-style-hologram-hud",
+      "requires_caller_media": false,
+      "fixture_sha256": "2d6ddb99e1d5906c79e5779269b48a3068103c542e12c3277b20582f90157ffe",
+      "module_path": "renderers/template-registry/modules/6f1884452a41-hologram-slice-volume.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "footage-caption-cuts",
+      "name": "Footage Caption Cuts",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-caption-news",
+      "requires_caller_media": true,
+      "fixture_sha256": "28780c86d68e0b33595d52229379fde7c783e71db53902b68f3acd11c90c597f",
+      "module_path": "renderers/template-registry/modules/7c074e219fc9-footage-caption-cuts.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "timelapse-mosaic",
+      "name": "Timelapse Mosaic",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-city-symphony",
+      "requires_caller_media": true,
+      "fixture_sha256": "f3a0655e55971c0eb7b6d42a9697f5b5e6c93b80310483fa63b0fe03c56be54e",
+      "module_path": "renderers/template-registry/modules/1bd00339694d-timelapse-mosaic.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "footage-diagonal-montage",
+      "name": "Footage Diagonal Montage",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-kino-montage",
+      "requires_caller_media": true,
+      "fixture_sha256": "6b21b27a18bad810cc284b7f3969c7e45de314cb79ea83e6752ebd5c6456d4c6",
+      "module_path": "renderers/template-registry/modules/8b15403a9e6f-footage-diagonal-montage.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "broadcast-footage-rundown",
+      "name": "Broadcast Footage Rundown",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-news-package",
+      "requires_caller_media": true,
+      "fixture_sha256": "5e73e5a6b6d29c2b3a80585763549e8f3d02da10323a9dda2007c4c2f259265c",
+      "module_path": "renderers/template-registry/modules/46976cc2886d-broadcast-footage-rundown.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "archive-footage-gate",
+      "name": "Archive Footage Gate",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-newsreel",
+      "requires_caller_media": true,
+      "fixture_sha256": "e5c988275144c96cf05be888345fc93449fd1e077309bff9488891dadc46dafd",
+      "module_path": "renderers/template-registry/modules/023676142033-archive-footage-gate.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "silent-footage-intertitles",
+      "name": "Silent Footage Intertitles",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-silent-film",
+      "requires_caller_media": true,
+      "fixture_sha256": "26280d92fbf87f2cf0cb0a8c620a0a3d68b5273ca7ca774bd453f6bcd8f4059f",
+      "module_path": "renderers/template-registry/modules/b7bdec0914d1-silent-footage-intertitles.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "liminal-footage-inspection",
+      "name": "Liminal Footage Inspection",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-backrooms",
+      "requires_caller_media": true,
+      "fixture_sha256": "7fb8dbceb28b6583466d2a23786b91148fecf2a7bf99bea4220492a100e9ad28",
+      "module_path": "renderers/template-registry/modules/830974c26e42-liminal-footage-inspection.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "screen-focus-follow",
+      "name": "Screen Focus Follow",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-living-screencast",
+      "requires_caller_media": true,
+      "fixture_sha256": "32bbe8e9d5a9fc3ffe51ebb8776be2a0ac8e46d7e1c4a32feebfee73d90f4d3d",
+      "module_path": "renderers/template-registry/modules/59b5267aabb9-screen-focus-follow.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "georeferenced-footage-track",
+      "name": "Georeferenced Footage Track",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-satellite-briefing",
+      "requires_caller_media": true,
+      "fixture_sha256": "9b74e34ed1552b011c5d032caf066110f4ae0901ae22356b19cee1384ec4932b",
+      "module_path": "renderers/template-registry/modules/15a80c4f2fc4-georeferenced-footage-track.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "footage-tactical-overlay",
+      "name": "Footage Tactical Overlay",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-telestrator",
+      "requires_caller_media": true,
+      "fixture_sha256": "f6fc7405a79197113fa4a809b0c4d470ae4e1a1538e43415d3b05f48cbe2b9c1",
+      "module_path": "renderers/template-registry/modules/06f5237f5517-footage-tactical-overlay.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "footage-focus-band",
+      "name": "Footage Focus Band",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-tilt-shift",
+      "requires_caller_media": true,
+      "fixture_sha256": "49e765bd9eddcb25e286489ba8cfa13130360310cf25b2df718133379d24dd2a",
+      "module_path": "renderers/template-registry/modules/6e9e2f0828b6-footage-focus-band.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "media-evidence-compare",
+      "name": "Media Evidence Compare",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "source-lemo-style-visual-investigation",
+      "requires_caller_media": true,
+      "fixture_sha256": "9ffc022244ce992a1a456849659d85879e305f7dfe417fcaf050f9010da04b96",
+      "module_path": "renderers/template-registry/modules/11b847c80eb3-media-evidence-compare.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "vector-puppet-cause",
+      "name": "Vector Puppet Cause",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F1E8",
+        "ink": "#1B2530",
+        "muted": "#56606B",
+        "accent": "#77512E"
+      },
+      "source_id": "src-athemeroy-style-flat-vector-cartoon",
+      "requires_caller_media": false,
+      "fixture_sha256": "246873616eb4a900e094fb6d416e5c142e16aebf3f2ac18fb2166dc58be96e5d",
+      "module_path": "renderers/template-registry/modules/13bf72e86fe8-vector-puppet-cause.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "field-orbit-ensemble",
+      "name": "Field Orbit Ensemble",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EFF3F5",
+        "ink": "#182B39",
+        "muted": "#4F6575",
+        "accent": "#245E83"
+      },
+      "source_id": "src-athemeroy-style-generative-abstract",
+      "requires_caller_media": false,
+      "fixture_sha256": "ca607aba1c66572568a9f91da81e4bd20802c2d16100544097e1f66517931069",
+      "module_path": "renderers/template-registry/modules/eb10ca0d6fa9-field-orbit-ensemble.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "construction-stroke-stack",
+      "name": "Construction Stroke Stack",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F1E8",
+        "ink": "#1B2530",
+        "muted": "#56606B",
+        "accent": "#77512E"
+      },
+      "source_id": "src-athemeroy-style-hand-drawn-sketch",
+      "requires_caller_media": false,
+      "fixture_sha256": "7e80df1dd798f5ac9d45480b6f9c9b7a114e1d51e87515bf01cc6b13942612db",
+      "module_path": "renderers/template-registry/modules/121aed4c0c3a-construction-stroke-stack.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "geometric-proof-transform",
+      "name": "Geometric Proof Transform",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EFF3F5",
+        "ink": "#182B39",
+        "muted": "#4F6575",
+        "accent": "#245E83"
+      },
+      "source_id": "src-athemeroy-style-math-diagram",
+      "requires_caller_media": false,
+      "fixture_sha256": "7942152e9cc1ed0539695b1e644e9e3151b1277a155f53810f545550959d4533",
+      "module_path": "renderers/template-registry/modules/b5002cf70549-geometric-proof-transform.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "ui-state-transition-lab",
+      "name": "Ui State Transition Lab",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EFF3F5",
+        "ink": "#182B39",
+        "muted": "#4F6575",
+        "accent": "#245E83"
+      },
+      "source_id": "src-athemeroy-style-motion-graphics-ui",
+      "requires_caller_media": false,
+      "fixture_sha256": "6e9867a2d17653b9f2c26fd695c359c25b07234cc964a6b8b1ac12715cfcc4a6",
+      "module_path": "renderers/template-registry/modules/05aa663c6498-ui-state-transition-lab.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "pixel-cellular-ecosystem",
+      "name": "Pixel Cellular Ecosystem",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EFF3F5",
+        "ink": "#182B39",
+        "muted": "#4F6575",
+        "accent": "#245E83"
+      },
+      "source_id": "src-athemeroy-style-pixel-art",
+      "requires_caller_media": false,
+      "fixture_sha256": "004bfe57a4eeb125ded7f65acdb35e086225f1a8282f86b673876fc3057c9679",
+      "module_path": "renderers/template-registry/modules/be1e443de10e-pixel-cellular-ecosystem.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "ascii-wave-buffer",
+      "name": "Ascii Wave Buffer",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#111A18",
+        "ink": "#D5F6DF",
+        "muted": "#9FBEAB",
+        "accent": "#ADF1C2"
+      },
+      "source_id": "src-athemeroy-style-retro-terminal-ascii",
+      "requires_caller_media": false,
+      "fixture_sha256": "c6d33c6095c36c4d522c682522552c8a97d4912e993db9b09179efbda9572c2b",
+      "module_path": "renderers/template-registry/modules/7ae25f27401c-ascii-wave-buffer.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "orbital-shadow-machine",
+      "name": "Orbital Shadow Machine",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#EFF3F5",
+        "ink": "#182B39",
+        "muted": "#4F6575",
+        "accent": "#245E83"
+      },
+      "source_id": "src-athemeroy-style-3d-render",
+      "requires_caller_media": false,
+      "fixture_sha256": "f33490e03632a9f1262b2a14f3e40f7f153941c150c8ecf5e8eaa5162b30d44e",
+      "module_path": "renderers/template-registry/modules/22f17bc3c0c8-orbital-shadow-machine.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "original-anime-action-arc",
+      "name": "Original Anime Action Arc",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F9EFEA",
+        "ink": "#342A35",
+        "muted": "#6E5663",
+        "accent": "#92502E"
+      },
+      "source_id": "src-athemeroy-style-anime",
+      "requires_caller_media": false,
+      "fixture_sha256": "2061b853d9a42dc242df493426453a6ed1aee3eb05f62ee57662dd9c9bde5d2b",
+      "module_path": "renderers/template-registry/modules/95591e3235b5-original-anime-action-arc.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "sand-rake-reformation",
+      "name": "Sand Rake Reformation",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F1E8",
+        "ink": "#1B2530",
+        "muted": "#56606B",
+        "accent": "#77512E"
+      },
+      "source_id": "src-athemeroy-style-painterly-ink-sand",
+      "requires_caller_media": false,
+      "fixture_sha256": "680b32ef040889488767a718028c0a7e7c8abfa9c5ab446f52c41ea88682bdf7",
+      "module_path": "renderers/template-registry/modules/3cb1c2447d23-sand-rake-reformation.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "torn-edge-layer-transfer",
+      "name": "Torn Edge Layer Transfer",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#F4F1E8",
+        "ink": "#1B2530",
+        "muted": "#56606B",
+        "accent": "#77512E"
+      },
+      "source_id": "src-athemeroy-style-paper-cutout-collage",
+      "requires_caller_media": false,
+      "fixture_sha256": "575ab1cb50df7b823c06c7c2bd6ea1aabd756d6e112a45424c6f466b72b8a29b",
+      "module_path": "renderers/template-registry/modules/bf5ceb0dc5c1-torn-edge-layer-transfer.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "licensed-shot-continuity",
+      "name": "Licensed Shot Continuity",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "src-athemeroy-style-live-action",
+      "requires_caller_media": true,
+      "fixture_sha256": "88006059629bac9ff6fb7b306447fd4bc2ae088ab3b24055ac2b24c03de6bd19",
+      "module_path": "renderers/template-registry/modules/08bab8372e98-licensed-shot-continuity.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    },
+    {
+      "id": "licensed-photo-depth",
+      "name": "Licensed Photo Depth",
+      "kind": "development-registry",
+      "description": "Bounded original archived geometry; native and visual acceptance pending.",
+      "palette": {
+        "background": "#101B24",
+        "ink": "#F4F3E9",
+        "muted": "#BBCBD3",
+        "accent": "#8CD8EF"
+      },
+      "source_id": "src-athemeroy-style-photoreal",
+      "requires_caller_media": true,
+      "fixture_sha256": "6d115d21154133091975c0734d3a94d97af5df267c447f88a4172e7996b77a0a",
+      "module_path": "renderers/template-registry/modules/0d4d416c6c9e-licensed-photo-depth.mjs",
+      "native_verified": false,
+      "visual_verified": false
+    }
+  ]
+}

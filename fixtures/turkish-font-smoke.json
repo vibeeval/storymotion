@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "brand": "neutral",
+  "title": "İı Şş Ğğ Çç Öö Üü",
+  "brief": "Sessiz Türkçe glif, kare hızı ve piksel oranı teknik provası; kaynak doğruluğu veya insan glif kabulü değildir.",
+  "demo": true,
+  "script": "İı Şş Ğğ Çç Öö Üü. İstanbul, ışık, şüphe, çağrı, öğün.",
+  "caption": "Sessiz Türkçe karakter provası.",
+  "duration": 3,
+  "alignment": "provisional_silent",
+  "audio": null,
+  "claims": [],
+  "brand_identity": {
+    "name": "",
+    "handle": ""
+  },
+  "scenes": [
+    {
+      "id": "glyphs",
+      "start": 0,
+      "end": 3,
+      "heading": "İı Şş Ğğ Çç Öö Üü",
+      "action": "unlock",
+      "information": "Yerel glif ve hareket örneği.",
+      "object_before": "Kilit kapalı.",
+      "object_after": "Kilit açık."
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3,
+      "text": "İı Şş Ğğ Çç Öö Üü. İstanbul, ışık, şüphe, çağrı, öğün."
+    }
+  ]
+}

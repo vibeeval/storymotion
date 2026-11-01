@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "scene_actions": [
+    "request-route",
+    "approval-gate",
+    "receipt-reuse"
+  ],
+  "visual_family": "approval-conveyor",
+  "duration_range_seconds": [
+    1,
+    90
+  ],
+  "wardrobe": null,
+  "scene_contract": {
+    "request-route": {
+      "state_before": "input-closed",
+      "state_after": "waiting-closed"
+    },
+    "approval-gate": {
+      "state_before": "waiting-closed",
+      "state_after": "processed-open"
+    },
+    "receipt-reuse": {
+      "state_before": "processed-open",
+      "state_after": "reused-open"
+    }
+  },
+  "initial_state": "input-closed",
+  "final_state": "reused-open",
+  "id": "neutral",
+  "display_name": "Neutral sample",
+  "niche": "Neutral technical fixture",
+  "procedures": [
+    {
+      "id": "owner-method",
+      "status": "TODO",
+      "instruction": "No complete production method is supplied. Adapt the neutral example to your own content and review the result."
+    }
+  ],
+  "visual_families": [
+    "approval-conveyor"
+  ],
+  "scene_vocab": [
+    "request-route",
+    "approval-gate",
+    "receipt-reuse"
+  ],
+  "series_rules": {
+    "enabled": false,
+    "fictional": false
+  },
+  "voice_defaults": {
+    "provider": "off",
+    "voice_id": null
+  },
+  "profile": {
+    "id": "neutral",
+    "name": "Neutral sample",
+    "format": "automation-explainer",
+    "palette": {
+      "background": "#F1EEE5",
+      "ink": "#101010",
+      "muted": "#66635E",
+      "accent": "#D96745"
+    },
+    "font": "Schibsted",
+    "handle": "",
+    "title_size": 78,
+    "subtitle_size": 44,
+    "subtitle_top": 1570,
+    "subtitle_width": 908,
+    "handle_left": 88,
+    "handle_bottom": 172,
+    "handle_size": 27,
+    "top_brand": false,
+    "avatar": false,
+    "sentence_case": true,
+    "assets": "Bundled neutral vector example; commercial authorization remains pending.",
+    "visual_family": "approval-conveyor"
+  },
+  "formats": [
+    "account-video",
+    "video-script",
+    "video-brief"
+  ],
+  "language": "tr",
+  "category": "explainer",
+  "capabilities": {
+    "legacy_fixture": true,
+    "raster": false,
+    "manual_scene_kinds": [
+      "process-route",
+      "object-transform"
+    ],
+    "rig_mode": "inset",
+    "certainty_guard": false
+  },
+  "rule_ids": [
+    "CORE-01",
+    "CORE-02",
+    "CORE-03",
+    "CORE-04",
+    "VIB-01",
+    "VIB-02"
+  ],
+  "rules": [
+    {
+      "id": "CORE-01",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-02",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-03",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-04",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "VIB-01",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "VIB-02",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    }
+  ],
+  "source_revision": "neutral-technical-fixture-1",
+  "asset_policy": {
+    "allowed": "original_project_vectors",
+    "commercial_transfer": "pending owner terms"
+  },
+  "acceptance": {
+    "publication_ready": false,
+    "source_truth": "pending_human_review",
+    "creative": "pending_human_review"
+  },
+  "workflow": [
+    "Adapt the neutral example; review sources, media rights and final output."
+  ],
+  "production_workflow": [],
+  "revision_policy": {},
+  "repeat_policy": {},
+  "brand": {
+    "palette": {
+      "background": "#F1EEE5",
+      "ink": "#101010",
+      "muted": "#66635E",
+      "accent": "#D96745"
+    }
+  },
+  "fixture": {
+    "schema_version": 1,
+    "brand": "neutral",
+    "title": "Aynı istek ikinci kez gelirse?",
+    "brief": "Özgün vektörlerle sessiz golden teknik prova; gerçek kullanıcı/sağlayıcı sonucu, tanı veya yeni kanon bölümü değildir.",
+    "demo": true,
+    "language": "tr",
+    "script": "İstek aynı kimlikle geliyor. Önce onay kapısı açılıyor. Aynı sonuç yeniden kullanılıyor.",
+    "caption": "Aynı istek ikinci kez gelirse? Bu sessiz teknik prova, kaynaklı üretim sözleşmesinin gözden geçirilmesi içindir.",
+    "duration": 12,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [],
+    "continuity": null,
+    "scenes": [
+      {
+        "id": "beat-1",
+        "start": 0,
+        "end": 4,
+        "heading": "Aynı istek geliyor.",
+        "action": "request-route",
+        "information": "İstek aynı kimlikle geliyor.",
+        "object_before": "İstek girişte; kapı kapalı.",
+        "object_after": "İstek kapının önünde; kapı kapalı.",
+        "object_id": "request-01",
+        "character_id": null,
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "VIB-01"
+        ],
+        "state_before": "input-closed",
+        "state_after": "waiting-closed"
+      },
+      {
+        "id": "beat-2",
+        "start": 4,
+        "end": 8,
+        "heading": "Onay olmadan geçmez.",
+        "action": "approval-gate",
+        "information": "Önce onay kapısı açılıyor.",
+        "object_before": "İstek kapının önünde; kapı kapalı.",
+        "object_after": "İstek işlenmiş; sonuç hazır.",
+        "object_id": "request-01",
+        "character_id": null,
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "VIB-01"
+        ],
+        "state_before": "waiting-closed",
+        "state_after": "processed-open"
+      },
+      {
+        "id": "beat-3",
+        "start": 8,
+        "end": 12,
+        "heading": "Sonuç yeniden kullanılır.",
+        "action": "receipt-reuse",
+        "information": "Aynı sonuç yeniden kullanılıyor.",
+        "object_before": "İstek işlenmiş; sonuç hazır.",
+        "object_after": "Önceki sonuç korunmuş; yeniden kullanılıyor.",
+        "object_id": "request-01",
+        "character_id": null,
+        "camera": "push-in",
+        "rule_ids": [
+          "CORE-01",
+          "VIB-01"
+        ],
+        "state_before": "processed-open",
+        "state_after": "reused-open"
+      }
+    ],
+    "cues": [
+      {
+        "start": 0,
+        "end": 3.9,
+        "text": "İstek aynı kimlikle geliyor."
+      },
+      {
+        "start": 4,
+        "end": 7.9,
+        "text": "Önce onay kapısı açılıyor."
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "text": "Aynı sonuç yeniden kullanılıyor."
+      }
+    ],
+    "creative": {
+      "pack_version": "1.0.0",
+      "topic_id": "golden-sample-flow-01",
+      "visual_motif": "approval-conveyor",
+      "canon_status": "standalone",
+      "characters": [],
+      "asset_policy": "original_vectors_only"
+    }
+  },
+  "legacy_fixture": {
+    "schema_version": 1,
+    "brand": "neutral",
+    "title": "İı Şş Ğğ Çç Öö Üü",
+    "brief": "Sessiz Türkçe glif, kare hızı ve piksel oranı teknik provası; kaynak doğruluğu veya insan glif kabulü değildir.",
+    "demo": true,
+    "script": "İı Şş Ğğ Çç Öö Üü. İstanbul, ışık, şüphe, çağrı, öğün.",
+    "caption": "Sessiz Türkçe karakter provası.",
+    "duration": 3,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [],
+    "scenes": [
+      {
+        "id": "glyphs",
+        "start": 0,
+        "end": 3,
+        "heading": "İı Şş Ğğ Çç Öö Üü",
+        "action": "unlock",
+        "information": "Yerel glif ve hareket örneği.",
+        "object_before": "Kilit kapalı.",
+        "object_after": "Kilit açık."
+      }
+    ],
+    "cues": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "İı Şş Ğğ Çç Öö Üü. İstanbul, ışık, şüphe, çağrı, öğün."
+      }
+    ]
+  }
+}

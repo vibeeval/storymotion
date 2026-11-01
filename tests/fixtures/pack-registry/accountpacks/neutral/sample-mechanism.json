@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "scene_actions": [
+    "latch-release",
+    "lid-rise",
+    "mechanism-return"
+  ],
+  "visual_family": "hinged-box",
+  "duration_range_seconds": [
+    1,
+    90
+  ],
+  "wardrobe": null,
+  "scene_contract": {
+    "latch-release": {
+      "state_before": "contact-closed",
+      "state_after": "released-closed"
+    },
+    "lid-rise": {
+      "state_before": "released-closed",
+      "state_after": "released-open"
+    },
+    "mechanism-return": {
+      "state_before": "released-open",
+      "state_after": "released-open"
+    }
+  },
+  "initial_state": "contact-closed",
+  "final_state": "released-open",
+  "id": "sample-mechanism",
+  "display_name": "Sample Mechanism",
+  "niche": "Neutral technical fixture",
+  "procedures": [
+    {
+      "id": "owner-method",
+      "status": "TODO",
+      "instruction": "Owner must supply an original method from dated production notes."
+    }
+  ],
+  "visual_families": [
+    "hinged-box"
+  ],
+  "scene_vocab": [
+    "latch-release",
+    "lid-rise",
+    "mechanism-return"
+  ],
+  "series_rules": {
+    "enabled": false,
+    "fictional": false
+  },
+  "voice_defaults": {
+    "provider": "off",
+    "voice_id": null
+  },
+  "profile": {
+    "id": "sample-mechanism",
+    "name": "sample-mechanism",
+    "format": "explainer",
+    "palette": {
+      "background": "#F1EEE4",
+      "ink": "#273450",
+      "muted": "#606C6B",
+      "accent": "#D5692D"
+    },
+    "font": "Schibsted",
+    "handle": "",
+    "title_size": 86,
+    "subtitle_size": 44,
+    "subtitle_top": 1570,
+    "subtitle_width": 908,
+    "handle_left": 88,
+    "handle_bottom": 172,
+    "handle_size": 27,
+    "top_brand": false,
+    "avatar": false,
+    "sentence_case": true,
+    "voice_policy": "Existing voice choice is a preference only; no spend or voice rights transfer.",
+    "visual_family": "hinged-box",
+    "assets": "Bundled neutral vector fixture; commercial terms pending owner review."
+  },
+  "formats": [
+    "account-video",
+    "short-explainer"
+  ],
+  "language": "tr",
+  "category": "explainer",
+  "capabilities": {
+    "legacy_fixture": true,
+    "raster": true,
+    "manual_scene_kinds": [],
+    "rig_mode": null,
+    "certainty_guard": false
+  },
+  "rule_ids": [
+    "CORE-01",
+    "CORE-02",
+    "CORE-03",
+    "CORE-04",
+    "ALT-01",
+    "ALT-02"
+  ],
+  "rules": [
+    {
+      "id": "CORE-01",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-02",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-03",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "CORE-04",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "ALT-01",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    },
+    {
+      "id": "ALT-02",
+      "text": "Technical fixture rule; human creative acceptance pending."
+    }
+  ],
+  "source_revision": "neutral-technical-fixture-1",
+  "asset_policy": {
+    "allowed": "original_project_vectors",
+    "commercial_transfer": "pending owner terms"
+  },
+  "acceptance": {
+    "publication_ready": false,
+    "source_truth": "pending_human_review",
+    "creative": "pending_human_review"
+  },
+  "workflow": [
+    "TODO: owner authored method"
+  ],
+  "production_workflow": [],
+  "revision_policy": {},
+  "repeat_policy": {},
+  "brand": {
+    "palette": {
+      "background": "#F1EEE4",
+      "ink": "#273450",
+      "muted": "#606C6B",
+      "accent": "#D5692D"
+    }
+  },
+  "fixture": {
+    "schema_version": 1,
+    "brand": "sample-mechanism",
+    "title": "Kapaktan önce hangi parça hareket eder?",
+    "brief": "Özgün vektörlerle sessiz golden teknik prova; gerçek kullanıcı/sağlayıcı sonucu, tanı veya yeni kanon bölümü değildir.",
+    "demo": true,
+    "language": "tr",
+    "script": "Bu çizimde önce mandal ayrılıyor. Sonra aynı kapak yükseliyor. Hareket sırası, nedeni görünür kılıyor.",
+    "caption": "Kapaktan önce hangi parça hareket eder? Bu sessiz teknik prova, kaynaklı üretim sözleşmesinin gözden geçirilmesi içindir.",
+    "duration": 12,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [],
+    "continuity": null,
+    "scenes": [
+      {
+        "id": "beat-1",
+        "start": 0,
+        "end": 4,
+        "heading": "Önce mandal ayrılır.",
+        "action": "latch-release",
+        "information": "Bu çizimde önce mandal ayrılıyor.",
+        "object_before": "Mandal temas ediyor; kapak kapalı.",
+        "object_after": "Mandal ayrılmış; kapak kapalı.",
+        "object_id": "hinge-model-01",
+        "character_id": null,
+        "camera": "push-in",
+        "rule_ids": [
+          "CORE-01",
+          "ALT-01"
+        ],
+        "state_before": "contact-closed",
+        "state_after": "released-closed"
+      },
+      {
+        "id": "beat-2",
+        "start": 4,
+        "end": 8,
+        "heading": "Sonra kapak yükselir.",
+        "action": "lid-rise",
+        "information": "Sonra aynı kapak yükseliyor.",
+        "object_before": "Mandal ayrılmış; kapak kapalı.",
+        "object_after": "Mandal ayrılmış; kapak açık.",
+        "object_id": "hinge-model-01",
+        "character_id": null,
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "ALT-01"
+        ],
+        "state_before": "released-closed",
+        "state_after": "released-open"
+      },
+      {
+        "id": "beat-3",
+        "start": 8,
+        "end": 12,
+        "heading": "Aynı mekanizmaya dön.",
+        "action": "mechanism-return",
+        "information": "Hareket sırası, nedeni görünür kılıyor.",
+        "object_before": "Mandal ayrılmış; kapak açık.",
+        "object_after": "Aynı mandal ve açık kapak görünür.",
+        "object_id": "hinge-model-01",
+        "character_id": null,
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "ALT-01"
+        ],
+        "state_before": "released-open",
+        "state_after": "released-open"
+      }
+    ],
+    "cues": [
+      {
+        "start": 0,
+        "end": 3.9,
+        "text": "Bu çizimde önce mandal ayrılıyor."
+      },
+      {
+        "start": 4,
+        "end": 7.9,
+        "text": "Sonra aynı kapak yükseliyor."
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "text": "Hareket sırası, nedeni görünür kılıyor."
+      }
+    ],
+    "creative": {
+      "pack_version": "1.0.0",
+      "topic_id": "golden-sample-mechanism-01",
+      "visual_motif": "hinged-latch",
+      "canon_status": "standalone",
+      "characters": [],
+      "asset_policy": "original_vectors_only"
+    }
+  },
+  "legacy_fixture": {
+    "schema_version": 1,
+    "brand": "sample-mechanism",
+    "title": "Önce neden, sonra sonuç",
+    "brief": "Dört saniyelik sessiz teknik fixture: aynı kutunun kilidi açılır, kapak kalkar. Bilimsel iddia veya yeni ses üretimi yok.",
+    "demo": true,
+    "script": "Kilit açılıyor. Ardından kapak kalkıyor.",
+    "caption": "Kilit açılıyor, ardından kapak kalkıyor. Bu kısa sahne, üretim hattının sessiz teknik demosudur.",
+    "duration": 4,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [],
+    "scenes": [
+      {
+        "id": "cause",
+        "start": 0,
+        "end": 2,
+        "heading": "Kilit açılıyor.",
+        "action": "unlock",
+        "information": "Kapak hareketinden önce kilit ayrılır.",
+        "object_before": "Kilit kapalı.",
+        "object_after": "Kilit açık."
+      },
+      {
+        "id": "effect",
+        "start": 2,
+        "end": 4,
+        "heading": "Kapak kalkıyor.",
+        "action": "open",
+        "information": "Aynı kutunun kapağı açılır.",
+        "object_before": "Kilit açık, kapak kapalı.",
+        "object_after": "Kapak açık."
+      }
+    ],
+    "cues": [
+      {
+        "start": 0,
+        "end": 1.9,
+        "text": "Kilit açılıyor."
+      },
+      {
+        "start": 2,
+        "end": 4,
+        "text": "Ardından kapak kalkıyor."
+      }
+    ]
+  }
+}

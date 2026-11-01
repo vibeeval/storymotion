@@ -1,0 +1,125 @@
+{
+  "family_id": "pictogram-limb-transition",
+  "source_id": "source-lemo-style-pictogram-motion",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "pictogram-limb-transition",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir eylemi anlatan basit eklemler, ortak bir parçayı sonraki harekete nasıl taşır?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F6F3EB",
+            "ink": "#192B43",
+            "muted": "#485366",
+            "accent": "#8F2D43"
+          },
+          "icon_sequence": [
+            "stand",
+            "reach"
+          ],
+          "joint_angles": [
+            {
+              "left_arm": -20,
+              "right_arm": 20,
+              "left_leg": -12,
+              "right_leg": 12
+            },
+            {
+              "left_arm": -50,
+              "right_arm": 80,
+              "left_leg": -22,
+              "right_leg": 25
+            }
+          ],
+          "transfer_parts": [
+            "hand"
+          ],
+          "action_cues": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "pictogram-limb-transition",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Uzanan el ile atılan adım aynı kemik uzunluğunu ve parça kimliğini korur.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F6F3EB",
+            "ink": "#192B43",
+            "muted": "#485366",
+            "accent": "#8F2D43"
+          },
+          "icon_sequence": [
+            "step",
+            "carry",
+            "reach"
+          ],
+          "joint_angles": [
+            {
+              "left_arm": -35,
+              "right_arm": 35,
+              "left_leg": -40,
+              "right_leg": 25
+            },
+            {
+              "left_arm": -65,
+              "right_arm": 65,
+              "left_leg": -15,
+              "right_leg": 15
+            },
+            {
+              "left_arm": -20,
+              "right_arm": 80,
+              "left_leg": -30,
+              "right_leg": 30
+            }
+          ],
+          "transfer_parts": [
+            "head",
+            "foot"
+          ],
+          "action_cues": [
+            0,
+            0.4,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "family_id": "caption-impact-rig",
+  "source_id": "source-mg-style-18-hanazi",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "caption-impact-rig",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir cümle okunurken yalnız anlamı taşıyan ifadeye kısa ve belirgin bir vurgu geliyor",
+          "duration": 4,
+          "narration": "Daha çok hareket, her zaman daha açık bir anlatım kurmaz. Tek bir vurgu, önemli ifadeyi görünür kılabilir.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Daha çok hareket, her zaman daha açık bir anlatım kurmaz."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Tek bir vurgu, önemli ifadeyi görünür kılabilir."
+            }
+          ],
+          "palette": {
+            "background": "#F6F0E8",
+            "ink": "#352B2C",
+            "muted": "#6B5B5D",
+            "accent": "#A03838"
+          },
+          "focus": "Tek bir vurgu",
+          "punctuation": "!",
+          "impact_fraction": 0.3,
+          "impact_seconds": 0.2
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "caption-impact-rig",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Okuma payı bırakılan bir soru, tek sözcüğün üstündeki işaretle yön değiştiriyor",
+          "duration": 4.8,
+          "narration": "Bir cümlede gerçekten neyin değiştiğini fark ediyor musun? Önce okumak, sonra vurguyu görmek için kısa bir durak gerekir.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.4,
+              "text": "Bir cümlede gerçekten neyin değiştiğini fark ediyor musun?"
+            },
+            {
+              "start": 2.4,
+              "end": 4.8,
+              "text": "Önce okumak, sonra vurguyu görmek için kısa bir durak gerekir."
+            }
+          ],
+          "palette": {
+            "background": "#F6F0E8",
+            "ink": "#352B2C",
+            "muted": "#6B5B5D",
+            "accent": "#A03838"
+          },
+          "focus": "gerçekten",
+          "punctuation": "?",
+          "impact_fraction": 0.48,
+          "impact_seconds": 0.28
+        }
+      }
+    }
+  ]
+}

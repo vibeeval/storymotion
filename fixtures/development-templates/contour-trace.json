@@ -1,0 +1,94 @@
+{
+  "family_id": "contour-trace",
+  "source_id": "source-mg-style-02-line-art",
+  "cases": [
+    {
+      "name": "short-silent",
+      "spec": {
+        "id": "contour-trace",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Çizgi yavaşça ilerlerken yaprağın dış sınırı ve iç dokusu birlikte görünür oluyor",
+          "duration": 3.2,
+          "narration": "Tek bir çizgi, yaprağın dış sınırını kuruyor. İç tarama tamamlandığında biçim daha belirgin görünüyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 1.493333333333,
+              "text": "Tek bir çizgi, yaprağın dış sınırını kuruyor."
+            },
+            {
+              "start": 1.6,
+              "end": 3.2,
+              "text": "İç tarama tamamlandığında biçim daha belirgin görünüyor."
+            }
+          ],
+          "palette": {
+            "background": "#FAF6EC",
+            "ink": "#263A30",
+            "muted": "#647165",
+            "accent": "#9C4D30"
+          },
+          "illustration": "leaf",
+          "label": "Özgün yaprak konturu, çizimden sonra açılan çapraz taramalarla tamamlanıyor.",
+          "width": 440,
+          "height": 500,
+          "stroke_width": 4,
+          "hatch_spacing": 18,
+          "draw_window": [
+            0.04,
+            0.62
+          ],
+          "hatch_window": [
+            0.65,
+            0.96
+          ]
+        }
+      }
+    },
+    {
+      "name": "long-timed",
+      "spec": {
+        "id": "contour-trace",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Seramik kabın simetrik çizgileri önce iskeleti kuruyor, ardından yüzey dokusu beliriyor",
+          "duration": 4,
+          "narration": "Önce seramik kabın kesintisiz dış çizgisi tamamlanıyor. Ardından daha sık taramalar yüzeyde bir ritim kuruyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Önce seramik kabın kesintisiz dış çizgisi tamamlanıyor."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Ardından daha sık taramalar yüzeyde bir ritim kuruyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4EFE7",
+            "ink": "#3E2B27",
+            "muted": "#76665B",
+            "accent": "#A24935"
+          },
+          "illustration": "vessel",
+          "label": "Daha dar gövde, kalın dış çizgi ve sık tarama; aynı sahnede farklı bir illüstrasyon.",
+          "width": 320,
+          "height": 460,
+          "stroke_width": 6,
+          "hatch_spacing": 12,
+          "draw_window": [
+            0,
+            0.5
+          ],
+          "hatch_window": [
+            0.55,
+            0.95
+          ]
+        }
+      }
+    }
+  ]
+}

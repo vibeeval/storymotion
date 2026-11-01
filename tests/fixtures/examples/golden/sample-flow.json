@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "brand": "sample-flow",
+  "title": "Aynı istek ikinci kez gelirse?",
+  "brief": "Özgün vektörlerle sessiz golden teknik prova; gerçek kullanıcı/sağlayıcı sonucu, tanı veya yeni kanon bölümü değildir.",
+  "demo": true,
+  "language": "tr",
+  "script": "İstek aynı kimlikle geliyor. Önce onay kapısı açılıyor. Aynı sonuç yeniden kullanılıyor.",
+  "caption": "Aynı istek ikinci kez gelirse? Bu sessiz teknik prova, kaynaklı üretim sözleşmesinin gözden geçirilmesi içindir.",
+  "duration": 12,
+  "alignment": "provisional_silent",
+  "audio": null,
+  "claims": [],
+  "continuity": null,
+  "scenes": [
+    {
+      "id": "beat-1",
+      "start": 0,
+      "end": 4,
+      "heading": "Aynı istek geliyor.",
+      "action": "request-route",
+      "information": "İstek aynı kimlikle geliyor.",
+      "object_before": "İstek girişte; kapı kapalı.",
+      "object_after": "İstek kapının önünde; kapı kapalı.",
+      "object_id": "request-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "VIB-01"
+      ],
+      "state_before": "input-closed",
+      "state_after": "waiting-closed"
+    },
+    {
+      "id": "beat-2",
+      "start": 4,
+      "end": 8,
+      "heading": "Onay olmadan geçmez.",
+      "action": "approval-gate",
+      "information": "Önce onay kapısı açılıyor.",
+      "object_before": "İstek kapının önünde; kapı kapalı.",
+      "object_after": "İstek işlenmiş; sonuç hazır.",
+      "object_id": "request-01",
+      "character_id": null,
+      "camera": "locked",
+      "rule_ids": [
+        "CORE-01",
+        "VIB-01"
+      ],
+      "state_before": "waiting-closed",
+      "state_after": "processed-open"
+    },
+    {
+      "id": "beat-3",
+      "start": 8,
+      "end": 12,
+      "heading": "Sonuç yeniden kullanılır.",
+      "action": "receipt-reuse",
+      "information": "Aynı sonuç yeniden kullanılıyor.",
+      "object_before": "İstek işlenmiş; sonuç hazır.",
+      "object_after": "Önceki sonuç korunmuş; yeniden kullanılıyor.",
+      "object_id": "request-01",
+      "character_id": null,
+      "camera": "push-in",
+      "rule_ids": [
+        "CORE-01",
+        "VIB-01"
+      ],
+      "state_before": "processed-open",
+      "state_after": "reused-open"
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.9,
+      "text": "İstek aynı kimlikle geliyor."
+    },
+    {
+      "start": 4,
+      "end": 7.9,
+      "text": "Önce onay kapısı açılıyor."
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "text": "Aynı sonuç yeniden kullanılıyor."
+    }
+  ],
+  "creative": {
+    "pack_version": "1.0.0",
+    "topic_id": "golden-sample-flow-01",
+    "visual_motif": "approval-conveyor",
+    "canon_status": "standalone",
+    "characters": [],
+    "asset_policy": "original_vectors_only"
+  }
+}

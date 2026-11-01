@@ -1,0 +1,236 @@
+{
+  "scope": "owned synthetic manual planning example; not factual, clinical, live-provider or accepted episode evidence",
+  "brief": {
+    "schema_version": 1,
+    "brand": "sample-series",
+    "title": "Zarfın köşesi neden tanıdık geldi?",
+    "brief": "Özgün sentetik edit provası; mevcut sınırlı görsel aile kullanılır. Gerçek konu videosu veya accepted bölüm değildir.",
+    "demo": true,
+    "language": "tr",
+    "script": "Zarfı masaya bıraktım. Aynı köşeyi yeniden çevirdim. İz oradaydı; bu, kabul edilmiş bir bölüm değil.",
+    "caption": "Bu özgün çizim, kurgu sözleşmesini incelemek için hazırlanmış sessiz bir provadır.",
+    "duration": 12,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [
+      {
+        "text": "Zarfı masaya bıraktım.",
+        "source": "owned-drawing",
+        "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+      },
+      {
+        "text": "Aynı köşeyi yeniden çevirdim.",
+        "source": "owned-drawing",
+        "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+      },
+      {
+        "text": "İz oradaydı; bu, kabul edilmiş bir bölüm değil.",
+        "source": "owned-drawing",
+        "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+      }
+    ],
+    "continuity": {
+      "object_id": "envelope-01",
+      "previous": "Zarf elimde; köşe izi sabit.",
+      "next": "Aynı zarf ve köşe izi doğrulama bekliyor."
+    },
+    "scenes": [
+      {
+        "id": "beat-1",
+        "start": 0,
+        "end": 4,
+        "heading": "Zarfı masaya bıraktım.",
+        "action": "envelope-place",
+        "information": "Zarfı masaya bıraktım.",
+        "object_before": "Zarf elimde; köşe izi sabit.",
+        "object_after": "Zarf masada; köşe izi sabit.",
+        "object_id": "envelope-01",
+        "character_id": "courier-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "YAR-01"
+        ],
+        "state_before": "hand-fixed-nick",
+        "state_after": "table-fixed-nick"
+      },
+      {
+        "id": "beat-2",
+        "start": 4,
+        "end": 8,
+        "heading": "Köşedeki izi inceledim.",
+        "action": "envelope-inspect",
+        "information": "Aynı köşeyi yeniden çevirdim.",
+        "object_before": "Zarf masada; köşe izi sabit.",
+        "object_after": "Zarf inceleme konumunda; köşe izi sabit.",
+        "object_id": "envelope-01",
+        "character_id": "courier-01",
+        "camera": "push-in",
+        "rule_ids": [
+          "CORE-01",
+          "YAR-01"
+        ],
+        "state_before": "table-fixed-nick",
+        "state_after": "inspect-fixed-nick"
+      },
+      {
+        "id": "beat-3",
+        "start": 8,
+        "end": 12,
+        "heading": "Aynı zarf, aynı iz.",
+        "action": "envelope-match",
+        "information": "İz oradaydı; bu, kabul edilmiş bir bölüm değil.",
+        "object_before": "Zarf inceleme konumunda; köşe izi sabit.",
+        "object_after": "Aynı zarf ve köşe izi doğrulama bekliyor.",
+        "object_id": "envelope-01",
+        "character_id": "courier-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "YAR-01"
+        ],
+        "state_before": "inspect-fixed-nick",
+        "state_after": "inspect-fixed-nick"
+      }
+    ],
+    "cues": [
+      {
+        "start": 0,
+        "end": 3.9,
+        "text": "Zarfı masaya bıraktım."
+      },
+      {
+        "start": 4,
+        "end": 7.9,
+        "text": "Aynı köşeyi yeniden çevirdim."
+      },
+      {
+        "start": 8,
+        "end": 12,
+        "text": "İz oradaydı; bu, kabul edilmiş bir bölüm değil."
+      }
+    ],
+    "creative": {
+      "pack_version": "1.0.0",
+      "topic_id": "authored-edit-sample-series",
+      "visual_motif": "owned edit rehearsal: sample-series",
+      "canon_status": "noncanonical_fixture",
+      "characters": [
+        {
+          "id": "courier-01",
+          "wardrobe": "cream-shirt",
+          "asset_license": "original_project_vectors"
+        }
+      ],
+      "asset_policy": "original_vectors_only"
+    },
+    "production_context": {
+      "schema_version": 1,
+      "account": "sample-series",
+      "sources": {
+        "kind": "sources",
+        "account": "sample-series",
+        "parent": null,
+        "data": {
+          "owned-drawing": {
+            "url": "https://example.org/storymotion-synthetic-drawing",
+            "title": "Özgün sentetik edit çizimi; gerçek araştırma kaynağı değildir",
+            "locator": "Bu örneğin sahne çizimi",
+            "excerpt": "Bu paket için hazırlanmış özgün sentetik vektör gösterimidir.",
+            "rights_note": "Original demonstration text and vector code; no private rig, PDF or voice"
+          }
+        },
+        "revision": "2a0b4464e4ccea8aa3d5af14240d243a410e237632b6159eb1f2c4a0b18b3970"
+      },
+      "canon": {
+        "kind": "canon",
+        "account": "sample-series",
+        "parent": null,
+        "data": {
+          "series_id": "synthetic-series",
+          "episode_id": "synthetic-final-01",
+          "bible_version": "synthetic-bible-1",
+          "origin": "synthetic_reference_test",
+          "final_sha256": "e572973511e7005ef2fc14c30bb80c0a5b2d0f2e3bb97017b72f7ac57ef8567a",
+          "accepted_by": "Synthetic human fixture",
+          "narrator": "first_person",
+          "source_revision": "2a0b4464e4ccea8aa3d5af14240d243a410e237632b6159eb1f2c4a0b18b3970",
+          "cast": [
+            {
+              "id": "courier-01",
+              "wardrobe": "cream-shirt"
+            }
+          ],
+          "objects": [
+            {
+              "id": "envelope-01",
+              "state": "Zarf elimde; köşe izi sabit.",
+              "identity_note": "Same synthetic nick"
+            }
+          ],
+          "open_clues": [
+            {
+              "id": "nick-01",
+              "object_id": "envelope-01",
+              "description": "Same synthetic nick remains open"
+            }
+          ]
+        },
+        "revision": "a85328d67d4c3cd02a63372e19c531611156fcab0a99dfa58a69d1051e4fa601"
+      },
+      "binding_sha256": "22a1082b6d30f894cd95f60cab73251cd45e62b1914fce77437190c38030a3e2"
+    }
+  },
+  "plan": {
+    "schema_version": 1,
+    "recipe": "manual-account-scenes-1",
+    "account": "sample-series",
+    "canon_revision": "a85328d67d4c3cd02a63372e19c531611156fcab0a99dfa58a69d1051e4fa601",
+    "scenes": [
+      {
+        "scene_id": "beat-1",
+        "kind": "clue-inspect",
+        "content": {
+          "clue_id": "nick-01",
+          "note": "Aynı nesnenin küçük izine bakıyorum."
+        },
+        "claim_indexes": [],
+        "cue_indexes": [
+          0
+        ],
+        "object_id": "envelope-01",
+        "camera": "locked"
+      },
+      {
+        "scene_id": "beat-2",
+        "kind": "canon-board",
+        "content": {
+          "clue_ids": [
+            "nick-01"
+          ],
+          "note": "Yalnız kabul edilmiş izleri yan yana koydum."
+        },
+        "claim_indexes": [],
+        "cue_indexes": [
+          1
+        ],
+        "object_id": "envelope-01",
+        "camera": "push-in"
+      },
+      {
+        "scene_id": "beat-3",
+        "kind": "clue-inspect",
+        "content": {
+          "clue_id": "nick-01",
+          "note": "Aynı nesnenin küçük izine bakıyorum."
+        },
+        "claim_indexes": [],
+        "cue_indexes": [
+          2
+        ],
+        "object_id": "envelope-01",
+        "camera": "locked"
+      }
+    ]
+  }
+}

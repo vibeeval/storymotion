@@ -1,0 +1,183 @@
+{
+  "family_id": "carved-groove-print",
+  "source_id": "source-lemo-style-woodcut",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "carved-groove-print",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Oyulmuş bir oluğun negatif izi, karşı kâğıda basıldığında nasıl korunur?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F4E5C8",
+            "ink": "#332919",
+            "muted": "#62503B",
+            "accent": "#75452C"
+          },
+          "groove_paths": [
+            [
+              [
+                0.1,
+                0.2
+              ],
+              [
+                0.5,
+                0.35
+              ],
+              [
+                0.85,
+                0.2
+              ]
+            ],
+            [
+              [
+                0.15,
+                0.65
+              ],
+              [
+                0.5,
+                0.8
+              ],
+              [
+                0.9,
+                0.6
+              ]
+            ]
+          ],
+          "groove_width": 8,
+          "ink_pressure": 0.85,
+          "print_order": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "carved-groove-print",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Önce relief açılır; basınç kontrollü transferde oyuklar renk almayan boşluk olarak kalır.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F4E5C8",
+            "ink": "#332919",
+            "muted": "#62503B",
+            "accent": "#75452C"
+          },
+          "groove_paths": [
+            [
+              [
+                0.1,
+                0.2
+              ],
+              [
+                0.5,
+                0.15
+              ],
+              [
+                0.85,
+                0.35
+              ]
+            ],
+            [
+              [
+                0.15,
+                0.4
+              ],
+              [
+                0.5,
+                0.5
+              ],
+              [
+                0.9,
+                0.4
+              ]
+            ],
+            [
+              [
+                0.1,
+                0.65
+              ],
+              [
+                0.4,
+                0.8
+              ],
+              [
+                0.8,
+                0.7
+              ]
+            ],
+            [
+              [
+                0.25,
+                0.15
+              ],
+              [
+                0.4,
+                0.45
+              ],
+              [
+                0.25,
+                0.8
+              ]
+            ],
+            [
+              [
+                0.7,
+                0.2
+              ],
+              [
+                0.6,
+                0.5
+              ],
+              [
+                0.8,
+                0.85
+              ]
+            ]
+          ],
+          "groove_width": 14,
+          "ink_pressure": 0.6,
+          "print_order": [
+            4,
+            2,
+            0,
+            3,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "family_id": "lead-cell-lightpass",
+  "source_id": "source-lemo-style-stained-glass",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "lead-cell-lightpass",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir cam hücrenin kenarı sabitken hareketli arka ışık içinden ne kadar geçer?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#182633",
+            "ink": "#F9EACD",
+            "muted": "#C5CCCA",
+            "accent": "#E2B05F"
+          },
+          "cell_polygons": [
+            [
+              [
+                0.1,
+                0.15
+              ],
+              [
+                0.5,
+                0.15
+              ],
+              [
+                0.3,
+                0.5
+              ]
+            ],
+            [
+              [
+                0.5,
+                0.15
+              ],
+              [
+                0.9,
+                0.15
+              ],
+              [
+                0.7,
+                0.5
+              ]
+            ],
+            [
+              [
+                0.3,
+                0.5
+              ],
+              [
+                0.7,
+                0.5
+              ],
+              [
+                0.5,
+                0.85
+              ]
+            ]
+          ],
+          "lead_width": 8,
+          "light_path": [
+            [
+              0.2,
+              0.25
+            ],
+            [
+              0.8,
+              0.65
+            ]
+          ],
+          "transmission_values": [
+            0.45,
+            0.85,
+            0.65
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "lead-cell-lightpass",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Önce hücreler yuvalarına oturur; iletim değeri ışığın her hücredeki etkisini sınırlar.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#182633",
+            "ink": "#F9EACD",
+            "muted": "#C5CCCA",
+            "accent": "#E2B05F"
+          },
+          "cell_polygons": [
+            [
+              [
+                0.1,
+                0.1
+              ],
+              [
+                0.45,
+                0.1
+              ],
+              [
+                0.45,
+                0.4
+              ],
+              [
+                0.1,
+                0.4
+              ]
+            ],
+            [
+              [
+                0.5,
+                0.1
+              ],
+              [
+                0.9,
+                0.1
+              ],
+              [
+                0.9,
+                0.4
+              ],
+              [
+                0.5,
+                0.4
+              ]
+            ],
+            [
+              [
+                0.1,
+                0.45
+              ],
+              [
+                0.4,
+                0.45
+              ],
+              [
+                0.4,
+                0.8
+              ],
+              [
+                0.1,
+                0.8
+              ]
+            ],
+            [
+              [
+                0.45,
+                0.45
+              ],
+              [
+                0.65,
+                0.45
+              ],
+              [
+                0.65,
+                0.85
+              ],
+              [
+                0.45,
+                0.85
+              ]
+            ],
+            [
+              [
+                0.7,
+                0.45
+              ],
+              [
+                0.9,
+                0.45
+              ],
+              [
+                0.9,
+                0.8
+              ],
+              [
+                0.7,
+                0.8
+              ]
+            ]
+          ],
+          "lead_width": 14,
+          "light_path": [
+            [
+              0.8,
+              0.2
+            ],
+            [
+              0.2,
+              0.6
+            ],
+            [
+              0.7,
+              0.85
+            ]
+          ],
+          "transmission_values": [
+            0.3,
+            0.7,
+            1,
+            0.5,
+            0.8
+          ]
+        }
+      }
+    }
+  ]
+}

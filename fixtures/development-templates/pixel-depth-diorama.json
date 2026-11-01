@@ -1,0 +1,130 @@
+{
+  "family_id": "pixel-depth-diorama",
+  "source_id": "source-lemo-style-hd-2d",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "pixel-depth-diorama",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Özgün piksel gezgininin yolculuğunda yakın ve uzak katmanlar neden farklı hızda ilerler?",
+          "duration": 6,
+          "narration": "Yakın katman daha hızlı kayar; gezginin konumu piksel aralığına göre adım adım değişir. Ön yapı gezgini örterken hareketli ışık, gölgenin yönünü kontrollü biçimde değiştirir.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Yakın katman daha hızlı kayar; gezginin konumu piksel aralığına göre adım adım değişir."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Ön yapı gezgini örterken hareketli ışık, gölgenin yönünü kontrollü biçimde değiştirir."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "plane_depths": [
+            0.2,
+            0.55,
+            0.9
+          ],
+          "actor_route": [
+            {
+              "x": 0.18,
+              "y": 0.72
+            },
+            {
+              "x": 0.56,
+              "y": 0.62
+            },
+            {
+              "x": 0.86,
+              "y": 0.74
+            }
+          ],
+          "light_position": [
+            {
+              "x": -0.7,
+              "y": -0.8
+            },
+            {
+              "x": 0.55,
+              "y": -0.4
+            }
+          ],
+          "pixel_scale": 12,
+          "camera_travel": 140,
+          "actor_label": "Özgün gezgin, üç katman ve hareketli ışık arasında ilerliyor."
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "pixel-depth-diorama",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Özgün piksel gezgininin yolculuğunda yakın ve uzak katmanlar neden farklı hızda ilerler? İkinci düzen.",
+          "duration": 6,
+          "narration": "Yakın katman daha hızlı kayar; gezginin konumu piksel aralığına göre adım adım değişir. Ön yapı gezgini örterken hareketli ışık, gölgenin yönünü kontrollü biçimde değiştirir.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Yakın katman daha hızlı kayar; gezginin konumu piksel aralığına göre adım adım değişir."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Ön yapı gezgini örterken hareketli ışık, gölgenin yönünü kontrollü biçimde değiştirir."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "plane_depths": [
+            0.12,
+            0.4,
+            1
+          ],
+          "actor_route": [
+            {
+              "x": 0.8,
+              "y": 0.8
+            },
+            {
+              "x": 0.52,
+              "y": 0.55
+            },
+            {
+              "x": 0.22,
+              "y": 0.68
+            }
+          ],
+          "light_position": [
+            {
+              "x": 0.85,
+              "y": -0.35
+            },
+            {
+              "x": -0.4,
+              "y": -0.9
+            }
+          ],
+          "pixel_scale": 16,
+          "camera_travel": 195,
+          "actor_label": "Geri dönen gezginin derinlik adımı ve gölge yönü değişiyor."
+        }
+      }
+    }
+  ]
+}

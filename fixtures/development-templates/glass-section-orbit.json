@@ -1,0 +1,88 @@
+{
+  "family_id": "glass-section-orbit",
+  "source_id": "source-lemo-style-glass-product",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "glass-section-orbit",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Saydam kabuğun geometrik kesitinde kalınlık, ışık açısı ve kırılma ilişkisini incelemek",
+          "duration": 6,
+          "narration": "Kabuk kalınlığı iç ve dış sınırın farkıdır; kesit yalnız belirtilen bölgede görünür. Işık açısı değişirken kırılan ışın Snell bağıntısını korur; geometri açıkça durur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Kabuk kalınlığı iç ve dış sınırın farkıdır; kesit yalnız belirtilen bölgede görünür."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Işık açısı değişirken kırılan ışın Snell bağıntısını korur; geometri açıkça durur."
+            }
+          ],
+          "palette": {
+            "background": "#F3F2E9",
+            "ink": "#202F35",
+            "muted": "#526169",
+            "accent": "#80522F"
+          },
+          "shell_geometry": "cylinder",
+          "outer_radius": 145,
+          "height": 420,
+          "wall_thickness": 18,
+          "section_depth": 0.5,
+          "orbit_degrees": 35,
+          "ior": 1.4,
+          "light_angles": [
+            -55,
+            45
+          ]
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "glass-section-orbit",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Saydam kabuğun geometrik kesitinde kalınlık, ışık açısı ve kırılma ilişkisini incelemek İkinci düzen.",
+          "duration": 6,
+          "narration": "Kabuk kalınlığı iç ve dış sınırın farkıdır; kesit yalnız belirtilen bölgede görünür. Işık açısı değişirken kırılan ışın Snell bağıntısını korur; geometri açıkça durur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Kabuk kalınlığı iç ve dış sınırın farkıdır; kesit yalnız belirtilen bölgede görünür."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Işık açısı değişirken kırılan ışın Snell bağıntısını korur; geometri açıkça durur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "shell_geometry": "capsule",
+          "outer_radius": 185,
+          "height": 500,
+          "wall_thickness": 27,
+          "section_depth": 0.7,
+          "orbit_degrees": 62,
+          "ior": 1.58,
+          "light_angles": [
+            65,
+            -35
+          ]
+        }
+      }
+    }
+  ]
+}

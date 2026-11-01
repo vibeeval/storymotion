@@ -1,0 +1,122 @@
+{
+  "family_id": "cutout-pin-assembly",
+  "source_id": "source-mg-style-06-collage",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "cutout-pin-assembly",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kesilmiş üç panel, kendi pimlerine oturdukça katmanlı bir bütün kuruyor",
+          "duration": 4,
+          "narration": "Her parça aynı noktadaki pim çevresinde açılıyor. Etiketler dönme durulunca okunabilir hâle geliyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Her parça aynı noktadaki pim çevresinde açılıyor."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Etiketler dönme durulunca okunabilir hâle geliyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4EDE2",
+            "ink": "#352F2C",
+            "muted": "#6D5E53",
+            "accent": "#93452E"
+          },
+          "pieces": [
+            {
+              "shape": "ticket",
+              "label": "Önce taşıyıcı yüzey",
+              "hinge": "left",
+              "final_angle": -3
+            },
+            {
+              "shape": "arch",
+              "label": "Ardından üst katman",
+              "hinge": "right",
+              "final_angle": 4
+            },
+            {
+              "shape": "wedge",
+              "label": "Sonra bağlantı yüzeyi",
+              "hinge": "left",
+              "final_angle": -2
+            }
+          ],
+          "fold_angle": 28,
+          "assembly_window": [
+            0.08,
+            0.84
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "cutout-pin-assembly",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Dört ayrı kenar, iki yöndeki sabit pimlerle dengeli bir kâğıt yapıya dönüşüyor",
+          "duration": 4.8,
+          "narration": "Sağ ve sol pimler sabit kalırken katman sırası ortaya çıkıyor. Kesilmiş kenarlar aynı yüzeyin parçalarını birleştiriyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.4,
+              "text": "Sağ ve sol pimler sabit kalırken katman sırası ortaya çıkıyor."
+            },
+            {
+              "start": 2.4,
+              "end": 4.8,
+              "text": "Kesilmiş kenarlar aynı yüzeyin parçalarını birleştiriyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4EDE2",
+            "ink": "#352F2C",
+            "muted": "#6D5E53",
+            "accent": "#93452E"
+          },
+          "pieces": [
+            {
+              "shape": "arch",
+              "label": "Kemerli ilk parça",
+              "hinge": "right",
+              "final_angle": 5
+            },
+            {
+              "shape": "wedge",
+              "label": "Eğimli ikinci parça",
+              "hinge": "left",
+              "final_angle": -5
+            },
+            {
+              "shape": "ticket",
+              "label": "Kesik köşeli yüzey",
+              "hinge": "right",
+              "final_angle": 3
+            },
+            {
+              "shape": "arch",
+              "label": "Tamamlayan üst katman",
+              "hinge": "left",
+              "final_angle": -2
+            }
+          ],
+          "fold_angle": 32,
+          "assembly_window": [
+            0.04,
+            0.92
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "rig_id": "neutral-presenter-1",
+  "license": "original_project_vectors",
+  "coordinate_system": {
+    "width": 1080,
+    "height": 1920,
+    "neck": [
+      0,
+      80
+    ]
+  },
+  "modes": {
+    "inset": {
+      "x": 850,
+      "y": 960,
+      "scale": 0.55
+    },
+    "serial-courier": {
+      "x": 245,
+      "y": 785,
+      "scale": 1
+    }
+  },
+  "body": [
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M-62 94Q0 64 62 94L86 376H-86Z",
+        "fill": "ink",
+        "stroke": "ink",
+        "stroke-width": 7
+      }
+    },
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M-24 86L0 120L24 86M0 120V368",
+        "fill": "none",
+        "stroke": "background",
+        "stroke-width": 4
+      }
+    },
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M-58 378L-75 602M58 378L80 602M-77 602H-110M80 602H112",
+        "fill": "none",
+        "stroke": "ink",
+        "stroke-width": 11,
+        "stroke-linecap": "round"
+      }
+    },
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M-62 140L-98 285L-83 344M62 140L195 235L275 265",
+        "fill": "none",
+        "stroke": "ink",
+        "stroke-width": 10,
+        "stroke-linecap": "round"
+      }
+    },
+    {
+      "tag": "circle",
+      "attrs": {
+        "cx": 275,
+        "cy": 265,
+        "r": 9,
+        "fill": "background",
+        "stroke": "ink",
+        "stroke-width": 4
+      }
+    }
+  ],
+  "head": [
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M-18 56V82Q0 94 18 82V56",
+        "fill": "background",
+        "stroke": "ink",
+        "stroke-width": 5
+      }
+    },
+    {
+      "tag": "circle",
+      "attrs": {
+        "cx": 0,
+        "cy": 0,
+        "r": 60,
+        "fill": "background",
+        "stroke": "ink",
+        "stroke-width": 6
+      }
+    },
+    {
+      "tag": "path",
+      "attrs": {
+        "d": "M-48-28Q-20-70 32-47L51-27M-33-8L-15-10M15-10L33-8M0 8L-4 22H3",
+        "fill": "none",
+        "stroke": "ink",
+        "stroke-width": 4,
+        "stroke-linecap": "round"
+      }
+    }
+  ],
+  "eyes": {
+    "open": [
+      {
+        "tag": "circle",
+        "attrs": {
+          "cx": -23,
+          "cy": 8,
+          "r": 4,
+          "fill": "ink"
+        }
+      },
+      {
+        "tag": "circle",
+        "attrs": {
+          "cx": 23,
+          "cy": 8,
+          "r": 4,
+          "fill": "ink"
+        }
+      }
+    ],
+    "closed": [
+      {
+        "tag": "path",
+        "attrs": {
+          "d": "M-30 8Q-23 12-16 8M16 8Q23 12 30 8",
+          "fill": "none",
+          "stroke": "ink",
+          "stroke-width": 4,
+          "stroke-linecap": "round"
+        }
+      }
+    ]
+  },
+  "mouths": {
+    "A": {
+      "label": "Closed lips; manual MBP suggestion only",
+      "shapes": [
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-20 34Q0 36 20 34",
+            "fill": "none",
+            "stroke": "ink",
+            "stroke-width": 5,
+            "stroke-linecap": "round"
+          }
+        }
+      ]
+    },
+    "B": {
+      "label": "Narrow open mouth; manual visual choice",
+      "shapes": [
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-20 29Q0 23 20 29L16 39Q0 44-16 39Z",
+            "fill": "ink",
+            "stroke": "ink",
+            "stroke-width": 3
+          }
+        },
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-15 29H15",
+            "fill": "none",
+            "stroke": "background",
+            "stroke-width": 4
+          }
+        }
+      ]
+    },
+    "C": {
+      "label": "Wide open mouth; manual visual choice",
+      "shapes": [
+        {
+          "tag": "ellipse",
+          "attrs": {
+            "cx": 0,
+            "cy": 35,
+            "rx": 25,
+            "ry": 11,
+            "fill": "ink"
+          }
+        }
+      ]
+    },
+    "D": {
+      "label": "Tall open mouth; manual visual choice",
+      "shapes": [
+        {
+          "tag": "ellipse",
+          "attrs": {
+            "cx": 0,
+            "cy": 35,
+            "rx": 16,
+            "ry": 21,
+            "fill": "ink"
+          }
+        }
+      ]
+    },
+    "E": {
+      "label": "Rounded mouth; manual visual choice",
+      "shapes": [
+        {
+          "tag": "circle",
+          "attrs": {
+            "cx": 0,
+            "cy": 35,
+            "r": 13,
+            "fill": "ink",
+            "stroke": "muted",
+            "stroke-width": 3
+          }
+        }
+      ]
+    },
+    "F": {
+      "label": "Lip and teeth; manual FV suggestion only",
+      "shapes": [
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-21 28Q0 19 21 28Q16 43 0 40Q-16 43-21 28Z",
+            "fill": "ink"
+          }
+        },
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-17 27H17V32H-17Z",
+            "fill": "background"
+          }
+        }
+      ]
+    },
+    "G": {
+      "label": "Teeth visible; manual visual choice",
+      "shapes": [
+        {
+          "tag": "rect",
+          "attrs": {
+            "x": -24,
+            "y": 27,
+            "width": 48,
+            "height": 15,
+            "rx": 5,
+            "fill": "background",
+            "stroke": "ink",
+            "stroke-width": 4
+          }
+        },
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-20 34H20",
+            "fill": "none",
+            "stroke": "ink",
+            "stroke-width": 2
+          }
+        }
+      ]
+    },
+    "H": {
+      "label": "Tongue visible; manual suggestion only",
+      "shapes": [
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-22 27Q0 19 22 27Q20 48 0 48Q-20 48-22 27Z",
+            "fill": "ink"
+          }
+        },
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-13 39Q0 30 13 39L10 46H-10Z",
+            "fill": "accent"
+          }
+        }
+      ]
+    },
+    "X": {
+      "label": "Rest or pause; not inferred from audio amplitude",
+      "shapes": [
+        {
+          "tag": "path",
+          "attrs": {
+            "d": "M-15 34Q0 41 15 34",
+            "fill": "none",
+            "stroke": "ink",
+            "stroke-width": 3,
+            "stroke-linecap": "round"
+          }
+        }
+      ]
+    }
+  }
+}

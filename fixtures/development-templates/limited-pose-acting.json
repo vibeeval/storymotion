@@ -1,0 +1,113 @@
+{
+  "family_id": "limited-pose-acting",
+  "source_id": "source-lemo-style-midcentury-toon",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "limited-pose-acting",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Az sayıda tutulan pozla bir düşünceyi dinlemekten paylaşmaya taşıyan karakter oyunculuğu",
+          "duration": 6,
+          "narration": "Karakter aynı çizimi birkaç kare tutar; amaçlı ara pozlar sonraki jesti açıkça bağlar. El hareketi ve yüz ifadesi fikri tamamlar; son poz okunabilir bir durakla korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Karakter aynı çizimi birkaç kare tutar; amaçlı ara pozlar sonraki jesti açıkça bağlar."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "El hareketi ve yüz ifadesi fikri tamamlar; son poz okunabilir bir durakla korunur."
+            }
+          ],
+          "palette": {
+            "background": "#F3F2E9",
+            "ink": "#202F35",
+            "muted": "#526169",
+            "accent": "#80522F"
+          },
+          "pose_sequence": [
+            {
+              "pose": "rest",
+              "label": "Dinle ve düşün"
+            },
+            {
+              "pose": "point",
+              "label": "Nedeni işaret et"
+            },
+            {
+              "pose": "wave",
+              "label": "Çözümü paylaş"
+            }
+          ],
+          "expression_cues": [
+            "neutral",
+            "curious",
+            "smile"
+          ],
+          "hold_frames": 6,
+          "smear_length": 45
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "limited-pose-acting",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Az sayıda tutulan pozla bir düşünceyi dinlemekten paylaşmaya taşıyan karakter oyunculuğu İkinci düzen.",
+          "duration": 6,
+          "narration": "Karakter aynı çizimi birkaç kare tutar; amaçlı ara pozlar sonraki jesti açıkça bağlar. El hareketi ve yüz ifadesi fikri tamamlar; son poz okunabilir bir durakla korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Karakter aynı çizimi birkaç kare tutar; amaçlı ara pozlar sonraki jesti açıkça bağlar."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "El hareketi ve yüz ifadesi fikri tamamlar; son poz okunabilir bir durakla korunur."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "pose_sequence": [
+            {
+              "pose": "shrug",
+              "label": "Bir olasılığı değerlendir"
+            },
+            {
+              "pose": "rest",
+              "label": "Kısa bir durakla yeniden düşün"
+            },
+            {
+              "pose": "point",
+              "label": "Yeni ayrıntıyı göster"
+            },
+            {
+              "pose": "wave",
+              "label": "Konuşmayı açık bir jestle tamamla"
+            }
+          ],
+          "expression_cues": [
+            "curious",
+            "neutral",
+            "curious",
+            "smile"
+          ],
+          "hold_frames": 8,
+          "smear_length": 80
+        }
+      }
+    }
+  ]
+}

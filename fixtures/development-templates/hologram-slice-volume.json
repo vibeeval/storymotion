@@ -1,0 +1,80 @@
+{
+  "family_id": "hologram-slice-volume",
+  "source_id": "source-lemo-style-hologram-hud",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "hologram-slice-volume",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Özgün depo hacmini dilimlerin alanından kurmak",
+          "duration": 4,
+          "narration": "Özgün geometri adım adım kurulur. Son ölçü sabit konumda okunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Özgün geometri adım adım kurulur."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Son ölçü sabit konumda okunur."
+            }
+          ],
+          "palette": {
+            "background": "#EFF1F4",
+            "ink": "#273749",
+            "muted": "#536376",
+            "accent": "#764441"
+          },
+          "radii_x": 2.5,
+          "radii_y": 1.4,
+          "radii_z": 1.8,
+          "slice_count": 9,
+          "section_fraction": 0.65,
+          "yaw_degrees": 22,
+          "volume_label": "Depo kesitinin alanı"
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "hologram-slice-volume",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Daha uzun kapsülde farklı bir derinliği ölçmek",
+          "duration": 5,
+          "narration": "Uzun Türkçe açıklama değişen parametreleri görünür kılar. Son durum açık ve dengeli biçimde bekler.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.5,
+              "text": "Uzun Türkçe açıklama değişen parametreleri görünür kılar."
+            },
+            {
+              "start": 2.5,
+              "end": 5,
+              "text": "Son durum açık ve dengeli biçimde bekler."
+            }
+          ],
+          "palette": {
+            "background": "#EFF1F4",
+            "ink": "#273749",
+            "muted": "#536376",
+            "accent": "#764441"
+          },
+          "radii_x": 1.6,
+          "radii_y": 2.1,
+          "radii_z": 2.4,
+          "slice_count": 14,
+          "section_fraction": 0.3,
+          "yaw_degrees": -26,
+          "volume_label": "Özgün kapsül ölçümü"
+        }
+      }
+    }
+  ]
+}

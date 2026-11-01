@@ -1,0 +1,124 @@
+{
+  "live_calls_enabled": false,
+  "providers": [
+    {
+      "id": "local",
+      "name": "Yerel / manuel",
+      "capabilities": [
+        "text",
+        "plan",
+        "animation"
+      ],
+      "state": "implemented",
+      "models": [
+        {
+          "id": "manual",
+          "name": "Manuel taslak ve yerel şablon"
+        }
+      ],
+      "key_kind": "none"
+    },
+    {
+      "id": "mock",
+      "name": "Sahte sağlayıcı",
+      "capabilities": [
+        "text",
+        "voice"
+      ],
+      "state": "mock_only",
+      "models": [
+        {
+          "id": "mock-v1",
+          "name": "Mock v1 · ücret ve üretim yok"
+        }
+      ],
+      "key_kind": "fake_only"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "capabilities": [
+        "text"
+      ],
+      "state": "implemented_contract_tested_live_unverified",
+      "models": [
+        {
+          "id": "model-selection-pending",
+          "name": "Eski yerel plan kimliği · API model erişimi veya güncel katalog iddiası değildir"
+        }
+      ],
+      "key_kind": "provider_specific",
+      "evidence": "storymotion/providers.py + storymotion/llm_service.py; canonical capability registry; contract/mock tests, live unverified",
+      "selection_scope": "Legacy local plan metadata only; actual writer model is chosen from the connected provider metadata in the writer tab"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "capabilities": [
+        "text"
+      ],
+      "state": "implemented_contract_tested_live_unverified",
+      "models": [
+        {
+          "id": "model-id-pending",
+          "name": "Eski yerel plan kimliği · API model erişimi veya güncel katalog iddiası değildir"
+        }
+      ],
+      "key_kind": "provider_specific",
+      "evidence": "storymotion/providers.py + storymotion/llm_service.py; canonical capability registry; contract/mock tests, live unverified",
+      "selection_scope": "Legacy local plan metadata only; actual writer model is chosen from the connected provider metadata in the writer tab"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "capabilities": [
+        "voice"
+      ],
+      "state": "dashboard_session_byok_explicit_host_mode_live_unverified",
+      "models": [
+        {
+          "id": "metadata-selection",
+          "name": "Dashboard ses bölümünde hesabınızın API listesinden seçilir"
+        }
+      ],
+      "key_kind": "provider_specific",
+      "evidence": "elevenlabs.py + session UI; default off, demo contract verified, no live paid acceptance",
+      "selection_scope": "Voice metadata and exact text/voice/model approval in the separate voice module"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "capabilities": [
+        "text"
+      ],
+      "state": "implemented_contract_tested_live_unverified",
+      "models": [
+        {
+          "id": "model-selection-pending",
+          "name": "Eski yerel plan kimliği · API model erişimi veya güncel katalog iddiası değildir"
+        }
+      ],
+      "key_kind": "provider_specific",
+      "evidence": "storymotion/providers.py + storymotion/llm_service.py; canonical capability registry; contract/mock tests, live unverified",
+      "selection_scope": "Legacy local plan metadata only; actual writer model is chosen from the connected provider metadata in the writer tab"
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "capabilities": [
+        "text"
+      ],
+      "state": "implemented_contract_tested_live_unverified",
+      "models": [
+        {
+          "id": "metadata-selection",
+          "name": "Senaryo yazarı sekmesinde hesabınızın API listesinden seçilir"
+        }
+      ],
+      "key_kind": "provider_specific",
+      "evidence": "storymotion/providers.py + storymotion/llm_service.py; Gemini GenerateContent contract/mock tests, live unverified",
+      "selection_scope": "Local plan metadata only; no endpoint dispatch authority"
+    }
+  ],
+  "policy": "Bu katalog eski yerel plan kimliklerini korur; model erişimi veya dispatch yetkisi vermez. OpenAI, Anthropic, Gemini ve OpenRouter metin adaptörleri kod/UI/mock testlidir; canlı kabul yapılmadı. Gerçek model seçimi Senaryo yazarı sekmesinde seçilen sağlayıcının metadata listesinden yapılır. Varsayılan provider modları off; oturumluk key, exact kaynak/metin/model/bağlantı ve bütçe onayı zorunludur. ElevenLabs ayrı ses modülüdür. Her model/protokol desteklenir iddiası yoktur."
+}

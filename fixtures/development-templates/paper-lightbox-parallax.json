@@ -1,0 +1,148 @@
+{
+  "family_id": "paper-lightbox-parallax",
+  "source_id": "source-lemo-style-paper-lantern",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "paper-lightbox-parallax",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kağıt katmanlarının arasındaki derinlik, içerideki ışığın gölgesini nasıl değiştirir?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#162D38",
+            "ink": "#FFF4D8",
+            "muted": "#D4D8C9",
+            "accent": "#F3C36F"
+          },
+          "layer_shapes": [
+            {
+              "aperture": "arch",
+              "scale": 0.9,
+              "label": "Uzak levha"
+            },
+            {
+              "aperture": "oval",
+              "scale": 0.75,
+              "label": "Orta levha"
+            },
+            {
+              "aperture": "diamond",
+              "scale": 0.6,
+              "label": "Yakın levha"
+            }
+          ],
+          "layer_depths": [
+            0.2,
+            0.5,
+            0.9
+          ],
+          "light_path": [
+            [
+              0.25,
+              0.3
+            ],
+            [
+              0.8,
+              0.65
+            ]
+          ],
+          "camera_offset": [
+            0.8,
+            0.3
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "paper-lightbox-parallax",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kamera kayarken yakın levha daha fazla ilerler; gölge ışığın ters yönüne düşer.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#162D38",
+            "ink": "#FFF4D8",
+            "muted": "#D4D8C9",
+            "accent": "#F3C36F"
+          },
+          "layer_shapes": [
+            {
+              "aperture": "oval",
+              "scale": 0.9,
+              "label": "Birinci açıklık"
+            },
+            {
+              "aperture": "diamond",
+              "scale": 0.8,
+              "label": "İkinci açıklık"
+            },
+            {
+              "aperture": "arch",
+              "scale": 0.68,
+              "label": "Üçüncü açıklık"
+            },
+            {
+              "aperture": "oval",
+              "scale": 0.52,
+              "label": "Dördüncü açıklık"
+            }
+          ],
+          "layer_depths": [
+            0.1,
+            0.3,
+            0.65,
+            1
+          ],
+          "light_path": [
+            [
+              0.8,
+              0.25
+            ],
+            [
+              0.25,
+              0.4
+            ],
+            [
+              0.7,
+              0.75
+            ]
+          ],
+          "camera_offset": [
+            0.25,
+            0.75
+          ]
+        }
+      }
+    }
+  ]
+}

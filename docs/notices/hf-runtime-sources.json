@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "purpose": "current partial notices supplement; not a replacement for historical pinned evidence",
+  "scope": "exact 94-package Darwin arm64 HF installation; four declaration-only gaps only",
+  "commercial_clearance": "pending",
+  "customer_release_ready": false,
+  "runtime_binaries_distributed": false,
+  "package_lock_sha256": "504437a68fbd0ebc3a2b89f9d80668a7a9629af81421ad5923530daa11a81919",
+  "historical_license_index": "vendor/licenses/SOURCES.json",
+  "packages": [
+    {
+      "name": "@img/sharp-wasm32",
+      "version": "0.35.5",
+      "url": "https://registry.npmjs.org/@img/sharp-wasm32/-/sharp-wasm32-0.35.5.tgz",
+      "integrity": "sha512-Ptsga1su4tQx+LLF1ECS9U6nz5kmrXKo6XVbtR48Ke3ZRxxgaWBu7IDtEe1quo8hiupwm6WFqxVlXaSf7IINGQ==",
+      "tarball_sha256": "c68abdf53e1ad2d7b27b53385a3862e16d4bde02ce6d121892ee36f0bfe5bb38",
+      "distribution": "install-time dependency; package code and binaries are not included in the source allowlist",
+      "declared_license": "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+      "coverage": "partial_text",
+      "complete_notices": false,
+      "commercial_clearance": "pending",
+      "package_json_sha256": "59d5eeaaac1c43434701f08e9ea78648aa54011159ff2eb192550432608e05c1",
+      "readme_sha256": "9d7a84ade91e8e50f5dfc303fb53e580e806f6f89bde804e84a01c1b8853fff5",
+      "retained_texts": [
+        {
+          "path": "docs/notices/sharp-wasm32-0.35.5-LICENSE.Apache-2.0",
+          "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68",
+          "source_member": "package/LICENSE"
+        },
+        {
+          "path": "docs/notices/sharp-wasm32-0.35.5-README.md",
+          "sha256": "9d7a84ade91e8e50f5dfc303fb53e580e806f6f89bde804e84a01c1b8853fff5",
+          "source_member": "package/README.md"
+        }
+      ],
+      "unresolved": "Exact component copyright/license texts and applicable source-access obligations remain uncollected; the Apache text alone does not cover the composite WASM.",
+      "declared_component_versions": {
+        "aom": "3.15.1",
+        "cgif": "0.5.4",
+        "emscripten": "6.0.10",
+        "exif": "0.6.26",
+        "expat": "2.8.5",
+        "ffi": "3.8.0",
+        "glib": "2.90.0",
+        "heif": "1.23.5",
+        "highway": "1.4.0",
+        "imagequant": "2.4.1",
+        "lcms": "2.19.1",
+        "mozjpeg": "0826579",
+        "png": "1.6.58",
+        "resvg": "0.48.1",
+        "tiff": "4.7.2",
+        "uhdr": "2.0.2",
+        "vips": "8.18.7",
+        "webp": "1.6.0",
+        "zlib-ng": "2.3.3"
+      },
+      "component_versions_sha256": "36e4e862aac3ac2dd037ff116627e0106ac67688b368282981962b920d8221d5"
+    },
+    {
+      "name": "brotli",
+      "version": "1.3.3",
+      "url": "https://registry.npmjs.org/brotli/-/brotli-1.3.3.tgz",
+      "integrity": "sha512-oTKjJdShmDuGW94SyyaoQvAjf30dZaHnjJ8uAF+u2/vGJkJbJPJAT1gDiOJP5v1Zb6f9KEyW/1HpuaWIXtGHPg==",
+      "tarball_sha256": "3c7c260f6263df95fee49a9119e9fd21227d628b6c9d99080a75edfd9e2bdb24",
+      "distribution": "install-time dependency; package code and binaries are not included in the source allowlist",
+      "declared_license": "MIT declaration + Apache-2.0 source notices",
+      "coverage": "partial_text",
+      "complete_notices": false,
+      "commercial_clearance": "pending",
+      "package_json_sha256": "387b47d00ea96cab9b4c521629fbcdc7621053ac061812526f3c69700924cef5",
+      "readme_sha256": "8a8bac543fccf52a64708ff3315ca2be90e3e4c270634df1e4e4b51f0ee9c5d7",
+      "retained_texts": [
+        {
+          "path": "docs/notices/brotli-1.3.3-Google-Apache-header.txt",
+          "sha256": "bc670957aaf188b069c48d4afe455bf0c276ec0f37994bdf435e3ad89e22a8a8",
+          "source_member": "package/dec/decode.js initial copyright/license comment"
+        }
+      ],
+      "apache_license_text": "docs/notices/sharp-wasm32-0.35.5-LICENSE.Apache-2.0",
+      "unresolved": "Package MIT declaration has no complete MIT copyright/license text in the installed package. Embedded Google decoder Apache notice is retained separately."
+    },
+    {
+      "name": "dfa",
+      "version": "1.2.0",
+      "url": "https://registry.npmjs.org/dfa/-/dfa-1.2.0.tgz",
+      "integrity": "sha512-ED3jP8saaweFTjeGX8HQPjeC1YYyZs98jGNZx6IiBvxW7JG5v492kamAQB3m2wop07CvU/RQmzcKr6bgcC5D/Q==",
+      "tarball_sha256": "d781eb3a307ab6aa2d97028f695b17dbeadf6fd27788c333b1fb96d18d2a23ad",
+      "distribution": "install-time dependency; package code and binaries are not included in the source allowlist",
+      "declared_license": "MIT",
+      "coverage": "publisher_declaration_only",
+      "complete_notices": false,
+      "commercial_clearance": "pending",
+      "package_json_sha256": "96c0ce3cc17b34aabd58fd442157766d9e244cba735e54ee4fe10d7841f0460c",
+      "readme_sha256": "30bd445925aa53205ff7f9afa6a43e21358fab656e471df6e028431aefc426c7",
+      "retained_texts": [],
+      "unresolved": "Package metadata and README declare MIT; no complete package-local copyright/license text was found. Exact upstream copyright/license evidence is still required."
+    },
+    {
+      "name": "fontkit",
+      "version": "2.0.4",
+      "url": "https://registry.npmjs.org/fontkit/-/fontkit-2.0.4.tgz",
+      "integrity": "sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==",
+      "tarball_sha256": "f686a9515af33fce16ab4bffe50570728197e53165068548c6f75a1793797a08",
+      "distribution": "install-time dependency; package code and binaries are not included in the source allowlist",
+      "declared_license": "MIT",
+      "coverage": "publisher_declaration_only",
+      "complete_notices": false,
+      "commercial_clearance": "pending",
+      "package_json_sha256": "49c60605b92316a5d5fe57b9a3bca8950ad9a8beab1cb633d6f29862d1bd163d",
+      "readme_sha256": "8a1cf12d8ae7277f047c3000af7677927f2da9243627223ba5715d40df4979d6",
+      "retained_texts": [
+        {
+          "path": "docs/notices/fontkit-base64-arraybuffer-LICENSE.txt",
+          "sha256": "f3eca6ff762533fa5a77caf954a143e48afa204668cf97dce758c45a9e006be3",
+          "source_member": "package/src/utils.js attributed helper; upstream 2021 license"
+        }
+      ],
+      "unresolved": "Package metadata and README declare MIT; no complete package-local copyright/license text was found. Exact upstream copyright/license evidence is still required.",
+      "inherited_helper_source": "docs/notices/fontkit-base64-arraybuffer-SOURCE.json"
+    }
+  ],
+  "upstream_completion_index": "docs/notices/upstream-runtime-20261029.json"
+}

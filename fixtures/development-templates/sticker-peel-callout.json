@@ -1,0 +1,86 @@
+{
+  "family_id": "sticker-peel-callout",
+  "source_id": "source-mg-style-19-paperclip",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "sticker-peel-callout",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Tek bir etiketin köşesi kaldırıldığında alttaki kısa ipucu ve açıklama ortaya çıkıyor",
+          "duration": 4,
+          "narration": "Ön yüz yerinde kalırken sağ köşe kat doğrusu boyunca açılıyor. Arka yüz ve kısa not aynı nesnenin iki katmanını gösteriyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Ön yüz yerinde kalırken sağ köşe kat doğrusu boyunca açılıyor."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Arka yüz ve kısa not aynı nesnenin iki katmanını gösteriyor."
+            }
+          ],
+          "palette": {
+            "background": "#EDF1F3",
+            "ink": "#253643",
+            "muted": "#5A6771",
+            "accent": "#345C86"
+          },
+          "headline": "İlk bakışın altında ek bir bilgi var.",
+          "reveal_label": "İpucu",
+          "note": "Köşeyi izleyen çizgi, kısa başlıkta görünmeyen açıklamaya bağlanıyor.",
+          "side": "right",
+          "peel_depth": 310,
+          "curl": 0.12,
+          "peel_window": [
+            0.16,
+            0.76
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "sticker-peel-callout",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Sol köşeden daha derin açılan etiket, aynı yüzeyi farklı bir kat iziyle açıklıyor",
+          "duration": 4.8,
+          "narration": "Bu kez köşe soldan kalkıyor; ön ve arka yüz ayrılıyor. Gizli kısa not, dışarıdaki açıklama çizgisine bağlanıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.4,
+              "text": "Bu kez köşe soldan kalkıyor; ön ve arka yüz ayrılıyor."
+            },
+            {
+              "start": 2.4,
+              "end": 4.8,
+              "text": "Gizli kısa not, dışarıdaki açıklama çizgisine bağlanıyor."
+            }
+          ],
+          "palette": {
+            "background": "#EDF1F3",
+            "ink": "#253643",
+            "muted": "#5A6771",
+            "accent": "#345C86"
+          },
+          "headline": "Bir ayrıntı daha yakından bakmayı gerektirir.",
+          "reveal_label": "Ölçüm",
+          "note": "Daha derin katlanma, ek bilgiyi yeni bir karta geçmeden aynı yüzeyde açıyor.",
+          "side": "left",
+          "peel_depth": 350,
+          "curl": 0.17,
+          "peel_window": [
+            0.08,
+            0.88
+          ]
+        }
+      }
+    }
+  ]
+}

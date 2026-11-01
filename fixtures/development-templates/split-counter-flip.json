@@ -1,0 +1,114 @@
+{
+  "family_id": "split-counter-flip",
+  "source_id": "source-lemo-style-countdown",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "split-counter-flip",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Sayı değiştiğinde yarım yüzeyler dönerken altındaki iki alan birbirine yer açıyor.",
+          "duration": 8,
+          "narration": "Sayaç yalnız tanımlanan dönüm noktalarında değişiyor. İki panelin payı değişse de toplam genişlik korunuyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Sayaç yalnız tanımlanan dönüm noktalarında değişiyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "İki panelin payı değişse de toplam genişlik korunuyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "start_value": 12,
+          "end_value": 96,
+          "flap_duration": 0.25,
+          "panel_labels": [
+            "Tamamlanan iş",
+            "Kalan alan"
+          ],
+          "milestones": [
+            {
+              "at": 0.2,
+              "value": 36,
+              "ratio": 0.35
+            },
+            {
+              "at": 0.5,
+              "value": 64,
+              "ratio": 0.6
+            },
+            {
+              "at": 0.74,
+              "value": 96,
+              "ratio": 0.5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "split-counter-flip",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Sayı değiştiğinde yarım yüzeyler dönerken altındaki iki alan birbirine yer açıyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. İki panelin payı değişse de toplam genişlik korunuyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "İki panelin payı değişse de toplam genişlik korunuyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "start_value": 90,
+          "end_value": 12,
+          "flap_duration": 0.38,
+          "panel_labels": [
+            "Kullanılan rezerv",
+            "Ayrılan pay"
+          ],
+          "milestones": [
+            {
+              "at": 0.18,
+              "value": 60,
+              "ratio": 0.65
+            },
+            {
+              "at": 0.48,
+              "value": 30,
+              "ratio": 0.4
+            },
+            {
+              "at": 0.75,
+              "value": 12,
+              "ratio": 0.55
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

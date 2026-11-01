@@ -1,0 +1,38 @@
+[
+  {
+    "scene_id": "beat-1",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    "highlight": null,
+    "label": "Özgün geometrik fixture",
+    "camera": "locked"
+  },
+  {
+    "scene_id": "beat-2",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    "highlight": null,
+    "label": "Özgün geometrik fixture",
+    "camera": "locked"
+  },
+  {
+    "scene_id": "beat-3",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    "highlight": null,
+    "label": "Özgün geometrik fixture",
+    "camera": "locked"
+  }
+]

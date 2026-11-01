@@ -1,0 +1,296 @@
+{
+  "scope": "owned synthetic manual planning example; not factual, clinical, live-provider or accepted episode evidence",
+  "brief": {
+    "schema_version": 1,
+    "brand": "sample-reflection",
+    "title": "Yanıt gelmeyince hangi ayrıntıya bakarsın?",
+    "brief": "Özgün sentetik edit provası; mevcut sınırlı görsel aile kullanılır. Gerçek konu videosu veya accepted bölüm değildir.",
+    "demo": true,
+    "language": "tr",
+    "script": "Mesajı beklerken ekrana baktım. Aklımdan kısa bir cümle geçti. Yoğun bir gün de farklı bir ritim de mümkün. Tek bir sessizlikten sonuç çıkarmadan neyi ayırt edebilirim? Bugün yalnız gözlediğim ayrıntıyı not ediyorum.",
+    "caption": "Bu özgün çizim, kurgu sözleşmesini incelemek için hazırlanmış sessiz bir provadır.",
+    "duration": 16.0,
+    "alignment": "provisional_silent",
+    "audio": null,
+    "claims": [
+      {
+        "text": "Mesajı beklerken ekrana baktım.",
+        "source": "owned-drawing",
+        "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+      },
+      {
+        "text": "Aklımdan kısa bir cümle geçti.",
+        "source": "owned-drawing",
+        "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+      },
+      {
+        "text": "Yoğun bir gün de farklı bir ritim de mümkün.",
+        "source": "owned-drawing",
+        "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+      },
+      {
+        "text": "Tek bir sessizlikten sonuç çıkarmadan neyi ayırt edebilirim?",
+        "source": "owned-drawing",
+        "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+      },
+      {
+        "text": "Bugün yalnız gözlediğim ayrıntıyı not ediyorum.",
+        "source": "owned-drawing",
+        "scope": "Yalnız bu özgün sentetik çizim; gerçek dünya veya psikoloji kanıtı değil"
+      }
+    ],
+    "continuity": null,
+    "scenes": [
+      {
+        "id": "beat-1",
+        "start": 0.0,
+        "end": 3.2,
+        "heading": "Yanıt henüz yok.",
+        "action": "familiar-moment",
+        "information": "Mesajı beklerken ekrana baktım.",
+        "object_before": "Telefon masada; yanıt görünmüyor.",
+        "object_after": "Telefon elde; yanıt görünmüyor.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "table-no-reply",
+        "state_after": "held-no-reply"
+      },
+      {
+        "id": "beat-2",
+        "start": 3.2,
+        "end": 6.4,
+        "heading": "İlk iç cümlem ne?",
+        "action": "inner-sentence",
+        "information": "Aklımdan kısa bir cümle geçti.",
+        "object_before": "Telefon elde; yanıt görünmüyor.",
+        "object_after": "Telefon elde; tek açıklama düşünülüyor.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "push-in",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "held-no-reply",
+        "state_after": "held-inner-sentence"
+      },
+      {
+        "id": "beat-3",
+        "start": 6.4,
+        "end": 9.6,
+        "heading": "İki olasılık açık.",
+        "action": "two-explanations",
+        "information": "Yoğun bir gün de farklı bir ritim de mümkün.",
+        "object_before": "Telefon elde; tek açıklama düşünülüyor.",
+        "object_after": "Telefon elde; iki olasılık açık.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "held-inner-sentence",
+        "state_after": "held-two-possibilities"
+      },
+      {
+        "id": "beat-4",
+        "start": 9.6,
+        "end": 12.8,
+        "heading": "Hangi ipucu ayırt eder?",
+        "action": "distinguish-question",
+        "information": "Tek bir sessizlikten sonuç çıkarmadan neyi ayırt edebilirim?",
+        "object_before": "Telefon elde; iki olasılık açık.",
+        "object_after": "Telefon elde; ayırt edici ipucu aranıyor.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "push-in",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "held-two-possibilities",
+        "state_after": "held-context-question"
+      },
+      {
+        "id": "beat-5",
+        "start": 12.8,
+        "end": 16.0,
+        "heading": "Küçük bir gözlem bırak.",
+        "action": "observe-cue",
+        "information": "Bugün yalnız gözlediğim ayrıntıyı not ediyorum.",
+        "object_before": "Telefon elde; ayırt edici ipucu aranıyor.",
+        "object_after": "Telefon masada; bağlam gözlemi bekliyor.",
+        "object_id": "phone-01",
+        "character_id": "observer-01",
+        "camera": "locked",
+        "rule_ids": [
+          "CORE-01",
+          "BIR-01"
+        ],
+        "state_before": "held-context-question",
+        "state_after": "table-observe-context"
+      }
+    ],
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 3.1,
+        "text": "Mesajı beklerken ekrana baktım."
+      },
+      {
+        "start": 3.2,
+        "end": 6.300000000000001,
+        "text": "Aklımdan kısa bir cümle geçti."
+      },
+      {
+        "start": 6.4,
+        "end": 9.5,
+        "text": "Yoğun bir gün de farklı bir ritim de mümkün."
+      },
+      {
+        "start": 9.6,
+        "end": 12.700000000000001,
+        "text": "Tek bir sessizlikten sonuç çıkarmadan neyi ayırt edebilirim?"
+      },
+      {
+        "start": 12.8,
+        "end": 16.0,
+        "text": "Bugün yalnız gözlediğim ayrıntıyı not ediyorum."
+      }
+    ],
+    "creative": {
+      "pack_version": "1.0.0",
+      "topic_id": "authored-edit-sample-reflection",
+      "visual_motif": "owned edit rehearsal: sample-reflection",
+      "canon_status": "standalone",
+      "characters": [
+        {
+          "id": "observer-01",
+          "wardrobe": "warm-shirt",
+          "asset_license": "original_project_vectors"
+        }
+      ],
+      "asset_policy": "original_vectors_only"
+    },
+    "production_context": {
+      "schema_version": 1,
+      "account": "sample-reflection",
+      "sources": {
+        "kind": "sources",
+        "account": "sample-reflection",
+        "parent": null,
+        "data": {
+          "owned-drawing": {
+            "url": "https://example.org/storymotion-synthetic-drawing",
+            "title": "Özgün sentetik edit çizimi; gerçek araştırma kaynağı değildir",
+            "locator": "Bu örneğin sahne çizimi",
+            "excerpt": "Bu paket için hazırlanmış özgün sentetik vektör gösterimidir.",
+            "rights_note": "Original demonstration text and vector code; no private rig, PDF or voice"
+          }
+        },
+        "revision": "d11d6d8b74381c7d23f8004d3c6498a299bb8382888d86eb46a685185d2f5bd7"
+      },
+      "canon": null,
+      "binding_sha256": "d1057edbf4d416cba64534dcfd9d7871bc454389e966fc3003927b4fff944c40"
+    }
+  },
+  "plan": {
+    "schema_version": 1,
+    "recipe": "manual-account-scenes-1",
+    "account": "sample-reflection",
+    "canon_revision": null,
+    "scenes": [
+      {
+        "scene_id": "beat-1",
+        "kind": "possibility-branches",
+        "content": {
+          "left": "Yoğun bir gün olabilir.",
+          "right": "Başka bir ritim olabilir.",
+          "question": "Hangi ayrıntıyı gözleyebilirim?"
+        },
+        "claim_indexes": [
+          0
+        ],
+        "cue_indexes": [
+          0
+        ],
+        "object_id": "phone-01",
+        "camera": "locked"
+      },
+      {
+        "scene_id": "beat-2",
+        "kind": "observation",
+        "content": {
+          "object": "clock",
+          "prompt": "Saatin yanındaki ayrıntıya bakalım.",
+          "observation": "Şimdilik yalnız gördüğümü not ediyorum."
+        },
+        "claim_indexes": [
+          1
+        ],
+        "cue_indexes": [
+          1
+        ],
+        "object_id": "phone-01",
+        "camera": "push-in"
+      },
+      {
+        "scene_id": "beat-3",
+        "kind": "possibility-branches",
+        "content": {
+          "left": "Yoğun bir gün olabilir.",
+          "right": "Başka bir ritim olabilir.",
+          "question": "Hangi ayrıntıyı gözleyebilirim?"
+        },
+        "claim_indexes": [
+          2
+        ],
+        "cue_indexes": [
+          2
+        ],
+        "object_id": "phone-01",
+        "camera": "locked"
+      },
+      {
+        "scene_id": "beat-4",
+        "kind": "observation",
+        "content": {
+          "object": "clock",
+          "prompt": "Saatin yanındaki ayrıntıya bakalım.",
+          "observation": "Şimdilik yalnız gördüğümü not ediyorum."
+        },
+        "claim_indexes": [
+          3
+        ],
+        "cue_indexes": [
+          3
+        ],
+        "object_id": "phone-01",
+        "camera": "push-in"
+      },
+      {
+        "scene_id": "beat-5",
+        "kind": "possibility-branches",
+        "content": {
+          "left": "Yoğun bir gün olabilir.",
+          "right": "Başka bir ritim olabilir.",
+          "question": "Hangi ayrıntıyı gözleyebilirim?"
+        },
+        "claim_indexes": [
+          4
+        ],
+        "cue_indexes": [
+          4
+        ],
+        "object_id": "phone-01",
+        "camera": "locked"
+      }
+    ]
+  }
+}

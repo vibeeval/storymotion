@@ -1,0 +1,80 @@
+{
+  "family_id": "cell-focus-section",
+  "source_id": "source-lemo-style-microscope",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "cell-focus-section",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Odak düzlemi özgün örneklerin içinden geçiyor",
+          "duration": 4,
+          "narration": "Özgün geometri adım adım kurulur. Son ölçü sabit konumda okunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Özgün geometri adım adım kurulur."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Son ölçü sabit konumda okunur."
+            }
+          ],
+          "palette": {
+            "background": "#F3F3E9",
+            "ink": "#263E31",
+            "muted": "#526450",
+            "accent": "#8A3E4D"
+          },
+          "cell_count": 4,
+          "cell_radius": 62,
+          "optical_radius": 0.9,
+          "focus_depth": 0.2,
+          "focus_band": 0.3,
+          "transport_fraction": 0.45,
+          "sample_label": "Odak ve kesit deneyi"
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "cell-focus-section",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Daha kalabalık örnekte farklı kesit ve taşıma oranı",
+          "duration": 5,
+          "narration": "Uzun Türkçe açıklama değişen parametreleri görünür kılar. Son durum açık ve dengeli biçimde bekler.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.5,
+              "text": "Uzun Türkçe açıklama değişen parametreleri görünür kılar."
+            },
+            {
+              "start": 2.5,
+              "end": 5,
+              "text": "Son durum açık ve dengeli biçimde bekler."
+            }
+          ],
+          "palette": {
+            "background": "#F3F3E9",
+            "ink": "#263E31",
+            "muted": "#526450",
+            "accent": "#8A3E4D"
+          },
+          "cell_count": 7,
+          "cell_radius": 52,
+          "optical_radius": 1.15,
+          "focus_depth": -0.5,
+          "focus_band": 0.52,
+          "transport_fraction": 0.75,
+          "sample_label": "Taşıma oranı değişen örnekler"
+        }
+      }
+    }
+  ]
+}

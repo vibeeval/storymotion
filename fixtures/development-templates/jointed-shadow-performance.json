@@ -1,0 +1,116 @@
+{
+  "family_id": "jointed-shadow-performance",
+  "source_id": "source-lemo-style-shadow-puppet",
+  "cases": [
+    {
+      "name": "Temel ilişki",
+      "spec": {
+        "id": "jointed-shadow-performance",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Mafsallı kuklanın sabit uzuvları ışık ve ekran uzaklığıyla büyüyen bir gölgeye dönüşür",
+          "duration": 6,
+          "narration": "Eklemler açılırken kol ve bacak uzunlukları sabit kalır; hareket açıdan doğar. Ekranın ışığa uzaklığı büyütmeyi belirler; gölge aynı geometrik izdüşümü izler.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Eklemler açılırken kol ve bacak uzunlukları sabit kalır; hareket açıdan doğar."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Ekranın ışığa uzaklığı büyütmeyi belirler; gölge aynı geometrik izdüşümü izler."
+            }
+          ],
+          "palette": {
+            "background": "#F3F2E9",
+            "ink": "#202F35",
+            "muted": "#526169",
+            "accent": "#80522F"
+          },
+          "light_distance": 700,
+          "screen_distance": 1500,
+          "joint_cues": [
+            {
+              "shoulder": -25,
+              "elbow": 20,
+              "hip": -12,
+              "knee": 20,
+              "label": "Hazırlık pozu"
+            },
+            {
+              "shoulder": 60,
+              "elbow": 80,
+              "hip": 20,
+              "knee": 45,
+              "label": "El ışığa doğru uzanıyor"
+            },
+            {
+              "shoulder": 15,
+              "elbow": 30,
+              "hip": 0,
+              "knee": 10,
+              "label": "Ekranda açık bir son jest"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Farklı geometri ve hareket",
+      "spec": {
+        "id": "jointed-shadow-performance",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Mafsallı kuklanın sabit uzuvları ışık ve ekran uzaklığıyla büyüyen bir gölgeye dönüşür İkinci düzen.",
+          "duration": 6,
+          "narration": "Eklemler açılırken kol ve bacak uzunlukları sabit kalır; hareket açıdan doğar. Ekranın ışığa uzaklığı büyütmeyi belirler; gölge aynı geometrik izdüşümü izler.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Eklemler açılırken kol ve bacak uzunlukları sabit kalır; hareket açıdan doğar."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Ekranın ışığa uzaklığı büyütmeyi belirler; gölge aynı geometrik izdüşümü izler."
+            }
+          ],
+          "palette": {
+            "background": "#17232D",
+            "ink": "#F2F2E5",
+            "muted": "#BACBCE",
+            "accent": "#EAC66E"
+          },
+          "light_distance": 450,
+          "screen_distance": 1750,
+          "joint_cues": [
+            {
+              "shoulder": -70,
+              "elbow": 90,
+              "hip": -30,
+              "knee": 65,
+              "label": "Dar bir hazırlık silueti"
+            },
+            {
+              "shoulder": 75,
+              "elbow": 125,
+              "hip": 30,
+              "knee": 90,
+              "label": "Eklemler açılarak gölge büyüyor"
+            },
+            {
+              "shoulder": -10,
+              "elbow": 25,
+              "hip": -5,
+              "knee": 5,
+              "label": "Dengeye gelen son siluet"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "family_id": "board-pin-routing",
+  "source_id": "source-lemo-style-briefing-board",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "board-pin-routing",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Sabit pimlere yerleşen kayıtlar, gerilen bağlantılarla birlikte incelemeye açılıyor.",
+          "duration": 8,
+          "narration": "Kartların yerini belirleyen pimler hareket etmiyor. Bağlar gerildikten sonra inceleme penceresi kayıtları dolaşıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Kartların yerini belirleyen pimler hareket etmiyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Bağlar gerildikten sonra inceleme penceresi kayıtları dolaşıyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "pin_positions": [
+            {
+              "x": 0.15,
+              "y": 0.15,
+              "label": "Gözlem kaydı"
+            },
+            {
+              "x": 0.85,
+              "y": 0.15,
+              "label": "Ölçüm noktası"
+            },
+            {
+              "x": 0.5,
+              "y": 0.8,
+              "label": "Sonuç notu"
+            }
+          ],
+          "card_count": 3,
+          "thread_routes": [
+            {
+              "from": 0,
+              "to": 1
+            },
+            {
+              "from": 1,
+              "to": 2
+            },
+            {
+              "from": 0,
+              "to": 2
+            }
+          ],
+          "inspection_order": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "board-pin-routing",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Sabit pimlere yerleşen kayıtlar, gerilen bağlantılarla birlikte incelemeye açılıyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Bağlar gerildikten sonra inceleme penceresi kayıtları dolaşıyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Bağlar gerildikten sonra inceleme penceresi kayıtları dolaşıyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "pin_positions": [
+            {
+              "x": 0.2,
+              "y": 0.15,
+              "label": "İlk tanım"
+            },
+            {
+              "x": 0.8,
+              "y": 0.15,
+              "label": "Karşı kayıt"
+            },
+            {
+              "x": 0.2,
+              "y": 0.8,
+              "label": "Ara kontrol"
+            },
+            {
+              "x": 0.8,
+              "y": 0.8,
+              "label": "Son denetim"
+            }
+          ],
+          "card_count": 4,
+          "thread_routes": [
+            {
+              "from": 0,
+              "to": 2
+            },
+            {
+              "from": 0,
+              "to": 1
+            },
+            {
+              "from": 2,
+              "to": 3
+            },
+            {
+              "from": 1,
+              "to": 3
+            }
+          ],
+          "inspection_order": [
+            3,
+            1,
+            0,
+            2
+          ]
+        }
+      }
+    }
+  ]
+}

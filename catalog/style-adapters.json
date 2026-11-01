@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact source-code adaptations; reference catalog records remain reference_only.",
+  "adapters": [
+    {
+      "family_id": "liquid-merge",
+      "source_style_id": "source-mg-style-07-liquid",
+      "provenance": {
+        "source_item_id": "source-mg-style-07-liquid",
+        "source_name": "Liquid Motion",
+        "repository": "https://github.com/Vincentwei1021/mg-styles-15",
+        "commit": "49052d80bfaf9fa8412cc9710530e5e95a3b8d8c",
+        "paths": [
+          {
+            "path": "demos/07-liquid/js/scene.js",
+            "blob_sha": "1456fc68c2d50c44f215f681d6e65bae50b4eae9",
+            "url": "https://github.com/Vincentwei1021/mg-styles-15/blob/49052d80bfaf9fa8412cc9710530e5e95a3b8d8c/demos/07-liquid/js/scene.js"
+          },
+          {
+            "path": "demos/07-liquid/js/shaders.js",
+            "blob_sha": "bd72b5e303962c06768ad90249da14c55b4ca5eb",
+            "url": "https://github.com/Vincentwei1021/mg-styles-15/blob/49052d80bfaf9fa8412cc9710530e5e95a3b8d8c/demos/07-liquid/js/shaders.js"
+          }
+        ],
+        "license": "MIT",
+        "copyright": "Copyright (c) 2026 Vincentwei1021",
+        "notice_path": "vendor/notices/mg-styles-15-MIT.txt",
+        "notice_sha256": "7f03fee9299a401615e13e2c636ead0394f47395da4f816ae60b35ed2d91a932",
+        "scope": "MG07 mergeK and area-preserving radius adapted to a bounded SVG blur/threshold union. Original scene, labels and vectors; not the full WebGL film or a fluid simulator.",
+        "omitted_assets": [
+          "source films and prompts",
+          "music and sound",
+          "source fonts and vendor libraries",
+          "source sprites, characters, logos and textures"
+        ],
+        "product_assets": "Original vectors/bitmaps and existing Schibsted Grotesk OFL font; existing motor/toolchain licenses remain separate.",
+        "acceptance_scope": "Bounded parametric adaptation; native verification is engine-specific; publication and speech review remain pending."
+      }
+    },
+    {
+      "family_id": "bauhaus-modules",
+      "source_style_id": "source-mg-style-09-bauhaus",
+      "provenance": {
+        "source_item_id": "source-mg-style-09-bauhaus",
+        "source_name": "Geometric Bauhaus",
+        "repository": "https://github.com/Vincentwei1021/mg-styles-15",
+        "commit": "49052d80bfaf9fa8412cc9710530e5e95a3b8d8c",
+        "paths": [
+          {
+            "path": "demos/09-bauhaus/film.js",
+            "blob_sha": "c532024fba7bc2dc7dac64b6db4ccbd7b4a30a30",
+            "url": "https://github.com/Vincentwei1021/mg-styles-15/blob/49052d80bfaf9fa8412cc9710530e5e95a3b8d8c/demos/09-bauhaus/film.js"
+          }
+        ],
+        "license": "MIT",
+        "copyright": "Copyright (c) 2026 Vincentwei1021",
+        "notice_path": "vendor/notices/mg-styles-15-MIT.txt",
+        "notice_sha256": "7f03fee9299a401615e13e2c636ead0394f47395da4f816ae60b35ed2d91a932",
+        "scope": "MG09 12-detent quarter-turn and inscribed rotation fit adapted to user-selected geometric modules and alternating column slides. Original layout and vectors; not the source film.",
+        "omitted_assets": [
+          "source films and prompts",
+          "music and sound",
+          "source fonts and vendor libraries",
+          "source sprites, characters, logos and textures"
+        ],
+        "product_assets": "Original vectors/bitmaps and existing Schibsted Grotesk OFL font; existing motor/toolchain licenses remain separate.",
+        "acceptance_scope": "Bounded parametric adaptation; native verification is engine-specific; publication and speech review remain pending."
+      }
+    },
+    {
+      "family_id": "pixel-journey",
+      "source_style_id": "source-mg-style-20-pixel",
+      "provenance": {
+        "source_item_id": "source-mg-style-20-pixel",
+        "source_name": "Pixel Art",
+        "repository": "https://github.com/Vincentwei1021/mg-styles-15",
+        "commit": "49052d80bfaf9fa8412cc9710530e5e95a3b8d8c",
+        "paths": [
+          {
+            "path": "demos/20-pixel/film.js",
+            "blob_sha": "b0e190581a633b23cce13433dd6a58a83b45cc29",
+            "url": "https://github.com/Vincentwei1021/mg-styles-15/blob/49052d80bfaf9fa8412cc9710530e5e95a3b8d8c/demos/20-pixel/film.js"
+          }
+        ],
+        "license": "MIT",
+        "copyright": "Copyright (c) 2026 Vincentwei1021",
+        "notice_path": "vendor/notices/mg-styles-15-MIT.txt",
+        "notice_sha256": "7f03fee9299a401615e13e2c636ead0394f47395da4f816ae60b35ed2d91a932",
+        "scope": "MG20 palette-mask blitting and quantized-frame technique adapted to original pixel motifs and a user-defined stage route. No source sprite, character, logo or scene bitmap.",
+        "omitted_assets": [
+          "source films and prompts",
+          "music and sound",
+          "source fonts and vendor libraries",
+          "source sprites, characters, logos and textures"
+        ],
+        "product_assets": "Original vectors/bitmaps and existing Schibsted Grotesk OFL font; existing motor/toolchain licenses remain separate.",
+        "acceptance_scope": "Bounded parametric adaptation; native verification is engine-specific; publication and speech review remain pending."
+      }
+    }
+  ]
+}

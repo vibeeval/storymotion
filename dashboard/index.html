@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Üretim Masası — Yerel MVP</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script><script src="local-audio.js" defer></script><script src="local-raster.js" defer></script><script src="scene-plan.js" defer></script><script src="series-panel.js" defer></script><script src="rig-panel.js" defer></script><script src="qa-panel.js" defer></script><script src="workflow-panel.js" defer></script><script src="writing-context.js" defer></script></head>
+<body>
+<a class="skip" href="#main">Çalışma alanına geç</a>
+<header class="top"><div class="identity"><span class="mark" aria-hidden="true">▤</span><div><strong>Üretim Masası</strong><span>Konular, formatlar ve tek üretim kuyruğu</span></div></div><span class="mode" id="connection-mode">Yerel inceleme · bağlantı modu okunuyor</span></header>
+<div class="shell">
+<aside class="accounts" aria-labelledby="topic-title">
+<h2 id="topic-title">Konu seç</h2>
+<label for="category">Konu grubu</label><select id="category"><option value="all">Tüm konular</option></select>
+<div id="account-list" class="account-list" aria-label="Üretim konuları"></div>
+<p class="inventory">Her konunun üretim kuralları ayrıdır. Hazır olan adımlar seçtiğiniz formatta gösterilir.</p>
+<details id="source-inventory"><summary>Envanter ayrıntıları</summary><div id="candidates"></div></details>
+</aside>
+<main id="main">
+<div class="work-head"><div><p id="account-handle" class="muted"></p><h1 id="account-name">Konu seç</h1></div><span id="account-state" class="tag"></span></div>
+<section class="profile"><div><strong>Anlatım dili</strong><p id="tone"></p></div><div><strong>Görsel yaklaşım</strong><p id="visual-style"></p></div></section>
+<div class="format-line"><label for="format">Format</label><select id="format"></select><span id="format-state" class="muted"></span></div><p id="format-description" class="description"></p>
+<section id="workflow-card" class="workflow-card" aria-labelledby="workflow-title">
+<div class="section-title"><h2 id="workflow-title">Üretim adımları</h2><span id="workflow-summary" role="status" aria-live="polite">Konu seçin</span></div>
+<details id="workflow-details"><summary>Prosedürü ve kalan adımları gör</summary><p id="workflow-context" class="hint"></p><p id="workflow-evidence" class="hint"></p><ol id="workflow-stages" class="workflow-stages"></ol><p class="hint">İnsan, doğal konuşma ve yayın onayları ayrı kayıtlardır.</p></details>
+</section>
+<nav class="tabs" aria-label="Çalışma alanları"><button data-tab="brief" aria-current="page">Brief</button><button data-tab="writer">Senaryo yazarı</button><button data-tab="capabilities">Sağlayıcı kataloğu</button><button data-tab="template">Şablon</button><button data-tab="queue">Üretim kuyruğu</button><button data-tab="qa">Önizleme ve QA</button></nav>
+<div id="notice" role="status" aria-live="polite"></div>
+<section id="tab-brief" class="tab-panel"><section class="starter-card" aria-labelledby="starter-title"><h2 id="starter-title">İlk yerel demo · API anahtarı gerekmez</h2><p class="hint">Seçili konunun sabit örneğiyle akışı deneyin. Yeni konu senaryosu veya gerçek ses üretilmez. İsterseniz aşağıdaki marka alanlarını doldurun.</p><button id="starter-create" type="button" disabled>Seçili konunun örneğini kuyruğa al</button><p class="hint">Ardından Üretim kuyruğu → Hazırla → Önizleme ve QA → motor seç → MP4 üret.</p></section><form id="brief-form">
+<div class="section-title"><h2>Yeni iş</h2><span>Model çalıştırmadan yerel taslak</span></div>
+<div class="brand-fields"><div><label for="brand-name">Marka adı</label><input id="brand-name" maxlength="60" autocomplete="organization" placeholder="Kendi markanız (isteğe bağlı)"></div><div><label for="brand-handle">Handle (isteğe bağlı)</label><input id="brand-handle" maxlength="31" autocomplete="off" placeholder="@sizinmarkaniz"></div></div>
+<p class="hint">Boş bırakırsanız çıktı nötr hazırlanır. Konu seçimi marka kimliğinizi değiştirmez.</p>
+<label for="title">İş başlığı</label><input id="title" maxlength="65" required>
+<label for="brief">Brief</label><textarea id="brief" rows="3" required></textarea>
+<label for="content">Senaryo veya taslak metni</label><textarea id="content" rows="7" required></textarea>
+<p class="hint">Video fixture'ında senaryo ile cue'lar aynı olmalı. Düzenlemek için Şablon alanını kullan. Metin alanlarına API anahtarı yazma.</p>
+<label for="caption">Caption / paylaşım açıklaması</label><textarea id="caption" rows="2" required></textarea>
+<button class="primary" id="enqueue" type="submit">Yerel kuyruğa ekle</button>
+</form></section>
+<section id="tab-capabilities" class="tab-panel" hidden aria-labelledby="capability-title">
+<div class="section-title"><h2 id="capability-title">Sağlayıcı kataloğu</h2><span>Yetenek başına ayrı destek durumu</span></div>
+<p class="hint">Katalog bağlantı kurmaz veya üretim başlatmaz. Aynı sağlayıcının metin, görsel, video ve ses yetenekleri ayrı adaptör gerektirir; bir alana girilen anahtar diğerine taşınmaz.</p>
+<div class="capability-filters"><div><label for="capability-category">Yetenek alanı</label><select id="capability-category"><option value="all">Tüm alanlar</option><option value="text">Metin</option><option value="image">Görsel</option><option value="video">Video</option><option value="audio">Ses</option><option value="render">Yerel render</option></select></div><div><label for="capability-status-filter">Destek durumu</label><select id="capability-status-filter"><option value="all">Tüm kayıtlar</option><option value="registered">Kayıtlı adaptör</option><option value="unavailable">Planlanan / belirsiz</option></select></div></div>
+<p id="capability-summary" class="hint" role="status" aria-live="polite">Katalog bilgisi bekleniyor.</p>
+<div id="capability-list" class="capability-list"></div>
+<p id="capability-empty" class="hint" hidden>Bu filtrede kayıt bulunmuyor.</p>
+<p class="hint">Model ve fiyat listesi bu katalogdan varsayılmaz. Canlı erişim sağlayıcıda doğrulanır; kayıtlı adaptör canlı test veya her modelle uyum garantisi değildir. Özel API adresi eklemek bu sürümde kapalıdır.</p>
+</section>
+<section id="tab-writer" class="tab-panel" hidden aria-labelledby="writer-title">
+<div class="section-title"><h2 id="writer-title">Senaryo yazarı</h2><span>Senaryo ve sahne önerisi → insan incelemesi</span></div>
+<p id="writer-mode" class="hint" role="status">Bağlantılar kapalı. Host --llm live ile açabilir; FAKE_ zorunluluğu yalnız demodadır.</p>
+<details id="writing-context-panel" class="connection-details"><summary>Kaynaklar ve önceki bölüm</summary>
+<p id="writing-context-status" class="hint" role="status" aria-live="polite">Kaynak kaydı bekleniyor.</p>
+<p class="hint">Kısa kaynak notları burada açıkça kaydedilir. URL otomatik açılmaz; ham PDF veya anahtar eklemeyin. Kayıt doğru bilgi ya da yayın onayı değildir.</p>
+<label for="writing-sources-json">Kısa kaynak kaydı (JSON)</label><textarea id="writing-sources-json" rows="5" spellcheck="false" aria-describedby="writing-sources-note">{}</textarea>
+<p id="writing-sources-note" class="hint">En fazla8kayıt: ID altında url, title, locator, excerpt (en fazla25kelime), rights_note. Yerel şemaya uygun özgün kısa not kullanın.</p>
+<label for="writing-source-rights" class="writer-consent"><input id="writing-source-rights" type="checkbox">Bu kısa notları kullanmaya ve seçtiğim sağlayıcıya göndermeye hakkım var.</label>
+<button id="writing-save-sources" type="button">Kaynak sürümünü kaydet</button>
+<div id="writing-canon-area" hidden><h3>Önceden kabul edilmiş bölüm referansı</h3>
+<p class="hint">Taslak veya model önerisi burada accepted kanon sayılamaz. Önceki kabul edilmiş finalin hash'i, bible sürümü, karakter/nesne durumu gerekir. Bu kayıt kullanıcı beyanıdır; yeni bölüm veya bağımsız final QA değildir.</p>
+<label for="writing-canon-json">Kabul edilmiş final referansı (JSON)</label><textarea id="writing-canon-json" rows="5" spellcheck="false">{}</textarea>
+<label for="writing-canon-confirm" class="writer-consent"><input id="writing-canon-confirm" type="checkbox">Bu kayıt taslak değil; önceden inceleyip kabul ettiğim finali referans alıyor.</label>
+<label for="writing-canon-rights" class="writer-consent"><input id="writing-canon-rights" type="checkbox">Bu referans notlarını kullanma ve seçili sağlayıcıya gönderme hakkım var.</label>
+<button id="writing-accept-reference" type="button">Önceki final referansını kaydet</button></div>
+<button id="writing-context-reload" type="button">Kaydı yeniden oku / yerel değişiklikleri bırak</button></details>
+<details id="writer-how" class="connection-details"><summary>Nasıl açılır?</summary><p>Host sahibi <code>--llm demo</code> veya açıkça <code>--llm live</code> seçer. Demo sabit kabul örneği döndürür; yazdığınız herhangi bir brief'e özgü senaryo üretmez. Canlı mod yalnız katalogda kayıtlı ve host tarafından etkinleştirilen metin adaptörlerini kullanır; her modelin çalışacağı garanti edilmez. FAKE_ / TEST_ONLY_ zorunluluğu yalnız demo içindir. Canlı modda kendi anahtarınızı girersiniz; erişim sağlayıcının metadata isteğiyle doğrulanır. Gerçek anahtar ve ücretli çağrıyla kabul testi yapılmadı.</p></details>
+<div id="writer-flow" hidden>
+<p class="hint">Önce Brief sekmesinde konu, iş başlığı, brief ve caption'ı yazın. Mevcut bir kuyruk işi gerekmez. Marka kimliği öneriyi yeni işe alırken ayrıca uygulanır.</p>
+<button id="writer-edit-brief" type="button">Brief'i düzenle</button>
+<form id="writer-connect-form" class="writer-connect" autocomplete="off">
+<h3><span class="step-number" aria-hidden="true">1</span> Sağlayıcıya bağlan</h3>
+<label for="writer-provider">Senaryo sağlayıcısı</label><select id="writer-provider" aria-describedby="writer-provider-note"></select><p id="writer-provider-note" class="hint">Seçenekler yalnız kayıtlı metin adaptörü ve host etkinlik ayarının kesişiminden gelir.</p>
+<label for="writer-key">Oturumluk API anahtarı</label><input id="writer-key" type="password" minlength="1" maxlength="512" required autocomplete="new-password" spellcheck="false" aria-describedby="writer-key-note">
+<p id="writer-key-note" class="hint">Bağlantı yalnız erişebildiğiniz model listesini okur. Anahtar sunucu RAM'inde oturumluk tutulur ve alan bağlanırken temizlenir.</p>
+<button id="writer-connect" type="submit" disabled>Bağla ve modelleri oku</button>
+</form>
+<div id="writer-connected" hidden><p id="writer-connection-status" class="hint" role="status"></p><button id="writer-disconnect" type="button" disabled>Bağlantıyı kes ve sil</button></div>
+<fieldset id="writer-selection" class="writer-step" hidden><legend><span class="step-number" aria-hidden="true">2</span> Model ve taslak bağlamı</legend>
+<div class="writer-model-row"><div><label for="writer-model">Hesabınızın model listesinden</label><select id="writer-model" disabled></select></div><div><label for="writer-tokens">En fazla çıktı token'ı</label><input id="writer-tokens" type="number" min="16" max="8000" step="1" value="2000" required></div></div>
+<p id="writer-metadata-status" class="hint"></p><button id="writer-refresh" type="button" disabled>Model listesini yenile</button>
+<dl id="writer-draft-context" class="writer-context"></dl>
+<button id="writer-preview" type="button" disabled>İsteği ve maliyeti önizle</button>
+</fieldset>
+<fieldset id="writer-approval" class="writer-step" hidden><legend><span class="step-number" aria-hidden="true">3</span> Bu tek isteği onayla</legend>
+<p id="writer-exact-model" class="exact-selection"></p>
+<dl id="writer-exact-context" class="writer-context"></dl>
+<p id="writer-attempt-limit" class="hint">Onay 120 saniye geçerlidir; en fazla 1 gönderim. Süre veya bağlam değişirse yeni önizleme gerekir.</p>
+<p id="writer-price-status" class="writer-warning">Doğrulanmış USD tahmini yok. Model listesi fiyat tarifesi değildir.</p>
+<div id="writer-live-budget" class="writer-model-row">
+<div><label for="writer-max-usd">Bu isteğin USD bütçe üst sınırı</label><input id="writer-max-usd" type="number" min="0.000001" max="10000" step="0.000001"></div>
+<div><label for="writer-estimate-usd">Kendi güncel teklifinizde tahmini USD</label><input id="writer-estimate-usd" type="number" min="0.000001" max="10000" step="0.000001"></div>
+<div class="writer-wide"><label for="writer-quote-source">Doğruladığınız güncel teklifin kaynağı / tarihi</label><input id="writer-quote-source" maxlength="1000"></div>
+</div>
+<p class="writer-warning">Kendi teklifiniz uygulama tarafından doğrulanmış sağlayıcı fiyatı değildir. Sonlu bütçe ve token sınırı gerçek faturaya hard cap sağlamaz. Timeout veya belirsiz sonuç otomatik tekrar gönderilmez; iptal olası ücreti geri almaz.</p>
+<label for="writer-cost-ack" class="writer-consent"><input id="writer-cost-ack" type="checkbox" required>Gösterilen exact sağlayıcı/model/başlık/brief/caption, kaynak/önceki bölüm sürümü ve token sınırı için tek denemeyi, doğrulanmış USD tahmini olmadığını ve kendi bütçe kaydımı kabul ediyorum.</label>
+<label for="writer-rights-ack" class="writer-consent"><input id="writer-rights-ack" type="checkbox" required>Gönderdiğim metin ve içerik için gereken haklara sahibim.</label>
+<button id="writer-generate" type="button" class="primary" disabled>Bu tek senaryo isteğini onayla ve başlat</button>
+</fieldset>
+<button id="writer-cancel" type="button" disabled hidden>Senaryo isteğini iptal et</button>
+</div>
+<p id="writer-status" role="status" aria-live="polite" class="hint"></p><button id="writer-check-state" type="button" hidden>İstek durumunu kontrol et</button>
+<section id="writer-result" class="writer-step" hidden aria-labelledby="writer-result-title"><h3 id="writer-result-title">İnceleme önerisi</h3>
+<p id="writer-review-status" class="writer-warning">Kaynak doğruluğu, yaratıcı kurgu ve son izleme insan incelemesi bekliyor. Yayına hazır değildir; ses ve render otomatik başlamaz.</p>
+<p id="writer-result-context" class="hint"></p><pre id="writer-script" class="writer-script"></pre>
+<details class="connection-details"><summary>Senaryo ve sahne sözleşmesi JSON</summary><pre id="writer-proposal" class="writer-json"></pre></details>
+<div id="writer-downloads" class="file-links"></div>
+<label for="writer-review-ack" class="writer-consent"><input id="writer-review-ack" type="checkbox" required>Öneriyi yeni, değişmez bir inceleme işine alıyorum. Bu seçim yaratıcı veya yayın kabulü sayılmaz.</label>
+<p id="writer-accept-brand" class="hint"></p><button id="writer-accept" type="button" disabled>Yeni inceleme işi oluştur</button><button id="writer-open-job" type="button" hidden>Oluşan işi incele</button>
+</section>
+<details class="connection-details"><summary>Senaryo bağlantısının güvenlik ayrıntıları</summary><p>Yalnız sunucuda kayıtlı ve host tarafından etkinleştirilen sabit metin API adaptörleri kullanılır. Anahtar browser storage, dosya, log, URL, ZIP veya çıktıya yazılmaz; oturum süresi dolunca veya bağlantı kesilince silinir. Model listesinin görünmesi adaptör uyumu veya kesin fiyat kanıtı değildir. Sağlayıcının saklama politikası geçerlidir.</p></details>
+</section>
+<section id="tab-template" class="tab-panel" hidden><div class="section-title"><h2>Şablon editörü</h2><span id="revision">Revizyon 0</span></div><p>Video çıktısını değiştiren alanlar: language, appearance (renk ve yazı boyutları), video (sahne ve cue'lar). Tone, visual_style ve source_notes yalnız planlama notlarıdır; otomatik görsel değişiklik yapmaz. JSON veri olarak kaydedilir; kod veya HTML çalıştırılmaz.</p><label for="template-json">Şablon JSON</label><textarea id="template-json" rows="21" spellcheck="false"></textarea><div class="actions"><button id="save-template" class="primary">Şablonu kaydet</button><button id="reload-template">Kaydı yeniden yükle</button></div></section>
+<section id="tab-queue" class="tab-panel" hidden><div class="section-title"><h2>Üretim kuyruğu</h2><div class="actions"><button id="run-worker">Yerel işçiyi bir kez çalıştır</button><button id="refresh-jobs">Kuyruğu yenile</button></div></div><p>İşler içerik kimliğiyle tekrar kullanılır. Hazırlama ve kontrol kullanıcı eylemiyle başlar; arka planda ücretli üretim yapılmaz.</p><div class="table-wrap"><table><thead><tr><th>İş</th><th>Konu / format</th><th>Durum</th><th>İşlem</th></tr></thead><tbody id="jobs"></tbody></table></div><p id="queue-empty" class="empty">Henüz iş yok. Brief alanından ilk yerel taslağını ekle.</p></section>
+<section id="tab-qa" class="tab-panel" hidden><div class="section-title"><h2>Önizleme ve QA</h2><span id="selected-job">İş seçilmedi</span></div><div class="review-layout"><div class="preview"><img id="cover-preview" alt="Üretilmiş SVG kapak kaynağı önizlemesi" hidden><p id="preview-empty">Kuyruktan hazırlanmış bir iş seç. Video önizlemesi render gerektirir; SVG kapak kaynağı ayrı gösterilir.</p></div><div><h3>Çıktı durumu</h3><pre id="qa-status">İş seçilmedi.</pre><p class="hint">Teknik kontrol, gerçek dinleme, yaratıcı onay ve fiziksel telefon testi ayrı adımlardır. Dört konu için sürümlü, sınırlı özgün vektör animatikleri ve iki eski teknik fixture desteklenir. Ses, tam yaratıcı üretim ve yayın kabulü ayrı adımlardır.</p><details id="rig-panel" class="connection-details">
+<summary>Nötr karakter rigini içe aktar</summary>
+<p id="rig-support" class="hint">Önce kuyruktan sesi bağlı bir iş seçin.</p>
+<p class="hint">Ağız zamanlarını elle veya dış aracın JSON çıktısıyla sağlayın. Otomatik fonem üretimi yoktur; genlik, harf veya kelime zamanından ağız biçimi tahmin edilmez. Bu adım sağlayıcı çağrısı veya render başlatmaz.</p>
+<button id="rig-load" type="button" disabled>Sese bağlı boş rig şablonunu aç</button>
+<form id="rig-form" hidden>
+<details class="connection-details"><summary>Sabit rig ve ses kaynak bağı</summary><pre id="rig-source" class="qa-bounded"></pre></details>
+<label for="rig-file">Kendi rig zamanlama dosyanız (.json)</label><input id="rig-file" type="file" accept=".json,application/json" aria-describedby="rig-json-note">
+<label for="rig-json">Ağız zamanları ve görsel hareketler (JSON)</label><textarea id="rig-json" rows="8" maxlength="110000" spellcheck="false" required aria-describedby="rig-json-note"></textarea>
+<p id="rig-json-note" class="hint">En fazla 110.000 UTF-8 bayt. Şablondaki kaynak hash, süre, rig kimliği ve fps alanlarını koruyun. mouthCues bu sesin tamamını kapsayan A–H/X aralıkları olmalı; X sessiz aralığı belirtir. JSON içindeki URL, SVG veya metin çalıştırılmaz.</p>
+<label for="rig-method">Ağız verisinin kaynağı</label><select id="rig-method" required><option value="manual_annotation">Elle işaretleme</option><option value="external_phoneme_export">Dış aracın fonem çıktısı</option><option value="synthetic_test">Sentetik test · gerçek fonetik kabulü değil</option></select>
+<label for="rig-approved-by">Veriyi düzenleyen</label><input id="rig-approved-by" minlength="1" maxlength="200" autocomplete="off" required>
+<p class="hint">Yöntem ve düzenleyen, JSON içindeki provenance.method ve provenance.approved_by ile aynı olmalı. provenance.rights_confirmed true olmalı; human_phonetic ve human_visual pending kalır. Bu beyanlar fonetik veya algısal doğruluk kanıtı değildir.</p>
+<label for="rig-rights" class="writer-consent"><input id="rig-rights" type="checkbox" required>Bu ağız verisini ve nötr rigi bu projede kullanma hakkımı onaylıyorum. İnsan fonetik ve görsel incelemesi bekleyen yeni iş oluşturulsun.</label>
+<button id="rig-submit" type="submit" disabled>Rig verisini bağla · yeni inceleme işi</button>
+</form>
+<p id="rig-status" role="status" aria-live="polite"></p><button id="rig-open" type="button" hidden>Rig bağlı inceleme işini aç</button>
+</details><details id="series-panel" class="connection-details" hidden>
+<summary>Bölüm devamı</summary>
+<p class="hint">Kabul edilen final yalnız devam referansıdır. Yeni taslak otomatik kanon olmaz; kaynak, devamlılık, ses ve yayın QA kabulü ayrıca bekler. Şema denetimi anlam doğruluğunu garanti etmez.</p>
+<h4>1 · Finali devam referansı olarak kaydet</h4>
+<p id="series-render-status" class="hint" role="status">Önce seçili iş ve motor için tamamlanmış, hash doğrulanmış bir final gerekiyor.</p>
+<button id="series-reference-load" type="button" disabled>Final referansını düzenle</button>
+<form id="series-reference-form" hidden>
+<p id="series-reference-pin" class="hint"></p>
+<label for="series-canon">Devam referansı (JSON)</label><textarea id="series-canon" rows="8" maxlength="20000" spellcheck="false" required></textarea>
+<label for="series-accepted-by">Referansı kabul eden / kayıt</label><input id="series-accepted-by" maxlength="120" required>
+<p class="hint">Gönderilen JSON içindeki accepted_by bu açık form alanıyla eşlenir. Bölüm kimliği episode_id alanından alınır; final hash'i değiştirilemez.</p>
+<label for="series-reference-rights"><input id="series-reference-rights" type="checkbox" required>Bu finali ve içeriğini devam referansı olarak kullanma hakkım var.</label>
+<label for="series-reference-only"><input id="series-reference-only" type="checkbox" required>Bu kabul yalnız devam referansıdır; yayın veya insan QA onayı değildir.</label>
+<button id="series-accept" type="submit" disabled>Yalnız devam referansı olarak kabul et</button>
+</form>
+<h4>2 · Önceki bölümden yeni taslak oluştur</h4>
+<label for="series-history-filter">Geçmişte seri kimliği (isteğe bağlı)</label><input id="series-history-filter" maxlength="60" pattern="[a-z][a-z0-9-]{0,59}" placeholder="Boş bırak: bu hesabın tüm serileri">
+<button id="series-state-read" type="button">Bölüm kayıtlarını oku</button>
+<p id="series-state-summary" class="hint" aria-live="polite">Kayıtlar henüz okunmadı.</p>
+<div class="row" role="group" aria-label="Bölüm geçmişi sayfaları"><button id="series-episodes-back" type="button" disabled>Önceki bölüm sayfası</button><button id="series-episodes-next" type="button" disabled>Sonraki bölüm sayfası</button></div>
+<div class="row" role="group" aria-label="Taslak geçmişi sayfaları"><button id="series-drafts-back" type="button" disabled>Önceki taslak sayfası</button><button id="series-drafts-next" type="button" disabled>Sonraki taslak sayfası</button></div>
+<p id="series-history-status" class="hint" role="status" aria-live="polite"></p>
+<ul id="series-draft-history" aria-label="Bu sayfadaki taslak kayıtları"></ul>
+<label for="series-previous">Önceki kabul edilmiş bölüm</label><select id="series-previous" disabled></select>
+<button id="series-draft-load" type="button" disabled>Yeni bölüm taslağını düzenle</button>
+<form id="series-draft-form" hidden>
+<p id="series-draft-pin" class="hint"></p>
+<p class="hint">Eski senaryo örnek olarak gelir. Yeni bölümün senaryo, sahne ve altyazı cue alanlarını birlikte düzenleyin. Aynı metin yeni bölüm olamaz; eksik referans ve karakter/nesne çelişkileri kaydı engeller.</p>
+<label for="series-video">Yeni bölüm önerisi · senaryo, sahne ve cue JSON</label><textarea id="series-video" rows="10" maxlength="70000" spellcheck="false" required></textarea>
+<label for="series-continuation-note">Devam kararı ve bağlantı notu</label><textarea id="series-continuation-note" rows="2" maxlength="1000" required></textarea>
+<label for="series-approved-by">Taslağı düzenleyen / kayıt</label><input id="series-approved-by" maxlength="200" required>
+<label for="series-draft-rights"><input id="series-draft-rights" type="checkbox" required>Bu taslak ve önceki referans için gereken kullanım hakkım var.</label>
+<label for="series-review-pending"><input id="series-review-pending" type="checkbox" required>Bu yeni taslak devamlılık, kaynak ve insan incelemesi bekler; kabul edilmiş bölüm değildir.</label>
+<button id="series-draft-save" type="submit" disabled>Yeni inceleme taslağını kaydet</button>
+</form>
+<p id="series-status" role="status" aria-live="polite" class="hint"></p>
+<button id="series-open" type="button" hidden>Oluşan bölüm taslağını aç</button>
+<a id="series-bundle" class="file-links" hidden download>Bölüm referansı ve teslim paketini indir · insan QA bekler</a>
+</details><details id="manual-step" class="connection-details" hidden><summary>Sahne içeriğini planla · elle seçim</summary><p class="hint">Bu üç konu profili için sınırlı sahne tiplerini seçin. Metin, kaynak ve görselin anlam eşleşmesi insan incelemesinde kalır. Ses gerekiyorsa önce kaynak işe bağlayın. Gizemli hikâyeler kabul edilmiş referans kanonu gerektirir; yeni taslak kabul edilmiş bölüm olmaz.</p><button id="manual-load" type="button">Kaynağa bağlı planı aç</button><form id="manual-form" hidden><label for="manual-scene">Sahne</label><select id="manual-scene"></select><label for="manual-kind">Sahne tipi</label><select id="manual-kind"></select><label for="manual-content">Sahnenin içeriği (JSON)</label><textarea id="manual-content" rows="6" maxlength="2500" spellcheck="false"></textarea><label for="manual-claims">Bu sahneyi destekleyen iddia numaraları</label><input id="manual-claims" maxlength="119" placeholder="Örn. 0, 1" autocomplete="off"><p class="hint">Aşağıdaki sabit kaynak kaydından elle eşleyin. Numaraların varlığı iddianın doğru olduğunu kanıtlamaz.</p><label for="manual-camera">Kamera</label><select id="manual-camera"><option value="locked">Sabit</option><option value="push-in">Yakınlaş</option><option value="follow-object">Nesneyi izle</option></select><pre id="manual-refs"></pre><label for="manual-approved-by">Planı düzenleyen</label><input id="manual-approved-by" maxlength="200" required><label for="manual-ack"><input id="manual-ack" type="checkbox" required>Kaynak/çizim eşleşmesi, ses ve varsa bölüm devamlılığı insan kabulü bekleyen yeni inceleme işidir.</label><button id="manual-submit" disabled>Planı bağla · yeni inceleme işi</button></form><p id="manual-status" role="status" aria-live="polite"></p><button id="manual-open" type="button" hidden>Planlanan inceleme işini aç</button></details><details id="raster-step" class="connection-details" hidden><summary>Yerel görsel · kırpma ve işaretleme</summary><p class="hint">Gündelik Şeylerin Nedenleri profili için tek PNG/JPEG, en fazla 8 MiB / 4096 px / 12 MP. Kaynak anlatım otomatik yeniden yazılmaz. Her sahnenin görsele uygunluğunu inceleyin. Ses gerekiyorsa önce kaynak işe sesi bağlayın; sonra görseli ekleyin.</p><form id="raster-form"><label for="raster-file">Kendi görseliniz</label><input id="raster-file" type="file" accept=".png,.jpg,.jpeg" required><label for="raster-scene">Görünümü düzenlenecek sahne</label><select id="raster-scene"></select><p class="hint">Koordinatlar tüm görsele göre 0–1 aralığında. X+genişlik ve Y+yükseklik en fazla 1; işaretleme kırpmanın içinde kalmalı.</p><label for="raster-highlight"><input id="raster-highlight" type="checkbox">Bu sahnede alanı işaretle</label><fieldset id="raster-crop-fields"><legend>Kırpma</legend><div class="raster-grid"><label for="raster-crop-x">X (0–1)</label><input id="raster-crop-x" type="number" min="0" max="1" step="0.01" value="0.2" required><label for="raster-crop-y">Y (0–1)</label><input id="raster-crop-y" type="number" min="0" max="1" step="0.01" value="0.2" required><label for="raster-crop-width">Genişlik (0–1)</label><input id="raster-crop-width" type="number" min="0" max="1" step="0.01" value="1" required><label for="raster-crop-height">Yükseklik (0–1)</label><input id="raster-crop-height" type="number" min="0" max="1" step="0.01" value="1" required></div></fieldset><fieldset id="raster-highlight-fields" hidden><legend>İşaretleme</legend><div class="raster-grid"><label for="raster-highlight-x">X (0–1)</label><input id="raster-highlight-x" type="number" min="0" max="1" step="0.01" value="0.2" required><label for="raster-highlight-y">Y (0–1)</label><input id="raster-highlight-y" type="number" min="0" max="1" step="0.01" value="0.2" required><label for="raster-highlight-width">Genişlik (0–1)</label><input id="raster-highlight-width" type="number" min="0" max="1" step="0.01" value="0.2" required><label for="raster-highlight-height">Yükseklik (0–1)</label><input id="raster-highlight-height" type="number" min="0" max="1" step="0.01" value="0.2" required></div></fieldset><label for="raster-camera">Kamera</label><select id="raster-camera"><option value="locked">Sabit</option><option value="push-in">Yakınlaş</option><option value="follow-object">İşaretli alana yönel</option></select><label for="raster-label">Kısa açıklama</label><input id="raster-label" maxlength="50"><label for="raster-approved-by">Onaylayan / referans</label><input id="raster-approved-by" maxlength="200" required><label for="raster-rights-note">Bu projede görsel kullanım hakkı</label><input id="raster-rights-note" maxlength="1000" required><label for="raster-rights"><input id="raster-rights" type="checkbox" required>Seçili görseli bu projede kullanma ve özel editable pakete ekleme hakkımı onaylıyorum. Bu onay müşteri dağıtım izni değildir.</label><button id="raster-submit" disabled>Görseli bağla · yeni inceleme işi</button></form><p id="raster-status" role="status" aria-live="polite"></p><button id="raster-open" type="button" hidden>Görselli inceleme işini aç</button></details><details id="local-audio-step" class="connection-details" hidden><summary>Yerel onaylı ses ve kelime zamanları</summary>
+<p class="hint">Aynı exact senaryo için MP3/WAV/M4A ve timing JSON seçin. Dosyalar yalnız yerel özel çalışma alanına gider; API/key/ücret yoktur. Kelime zamanları sağlanan dosyadan alınır; karakter/viseme zamanı uydurulmaz. Bu sınırlı vektörlerde konuşan ağız yoktur. İnsan dinleme ve altyazı anlamı ayrıca bekler.</p>
+<form id="local-audio-form"><label for="local-audio-file">Onaylı ses (en fazla 12 MiB)</label><input id="local-audio-file" type="file" accept=".mp3,.wav,.m4a" required>
+<label for="local-audio-alignment">Exact metin/ses hash'ine bağlı timing JSON</label><input id="local-audio-alignment" type="file" accept=".json" required>
+<label for="local-audio-spans">Sahne kelime aralıkları (gerekiyorsa JSON, end_word hariç)</label><textarea id="local-audio-spans" rows="3" maxlength="10000"></textarea>
+<label for="local-audio-approved-by">Onaylayan / referans</label><input id="local-audio-approved-by" maxlength="200" required>
+<label for="local-audio-rights-note">Bu özel projede kullanım hakkı notu</label><input id="local-audio-rights-note" maxlength="1000" required>
+<label for="local-audio-rights"><input id="local-audio-rights" type="checkbox" required>Bu ses ve metni bu yerel projede kullanma hakkını onaylıyorum. Bu onay müşteri dağıtım izni değildir.</label>
+<button id="local-audio-submit" type="submit" disabled>Yerel sesi bağla · yeni inceleme işi</button></form>
+<p id="local-audio-status" role="status" aria-live="polite"></p></details><section aria-labelledby="render-title"><h3 id="render-title" tabindex="-1">Yerel video renderi</h3>
+<label for="render-engine">Bu işin render motoru</label><select id="render-engine"><option value="hyperframes">HyperFrames</option><option value="remotion">Remotion</option></select>
+<p id="render-license-notice" class="muted" role="note">HyperFrames varsayılandır. Remotion seçmeden önce sabit sürümün lisansını ve kendi kullanım hakkınızı doğrulayın. Selecting Remotion requires a separate license review; this panel does not accept an agreement.</p>
+<p id="render-scope" class="hint">İş seçin. Render sürümlü konu animatikleri ve eski teknik fixture formatlarında açıktır.</p>
+<button id="edit-plan-read" type="button" disabled>Render öncesi kurgu planını incele</button><details id="edit-plan-details" hidden><summary>Nesne, kamera, kaynak ve gerekli varlıklar</summary><p id="edit-plan-summary" role="status"></p><pre id="edit-plan-data"></pre></details>
+<details id="scene-edit-panel" hidden><summary>Seçili sahneyi revize et</summary><p class="hint">Yalnız sahne başlığı veya kamera. Senaryo/ses/altyazı korunur; yeni revizyonun QA/export onayı ayrıdır. Anlatım ve süre değişikliği bu dilimde yok.</p><form id="scene-edit-form">
+<label for="scene-edit-scene">Sahne</label><select id="scene-edit-scene"></select><label for="scene-edit-property">Değişecek alan</label><select id="scene-edit-property"><option value="heading">Sahne başlığı</option><option value="camera">Kamera</option></select>
+<label id="scene-edit-heading-label" for="scene-edit-heading">Yeni sahne başlığı</label><input id="scene-edit-heading" maxlength="50" autocomplete="off">
+<label id="scene-edit-camera-label" for="scene-edit-camera" hidden>Yeni kamera</label><select id="scene-edit-camera" hidden><option value="locked">Sabit</option><option value="push-in">Yakınlaş</option><option value="follow-object">Nesneyi izle</option></select>
+<p id="scene-edit-before" class="hint"></p><label for="scene-edit-ack"><input id="scene-edit-ack" type="checkbox" required> Seçili sahnenin tek alanını yeni inceleme revizyonuna alıyorum; kaynak/yaratıcı/son izleme kabulü yeniden gerekiyor.</label><button id="scene-edit-create" disabled>Yeni revizyon oluştur</button></form><p id="scene-edit-status" role="status" aria-live="polite"></p><button id="scene-edit-open" type="button" hidden>Oluşturulan revizyonu aç</button></details>
+<button id="scene-edit-parent" type="button" hidden>Önceki revizyonu aç</button>
+<button id="render-start" disabled>Seçili motorla MP4 üret / kaldığı yerden devam et</button><button id="render-cancel" disabled>Yerel renderi iptal et</button>
+<video id="render-preview" controls playsinline preload="none" hidden aria-label="Seçili motorun teknik demo videosu"></video><p id="render-preview-hint" class="hint" hidden>Bu teknik inceleme videosudur. Oynatılamazsa aşağıdan MP4 dosyasını indirin; insan QA ve yayın kabulü ayrıdır.</p><pre id="render-status">Render başlatılmadı.</pre><div id="render-downloads" class="file-links"></div></section><div id="file-links" class="file-links"></div><div class="actions"><button id="check-job" disabled>Kontrolü çalıştır</button><button id="export-job" disabled>İnceleme paketini hazırla</button></div><a id="download" hidden download>İnceleme ZIP'ini indir</a></div></div>
+<section id="qa-review" class="qa-review" aria-labelledby="qa-review-title">
+<div class="section-title"><h3 id="qa-review-title" tabindex="-1">Kare ve geçiş incelemesi</h3><span>Yerel kanıt · insan QA ayrı</span></div>
+<p id="qa-review-summary" role="status" aria-live="polite" class="hint">Önce seçili motorla tamamlanmış bir MP4 üretin.</p>
+<div class="actions"><button id="qa-review-create" type="button" disabled>QA panosunu hazırla</button><button id="qa-review-refresh" type="button" disabled>QA durumunu yenile</button><button id="qa-review-recheck" type="button" disabled>Yerel düzeltmeleri yeniden denetle</button></div>
+<p class="hint">Teknik pass, insan dinleme, yaratıcı kabul veya yayın izni değildir. Yerel düzeltme alanları yalnız kayıt tutar; komut çalıştırmaz.</p>
+<p id="qa-review-hash" class="qa-hash"></p>
+<div id="qa-review-files" class="file-links"></div><div id="qa-review-images" class="qa-evidence-images"></div>
+<div id="qa-review-details" hidden>
+<h4>Kontroller ve kapsama</h4><div id="qa-review-checks" class="qa-checks"></div><pre id="qa-review-coverage" class="qa-bounded"></pre>
+<h4>Kusur kayıtları</h4><div class="table-wrap"><table><thead><tr><th>Kare / sahne</th><th>Önem / durum</th><th>Kusur ve yerel düzeltme</th><th>Kırpma / render hash</th></tr></thead><tbody id="qa-review-issues"></tbody></table></div><p id="qa-review-no-issues" class="hint">Kayıtlı kusur yok. Bu durum insan QA kabulü anlamına gelmez.</p>
+<form id="qa-issue-form" class="qa-issue-form">
+<h4>Bir kusur kaydet</h4><div class="qa-fields"><div><label for="qa-issue-frame">Kare numarası</label><input id="qa-issue-frame" type="number" min="0" step="1" required></div><div><label for="qa-issue-scene">Sahne ID</label><input id="qa-issue-scene" maxlength="80" list="qa-scene-options" required><datalist id="qa-scene-options"></datalist></div><div><label for="qa-issue-severity">Önem</label><select id="qa-issue-severity"><option value="major">Major · belirgin</option><option value="critical">Critical · engelleyici</option><option value="minor">Minor · küçük</option></select></div></div>
+<label for="qa-issue-description">Gözlenen kusur</label><textarea id="qa-issue-description" rows="3" maxlength="2000" required></textarea>
+<label for="qa-issue-fix">Yerel düzeltme notu</label><textarea id="qa-issue-fix" rows="2" maxlength="2000" required></textarea>
+<div class="qa-fields"><div><label for="qa-affected-scenes">Etkilenen sahne ID'leri · seçilen sahne dahil</label><input id="qa-affected-scenes" maxlength="1000" required></div><div><label for="qa-affected-checks">Etkilenen kontrol ID'leri · virgülle</label><input id="qa-affected-checks" maxlength="1000" required></div></div>
+<p id="qa-bounds-note" class="hint">Kırpma alanı orijinal renderın tam sayı piksel koordinatlarıdır. Sahne ID ve kare eşleşmesi sunucuda doğrulanır.</p>
+<div class="qa-bounds"><div><label for="qa-bound-x">X</label><input id="qa-bound-x" type="number" min="0" step="1" required></div><div><label for="qa-bound-y">Y</label><input id="qa-bound-y" type="number" min="0" step="1" required></div><div><label for="qa-bound-width">Genişlik</label><input id="qa-bound-width" type="number" min="1" step="1" required></div><div><label for="qa-bound-height">Yükseklik</label><input id="qa-bound-height" type="number" min="1" step="1" required></div></div>
+<button id="qa-issue-save" type="submit" disabled>Kusuru kaydet</button>
+</form>
+<form id="qa-resolve-form" class="qa-issue-form"><h4>Düzeltme kaydı</h4><label for="qa-resolve-issue">Kusur</label><select id="qa-resolve-issue"></select><label for="qa-resolve-fix">Yapılan yerel düzeltme</label><textarea id="qa-resolve-fix" rows="2" maxlength="2000" required></textarea><button id="qa-resolve-save" type="submit" disabled>Düzeltmeyi kaydet</button><p class="hint">Düzeltme kaydı tek başına geçer durum yaratmaz; ilgili alanlar yeniden denetlenmelidir.</p></form>
+<details class="connection-details"><summary>Teknik QA kaydı</summary><pre id="qa-review-raw" class="qa-bounded"></pre></details>
+</div>
+</section>
+</section>
+<footer>LLM ve ElevenLabs varsayılan olarak kapalıdır; açık host modu ve istek başına onay gerekir. <span id="inventory-note"></span></footer>
+</main>
+<aside class="connections" aria-labelledby="connections-title">
+<h2 id="connections-title">Sağlayıcı ve onay</h2>
+<div class="provider-selection">
+<label for="provider-task">Görev</label><select id="provider-task"><option value="text">Metin</option><option value="voice">Ses</option><option value="image">Görsel</option><option value="video">Video</option><option value="plan">Plan</option><option value="animation">Yerel animasyon</option></select>
+<label for="provider">Sağlayıcı</label><select id="provider"></select>
+<label for="model">Model / adaptör</label><select id="model"></select>
+<p id="provider-state" class="connection-summary" role="status" aria-live="polite">Bağlantı kurulmadı.</p>
+</div>
+<details id="llm-demo" class="connection-details" hidden>
+<summary>Eski FAKE alan demosu</summary>
+<form id="key-form" autocomplete="off">
+<p>Yalnız FAKE_ örnek değeri kabul edilir. Senaryo yazarı bağlantısından ayrıdır; gerçek LLM bağlantısı kurulmaz.</p>
+<label for="demo-key">Sahte anahtar</label><input id="demo-key" type="password" placeholder="FAKE_DEMO_ONLY" autocomplete="new-password" maxlength="85">
+<button id="save-key" type="submit">Demo alanını dene</button><button id="clear-keys" type="button">Demo alanlarını temizle</button>
+<p id="key-state" class="hint" role="status">Demo alanı boş.</p>
+</form></details>
+<details id="llm-plan" class="connection-details" hidden>
+<summary>Eski yerel plan limiti</summary>
+<form id="budget-form">
+<p>Seçili işin yerel plan kaydıdır. ElevenLabs üretim onayından ayrıdır; canlı harcama izni vermez.</p>
+<label for="budget">Plan üst sınırı (USD)</label><input id="budget" type="number" min="0" max="10000" step="0.000001" placeholder="Güncel teklifin tutarı" required>
+<label for="quote-source">Tutarın kaynağı</label><input id="quote-source" placeholder="Doğrulanmış teklif / test notu" required>
+<label for="approved-by">Onay kaydına referans</label><input id="approved-by" placeholder="Bu işe ait onay notu" required>
+<button type="submit" id="save-budget" disabled>Plan limitini kaydet</button>
+</form></details>
+<section class="voice-box" aria-labelledby="el-title">
+<h3 id="el-title" tabindex="-1">ElevenLabs · ses üretimi</h3>
+<p id="el-mode" class="connection-summary">Bağlantı modu okunuyor.</p>
+<details id="el-how" class="connection-details" hidden><summary>Nasıl açılır?</summary><p>Host sahibi yerel inceleme için <code>--elevenlabs demo</code>, kendi hesabıyla kullanım için <code>--elevenlabs live</code> modunu seçer. Mod değiştirmek bağlantı kurmaz veya üretim başlatmaz.</p></details>
+<div id="el-flow" hidden>
+<form id="el-connect-form" autocomplete="off">
+<h4 id="el-connect-title" tabindex="-1"><span class="step-number" aria-hidden="true">1</span> Bağlan</h4>
+<label for="el-key">Oturumluk API anahtarı</label><input id="el-key" type="password" maxlength="512" autocomplete="new-password" spellcheck="false" placeholder="FAKE_ELEVENLABS_DEMO_ONLY" aria-describedby="el-connect-note">
+<p id="el-connect-note" class="hint">Erişilebilir ses/model listesi okunur. Bu adım ses üretmez.</p>
+<button id="el-connect" type="submit" disabled>Bağla ve listeyi oku</button>
+</form>
+<div id="el-connected" hidden><p id="el-connection-summary" class="hint" role="status"></p><button id="el-disconnect" type="button" disabled>Bağlantıyı kes ve sil</button></div>
+<fieldset id="el-step-select" class="voice-step" hidden><legend><span class="step-number" aria-hidden="true">2</span> Ses ve model</legend>
+<label for="el-voice">Hesabınızdaki ses</label><select id="el-voice" disabled></select>
+<label for="el-model">Metinden sese modeli</label><select id="el-model" disabled></select>
+<button id="el-refresh" type="button" disabled>Listeleri ve kotayı yenile</button>
+</fieldset>
+<fieldset id="el-step-text" class="voice-step" hidden><legend><span class="step-number" aria-hidden="true">3</span> Metin ve önizleme</legend>
+<p id="el-job-hint" class="hint">Önce kuyruktan bir iş seçin.</p>
+<label for="el-tts">TTS metni · ekran yazımı ayrı</label><textarea id="el-tts" rows="5" maxlength="10000" disabled></textarea>
+<button id="el-preview" type="button" disabled>Metni ve maliyeti önizle</button>
+</fieldset>
+<fieldset id="el-step-approve" class="voice-step approval-step" hidden><legend><span class="step-number" aria-hidden="true">4</span> Onay ve üretim</legend>
+<p id="el-exact-selection" class="exact-selection"></p>
+<p id="el-exact-limit" class="hint"></p>
+<p class="exact-label">Onaylayacağınız metin</p><pre id="el-exact-text" class="voice-preview exact-text"></pre>
+<p id="el-price-status" class="price-warning"></p>
+<div id="el-live-budget">
+<label for="el-max-usd">Bu tek işin USD bütçe üst sınırı</label><input id="el-max-usd" type="number" min="0" max="10000" step="0.000001" placeholder="Canlı modda zorunlu">
+<label for="el-estimate-usd">Güncel teklifinizdeki tahmini USD tutarı</label><input id="el-estimate-usd" type="number" min="0" max="10000" step="0.000001" placeholder="Kendi hesabınız için doğruladığınız tutar">
+<label for="el-quote-source">Güncel teklifin kaynağı / tarihi</label><input id="el-quote-source" maxlength="1000" placeholder="Kendi planınız ve güncel hesaplama">
+</div>
+<p class="price-warning">Bütçe kaydı gerçek faturaya hard cap değildir. Gönderilmiş bir isteği iptal etmek olası ücreti geri almaz; belirsiz sonuç otomatik yeniden gönderilmez.</p>
+<label class="voice-consent" for="el-cost-ack"><input id="el-cost-ack" type="checkbox" required>Bu exact metin/ses/model için tek üretimi, gösterilen karakter sınırını ve doğrulanmış USD tahmini bulunmadığını kabul ediyorum.</label>
+<label class="voice-consent" for="el-rights-ack"><input id="el-rights-ack" type="checkbox" required>Metin ve seçtiğim ses için gereken kullanım hakkına sahibim.</label>
+<button id="el-generate" type="button" class="primary" disabled>Bu tek üretimi onayla ve başlat</button>
+<details class="connection-details"><summary>Teknik önizleme verisi</summary><pre id="el-preview-data" class="voice-preview">Önizleme bekliyor.</pre></details>
+</fieldset>
+<button id="el-cancel" type="button" disabled hidden>Ses işini iptal et</button>
+</div>
+<p id="el-status" role="status" aria-live="polite" class="hint"></p>
+<div id="el-downloads" class="file-links"></div>
+<details id="audio-bind-step" class="connection-details audio-bind" hidden>
+<summary>Videoya bağla</summary>
+<p id="audio-bind-source" class="hint"></p>
+<p id="audio-bind-note" class="hint">Tamamlanan sesi taze kelime ve sahne zamanlarına bağlayan yeni bir inceleme işi oluşturur. Render veya sağlayıcı API çağrısı başlatmaz; hazırlama ve render ayrı eylemlerdir. Bu sınırlı vektörlerde konuşan ağız ve taze viseme yoktur. Zamanlama ve insan QA kabulü ayrıca bekler.</p>
+<form id="audio-bind-form" aria-describedby="audio-bind-note">
+<label for="audio-bind-approved-by">Onaylayan / referans</label><input id="audio-bind-approved-by" minlength="1" maxlength="200" required>
+<label for="audio-bind-rights-note">Kullanım hakkı notu</label><input id="audio-bind-rights-note" minlength="1" maxlength="1000" required>
+<label for="audio-bind-rights" class="voice-consent"><input id="audio-bind-rights" type="checkbox" required>Bu sesin bu projede kullanım hakkını onaylıyorum.</label>
+<button id="audio-bind-submit" type="submit" disabled>Sesli inceleme işi oluştur</button>
+</form>
+<p id="audio-bind-status" class="hint" role="status" aria-live="polite"></p>
+</details>
+</section>
+<details id="connection-security" class="connection-details"><summary>Güvenlik ayrıntıları</summary>
+<p>Anahtarlar yalnız sunucu RAM'inde oturumluk tutulur; LLM demo alanı 15 dakikada veya sunucu kapanınca silinir. Bağlantıyı kesmek ElevenLabs anahtarını siler. Dosya, log, export, ZIP, URL veya browser storage'a yazılmaz. Anahtar alanı bağlanırken temizlenir.</p>
+<p>Canlı modda anahtar yalnız seçilen sağlayıcıya gönderilir; sağlayıcının retention politikası geçerlidir. Gerçek anahtarla veya ücretli üretimle kabul testi yapılmadı.</p>
+<p>Yeni ses eski altyazı, sahne ve viseme zamanlarını geçersiz kılar. Yeni timing ve insan dinleme kabulü tamamlanmadan eski kaynak exportu engellenir.</p>
+</details>
+</aside>
+<details id="family-studio"><summary>91 parametrik template / 91 bounded templates</summary>
+<p>Kaynak hazırlama MP4 üretmez. Doğrulanmış kayıtlı hazırlık için aşağıdaki ayrı yerel render panelini kullanın. Ses/sağlayıcı veya yayın işlemi yok; native ve görsel kabul 0/91. Yaş/izleyici hipotezdir; görsel puan yoktur.</p>
+<button id="family-load" type="button">Template listesini yükle / Load templates</button>
+<details id="family-references" class="reference-gallery"><summary>Kaynak referansları / Source references</summary>
+<p>Yalnız mevcut doğrulanmış uyarlama metadata kayıtları. Kaynak içeriği, medya, istem veya kod içe aktarılmaz. MIT kod bildirimi diğer asset haklarını kapsamaz. / References only; no upstream content imported.</p>
+<button id="family-references-load" type="button" disabled>Yerel kataloğu yükle / Load local catalog</button>
+<p id="family-references-status" role="status" aria-live="polite"></p>
+<div class="reference-filters"><label for="family-references-search">Ara / Search</label><input id="family-references-search" type="search" autocomplete="off">
+<label for="family-references-filter">Kapsam filtresi / Scope filter</label><select id="family-references-filter"><option value="">Tümü / All</option><option value="compatible">Seçili template ile eşleşen / Compatible with selected template</option><option value="unknown_rights">Asset hakları bilinmiyor / Unknown asset rights</option></select></div>
+<button id="family-references-reset" type="button">Filtreleri sıfırla / Reset filters</button>
+<p id="family-references-count" role="status" aria-live="polite"></p><p id="family-references-empty" hidden>Eşleşen kayıt yok / No matching records</p>
+<ul id="family-references-cards" class="reference-cards"></ul>
+<section id="family-references-detail" aria-labelledby="family-references-title" hidden><h4 id="family-references-title"></h4><dl id="family-references-meta"></dl>
+<button id="family-references-apply" type="button" disabled hidden>Paleti geçerli JSON taslağına uygula / Apply palette to current JSON draft</button>
+<button id="family-references-close" type="button">Ayrıntıyı kapat / Close details</button></section>
+</details>
+<details id="family-styles" class="reference-gallery"><summary>Yeniden kullanılabilir paletler / Reusable palettes</summary>
+<p>Palet seçimi hareketi değiştirmez; yeni template veya video önizlemesi değildir. Yalnız desteklenen template için açık düğmeyle RAM JSON taslağına uygulanır. / Explicit palette-only draft editing for compatible templates.</p>
+<button id="family-styles-load" type="button" disabled>Yerel kataloğu yükle / Load local catalog</button>
+<p id="family-styles-status" role="status" aria-live="polite"></p>
+<div class="reference-filters"><label for="family-styles-search">Ara / Search</label><input id="family-styles-search" type="search" autocomplete="off">
+<label for="family-styles-filter">Kapsam filtresi / Scope filter</label><select id="family-styles-filter"><option value="">Tümü / All</option><option value="compatible">Seçili template ile eşleşen / Compatible with selected template</option></select></div>
+<button id="family-styles-reset" type="button">Filtreleri sıfırla / Reset filters</button>
+<p id="family-styles-count" role="status" aria-live="polite"></p><p id="family-styles-empty" hidden>Eşleşen kayıt yok / No matching records</p>
+<ul id="family-styles-cards" class="reference-cards"></ul>
+<section id="family-styles-detail" aria-labelledby="family-styles-title" hidden><h4 id="family-styles-title"></h4><dl id="family-styles-meta"></dl>
+<p id="family-styles-apply-reason" role="status" aria-live="polite" hidden></p>
+<button id="family-styles-apply" type="button" aria-describedby="family-styles-apply-reason" disabled>Paleti geçerli JSON taslağına uygula / Apply palette to current JSON draft</button>
+<button id="family-styles-close" type="button">Ayrıntıyı kapat / Close details</button></section>
+</details>
+<section id="taxonomy-panel" class="taxonomy-panel" aria-labelledby="taxonomy-title" hidden>
+<h3 id="taxonomy-title">Niş ve konu planı / Niche and topic planning</h3>
+<p>Galeri AccountPack seçimini kullanır. Editoryal bağlantılar kaynak doğrulaması, ölçülmüş yaş verisi veya çalışan renderer değildir. / Uses the gallery AccountPack; editorial links are not factual, demographic or render acceptance.</p>
+<button id="taxonomy-reload" type="button" disabled>Konu planını yükle / Reload planning</button>
+<p id="taxonomy-count" role="status" aria-live="polite"></p>
+<div class="taxonomy-fields">
+<label for="taxonomy-niche">Niş / Niche</label><select id="taxonomy-niche" disabled></select>
+<label for="taxonomy-topic">Bağlı konu / Topic within niche</label><select id="taxonomy-topic" disabled></select>
+<label for="taxonomy-niche-name">Yeni özel niş / New custom niche</label><input id="taxonomy-niche-name" maxlength="100" autocomplete="off">
+<button id="taxonomy-add-niche" type="button" disabled>Niş ekle / Add niche</button>
+<label for="taxonomy-topic-name">Seçili nişe yeni konu / New topic in selected niche</label><input id="taxonomy-topic-name" maxlength="160" autocomplete="off">
+<button id="taxonomy-add-topic" type="button" disabled>Konu ekle / Add topic</button>
+</div>
+<div class="actions"><button id="taxonomy-apply" type="button" disabled>Plan seçimini uygula / Apply selection</button><button id="taxonomy-clear" type="button" disabled>Kaydedilmiş seçimi temizle / Clear saved selection</button><button id="taxonomy-revert" type="button" disabled>Yerel plan düzenlemelerini bırak / Discard local planning edits</button></div>
+<p id="taxonomy-context" class="hint"></p><p id="taxonomy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</section>
+<p id="family-count" class="hint" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+<p id="family-status" class="hint" role="status" aria-live="polite" aria-atomic="true"></p>
+<div id="family-filters" hidden>
+<label for="family-search">Ara / Search</label>
+<input id="family-search" type="search" autocomplete="off">
+<label for="family-filter-niche">Niş / Niche</label>
+<select id="family-filter-niche"><option value="">Tümü / All</option></select>
+<label for="family-filter-type">İçerik türü / Content type</label>
+<select id="family-filter-type"><option value="">Tümü / All</option></select>
+<label for="family-filter-media">Medya / Media</label>
+<select id="family-filter-media">
+<option value="">Tümü / All</option>
+<option value="proxy">14 RGB vekil / caller-media proxy</option>
+<option value="vector">Vektör / no caller media</option>
+</select>
+<label for="family-filter-engine">Motor desteği filtresi / Engine availability filter</label>
+<select id="family-filter-engine"><option value="">Tümü / All</option><option value="hyperframes">HyperFrames</option><option value="remotion">Remotion</option></select>
+<label for="family-filter-state">Hazırlık / Readiness</label>
+<select id="family-filter-state"><option value="">Tümü / All</option></select>
+<button id="family-clear-search" type="button">Sıfırla / Reset</button>
+</div>
+<p id="family-empty" hidden>Eşleşen template yok. Filtreleri sıfırlayın. / No matching templates. Reset filters.</p>
+<ul id="family-cards" hidden></ul>
+<section id="family-details" aria-labelledby="family-details-title" hidden>
+<h3 id="family-details-title">Seçili template / Selected template</h3><dl id="family-meta"></dl>
+</section>
+<form id="family-form" hidden>
+<label for="family-account">AccountPack</label><select id="family-account" required></select>
+<label for="family-select">Template</label><select id="family-select" required></select>
+<label for="family-example">Örnek girdi / Input variant</label><select id="family-example" required></select>
+<label for="family-engine">Motor / Engine</label><select id="family-engine"><option value="hyperframes">HyperFrames</option><option value="remotion">Remotion (optional; separate license review)</option></select>
+<p id="family-edit-hint">Taslaklar hesap + template + örnek bazında yalnız bu sayfanın RAM’inde korunur. Filtre sıfırlama ve katalog yenileme taslağı silmez; sayfayı kapatma/yenileme siler. / Drafts stay in page RAM per account, template and example. Filter reset/catalog reload preserve them; full page reload/close does not.</p>
+<label for="family-spec">Parametreler / Parameters (JSON)</label><textarea id="family-spec" rows="12" spellcheck="false" aria-describedby="family-edit-hint family-status" required></textarea>
+<section id="family-editor" aria-labelledby="family-editor-title">
+<h3 id="family-editor-title">Beyanlı alan editörü / Declared field editor</h3>
+<p>Kısmi sözleşmeler kullanılır; eksik alanlar JSON’da kalır. Alan değişiklikleri ve sunucu normalizasyonu ayrı açık uygulama ister. / Partial contracts; missing fields remain in JSON. Apply field edits and server normalization explicitly.</p>
+<button id="family-editor-load" type="button" disabled>Alanları yükle / Load fields</button>
+<button id="family-editor-toggle" type="button">Alan panelini gizle / Hide fields</button>
+<p id="family-editor-status" role="status" aria-live="polite"></p>
+<p id="family-editor-coverage"></p>
+<div id="family-editor-panel"><div id="family-editor-fields"></div></div>
+<button id="family-editor-apply" type="button" disabled>Alanları JSON’a uygula / Apply fields to JSON</button>
+<button id="family-editor-discard" type="button" disabled>Alan taslağını bırak / Discard field edits</button>
+<button id="family-editor-validate" type="button" disabled>Yerel doğrula / Validate locally</button>
+<pre id="family-editor-normalized" aria-label="İncelenecek normalize değerler / Normalized values to review"></pre>
+<button id="family-editor-normalize" type="button" disabled>İncelenen normalizasyonu uygula / Apply reviewed normalization</button>
+</section>
+<label for="family-claims">Kaynaklı iddialar / Scoped claims (JSON)</label><textarea id="family-claims" rows="4" spellcheck="false" aria-describedby="family-claim-fields family-status">[]</textarea>
+<p>Sayı/fiyat içeren görünür metin veya veri için kendi kaynak kaydınızı ve kapsamlı iddianızı sağlayın. Panel mevcut kaynak revizyonunu bağlar; kaynak doğruluğu insan incelemesi bekler. / Numeric or price copy/data requires your registered source and scoped claim; traceability is not truth approval.</p>
+<p id="family-claim-fields" class="hint"></p>
+<button id="family-prepare" type="submit" aria-describedby="family-status" disabled>Kaynak hazırla / Prepare sources</button>
+</form><pre id="family-result" role="status" aria-live="polite"></pre>
+<h3 id="family-results-title">Bu sayfanın hazırlama yanıtları / This page's preparation receipts</h3>
+<p>Yanıtlar isteğin özgün hesabı, template’i ve motoruyla gösterilir; bu RAM listesi sayfa yenilenince kaybolur. / Receipts retain the original request context; this page-local list disappears on full page reload.</p>
+<ol id="family-results" aria-labelledby="family-results-title"></ol>
+<section aria-labelledby="family-history-title">
+<h3 id="family-history-title">Kayıtlı kaynak hazırlama geçmişi / Saved preparation history</h3>
+<p>Yukarıdaki AccountPack için son 100 kayıt. Dosyalar açılırken tüm hazırlama manifesti yeniden doğrulanır. Bu kayıtlar editör taslakları değildir. / Last 100 records for the account above; all prepared files are reverified on access. Editor drafts remain page-local.</p>
+<button id="family-history-load" type="button" disabled aria-describedby="family-history-status">Hesabın geçmişini yükle / Load account history</button>
+<p id="family-history-status" role="status" aria-live="polite"></p>
+<ul id="family-history-list" aria-labelledby="family-history-title"></ul>
+<section id="family-history-detail" hidden aria-labelledby="family-history-detail-title">
+<h4 id="family-history-detail-title">Hazırlama ayrıntısı / Preparation details</h4>
+<p id="family-history-summary"></p><pre id="family-history-spec" aria-label="Kayıtlı spec / Saved spec"></pre>
+<ul id="family-history-files" aria-label="Doğrulanmış hazırlama dosyaları / Verified preparation files"></ul>
+<section id="family-render-panel" hidden aria-labelledby="family-render-title">
+<h5 id="family-render-title">Kayıtlı hazırlıktan yerel sessiz render</h5>
+<p id="family-render-binding"></p>
+<p id="family-render-scope">Bu işlem yukarıdaki kayıtlı hazırlığı ve sabit motorunu kullanır; RAM editör taslağını kullanmaz. Runtime hazır değilse render durur; otomatik kurulum, motor geçişi veya sağlayıcı çağrısı yapılmaz. MP4 üretimi insan/görsel/yayın kabulü değildir. Durum yalnız Yenile ile okunur; otomatik tekrar yoktur.</p>
+<label for="family-render-ack" class="voice-consent"><input id="family-render-ack" type="checkbox" aria-describedby="family-render-binding family-render-scope" disabled>Bu kayıt ve motor için yerel sessiz render başlatmayı onaylıyorum.</label>
+<div class="actions"><button id="family-render-refresh" type="button" disabled>Render durumunu yenile</button><button id="family-render-start" type="button" disabled>Yerel sessiz render başlat</button><button id="family-render-cancel" type="button" disabled>Bu girişimi iptal et</button><button id="family-render-retry" type="button" disabled>Yeni render girişimi oluştur</button></div>
+<p id="family-render-status" role="status" aria-live="polite" aria-atomic="true"></p>
+<ul id="family-render-files" aria-label="Sunucuda doğrulanmış tamamlanan MP4 dosyaları"></ul>
+</section>
+</section>
+</section>
+</details>
+<script src="/reference-gallery.js" defer></script><script src="/taxonomy-panel.js" defer></script><script src="/template-editor.js" defer></script><script src="/family-render.js" defer></script><script src="/template-families.js" defer></script>
+
+</div></body></html>

@@ -1,0 +1,148 @@
+{
+  "family_id": "constrained-part-section",
+  "source_id": "source-lemo-style-teardown",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "constrained-part-section",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kendi eksenleri boyunca ayrılan parçalar, kesit görüldükten sonra aynı montaja dönüyor.",
+          "duration": 8,
+          "narration": "Her parça yalnız tanımlanan mekanik eksende uzaklaşıyor. Kesit taraması bitince bütün parçalar ilk kayıtlarına dönüyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Her parça yalnız tanımlanan mekanik eksende uzaklaşıyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Kesit taraması bitince bütün parçalar ilk kayıtlarına dönüyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "part_geometry": [
+            {
+              "width": 220,
+              "height": 80,
+              "depth": 60,
+              "label": "Üst gövde"
+            },
+            {
+              "width": 200,
+              "height": 90,
+              "depth": 50,
+              "label": "Ara halka"
+            },
+            {
+              "width": 240,
+              "height": 75,
+              "depth": 70,
+              "label": "Taban"
+            }
+          ],
+          "assembly_axes": [
+            {
+              "x": -1,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": -1
+            },
+            {
+              "x": 1,
+              "y": 0
+            }
+          ],
+          "section_plane": 0.45,
+          "explosion_distance": 90
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "constrained-part-section",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kendi eksenleri boyunca ayrılan parçalar, kesit görüldükten sonra ortak montaja dönüyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Kesit taraması bitince bütün parçalar ilk kayıtlarına dönüyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Kesit taraması bitince bütün parçalar ilk kayıtlarına dönüyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "part_geometry": [
+            {
+              "width": 180,
+              "height": 70,
+              "depth": 45,
+              "label": "Kapak"
+            },
+            {
+              "width": 260,
+              "height": 90,
+              "depth": 80,
+              "label": "Taşıyıcı"
+            },
+            {
+              "width": 220,
+              "height": 100,
+              "depth": 65,
+              "label": "Ara kat"
+            },
+            {
+              "width": 240,
+              "height": 80,
+              "depth": 60,
+              "label": "Taban"
+            }
+          ],
+          "assembly_axes": [
+            {
+              "x": 0.6,
+              "y": 0.8
+            },
+            {
+              "x": -0.8,
+              "y": 0.6
+            },
+            {
+              "x": 0.6,
+              "y": -0.8
+            },
+            {
+              "x": -0.6,
+              "y": -0.8
+            }
+          ],
+          "section_plane": 0.7,
+          "explosion_distance": 140
+        }
+      }
+    }
+  ]
+}

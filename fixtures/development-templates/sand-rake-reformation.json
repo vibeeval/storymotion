@@ -1,0 +1,111 @@
+{
+  "family_id": "sand-rake-reformation",
+  "source_id": "src-athemeroy-style-painterly-ink-sand",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "sand-rake-reformation",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "İzden biçime dönüşüm: aynı kum taneleri yeni bir anlam için birleşir",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F4F1E8",
+            "ink": "#1B2530",
+            "muted": "#56606B",
+            "accent": "#77512E"
+          },
+          "rake_path": [
+            {
+              "x": 280,
+              "y": 930
+            },
+            {
+              "x": 520,
+              "y": 880
+            },
+            {
+              "x": 780,
+              "y": 1130
+            }
+          ],
+          "grain_seed": 21,
+          "ridge_height": 16,
+          "symbol_sequence": [
+            "circle",
+            "chevron"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "sand-rake-reformation",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Kumda kalan ortak işaret, tırmığın geçtiği yoldan yeniden kurulur",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#F4F1E8",
+            "ink": "#1B2530",
+            "muted": "#56606B",
+            "accent": "#77512E"
+          },
+          "rake_path": [
+            {
+              "x": 300,
+              "y": 1180
+            },
+            {
+              "x": 440,
+              "y": 790
+            },
+            {
+              "x": 680,
+              "y": 1210
+            },
+            {
+              "x": 780,
+              "y": 890
+            }
+          ],
+          "grain_seed": 377,
+          "ridge_height": 27,
+          "symbol_sequence": [
+            "chevron",
+            "arch",
+            "circle"
+          ]
+        }
+      }
+    }
+  ]
+}

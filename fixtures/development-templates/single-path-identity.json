@@ -1,0 +1,147 @@
+{
+  "family_id": "single-path-identity",
+  "source_id": "source-lemo-style-one-line",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "single-path-identity",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir halka çizgisi, kalem kâğıttan kalkmadan başka bir nesneye dönüşebilir mi?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#FAF7F0",
+            "ink": "#1B292C",
+            "muted": "#495554",
+            "accent": "#176C67"
+          },
+          "object_sequence": [
+            "loop",
+            "leaf"
+          ],
+          "path_control_points": [
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          "transition_duration": 0.8,
+          "line_weight": 5
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "single-path-identity",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Aynı sekiz düğüm yeni konumlarına geçerken önceki şeklin izi görünür kalır.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#FAF7F0",
+            "ink": "#1B292C",
+            "muted": "#495554",
+            "accent": "#176C67"
+          },
+          "object_sequence": [
+            "cup",
+            "arch",
+            "loop"
+          ],
+          "path_control_points": [
+            [
+              0.4,
+              0.5
+            ],
+            [
+              0.55,
+              0.6
+            ],
+            [
+              0.6,
+              0.45
+            ],
+            [
+              0.35,
+              0.55
+            ],
+            [
+              0.55,
+              0.6
+            ],
+            [
+              0.4,
+              0.4
+            ],
+            [
+              0.6,
+              0.5
+            ],
+            [
+              0.45,
+              0.65
+            ]
+          ],
+          "transition_duration": 1.3,
+          "line_weight": 8
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "family_id": "aurora-refraction-panels",
+  "source_id": "source-mg-style-12-aurora-glass",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "aurora-refraction-panels",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Açısı değişen paneller, arkalarındaki alanı kendi sınırları içinde başka bir yere kırıyor.",
+          "duration": 8,
+          "narration": "Matematiksel şeritler tek bir alanın içinde ilerliyor. Paneller eğildikçe kendi içlerindeki kopya yer değiştiriyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Matematiksel şeritler tek bir alanın içinde ilerliyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Paneller eğildikçe kendi içlerindeki kopya yer değiştiriyor."
+            }
+          ],
+          "palette": {
+            "background": "#EAF0F4",
+            "ink": "#253D50",
+            "muted": "#526875",
+            "accent": "#315D87"
+          },
+          "field_seed": 37,
+          "flow_rate": 0.75,
+          "panel_tilt": 14,
+          "refraction_amount": 20,
+          "panels": [
+            "Önce gözlemi ayır",
+            "Ardından ilişkiyi kur",
+            "Sonra sonucu tartış"
+          ]
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "aurora-refraction-panels",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Açısı değişen paneller, arkalarındaki alanı kendi sınırları içinde başka bir yere kırıyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Paneller eğildikçe kendi içlerindeki kopya yer değiştiriyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Paneller eğildikçe kendi içlerindeki kopya yer değiştiriyor."
+            }
+          ],
+          "palette": {
+            "background": "#EAF0F4",
+            "ink": "#253D50",
+            "muted": "#526875",
+            "accent": "#315D87"
+          },
+          "field_seed": 91,
+          "flow_rate": 1.1,
+          "panel_tilt": -17,
+          "refraction_amount": 34,
+          "panels": [
+            "Açıyı değiştirince alan kırılır",
+            "Etiket kendi yüzeyinde kalır"
+          ]
+        }
+      }
+    }
+  ]
+}

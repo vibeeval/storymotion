@@ -1,0 +1,3648 @@
+{
+  "schema_version": 1,
+  "source_sha256": "2c4fe5e1e4903a1bb6ffd3443d5d8978d7a862eba3c66933218d35abe68290d8",
+  "source_role": "editorial_discovery_input_not_render_acceptance",
+  "policy": "Age and audience are unmeasured editorial hypotheses. Visual scores stay null until Phase 5 assessment. No audio generation.",
+  "families": [
+    {
+      "id": "kinetic-grid",
+      "editorial_description": "Bir toplantı notunu üç uygulanabilir işe dönüştür Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "üretkenlik",
+        "eğitim"
+      ],
+      "content_types": [
+        "liste",
+        "metin açıklaması"
+      ],
+      "sample_topics": [
+        "Bir toplantı notunu üç uygulanabilir işe dönüştür"
+      ],
+      "audience_hypothesis": "bilgi çalışanları ve bağımsız üreticiler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "causal-path",
+      "editorial_description": "Bir bildirim neden odağı bölüyor: tetikleyici, kesinti, geri dönüş Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "bilim",
+        "iş süreçleri"
+      ],
+      "content_types": [
+        "neden sonuç",
+        "açıklayıcı"
+      ],
+      "sample_topics": [
+        "Bir bildirim neden odağı bölüyor: tetikleyici, kesinti, geri dönüş"
+      ],
+      "audience_hypothesis": "meraklı yetişkinler ve öğrenenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "exploded-blueprint",
+      "editorial_description": "Bir mekanik klavyenin tuş katmanları ne işe yarar? Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "ürün tasarımı",
+        "teknoloji"
+      ],
+      "content_types": [
+        "parça açıklaması",
+        "ürün tanıtımı"
+      ],
+      "sample_topics": [
+        "Bir mekanik klavyenin tuş katmanları ne işe yarar?"
+      ],
+      "audience_hypothesis": "tasarım ve teknoloji meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "isometric-process",
+      "editorial_description": "Bir kahve siparişinin kasadan teslimata yolculuğu Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "girişimcilik",
+        "operasyon"
+      ],
+      "content_types": [
+        "süreç anlatımı",
+        "mini rehber"
+      ],
+      "sample_topics": [
+        "Bir kahve siparişinin kasadan teslimata yolculuğu"
+      ],
+      "audience_hypothesis": "küçük işletme sahipleri ve süreç meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "liquid-merge",
+      "editorial_description": "İki renk tek bir marka paletine nasıl dönüşür? Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "marka tasarımı",
+        "kozmetik"
+      ],
+      "content_types": [
+        "ürün hikayesi",
+        "kavram birleştirme"
+      ],
+      "sample_topics": [
+        "İki renk tek bir marka paletine nasıl dönüşür?"
+      ],
+      "audience_hypothesis": "tasarımcılar ve marka kurucuları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "bauhaus-modules",
+      "editorial_description": "Üç temel şekille dengeli afiş kompozisyonu Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "grafik tasarım",
+        "mimari"
+      ],
+      "content_types": [
+        "tasarım ilkesi",
+        "görsel ders"
+      ],
+      "sample_topics": [
+        "Üç temel şekille dengeli afiş kompozisyonu"
+      ],
+      "audience_hypothesis": "tasarım öğrencileri ve görsel üreticiler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "pixel-journey",
+      "editorial_description": "İlk oyun prototipinden çalışan bölüme dört durak Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "oyun",
+        "öğrenme"
+      ],
+      "content_types": [
+        "adım adım hikaye",
+        "ilerleme"
+      ],
+      "sample_topics": [
+        "İlk oyun prototipinden çalışan bölüme dört durak"
+      ],
+      "audience_hypothesis": "bağımsız oyun geliştiricileri ve öğrenenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "contour-trace",
+      "editorial_description": "Bir bisiklet siluetini tek konturla tanıt Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "ürün çizimi",
+        "tasarım"
+      ],
+      "content_types": [
+        "açığa çıkarma",
+        "çizim süreci"
+      ],
+      "sample_topics": [
+        "Bir bisiklet siluetini tek konturla tanıt"
+      ],
+      "audience_hypothesis": "çizim ve ürün tasarımı meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "shape-morph",
+      "editorial_description": "Daire, konuşma balonu ve fikir simgesi arasındaki dönüşüm Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "marka tasarımı",
+        "eğitim"
+      ],
+      "content_types": [
+        "dönüşüm",
+        "kavram karşılaştırması"
+      ],
+      "sample_topics": [
+        "Daire, konuşma balonu ve fikir simgesi arasındaki dönüşüm"
+      ],
+      "audience_hypothesis": "görsel iletişim öğrenenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "scan-hud",
+      "editorial_description": "Bir kameranın üç fiziksel kontrolünü sırayla işaretle Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "teknoloji",
+        "ürün incelemesi"
+      ],
+      "content_types": [
+        "özellik taraması",
+        "analiz"
+      ],
+      "sample_topics": [
+        "Bir kameranın üç fiziksel kontrolünü sırayla işaretle"
+      ],
+      "audience_hypothesis": "kamera ve donanım meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "vector-mass-transfer",
+      "editorial_description": "Yağmur suyu depodan bahçeye nasıl ulaşır? Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "bilim",
+        "sürdürülebilirlik"
+      ],
+      "content_types": [
+        "akış anlatımı",
+        "açıklayıcı"
+      ],
+      "sample_topics": [
+        "Yağmur suyu depodan bahçeye nasıl ulaşır?"
+      ],
+      "audience_hypothesis": "bilim iletişimi izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "cel-contour-boil",
+      "editorial_description": "Aynı çizgiye üç farklı elde çizilmiş hareket hissi Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "animasyon",
+        "illüstrasyon"
+      ],
+      "content_types": [
+        "stil gösterimi",
+        "süreç"
+      ],
+      "sample_topics": [
+        "Aynı çizgiye üç farklı elde çizilmiş hareket hissi"
+      ],
+      "audience_hypothesis": "çizerler ve animasyon öğrencileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "cutout-pin-assembly",
+      "editorial_description": "Kesilmiş kağıt parçalarıyla masaüstü kuş figürü kur Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "el işi",
+        "tasarım"
+      ],
+      "content_types": [
+        "montaj",
+        "adım adım"
+      ],
+      "sample_topics": [
+        "Kesilmiş kağıt parçalarıyla masaüstü kuş figürü kur"
+      ],
+      "audience_hypothesis": "el işi ve stop motion meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "caption-impact-rig",
+      "editorial_description": "Uzun bir cümleden tek ana mesaj nasıl çıkarılır? Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "içerik üretimi",
+        "iletişim"
+      ],
+      "content_types": [
+        "metin vurgusu",
+        "mini ders"
+      ],
+      "sample_topics": [
+        "Uzun bir cümleden tek ana mesaj nasıl çıkarılır?"
+      ],
+      "audience_hypothesis": "içerik üreticileri ve iletişim çalışanları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "sticker-peel-callout",
+      "editorial_description": "Bir termosun kapağındaki gözden kaçan ayrıntı Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "ürün incelemesi",
+        "alışveriş rehberi"
+      ],
+      "content_types": [
+        "özellik vurgusu",
+        "etiket açılımı"
+      ],
+      "sample_topics": [
+        "Bir termosun kapağındaki gözden kaçan ayrıntı"
+      ],
+      "audience_hypothesis": "ürün araştıran yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "iso-room-route",
+      "editorial_description": "Küçük çalışma odasında kablo ve eşya akışını düzenle Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "iç mekan",
+        "organizasyon"
+      ],
+      "content_types": [
+        "mekan turu",
+        "rota"
+      ],
+      "sample_topics": [
+        "Küçük çalışma odasında kablo ve eşya akışını düzenle"
+      ],
+      "audience_hypothesis": "evden çalışanlar ve dekorasyon meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "perspective-neon-run",
+      "editorial_description": "Özgün bir yarış oyununun gece parkurunu tanıt Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "oyun",
+        "etkinlik tasarımı"
+      ],
+      "content_types": [
+        "teaser",
+        "hızlı yolculuk"
+      ],
+      "sample_topics": [
+        "Özgün bir yarış oyununun gece parkurunu tanıt"
+      ],
+      "audience_hypothesis": "oyun ve dijital sanat izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "aurora-refraction-panels",
+      "editorial_description": "Soğuk ve sıcak paletleri üç cam panelde karşılaştır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "dijital sanat",
+        "marka tasarımı"
+      ],
+      "content_types": [
+        "palet sunumu",
+        "soyut tanıtım"
+      ],
+      "sample_topics": [
+        "Soğuk ve sıcak paletleri üç cam panelde karşılaştır"
+      ],
+      "audience_hypothesis": "tasarımcılar ve görsel sanat izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "deco-radial-reveal",
+      "editorial_description": "Bir bağımsız film gecesinin tarihini tipografik olarak aç Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "kültür",
+        "etkinlik"
+      ],
+      "content_types": [
+        "duyuru",
+        "başlık açılımı"
+      ],
+      "sample_topics": [
+        "Bir bağımsız film gecesinin tarihini tipografik olarak aç"
+      ],
+      "audience_hypothesis": "kültür etkinliği takipçileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "terminal-raster",
+      "editorial_description": "Bir dosya aramasının filtreleme adımlarını göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "yazılım",
+        "teknoloji"
+      ],
+      "content_types": [
+        "kod açıklaması",
+        "sistem günlüğü"
+      ],
+      "sample_topics": [
+        "Bir dosya aramasının filtreleme adımlarını göster"
+      ],
+      "audience_hypothesis": "yazılım öğrenenler ve geliştiriciler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "split-counter-flip",
+      "editorial_description": "Üç haftalık okuma hedefinin gerçekleşen sayısını göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "veri okuryazarlığı",
+        "iş"
+      ],
+      "content_types": [
+        "ölçüm",
+        "karşılaştırma"
+      ],
+      "sample_topics": [
+        "Üç haftalık okuma hedefinin gerçekleşen sayısını göster"
+      ],
+      "audience_hypothesis": "öğrenme alışkanlığı geliştiren yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "spotlight-product-reveal",
+      "editorial_description": "Seramik kupanın kulp ve yüzey dokusunu ışıkla göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "ürün tasarımı",
+        "e-ticaret"
+      ],
+      "content_types": [
+        "ürün tanıtımı",
+        "detay çekimi"
+      ],
+      "sample_topics": [
+        "Seramik kupanın kulp ve yüzey dokusunu ışıkla göster"
+      ],
+      "audience_hypothesis": "zanaat alıcıları ve ürün tasarımı izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "iris-silhouette-chase",
+      "editorial_description": "Bir siluetten kedi oyuncağının biçimini keşfet Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "illüstrasyon",
+        "öykü"
+      ],
+      "content_types": [
+        "gizemli açılış",
+        "kısa hikaye"
+      ],
+      "sample_topics": [
+        "Bir siluetten kedi oyuncağının biçimini keşfet"
+      ],
+      "audience_hypothesis": "görsel hikaye ve tasarım izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "baseline-type-reflow",
+      "editorial_description": "Dağınık başlığı okunabilir üç satıra yeniden yerleştir Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "tipografi",
+        "tasarım"
+      ],
+      "content_types": [
+        "önce sonra",
+        "düzenleme"
+      ],
+      "sample_topics": [
+        "Dağınık başlığı okunabilir üç satıra yeniden yerleştir"
+      ],
+      "audience_hypothesis": "grafik tasarım öğrencileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "dimension-construction",
+      "editorial_description": "Katlanır bir rafın ölçü ve açılma mantığını anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "mimari",
+        "ürün tasarımı"
+      ],
+      "content_types": [
+        "ölçülü açıklama",
+        "yapım"
+      ],
+      "sample_topics": [
+        "Katlanır bir rafın ölçü ve açılma mantığını anlat"
+      ],
+      "audience_hypothesis": "kendin yap ve tasarım meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "board-pin-routing",
+      "editorial_description": "Bir günlük müze gezisini üç duraklı plana dönüştür Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "seyahat",
+        "proje yönetimi"
+      ],
+      "content_types": [
+        "rota",
+        "plan"
+      ],
+      "sample_topics": [
+        "Bir günlük müze gezisini üç duraklı plana dönüştür"
+      ],
+      "audience_hypothesis": "gezi planlayan yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "bead-transfer-counts",
+      "editorial_description": "Yirmi anket cevabını üç seçeneğe boncuklarla dağıt Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "matematik",
+        "veri okuryazarlığı"
+      ],
+      "content_types": [
+        "sayma",
+        "kategori dağılımı"
+      ],
+      "sample_topics": [
+        "Yirmi anket cevabını üç seçeneğe boncuklarla dağıt"
+      ],
+      "audience_hypothesis": "görsel öğrenmeyi tercih eden yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "scale-morph-charts",
+      "editorial_description": "Aynı veri farklı eksen ölçeğinde neden farklı görünür? Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "veri okuryazarlığı",
+        "iş"
+      ],
+      "content_types": [
+        "grafik karşılaştırması",
+        "açıklayıcı"
+      ],
+      "sample_topics": [
+        "Aynı veri farklı eksen ölçeğinde neden farklı görünür?"
+      ],
+      "audience_hypothesis": "veri sunumu yapanlar ve haber okuyucuları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "iso-transport-network",
+      "editorial_description": "Aktarma noktası eklemek teslimat rotasını nasıl değiştirir? Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "şehircilik",
+        "lojistik"
+      ],
+      "content_types": [
+        "ağ açıklaması",
+        "rota karşılaştırması"
+      ],
+      "sample_topics": [
+        "Aktarma noktası eklemek teslimat rotasını nasıl değiştirir?"
+      ],
+      "audience_hypothesis": "şehir ve ulaşım meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "constrained-part-section",
+      "editorial_description": "Bir pompanın giriş ve çıkış kanallarını kesitte göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "mühendislik",
+        "ürün tasarımı"
+      ],
+      "content_types": [
+        "kesit",
+        "işleyiş"
+      ],
+      "sample_topics": [
+        "Bir pompanın giriş ve çıkış kanallarını kesitte göster"
+      ],
+      "audience_hypothesis": "teknik öğrenenler ve tasarımcılar",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "engraved-hatch-growth",
+      "editorial_description": "Bir yaprağın ışık ve gölgesini tarama çizgileriyle kur Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "illüstrasyon",
+        "zanaat"
+      ],
+      "content_types": [
+        "çizim süreci",
+        "doku"
+      ],
+      "sample_topics": [
+        "Bir yaprağın ışık ve gölgesini tarama çizgileriyle kur"
+      ],
+      "audience_hypothesis": "çizerler ve baskı sanatı meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "single-path-identity",
+      "editorial_description": "Özgün bir fırın amblemini tek çizgiyle oluştur Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "marka tasarımı",
+        "kişisel marka"
+      ],
+      "content_types": [
+        "logo yapımı",
+        "kimlik tanıtımı"
+      ],
+      "sample_topics": [
+        "Özgün bir fırın amblemini tek çizgiyle oluştur"
+      ],
+      "audience_hypothesis": "marka kurucuları ve tasarımcılar",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "pictogram-limb-transition",
+      "editorial_description": "Yürüme ve koşma ikonları arasındaki eklem farkını göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "spor",
+        "görsel iletişim"
+      ],
+      "content_types": [
+        "hareket açıklaması",
+        "ikon dönüşümü"
+      ],
+      "sample_topics": [
+        "Yürüme ve koşma ikonları arasındaki eklem farkını göster"
+      ],
+      "audience_hypothesis": "spor iletişimi ve tasarım izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "perspective-pen-wash",
+      "editorial_description": "Bir sokak köşesini perspektif çizgilerinden renkli eskize taşı Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "mimari",
+        "seyahat"
+      ],
+      "content_types": [
+        "mekan eskizi",
+        "görsel günlük"
+      ],
+      "sample_topics": [
+        "Bir sokak köşesini perspektif çizgilerinden renkli eskize taşı"
+      ],
+      "audience_hypothesis": "kent gezginleri ve eskiz meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "stroke-erase-explanation",
+      "editorial_description": "Karmaşık bir yapılacaklar listesini eleme yöntemiyle sadeleştir Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "eğitim",
+        "üretkenlik"
+      ],
+      "content_types": [
+        "tahta açıklaması",
+        "problem çözümü"
+      ],
+      "sample_topics": [
+        "Karmaşık bir yapılacaklar listesini eleme yöntemiyle sadeleştir"
+      ],
+      "audience_hypothesis": "öğrenciler ve bilgi çalışanları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "crayon-stroke-fill",
+      "editorial_description": "Aynı meyve çiziminde üç pastel kalem dokusu dene Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "el işi",
+        "illüstrasyon"
+      ],
+      "content_types": [
+        "boyama süreci",
+        "stil gösterimi"
+      ],
+      "sample_topics": [
+        "Aynı meyve çiziminde üç pastel kalem dokusu dene"
+      ],
+      "audience_hypothesis": "hobi üreticileri ve sanat eğitmenleri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "halftone-evidence-lens",
+      "editorial_description": "Bir baskı fotoğrafındaki noktaları büyüterek göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "medya okuryazarlığı",
+        "tasarım"
+      ],
+      "content_types": [
+        "kanıt incelemesi",
+        "yakın plan"
+      ],
+      "sample_topics": [
+        "Bir baskı fotoğrafındaki noktaları büyüterek göster"
+      ],
+      "audience_hypothesis": "fotoğraf ve baskı meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "paint-ridge-deposition",
+      "editorial_description": "Palet bıçağının bıraktığı boya sırtını katman katman anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "resim",
+        "zanaat"
+      ],
+      "content_types": [
+        "doku gösterimi",
+        "süreç"
+      ],
+      "sample_topics": [
+        "Palet bıçağının bıraktığı boya sırtını katman katman anlat"
+      ],
+      "audience_hypothesis": "resim ve malzeme meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "ink-diffusion-front",
+      "editorial_description": "Mürekkep yayılmasını hız değil şekil üzerinden karşılaştır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "bilim",
+        "sanat"
+      ],
+      "content_types": [
+        "deney görselleştirmesi",
+        "süreç"
+      ],
+      "sample_topics": [
+        "Mürekkep yayılmasını hız değil şekil üzerinden karşılaştır"
+      ],
+      "audience_hypothesis": "bilim ve sanat keşfi izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "ink-drum-misregister",
+      "editorial_description": "İki baskı katmanı kayınca kenarlarda ne oluşur? Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "baskı",
+        "tasarım"
+      ],
+      "content_types": [
+        "önce sonra",
+        "üretim hatası"
+      ],
+      "sample_topics": [
+        "İki baskı katmanı kayınca kenarlarda ne oluşur?"
+      ],
+      "audience_hypothesis": "baskı tasarımcıları ve öğrenciler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "pigment-pool-drying",
+      "editorial_description": "Suluboya lekesinin kenarında pigment birikimini göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "resim",
+        "malzeme"
+      ],
+      "content_types": [
+        "zaman süreci",
+        "detay"
+      ],
+      "sample_topics": [
+        "Suluboya lekesinin kenarında pigment birikimini göster"
+      ],
+      "audience_hypothesis": "resim öğrenen yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "paper-lightbox-parallax",
+      "editorial_description": "Üç kağıt katmanıyla bir orman ışık kutusu oluştur Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "el işi",
+        "dekorasyon"
+      ],
+      "content_types": [
+        "ürün gösterimi",
+        "derinlik"
+      ],
+      "sample_topics": [
+        "Üç kağıt katmanıyla bir orman ışık kutusu oluştur"
+      ],
+      "audience_hypothesis": "kağıt sanatı ve dekorasyon meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "page-hinge-popups",
+      "editorial_description": "Bir açılır kitap köprüsünün menteşesini göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "kitap tasarımı",
+        "eğitim"
+      ],
+      "content_types": [
+        "mekanizma gösterimi",
+        "açılır sahne"
+      ],
+      "sample_topics": [
+        "Bir açılır kitap köprüsünün menteşesini göster"
+      ],
+      "audience_hypothesis": "kitap tasarımcıları ve el işi üreticileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "negative-space-cut",
+      "editorial_description": "İki şekil arasındaki boşlukta bir fincan oluştur Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "grafik tasarım",
+        "marka"
+      ],
+      "content_types": [
+        "görsel bulmaca",
+        "tasarım ilkesi"
+      ],
+      "sample_topics": [
+        "İki şekil arasındaki boşlukta bir fincan oluştur"
+      ],
+      "audience_hypothesis": "tasarım ve görsel bulmaca izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "screenprint-layer-pull",
+      "editorial_description": "Bir bez çanta baskısının iki renk geçişini göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "zanaat",
+        "moda"
+      ],
+      "content_types": [
+        "üretim süreci",
+        "katman"
+      ],
+      "sample_topics": [
+        "Bir bez çanta baskısının iki renk geçişini göster"
+      ],
+      "audience_hypothesis": "tekstil ve baskı meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "lead-cell-lightpass",
+      "editorial_description": "Vitray panelde gün ışığının renkleri nasıl taşıdığını göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "zanaat",
+        "iç mekan"
+      ],
+      "content_types": [
+        "malzeme gösterimi",
+        "ışık deneyi"
+      ],
+      "sample_topics": [
+        "Vitray panelde gün ışığının renkleri nasıl taşıdığını göster"
+      ],
+      "audience_hypothesis": "dekorasyon ve cam sanatı izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "woodblock-wave-layers",
+      "editorial_description": "Özgün bir dalga çizimini üç tahta baskı katmanına ayır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "baskı sanatı",
+        "sanat eğitimi"
+      ],
+      "content_types": [
+        "katman süreci",
+        "görsel ders"
+      ],
+      "sample_topics": [
+        "Özgün bir dalga çizimini üç tahta baskı katmanına ayır"
+      ],
+      "audience_hypothesis": "baskı sanatı öğrenenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "carved-groove-print",
+      "editorial_description": "Linol kesikte oyulan ve basılan alanları karşılaştır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "zanaat",
+        "illüstrasyon"
+      ],
+      "content_types": [
+        "önce sonra",
+        "üretim"
+      ],
+      "sample_topics": [
+        "Linol kesikte oyulan ve basılan alanları karşılaştır"
+      ],
+      "audience_hypothesis": "el baskısı meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "stud-lock-assembly",
+      "editorial_description": "Özgün geçmeli bloklarla bir masa düzenleyicisi kur Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "ürün tasarımı",
+        "kendin yap"
+      ],
+      "content_types": [
+        "montaj",
+        "süreç"
+      ],
+      "sample_topics": [
+        "Özgün geçmeli bloklarla bir masa düzenleyicisi kur"
+      ],
+      "audience_hypothesis": "modelleme ve kendin yap izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "pixel-depth-diorama",
+      "editorial_description": "Piksel bir sahilde ön plan ile arka planı ayır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "oyun",
+        "dijital sanat"
+      ],
+      "content_types": [
+        "mekan tanıtımı",
+        "katman"
+      ],
+      "sample_topics": [
+        "Piksel bir sahilde ön plan ile arka planı ayır"
+      ],
+      "audience_hypothesis": "piksel sanatçıları ve oyun meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "microgame-state-loop",
+      "editorial_description": "Tek tuşlu oyunda bekle, zıpla ve tekrar dene durumları Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "oyun",
+        "yazılım"
+      ],
+      "content_types": [
+        "mekanik açıklaması",
+        "döngü"
+      ],
+      "sample_topics": [
+        "Tek tuşlu oyunda bekle, zıpla ve tekrar dene durumları"
+      ],
+      "audience_hypothesis": "bağımsız oyun geliştiricileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "limited-pose-acting",
+      "editorial_description": "Üç pozla bir karakterin kayıp anahtarını bulmasını anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "animasyon",
+        "öykü"
+      ],
+      "content_types": [
+        "karakter anlatımı",
+        "duygu değişimi"
+      ],
+      "sample_topics": [
+        "Üç pozla bir karakterin kayıp anahtarını bulmasını anlat"
+      ],
+      "audience_hypothesis": "animasyon ve görsel öykü izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "tile-quest-state",
+      "editorial_description": "Bir bahçe kurma görevini dört karo durumuna böl Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "oyun",
+        "eğitim"
+      ],
+      "content_types": [
+        "görev ilerlemesi",
+        "mini hikaye"
+      ],
+      "sample_topics": [
+        "Bir bahçe kurma görevini dört karo durumuna böl"
+      ],
+      "audience_hypothesis": "oyun tasarımı öğrenen yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "rubber-limb-cycle",
+      "editorial_description": "Özgün bir maskotun esnek yürüyüş ritmini göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "animasyon",
+        "karakter tasarımı"
+      ],
+      "content_types": [
+        "hareket döngüsü",
+        "stil gösterimi"
+      ],
+      "sample_topics": [
+        "Özgün bir maskotun esnek yürüyüş ritmini göster"
+      ],
+      "audience_hypothesis": "animasyon meraklıları ve marka tasarımcıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "cel-pose-camera",
+      "editorial_description": "Aynı karakter pozunu yakın ve genel planda karşılaştır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "animasyon",
+        "film dili"
+      ],
+      "content_types": [
+        "çekim karşılaştırması",
+        "karakter"
+      ],
+      "sample_topics": [
+        "Aynı karakter pozunu yakın ve genel planda karşılaştır"
+      ],
+      "audience_hypothesis": "film ve animasyon öğrenenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "glass-section-orbit",
+      "editorial_description": "Cam bir şişenin duvar kalınlığını dönüşle göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "ürün tasarımı",
+        "malzeme"
+      ],
+      "content_types": [
+        "kesit",
+        "ürün incelemesi"
+      ],
+      "sample_topics": [
+        "Cam bir şişenin duvar kalınlığını dönüşle göster"
+      ],
+      "audience_hypothesis": "ürün ve ambalaj tasarımı izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "toon-dialogue-blocking",
+      "editorial_description": "İki karakterin sıra bekleme anlaşmazlığını sessizce anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "animasyon",
+        "hikaye anlatımı"
+      ],
+      "content_types": [
+        "diyalog",
+        "iki karakter sahnesi"
+      ],
+      "sample_topics": [
+        "İki karakterin sıra bekleme anlaşmazlığını sessizce anlat"
+      ],
+      "audience_hypothesis": "görsel hikaye izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "jointed-shadow-performance",
+      "editorial_description": "Eklemli kağıt kuşun kanat gölgesini hareket ettir Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "tiyatro",
+        "el işi"
+      ],
+      "content_types": [
+        "karakter performansı",
+        "mekanizma"
+      ],
+      "sample_topics": [
+        "Eklemli kağıt kuşun kanat gölgesini hareket ettir"
+      ],
+      "audience_hypothesis": "gölge oyunu ve zanaat meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "projection-surface-register",
+      "editorial_description": "Projeksiyon desenini üç yüzeyin köşelerine oturt Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "etkinlik tasarımı",
+        "teknoloji"
+      ],
+      "content_types": [
+        "hizalama",
+        "önce sonra"
+      ],
+      "sample_topics": [
+        "Projeksiyon desenini üç yüzeyin köşelerine oturt"
+      ],
+      "audience_hypothesis": "etkinlik tasarımcıları ve görsel teknisyenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "pointcloud-sweep-measure",
+      "editorial_description": "Bir sandalyenin nokta bulutundan ölçü çıkarmayı anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "mühendislik",
+        "3B tarama"
+      ],
+      "content_types": [
+        "tarama",
+        "ölçüm açıklaması"
+      ],
+      "sample_topics": [
+        "Bir sandalyenin nokta bulutundan ölçü çıkarmayı anlat"
+      ],
+      "audience_hypothesis": "3B üretim ve ölçüm meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "facet-terrain-growth",
+      "editorial_description": "Düzlemden vadili düşük poligon arazi oluştur Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "coğrafya",
+        "oyun tasarımı"
+      ],
+      "content_types": [
+        "arazi oluşumu",
+        "modelleme"
+      ],
+      "sample_topics": [
+        "Düzlemden vadili düşük poligon arazi oluştur"
+      ],
+      "audience_hypothesis": "coğrafya ve çevre tasarımı izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "cell-focus-section",
+      "editorial_description": "Şematik bir bitki hücresinde üç yapıyı ayırt et Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "bilim",
+        "eğitim"
+      ],
+      "content_types": [
+        "kesit",
+        "yakınlaştırma"
+      ],
+      "sample_topics": [
+        "Şematik bir bitki hücresinde üç yapıyı ayırt et"
+      ],
+      "audience_hypothesis": "biyoloji öğrenen yetişkinler ve eğitmenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "rigid-body-lightstage",
+      "editorial_description": "Aynı nesnenin mat ve parlak yüzeyini ışık altında karşılaştır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "ürün tasarımı",
+        "3B sanat"
+      ],
+      "content_types": [
+        "ışık karşılaştırması",
+        "ürün gösterimi"
+      ],
+      "sample_topics": [
+        "Aynı nesnenin mat ve parlak yüzeyini ışık altında karşılaştır"
+      ],
+      "audience_hypothesis": "3B sanatçılar ve ürün fotoğrafçıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "lighttable-register",
+      "editorial_description": "İki afiş eskizini ışıklı masada üst üste karşılaştır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "fotoğraf",
+        "tasarım"
+      ],
+      "content_types": [
+        "karşılaştırma",
+        "hizalama"
+      ],
+      "sample_topics": [
+        "İki afiş eskizini ışıklı masada üst üste karşılaştır"
+      ],
+      "audience_hypothesis": "fotoğraf ve grafik tasarım üreticileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "score-reveal-wheel",
+      "editorial_description": "Bir masa oyununun üç özelliğini açık ölçütlerle değerlendir Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "ürün incelemesi",
+        "oyun"
+      ],
+      "content_types": [
+        "puan açıklaması",
+        "değerlendirme"
+      ],
+      "sample_topics": [
+        "Bir masa oyununun üç özelliğini açık ölçütlerle değerlendir"
+      ],
+      "audience_hypothesis": "masa oyunu araştıran yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "hologram-slice-volume",
+      "editorial_description": "Bir hacmin yatay kesitlerle nasıl temsil edildiğini göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "bilim",
+        "teknoloji"
+      ],
+      "content_types": [
+        "kesit dizisi",
+        "3B açıklama"
+      ],
+      "sample_topics": [
+        "Bir hacmin yatay kesitlerle nasıl temsil edildiğini göster"
+      ],
+      "audience_hypothesis": "3B görselleştirme öğrenenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "footage-caption-cuts",
+      "editorial_description": "Kendi çekiminle kahve demlemenin üç adımını göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "içerik üretimi",
+        "eğitim"
+      ],
+      "content_types": [
+        "çekim üstü açıklama",
+        "kısa ders"
+      ],
+      "sample_topics": [
+        "Kendi çekiminle kahve demlemenin üç adımını göster"
+      ],
+      "audience_hypothesis": "evde kahve hazırlayan yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "timelapse-mosaic",
+      "editorial_description": "Kendi masa düzenleme çekimlerini gün boyunca birleştir Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "üretim",
+        "el işi"
+      ],
+      "content_types": [
+        "zaman sıkıştırma",
+        "süreç"
+      ],
+      "sample_topics": [
+        "Kendi masa düzenleme çekimlerini gün boyunca birleştir"
+      ],
+      "audience_hypothesis": "çalışma alanı ve düzen meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "footage-diagonal-montage",
+      "editorial_description": "Kendi şehir yürüyüşünü üç doku ve üç renk üzerinden anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "seyahat",
+        "yaşam tarzı"
+      ],
+      "content_types": [
+        "montaj",
+        "görsel günlük"
+      ],
+      "sample_topics": [
+        "Kendi şehir yürüyüşünü üç doku ve üç renk üzerinden anlat"
+      ],
+      "audience_hypothesis": "şehir gezginleri ve görsel günlük izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "broadcast-footage-rundown",
+      "editorial_description": "İzinli çekimlerle yerel serginin üç bölümünü özetle Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "kültür",
+        "haber açıklaması"
+      ],
+      "content_types": [
+        "özet",
+        "başlık sıralaması"
+      ],
+      "sample_topics": [
+        "İzinli çekimlerle yerel serginin üç bölümünü özetle"
+      ],
+      "audience_hypothesis": "kültür sanat takipçileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "archive-footage-gate",
+      "editorial_description": "Lisansı doğrulanmış iki sokak fotoğrafında değişen ulaşımı anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "tarih",
+        "medya okuryazarlığı"
+      ],
+      "content_types": [
+        "arşiv açıklaması",
+        "bağlam"
+      ],
+      "sample_topics": [
+        "Lisansı doğrulanmış iki sokak fotoğrafında değişen ulaşımı anlat"
+      ],
+      "audience_hypothesis": "kent tarihi meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "silent-footage-intertitles",
+      "editorial_description": "Kendi atölye ziyaretini kısa ara yazılarla anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "seyahat",
+        "belgesel"
+      ],
+      "content_types": [
+        "ara yazılı hikaye",
+        "sessiz anlatım"
+      ],
+      "sample_topics": [
+        "Kendi atölye ziyaretini kısa ara yazılarla anlat"
+      ],
+      "audience_hypothesis": "zanaat ve belgesel izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "liminal-footage-inspection",
+      "editorial_description": "Kendi boş koridor çekiminde simetri ve kaçış çizgisini göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "mimari",
+        "film dili"
+      ],
+      "content_types": [
+        "mekan incelemesi",
+        "atmosfer"
+      ],
+      "sample_topics": [
+        "Kendi boş koridor çekiminde simetri ve kaçış çizgisini göster"
+      ],
+      "audience_hypothesis": "mimari ve sinematografi meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "screen-focus-follow",
+      "editorial_description": "Kendi ekran kaydında dosya adlarını topluca düzenle Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "yazılım",
+        "üretkenlik"
+      ],
+      "content_types": [
+        "ekran rehberi",
+        "iş akışı"
+      ],
+      "sample_topics": [
+        "Kendi ekran kaydında dosya adlarını topluca düzenle"
+      ],
+      "audience_hypothesis": "bilgisayar kullanıcıları ve bilgi çalışanları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "georeferenced-footage-track",
+      "editorial_description": "Kendi yürüyüş çekimlerini yaklaşık rota duraklarıyla eşleştir Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "seyahat",
+        "coğrafya"
+      ],
+      "content_types": [
+        "rota anlatımı",
+        "çekim eşleştirme"
+      ],
+      "sample_topics": [
+        "Kendi yürüyüş çekimlerini yaklaşık rota duraklarıyla eşleştir"
+      ],
+      "audience_hypothesis": "gezi ve harita meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "footage-tactical-overlay",
+      "editorial_description": "İzinli bir basketbol çekiminde pas boşluğunu işaretle Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "spor",
+        "eğitim"
+      ],
+      "content_types": [
+        "pozisyon açıklaması",
+        "analiz"
+      ],
+      "sample_topics": [
+        "İzinli bir basketbol çekiminde pas boşluğunu işaretle"
+      ],
+      "audience_hypothesis": "amatör sporcular ve spor izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "footage-focus-band",
+      "editorial_description": "Kendi seramik çekiminde yüzeydeki işçilik ayrıntısını göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "fotoğraf",
+        "ürün incelemesi"
+      ],
+      "content_types": [
+        "detay vurgusu",
+        "odak"
+      ],
+      "sample_topics": [
+        "Kendi seramik çekiminde yüzeydeki işçilik ayrıntısını göster"
+      ],
+      "audience_hypothesis": "zanaat ve ürün fotoğrafı izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "media-evidence-compare",
+      "editorial_description": "Aynı ışıkta çekilmiş iki lens görüntüsünü yan yana değerlendir Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "medya okuryazarlığı",
+        "ürün incelemesi"
+      ],
+      "content_types": [
+        "kanıt karşılaştırması",
+        "önce sonra"
+      ],
+      "sample_topics": [
+        "Aynı ışıkta çekilmiş iki lens görüntüsünü yan yana değerlendir"
+      ],
+      "audience_hypothesis": "fotoğraf ekipmanı araştıran yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "vector-puppet-cause",
+      "editorial_description": "Bir maskotun yanlış klasöre koyduğu dosyayı bulmasını anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "eğitim",
+        "hikaye anlatımı"
+      ],
+      "content_types": [
+        "neden sonuç",
+        "karakter"
+      ],
+      "sample_topics": [
+        "Bir maskotun yanlış klasöre koyduğu dosyayı bulmasını anlat"
+      ],
+      "audience_hypothesis": "görsel öğrenme ve iş akışı izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "field-orbit-ensemble",
+      "editorial_description": "Temsili bir kuvvet alanında parçacık yollarını göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "bilim",
+        "veri görselleştirme"
+      ],
+      "content_types": [
+        "alan açıklaması",
+        "sistem"
+      ],
+      "sample_topics": [
+        "Temsili bir kuvvet alanında parçacık yollarını göster"
+      ],
+      "audience_hypothesis": "fizik ve görselleştirme meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "construction-stroke-stack",
+      "editorial_description": "Bir sandalye eskizinin iskelet, yüzey ve ölçü katmanları Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "mimari",
+        "tasarım"
+      ],
+      "content_types": [
+        "yapım sırası",
+        "katman"
+      ],
+      "sample_topics": [
+        "Bir sandalye eskizinin iskelet, yüzey ve ölçü katmanları"
+      ],
+      "audience_hypothesis": "tasarım ve çizim öğrenenler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "geometric-proof-transform",
+      "editorial_description": "İki üçgeni kaydırarak paralelkenarın alanını açıkla Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "matematik",
+        "eğitim"
+      ],
+      "content_types": [
+        "görsel ispat",
+        "dönüşüm"
+      ],
+      "sample_topics": [
+        "İki üçgeni kaydırarak paralelkenarın alanını açıkla"
+      ],
+      "audience_hypothesis": "matematiği görsel öğrenen yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "ui-state-transition-lab",
+      "editorial_description": "Bir yükleme düğmesinin boş, yükleniyor ve tamam durumları Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "yazılım",
+        "ürün tasarımı"
+      ],
+      "content_types": [
+        "arayüz açıklaması",
+        "durum karşılaştırması"
+      ],
+      "sample_topics": [
+        "Bir yükleme düğmesinin boş, yükleniyor ve tamam durumları"
+      ],
+      "audience_hypothesis": "arayüz tasarımcıları ve geliştiriciler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "pixel-cellular-ecosystem",
+      "editorial_description": "Basit komşuluk kurallarının piksel desenini nasıl değiştirdiğini göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "bilim",
+        "yazılım"
+      ],
+      "content_types": [
+        "kural simülasyonu",
+        "döngü"
+      ],
+      "sample_topics": [
+        "Basit komşuluk kurallarının piksel desenini nasıl değiştirdiğini göster"
+      ],
+      "audience_hypothesis": "sistem ve yaratıcı kodlama meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "ascii-wave-buffer",
+      "editorial_description": "Bir dalganın yüksekliğini karakter yoğunluğuyla göster Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "yazılım",
+        "dijital sanat"
+      ],
+      "content_types": [
+        "kod sanatı",
+        "dalga"
+      ],
+      "sample_topics": [
+        "Bir dalganın yüksekliğini karakter yoğunluğuyla göster"
+      ],
+      "audience_hypothesis": "yaratıcı kodlama izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "orbital-shadow-machine",
+      "editorial_description": "Dönen bir parçanın gölgesi neden farklı hızda uzar? Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "bilim",
+        "3B sanat"
+      ],
+      "content_types": [
+        "ışık deneyi",
+        "döngü"
+      ],
+      "sample_topics": [
+        "Dönen bir parçanın gölgesi neden farklı hızda uzar?"
+      ],
+      "audience_hypothesis": "fizik ve 3B sanat meraklıları",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "original-anime-action-arc",
+      "editorial_description": "Özgün karakterin uçan şapkasını yakalama hareketini anlat Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "animasyon",
+        "hikaye anlatımı"
+      ],
+      "content_types": [
+        "aksiyon sekansı",
+        "karakter"
+      ],
+      "sample_topics": [
+        "Özgün karakterin uçan şapkasını yakalama hareketini anlat"
+      ],
+      "audience_hypothesis": "animasyon ve görsel hikaye izleyicileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "sand-rake-reformation",
+      "editorial_description": "Kumdaki paralel çizgileri dairesel bir desene dönüştür Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "zanaat",
+        "tasarım"
+      ],
+      "content_types": [
+        "doku dönüşümü",
+        "sakin süreç"
+      ],
+      "sample_topics": [
+        "Kumdaki paralel çizgileri dairesel bir desene dönüştür"
+      ],
+      "audience_hypothesis": "malzeme ve süreç izlemeyi seven yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "torn-edge-layer-transfer",
+      "editorial_description": "Kendi seyahat notlarını yırtık kağıt kolajında sırala Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "kolaj",
+        "kişisel marka"
+      ],
+      "content_types": [
+        "katman değişimi",
+        "görsel günlük"
+      ],
+      "sample_topics": [
+        "Kendi seyahat notlarını yırtık kağıt kolajında sırala"
+      ],
+      "audience_hypothesis": "kolaj ve görsel günlük üreticileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": false,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "licensed-shot-continuity",
+      "editorial_description": "İzinli iki çekimde bakış yönü devamlılığını açıkla Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "film dili",
+        "eğitim"
+      ],
+      "content_types": [
+        "devamlılık",
+        "çekim karşılaştırması"
+      ],
+      "sample_topics": [
+        "İzinli iki çekimde bakış yönü devamlılığını açıkla"
+      ],
+      "audience_hypothesis": "video kurgu öğrenen yetişkinler",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    },
+    {
+      "id": "licensed-photo-depth",
+      "editorial_description": "Kendi manzara fotoğrafını ön, orta ve arka plana ayır Bu kullanım önerisi editoryaldir; şablonun son renderı üzerinden doğrulanmış uygunluk kararı değildir.",
+      "niches": [
+        "fotoğraf",
+        "seyahat"
+      ],
+      "content_types": [
+        "derinlik ayrıştırma",
+        "mekan anlatımı"
+      ],
+      "sample_topics": [
+        "Kendi manzara fotoğrafını ön, orta ve arka plana ayır"
+      ],
+      "audience_hypothesis": "fotoğrafçılar ve seyahat üreticileri",
+      "age_hypothesis": {
+        "label": "18+",
+        "min": 18,
+        "max": null,
+        "status": "hypothesis_not_measured",
+        "basis": "editoryal yetişkin başlangıç kohortu; ölçülmüş demografi veya yaşa özgü görsel tercih çıkarımı değil"
+      },
+      "requires_caller_media": true,
+      "visual_score": null,
+      "instagram_assessment": {
+        "status": "not_assessed",
+        "score_100": null,
+        "dimensions": {
+          "creator_usefulness": null,
+          "phone_legibility": null,
+          "safe_zone_and_crop": null,
+          "silent_clarity": null,
+          "narrative": null,
+          "motion_hierarchy": null,
+          "loop_or_ending": null,
+          "performance": null
+        },
+        "audio": "not_requested_do_not_generate"
+      }
+    }
+  ]
+}

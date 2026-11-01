@@ -1,0 +1,116 @@
+{
+  "family_id": "lighttable-register",
+  "source_id": "source-lemo-style-archive-lighttable",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "lighttable-register",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "İki özgün plan katmanını aynı kayda getiriyoruz",
+          "duration": 4,
+          "narration": "Özgün geometri adım adım kurulur. Son ölçü sabit konumda okunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2,
+              "text": "Özgün geometri adım adım kurulur."
+            },
+            {
+              "start": 2,
+              "end": 4,
+              "text": "Son ölçü sabit konumda okunur."
+            }
+          ],
+          "palette": {
+            "background": "#F3EFE4",
+            "ink": "#34372D",
+            "muted": "#62654E",
+            "accent": "#8A3F2D"
+          },
+          "plates": [
+            {
+              "label": "Ana plan katmanı",
+              "offset_x": -65,
+              "offset_y": 50,
+              "angle": -10,
+              "mark_fraction": 0.35
+            },
+            {
+              "label": "Kontrol çizgileri",
+              "offset_x": 55,
+              "offset_y": -45,
+              "angle": 8,
+              "mark_fraction": 0.65
+            }
+          ],
+          "inspection_fraction": 0.65,
+          "aperture_height": 60
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "lighttable-register",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Dört ölçüm fişi ortak kayıt işaretinde buluşuyor",
+          "duration": 5,
+          "narration": "Uzun Türkçe açıklama değişen parametreleri görünür kılar. Son durum açık ve dengeli biçimde bekler.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 2.5,
+              "text": "Uzun Türkçe açıklama değişen parametreleri görünür kılar."
+            },
+            {
+              "start": 2.5,
+              "end": 5,
+              "text": "Son durum açık ve dengeli biçimde bekler."
+            }
+          ],
+          "palette": {
+            "background": "#F3EFE4",
+            "ink": "#34372D",
+            "muted": "#62654E",
+            "accent": "#8A3F2D"
+          },
+          "plates": [
+            {
+              "label": "İlk ölçüm fişi",
+              "offset_x": -75,
+              "offset_y": -65,
+              "angle": 11,
+              "mark_fraction": 0.25
+            },
+            {
+              "label": "İkinci kontrol fişi",
+              "offset_x": 70,
+              "offset_y": 35,
+              "angle": -9,
+              "mark_fraction": 0.4
+            },
+            {
+              "label": "Üçüncü kayıt fişi",
+              "offset_x": -40,
+              "offset_y": 70,
+              "angle": 7,
+              "mark_fraction": 0.6
+            },
+            {
+              "label": "Son karşılaştırma fişi",
+              "offset_x": 45,
+              "offset_y": -70,
+              "angle": -12,
+              "mark_fraction": 0.75
+            }
+          ],
+          "inspection_fraction": 0.4,
+          "aperture_height": 84
+        }
+      }
+    }
+  ]
+}

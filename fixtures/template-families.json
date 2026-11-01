@@ -1,0 +1,632 @@
+{
+  "schema_version": 1,
+  "purpose": "Two synthetic caller-input variants per bounded template; no native acceptance.",
+  "families": {
+    "kinetic-grid": [
+      {
+        "name": "short-silent",
+        "audio_fixture": null,
+        "spec": {
+          "id": "kinetic-grid",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Bir fikirden açık bir akışa",
+            "duration": 3.2,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 1.6,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 1.6,
+                "end": 3.2,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "phrases": [
+              {
+                "text": "Önce soruyu görünür kıl."
+              },
+              {
+                "text": "Sonra adımları birlikte kur."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "long-timed",
+        "audio_fixture": "template-timing-tone.wav",
+        "spec": {
+          "id": "kinetic-grid",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Türkçe uzun metinler: şüpheyi, gözlemi ve açıklamayı aynı cümlede kaybetmeden anlatmak",
+            "duration": 4,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 2.0,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 2.0,
+                "end": 4,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "phrases": [
+              {
+                "text": "İlk bakışta karmaşık görünen düşünceyi küçük ve anlaşılır bölümlere ayır."
+              },
+              {
+                "text": "Gözlemi, yorumu ve açık kalan soruyu birbirinden ayırarak sırala."
+              },
+              {
+                "text": "Öğrenilen bağlantıyı kendi sözlerinle yeniden kur ve gereksiz tekrarı çıkar."
+              },
+              {
+                "text": "Son cümle başlangıçtaki soruya dönsün; bilinmeyen kısmı açık bıraksın."
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "causal-path": [
+      {
+        "name": "short-silent",
+        "audio_fixture": null,
+        "spec": {
+          "id": "causal-path",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Bağlantıyı adım adım çiz",
+            "duration": 3.2,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 1.6,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 1.6,
+                "end": 3.2,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "nodes": [
+              {
+                "id": "question",
+                "label": "Açık soru"
+              },
+              {
+                "id": "observation",
+                "label": "Gözlenen bağlantı"
+              },
+              {
+                "id": "result",
+                "label": "Sınırlı sonuç"
+              }
+            ],
+            "edges": [
+              {
+                "from": "question",
+                "to": "observation"
+              },
+              {
+                "from": "observation",
+                "to": "result"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "long-timed",
+        "audio_fixture": "template-timing-tone.wav",
+        "spec": {
+          "id": "causal-path",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Bir açıklamanın beş adımı: gözlemden kontrol edilebilir sonuca",
+            "duration": 4,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 2.0,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 2.0,
+                "end": 4,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "nodes": [
+              {
+                "id": "start",
+                "label": "İlk koşulu ve açık soruyu tanımla"
+              },
+              {
+                "id": "input",
+                "label": "Gözlemi bağlamıyla birlikte kaydet"
+              },
+              {
+                "id": "link",
+                "label": "Olası bağlantıyı sınırlarıyla açıkla"
+              },
+              {
+                "id": "check",
+                "label": "Karşı örneği ve belirsizliği kontrol et"
+              },
+              {
+                "id": "finish",
+                "label": "Sonucu yalnız gözlenen kapsamda ifade et"
+              }
+            ],
+            "edges": [
+              {
+                "from": "start",
+                "to": "input"
+              },
+              {
+                "from": "input",
+                "to": "link"
+              },
+              {
+                "from": "link",
+                "to": "check"
+              },
+              {
+                "from": "check",
+                "to": "finish"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "exploded-blueprint": [
+      {
+        "name": "short-silent",
+        "audio_fixture": null,
+        "spec": {
+          "id": "exploded-blueprint",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Parçalar nasıl birlikte duruyor?",
+            "duration": 3.2,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 1.6,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 1.6,
+                "end": 3.2,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "parts": [
+              {
+                "shape": "plate",
+                "label": "Üst plaka"
+              },
+              {
+                "shape": "coil",
+                "label": "Esnek yay"
+              },
+              {
+                "shape": "cylinder",
+                "label": "Taşıyıcı gövde"
+              }
+            ],
+            "separation": 160
+          }
+        }
+      },
+      {
+        "name": "long-timed",
+        "audio_fixture": "template-timing-tone.wav",
+        "spec": {
+          "id": "exploded-blueprint",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Katmanlı mekanizma: her parçanın yerini ve ilişkisini görünür kıl",
+            "duration": 4,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 2.0,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 2.0,
+                "end": 4,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "parts": [
+              {
+                "shape": "plate",
+                "label": "Üst bağlantı plakası"
+              },
+              {
+                "shape": "filter",
+                "label": "Geçirgen ara katman"
+              },
+              {
+                "shape": "coil",
+                "label": "Esnek bağlantı yayı"
+              },
+              {
+                "shape": "cylinder",
+                "label": "Alt taşıyıcı gövde"
+              }
+            ],
+            "separation": 180
+          }
+        }
+      }
+    ],
+    "isometric-process": [
+      {
+        "name": "short-silent",
+        "audio_fixture": null,
+        "spec": {
+          "id": "isometric-process",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Veriyi hacimlerle karşılaştır",
+            "duration": 3.2,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 1.6,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 1.6,
+                "end": 3.2,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "series": [
+              {
+                "label": "Girdi",
+                "value": 12
+              },
+              {
+                "label": "İşlem",
+                "value": 28
+              },
+              {
+                "label": "Çıktı",
+                "value": 18
+              }
+            ],
+            "unit": "örnek birim"
+          }
+        }
+      },
+      {
+        "name": "long-timed",
+        "audio_fixture": "template-timing-tone.wav",
+        "spec": {
+          "id": "isometric-process",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Beş aşamalı süreç: farklı değerleri aynı ölçekte birlikte oku",
+            "duration": 4,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 2.0,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 2.0,
+                "end": 4,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "series": [
+              {
+                "label": "Hazırlık",
+                "value": 0
+              },
+              {
+                "label": "Ölçüm",
+                "value": 9
+              },
+              {
+                "label": "İşleme",
+                "value": 31
+              },
+              {
+                "label": "Kontrol",
+                "value": 68
+              },
+              {
+                "label": "Çıkış",
+                "value": 44
+              }
+            ],
+            "unit": "teknik örnek"
+          }
+        }
+      }
+    ],
+    "liquid-merge": [
+      {
+        "name": "short-silent",
+        "audio_fixture": null,
+        "spec": {
+          "id": "liquid-merge",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Akışkan fikirler birleşirken",
+            "duration": 3.2,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 1.6,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 1.6,
+                "end": 3.2,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "drops": [
+              {
+                "label": "Açık soru",
+                "amount": 12
+              },
+              {
+                "label": "Gözlem",
+                "amount": 24
+              },
+              {
+                "label": "Bağlantı",
+                "amount": 18
+              }
+            ],
+            "softness": 14
+          }
+        }
+      },
+      {
+        "name": "long-timed",
+        "audio_fixture": "template-timing-tone.wav",
+        "spec": {
+          "id": "liquid-merge",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Ayrı gözlemleri bir araya getir; birleşen düşünceyi yeniden parçalarına ayır",
+            "duration": 4,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 2.0,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 2.0,
+                "end": 4,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "drops": [
+              {
+                "label": "Gözlemin başlangıç koşullarını tanımla",
+                "amount": 9
+              },
+              {
+                "label": "İlişkili örnekleri bağlamıyla birleştir",
+                "amount": 25
+              },
+              {
+                "label": "Açık kalan soruları birlikte görünür kıl",
+                "amount": 48
+              },
+              {
+                "label": "Sonucu yeniden bağımsız adımlara ayır",
+                "amount": 18
+              }
+            ],
+            "softness": 22
+          }
+        }
+      }
+    ],
+    "bauhaus-modules": [
+      {
+        "name": "short-silent",
+        "audio_fixture": null,
+        "spec": {
+          "id": "bauhaus-modules",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Geometri yerini adımlarla bulur",
+            "duration": 3.2,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 1.6,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 1.6,
+                "end": 3.2,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "modules": [
+              {
+                "label": "Daire dengesi",
+                "shape": "disc"
+              },
+              {
+                "label": "Çizgi ritmi",
+                "shape": "bars"
+              },
+              {
+                "label": "Kemer geçişi",
+                "shape": "arch"
+              }
+            ],
+            "turns": 1,
+            "stagger": 0.06
+          }
+        }
+      },
+      {
+        "name": "long-timed",
+        "audio_fixture": "template-timing-tone.wav",
+        "spec": {
+          "id": "bauhaus-modules",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Türkçe etiketleri koruyan modüller: dönüş, bekleme ve karşılıklı yer değiştirme",
+            "duration": 4,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 2.0,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 2.0,
+                "end": 4,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "modules": [
+              {
+                "label": "Başlangıç biçimini ve sınırını tanımla",
+                "shape": "quarters"
+              },
+              {
+                "label": "Yön değişimini küçük adımlara böl",
+                "shape": "arch"
+              },
+              {
+                "label": "Karşılıklı hareketin ritmini görünür kıl",
+                "shape": "bars"
+              },
+              {
+                "label": "Düzen değişirken etiketleri yerinde tut",
+                "shape": "disc"
+              }
+            ],
+            "turns": 3,
+            "stagger": 0.1
+          }
+        }
+      }
+    ],
+    "pixel-journey": [
+      {
+        "name": "short-silent",
+        "audio_fixture": null,
+        "spec": {
+          "id": "pixel-journey",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Küçük piksellerle bir yol kur",
+            "duration": 3.2,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 1.6,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 1.6,
+                "end": 3.2,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "waypoints": [
+              {
+                "label": "İlk damla",
+                "motif": "drop"
+              },
+              {
+                "label": "Yeni yaprak",
+                "motif": "leaf"
+              },
+              {
+                "label": "Açık güneş",
+                "motif": "sun"
+              }
+            ],
+            "step_fps": 8
+          }
+        }
+      },
+      {
+        "name": "long-timed",
+        "audio_fixture": "template-timing-tone.wav",
+        "spec": {
+          "id": "pixel-journey",
+          "version": "1.0.0",
+          "parameters": {
+            "title": "Dört durakta özgün piksel yolculuğu: Türkçe uzun etiketler ve kesikli hareket",
+            "duration": 4,
+            "narration": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir. Metin ve zamanlama teknik inceleme içindir.",
+            "cues": [
+              {
+                "start": 0,
+                "end": 2.0,
+                "text": "Bu, kullanıcı içeriğiyle hazırlanmış yerel bir şablon örneğidir."
+              },
+              {
+                "start": 2.0,
+                "end": 4,
+                "text": "Metin ve zamanlama teknik inceleme içindir."
+              }
+            ],
+            "waypoints": [
+              {
+                "label": "Başlangıç koşulunu küçük bir işaretle göster",
+                "motif": "cube"
+              },
+              {
+                "label": "Sonraki adımı ayrı bir simgeyle görünür kıl",
+                "motif": "drop"
+              },
+              {
+                "label": "Yeni gözlemi ve yön değişimini kaydet",
+                "motif": "leaf"
+              },
+              {
+                "label": "Son durakta açık kalan bağlantıyı koru",
+                "motif": "sun"
+              }
+            ],
+            "step_fps": 15
+          }
+        }
+      }
+    ]
+  }
+}

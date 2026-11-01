@@ -1,0 +1,126 @@
+{
+  "family_id": "ink-diffusion-front",
+  "source_id": "source-lemo-style-ink-wash",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "ink-diffusion-front",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir fırça izindeki su arttığında mürekkebin kenarı neden daha uzağa yayılır?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F5F5EC",
+            "ink": "#182625",
+            "muted": "#505E5A",
+            "accent": "#375C60"
+          },
+          "brush_paths": [
+            [
+              [
+                0.3,
+                0.2
+              ],
+              [
+                0.55,
+                0.45
+              ]
+            ],
+            [
+              [
+                0.4,
+                0.55
+              ],
+              [
+                0.7,
+                0.75
+              ]
+            ]
+          ],
+          "water_amount": 0.3,
+          "diffusion_radius": 40,
+          "dry_time": 0.5
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "ink-diffusion-front",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Yayılma cephesi zamana göre büyür; koyu kenar ve kuruma farklı aşamalarda ilerler.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F5F5EC",
+            "ink": "#182625",
+            "muted": "#505E5A",
+            "accent": "#375C60"
+          },
+          "brush_paths": [
+            [
+              [
+                0.25,
+                0.2
+              ],
+              [
+                0.6,
+                0.35
+              ]
+            ],
+            [
+              [
+                0.3,
+                0.45
+              ],
+              [
+                0.55,
+                0.7
+              ]
+            ],
+            [
+              [
+                0.6,
+                0.65
+              ],
+              [
+                0.75,
+                0.85
+              ]
+            ]
+          ],
+          "water_amount": 0.85,
+          "diffusion_radius": 88,
+          "dry_time": 0.62
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "family_id": "iso-room-route",
+  "source_id": "source-mg-style-03-isometric",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "iso-room-route",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir oda açıldığında yalnız duvarlar değil, taşıyıcının izlediği yol da görünür hâle gelir.",
+          "duration": 8,
+          "narration": "Duvarlar kendi menteşesi çevresinde açılıyor. Taşıyıcı kapılardan geçerken derinlik sırası korunuyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Duvarlar kendi menteşesi çevresinde açılıyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Taşıyıcı kapılardan geçerken derinlik sırası korunuyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "room_layout": {
+            "width": 3,
+            "depth": 2.5,
+            "height": 110
+          },
+          "door_order": [
+            "west",
+            "east"
+          ],
+          "carrier_route": [
+            {
+              "x": 0.2,
+              "y": 0.5
+            },
+            {
+              "x": 0.7,
+              "y": 0.75
+            }
+          ],
+          "unfold_angle": 85,
+          "room_label": "Taşıyıcı, açık kapıdan geçerek odanın karşı tarafına ulaşıyor."
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "iso-room-route",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir oda açıldığında yalnız duvarlar değil, taşıyıcının izlediği yol da görünür hâle gelir. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Taşıyıcı kapılardan geçerken derinlik sırası korunuyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Taşıyıcı kapılardan geçerken derinlik sırası korunuyor."
+            }
+          ],
+          "palette": {
+            "background": "#F4F0E7",
+            "ink": "#24343B",
+            "muted": "#59646B",
+            "accent": "#85432E"
+          },
+          "room_layout": {
+            "width": 3.8,
+            "depth": 3.2,
+            "height": 145
+          },
+          "door_order": [
+            "east",
+            "west"
+          ],
+          "carrier_route": [
+            {
+              "x": 0.8,
+              "y": 0.4
+            },
+            {
+              "x": 0.4,
+              "y": 0.2
+            },
+            {
+              "x": 0.2,
+              "y": 0.7
+            }
+          ],
+          "unfold_angle": 65,
+          "room_label": "Yeni sıra, çıkış yönünü ve duvarların açılma miktarını değiştiriyor."
+        }
+      }
+    }
+  ]
+}

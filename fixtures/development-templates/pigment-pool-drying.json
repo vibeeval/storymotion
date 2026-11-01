@@ -1,0 +1,138 @@
+{
+  "family_id": "pigment-pool-drying",
+  "source_id": "source-lemo-style-watercolor",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "pigment-pool-drying",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Islak renk havuzunun merkezi kururken pigmentin bir kısmı hangi kenarda birikir?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F2F5EB",
+            "ink": "#213B40",
+            "muted": "#4D5C57",
+            "accent": "#236875"
+          },
+          "pool_centers": [
+            {
+              "center": [
+                0.3,
+                0.35
+              ],
+              "radius": 0.14,
+              "load": 0.65,
+              "label": "İlk renk havuzu"
+            },
+            {
+              "center": [
+                0.65,
+                0.65
+              ],
+              "radius": 0.16,
+              "load": 0.8,
+              "label": "Kenarın tuttuğu pigment"
+            }
+          ],
+          "pigment_colors": [
+            "#235F8B",
+            "#A45E32"
+          ],
+          "wetness": 0.4,
+          "dry_duration": 0.25
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "pigment-pool-drying",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Toplam pigment korunur; merkezden kenara taşınan miktar kuruma ilerledikçe artar.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F2F5EB",
+            "ink": "#213B40",
+            "muted": "#4D5C57",
+            "accent": "#236875"
+          },
+          "pool_centers": [
+            {
+              "center": [
+                0.3,
+                0.3
+              ],
+              "radius": 0.16,
+              "load": 0.8,
+              "label": "Suyla açılan mavi"
+            },
+            {
+              "center": [
+                0.55,
+                0.4
+              ],
+              "radius": 0.18,
+              "load": 1,
+              "label": "İkinci temas bölgesi"
+            },
+            {
+              "center": [
+                0.65,
+                0.65
+              ],
+              "radius": 0.12,
+              "load": 0.5,
+              "label": "Kenar çizgisinin izi"
+            },
+            {
+              "center": [
+                0.35,
+                0.7
+              ],
+              "radius": 0.15,
+              "load": 0.7,
+              "label": "Yavaş kuruyan yüzey"
+            }
+          ],
+          "pigment_colors": [
+            "#2D6A8B",
+            "#926322",
+            "#9A3B50",
+            "#3B6B4D"
+          ],
+          "wetness": 0.9,
+          "dry_duration": 0.4
+        }
+      }
+    }
+  ]
+}

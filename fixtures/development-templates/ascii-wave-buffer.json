@@ -1,0 +1,102 @@
+{
+  "family_id": "ascii-wave-buffer",
+  "source_id": "src-athemeroy-style-retro-terminal-ascii",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "ascii-wave-buffer",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Verinin dalga izi, satır satır yazılan küçük bir tamponda görünür olur",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#111A18",
+            "ink": "#D5F6DF",
+            "muted": "#9FBEAB",
+            "accent": "#ADF1C2"
+          },
+          "density_field": {
+            "frequency_x": 1.5,
+            "frequency_y": 1.2,
+            "phase_speed": 0.9
+          },
+          "character_ramp": ".:-=+*#@",
+          "update_regions": [
+            {
+              "x": 0,
+              "y": 0,
+              "width": 32,
+              "height": 20
+            }
+          ],
+          "tear_cadence": 0.32
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "ascii-wave-buffer",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Tampondaki ikinci ritim, değişen yoğunluğu harflerin sırasına aktarır",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#111A18",
+            "ink": "#D5F6DF",
+            "muted": "#9FBEAB",
+            "accent": "#ADF1C2"
+          },
+          "density_field": {
+            "frequency_x": 3.2,
+            "frequency_y": 2.4,
+            "phase_speed": 1.7
+          },
+          "character_ramp": ",;ox%MW",
+          "update_regions": [
+            {
+              "x": 3,
+              "y": 2,
+              "width": 24,
+              "height": 12
+            },
+            {
+              "x": 12,
+              "y": 0,
+              "width": 20,
+              "height": 20
+            }
+          ],
+          "tear_cadence": 0.24
+        }
+      }
+    }
+  ]
+}

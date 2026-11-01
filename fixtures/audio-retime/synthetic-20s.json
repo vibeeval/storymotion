@@ -1,0 +1,9 @@
+{
+  "kind": "original synthetic silence, not speech",
+  "duration_seconds": 20,
+  "sample_rate": 8000,
+  "channels": 1,
+  "sha256": "3a4075165eae03a178af902902dce747dcf642caa4538bca578e0a02a84fa017",
+  "rights": "Original generated test bytes; no person, voice clone or third-party audio",
+  "alignment": "Contract fixtures only; no acoustic alignment/quality acceptance"
+}

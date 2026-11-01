@@ -1,0 +1,207 @@
+{
+  "family_id": "ui-state-transition-lab",
+  "source_id": "src-athemeroy-style-motion-graphics-ui",
+  "cases": [
+    {
+      "name": "Türkçe A — ilk düzen",
+      "spec": {
+        "id": "ui-state-transition-lab",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Başvurunun üç adımı kullanıcıya beklenen sonucu açıkça gösterir",
+          "duration": 6,
+          "narration": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur. Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "Küçük bir değişim, bağlantıların tamamında görünür bir sonuç oluşturur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Her adımın nedeni izlenebilir; son biçim okunabilir bir durakta kalır."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "state_graph": {
+            "nodes": [
+              {
+                "key": "basla",
+                "label": "Başvuru alındı"
+              },
+              {
+                "key": "incele",
+                "label": "İnceleme sürüyor"
+              },
+              {
+                "key": "tamam",
+                "label": "Sonuç hazır"
+              }
+            ],
+            "edges": [
+              {
+                "from": "basla",
+                "to": "incele"
+              },
+              {
+                "from": "incele",
+                "to": "tamam"
+              }
+            ]
+          },
+          "component_bounds": [
+            {
+              "x": 36,
+              "y": 140,
+              "width": 648,
+              "height": 120
+            },
+            {
+              "x": 36,
+              "y": 290,
+              "width": 308,
+              "height": 160
+            },
+            {
+              "x": 364,
+              "y": 290,
+              "width": 320,
+              "height": 160
+            }
+          ],
+          "event_cues": [
+            {
+              "at": 0.28,
+              "label": "Gönder"
+            },
+            {
+              "at": 0.64,
+              "label": "Onayla"
+            }
+          ],
+          "progress_values": [
+            0,
+            0.55,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe B — değiştirilmiş mekanizma",
+      "spec": {
+        "id": "ui-state-transition-lab",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir siparişin izlediği yol, dört görünür durumla anlaşılır hâle gelir",
+          "duration": 7,
+          "narration": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir. Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.5,
+              "text": "Farklı bir başlangıç düzeni, aynı mekanizmanın başka bir sonucunu gösterir."
+            },
+            {
+              "start": 3.5,
+              "end": 7,
+              "text": "Süre, geometri ve kararlar birlikte değişirken ilişki açıkça korunur."
+            }
+          ],
+          "palette": {
+            "background": "#EFF3F5",
+            "ink": "#182B39",
+            "muted": "#4F6575",
+            "accent": "#245E83"
+          },
+          "state_graph": {
+            "nodes": [
+              {
+                "key": "kayit",
+                "label": "Sipariş kaydedildi"
+              },
+              {
+                "key": "hazir",
+                "label": "Hazırlık başladı"
+              },
+              {
+                "key": "yol",
+                "label": "Yola çıktı"
+              },
+              {
+                "key": "teslim",
+                "label": "Teslim tamamlandı"
+              }
+            ],
+            "edges": [
+              {
+                "from": "kayit",
+                "to": "hazir"
+              },
+              {
+                "from": "hazir",
+                "to": "yol"
+              },
+              {
+                "from": "yol",
+                "to": "teslim"
+              }
+            ]
+          },
+          "component_bounds": [
+            {
+              "x": 40,
+              "y": 120,
+              "width": 640,
+              "height": 90
+            },
+            {
+              "x": 40,
+              "y": 245,
+              "width": 300,
+              "height": 130
+            },
+            {
+              "x": 360,
+              "y": 245,
+              "width": 320,
+              "height": 130
+            },
+            {
+              "x": 40,
+              "y": 430,
+              "width": 640,
+              "height": 140
+            }
+          ],
+          "event_cues": [
+            {
+              "at": 0.2,
+              "label": "Kaydet"
+            },
+            {
+              "at": 0.44,
+              "label": "Hazırla"
+            },
+            {
+              "at": 0.7,
+              "label": "Teslim et"
+            }
+          ],
+          "progress_values": [
+            0,
+            0.23,
+            0.72,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

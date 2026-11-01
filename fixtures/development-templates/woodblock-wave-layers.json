@@ -1,0 +1,136 @@
+{
+  "family_id": "woodblock-wave-layers",
+  "source_id": "source-lemo-style-ukiyoe",
+  "cases": [
+    {
+      "name": "Türkçe uzun içerik A",
+      "spec": {
+        "id": "woodblock-wave-layers",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Bir dalganın renk blokları ayrı basılırken köpük izi konturla nasıl aynı yerde kalır?",
+          "duration": 6,
+          "narration": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur. Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3,
+              "text": "İlk biçim özgün çizgilerle kurulur; küçük farklar yüzeyde görünür olur."
+            },
+            {
+              "start": 3,
+              "end": 6,
+              "text": "Son durumda hareket durur, oluşan yapı okunabilen bir iz olarak kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F3EFDC",
+            "ink": "#173B4F",
+            "muted": "#4B5B61",
+            "accent": "#1C617C"
+          },
+          "wave_contours": [
+            {
+              "amplitude": 50,
+              "frequency": 1.2,
+              "phase": 0.3,
+              "level": 0.3
+            },
+            {
+              "amplitude": 45,
+              "frequency": 2.2,
+              "phase": 1.4,
+              "level": 0.6
+            }
+          ],
+          "color_blocks": [
+            "#4A7880",
+            "#244E6C"
+          ],
+          "plane_depths": [
+            0.3,
+            0.8
+          ],
+          "print_order": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Türkçe uzun içerik B",
+      "spec": {
+        "id": "woodblock-wave-layers",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Her derinlik düzlemi farklı kayar; köpük örnekleri aynı dalganın noktasını izler.",
+          "duration": 7.2,
+          "narration": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur. İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 3.6,
+              "text": "Yeni ölçüler ve değişen sıra, aynı yöntemin farklı bir sonucunu oluşturur."
+            },
+            {
+              "start": 3.6,
+              "end": 7.2,
+              "text": "İşlem tamamlanınca son yapı sabitlenir; ayrıntılar karşılaştırmaya açık kalır."
+            }
+          ],
+          "palette": {
+            "background": "#F3EFDC",
+            "ink": "#173B4F",
+            "muted": "#4B5B61",
+            "accent": "#1C617C"
+          },
+          "wave_contours": [
+            {
+              "amplitude": 30,
+              "frequency": 1.1,
+              "phase": 0.8,
+              "level": 0.18
+            },
+            {
+              "amplitude": 45,
+              "frequency": 1.8,
+              "phase": 2,
+              "level": 0.35
+            },
+            {
+              "amplitude": 65,
+              "frequency": 2.6,
+              "phase": 1,
+              "level": 0.5
+            },
+            {
+              "amplitude": 40,
+              "frequency": 3.2,
+              "phase": 2.8,
+              "level": 0.7
+            }
+          ],
+          "color_blocks": [
+            "#688B88",
+            "#3E7680",
+            "#2D5D7B",
+            "#1C405F"
+          ],
+          "plane_depths": [
+            0.1,
+            0.35,
+            0.65,
+            1
+          ],
+          "print_order": [
+            3,
+            1,
+            0,
+            2
+          ]
+        }
+      }
+    }
+  ]
+}

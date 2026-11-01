@@ -1,0 +1,19 @@
+import {base,keys,number,permutation,done,time,ease,fmt,line,label,page,PALETTES,meta} from './f2b8a056cce3-shared.mjs';
+export const ID='dimension-construction',SOURCE_ID='source-lemo-style-blueprint',DEFAULT_PALETTE=PALETTES.blue;
+export const METADATA=meta('Kayıtlı ölçüler ve kesit çizimi','orthographic-section','dimensioned-elevation','ordered construction strokes and registered section plane','wide drawing title / orthographic plate / dimension rails');
+export const PARAMETER_SCHEMA={dimension_values:{width:[160,360],height:[140,280],depth:[80,150]},section_position:[.2,.8],construction_order:{permutation:['outline','axes','dimension']},part_count:[2,4]};
+function numericLabels(p){return [['W · Genişlik',p.dimension_values.width],['H · Yükseklik',p.dimension_values.height],['D · Derinlik',p.dimension_values.depth]].map(([name,value],i)=>label(`${name} ${value} mm`,100,1400+i*60,880,34,p.palette.ink,1)).join('');}
+export function validateSpec(spec){const p=base(spec,ID,['dimension_values','section_position','construction_order','part_count'],{},DEFAULT_PALETTE),r=spec.parameters;keys(r.dimension_values,['width','height','depth']);p.dimension_values={width:number(r.dimension_values.width,'width',160,360),height:number(r.dimension_values.height,'height',140,280),depth:number(r.dimension_values.depth,'depth',80,150)};p.section_position=number(r.section_position,'section position',.2,.8);p.construction_order=permutation(r.construction_order,['outline','axes','dimension'],'construction order');p.part_count=number(r.part_count,'part count',2,4,true);numericLabels(p);return done(ID,p);}
+function state(p,seconds){const q=time(p,seconds),scale=1.55,width=p.dimension_values.width*scale,height=p.dimension_values.height*scale,box={x:540-width/2,y:980-height/2,width,height},depthScale=.7,depthSpan=p.dimension_values.depth*depthScale,depthBox={x:box.x+width+25,y:box.y,width:depthSpan,height},layers=Object.fromEntries(p.construction_order.map((id,i)=>[id,ease(q.u,i*.16,.35+i*.16)])),section=ease(q.u,.46,.84),sectionX=box.x+box.width*p.section_position*section,parts=Array.from({length:p.part_count},(_,i)=>({x:box.x,y:box.y+i*height/p.part_count,width,height:height/p.part_count}));return{...q,scale,depthScale,depthSpan,depthBox,box,layers,section,sectionX,parts,dimensionSpan:width,verticalSpan:height};}
+export const sample=(spec,seconds)=>state(validateSpec(spec).parameters,seconds);
+export function render(spec,seconds){const p=validateSpec(spec).parameters,s=state(p,seconds),c=p.palette,b=s.box,d=s.depthBox;
+ const stroke=(path,color,width,amount)=>`<path d="${path}" fill="none" stroke="${color}" stroke-width="${width}" pathLength="1" stroke-dasharray="1" stroke-dashoffset="${fmt(1-amount)}"/>`;
+ let body=stroke('M180 980H960M540 650V1330',c.muted,2,s.layers.axes);
+ body+=stroke(`M${fmt(b.x)} ${fmt(b.y)}h${fmt(b.width)}v${fmt(b.height)}h${fmt(-b.width)}Z`,c.ink,3,s.layers.outline);
+ body+=stroke(`M${fmt(d.x)} ${fmt(d.y)}h${fmt(d.width)}v${fmt(d.height)}h${fmt(-d.width)}Z`,c.ink,3,s.layers.outline);
+ body+=s.parts.slice(1).map(v=>stroke(`M${fmt(v.x)} ${fmt(v.y)}h${fmt(v.width)}`,c.ink,3,s.layers.outline)).join('');
+ body+=stroke(`M${fmt(b.x)} 1320H${fmt(b.x+b.width)}M${fmt(b.x)} 1308v24M${fmt(b.x+b.width)} 1308v24M210 ${fmt(b.y)}V${fmt(b.y+b.height)}M198 ${fmt(b.y)}h24M198 ${fmt(b.y+b.height)}h24M${fmt(d.x)} 1320h${fmt(d.width)}`,c.accent,3,s.layers.dimension);
+ body+=`<g opacity="${fmt(s.layers.dimension)}">${label('W',540,1305,400,28,c.ink,1,'middle')}${label('H',110,980,140,28,c.ink,1)}${label('D',d.x+d.width/2,1305,150,28,c.ink,1,'middle')}${numericLabels(p)}</g>`;
+ body+=line({x:s.sectionX,y:b.y-30},{x:s.sectionX,y:b.y+b.height+30},c.accent,4)+`<g opacity="${fmt(s.section)}">${label('Ön görünüş ve yan kesit aynı yüksekliğe kayıtlıdır.',150,600,780,30,c.ink,2)}</g>`;
+ return page(ID,p,s.seconds,body);
+}

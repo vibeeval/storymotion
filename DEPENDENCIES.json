@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "version": "0.14.1",
+  "package_lock_sha256": "6b28806e789fcb8a1074fd15da7c1a22eea25191e9d37ae687e907f9f003b754",
+  "npm_registry": "https://registry.npmjs.org",
+  "direct_dependencies": {
+    "ffmpeg-static": "5.3.0",
+    "hyperframes": "0.8.181"
+  },
+  "browser": {
+    "version": "152.0.7977.30",
+    "source": "https://googlechromelabs.github.io/chrome-for-testing/",
+    "installer": "locked @puppeteer/browsers through HyperFrames",
+    "redistributed_binary": false
+  },
+  "ffmpeg": {
+    "npm_package": "ffmpeg-static",
+    "version": "5.3.0",
+    "binary_source": "https://github.com/eugeneware/ffmpeg-static/releases",
+    "redistributed_binary": false
+  },
+  "ffprobe": {
+    "source_recipe": "renderers/ffprobe-source.json",
+    "source_url": "https://ffmpeg.org/releases/ffmpeg-8.1.3.tar.xz",
+    "source_sha256": "7138d28c96d9d3e3af4ee3d8cad72741f8ffb40da90c1112235dea3ecd3178a3",
+    "build": "project-local from pinned source; requires existing CLT clang/make and macOS SDK with system zlib",
+    "license": "LGPL-2.1-or-later for this configured build; retain source/license obligations",
+    "redistributed_binary": false,
+    "native_verified": "standalone macOS arm64 probe only; other targets unverified"
+  },
+  "full_dependencies_and_licenses": "docs/DEPENDENCY-LOCK.json",
+  "rights_review": "docs/RIGHTS.md",
+  "api_credentials_in_package": false,
+  "paid_calls_required_for_smoke": 0,
+  "compatibility_targets": {
+    "macOS": [
+      "arm64",
+      "x64"
+    ],
+    "Linux glibc": [
+      "arm64",
+      "x64"
+    ],
+    "python": "3.9+",
+    "node": ">=22.23.2 <23",
+    "Windows 10/11 local NTFS": [
+      "x64"
+    ]
+  },
+  "unsupported_platforms": [
+    "Linux musl",
+    "unknown libc",
+    "other architectures",
+    "Windows ARM64/32-bit",
+    "Windows network/non-NTFS volumes"
+  ],
+  "locking": "POSIX fcntl; Windows LockFileEx",
+  "native_browser_clean_device_acceptance": "unverified on every platform",
+  "graphs": [
+    {
+      "graph": "core",
+      "manifest": "package.json",
+      "lockfile": "package-lock.json",
+      "package_json_sha256": "92bc81d23109a797dc8ad9870dd74c3e51a8d786a4cf974b9d3e86bcaa7cc573",
+      "lock_sha256": "6b28806e789fcb8a1074fd15da7c1a22eea25191e9d37ae687e907f9f003b754",
+      "locked_packages": 142,
+      "direct_dependencies": {
+        "ffmpeg-static": "5.3.0",
+        "hyperframes": "0.8.181"
+      },
+      "lockfile_version": 3
+    },
+    {
+      "graph": "remotion",
+      "manifest": "optional/remotion/package.json",
+      "lockfile": "optional/remotion/package-lock.json",
+      "package_json_sha256": "e3cba3338f06adfe0320962041f4925b9a1826ec30101da0a44f53b64c4fe67e",
+      "lock_sha256": "5b581598479ae976fabdcd937dfec6c6c2bcb7d77db4c6963cde25480a51a3f1",
+      "locked_packages": 310,
+      "direct_dependencies": {
+        "@remotion/bundler": "4.0.537",
+        "@remotion/cli": "4.0.537",
+        "@remotion/renderer": "4.0.537",
+        "react": "19.0.0",
+        "react-dom": "19.0.0",
+        "remotion": "4.0.537"
+      },
+      "lockfile_version": 3
+    }
+  ],
+  "windows_media": {
+    "schema_version": 1,
+    "platform": "win32",
+    "architecture": "x64",
+    "minimum_windows": "10",
+    "version": "9.0.2",
+    "archive_url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.0.2-essentials_build.zip",
+    "archive_sha256": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba",
+    "checksum_source": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.0.2-essentials_build.zip.sha256",
+    "publisher": "Gyan Doshi",
+    "license": "GPL-3.0-or-later",
+    "binary_redistributed": false,
+    "native_acceptance": "unverified"
+  }
+}

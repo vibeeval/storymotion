@@ -1,0 +1,21 @@
+{
+  "name": "storymotion",
+  "version": "0.14.1",
+  "private": true,
+  "description": "Local dual-engine bounded scene/edit review candidate; session approval gates remain.",
+  "engines": {
+    "node": ">=22.23.2 <23"
+  },
+  "dependencies": {
+    "ffmpeg-static": "5.3.0",
+    "hyperframes": "0.8.181"
+  },
+  "scripts": {
+    "setup": "python3 -m storymotion setup",
+    "doctor": "python3 -m storymotion doctor --strict"
+  },
+  "license": "MIT",
+  "overrides": {
+    "zod": "4.6.7"
+  }
+}

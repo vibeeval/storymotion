@@ -1,0 +1,1200 @@
+{
+ "schema_version": 1,
+ "policy": "Template numeric/price claim surface. Every caller string parameter is audience copy unless listed in hidden_strings (never rendered as text). Caller numbers listed in guarded_numbers are rendered as text directly or feed a rendered quantity, measurement, coordinate, axis or source time and must be covered by a caller-registered scoped claim. exempt_numbers lists caller numbers that change rendered digits only as timing/progress, item index/permutation or emergent simulation state readouts. Module-authored chrome and ordinals are not caller copy. Traceability is not source truth or publication approval.",
+ "common": {
+  "hidden_strings": [
+   "palette.accent",
+   "palette.background",
+   "palette.ink",
+   "palette.muted"
+  ],
+  "exempt_numbers": {
+   "timing": [
+    "cues[].end",
+    "cues[].start",
+    "duration"
+   ],
+   "index": [],
+   "simulation_state": []
+  }
+ },
+ "families": {
+  "kinetic-grid": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "causal-path": {
+   "hidden_strings": [
+    "edges[].from",
+    "edges[].to",
+    "nodes[].id"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "exploded-blueprint": {
+   "hidden_strings": [
+    "parts[].shape"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "isometric-process": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "series[].value"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "liquid-merge": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "bauhaus-modules": {
+   "hidden_strings": [
+    "modules[].shape"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "pixel-journey": {
+   "hidden_strings": [
+    "waypoints[].motif"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "contour-trace": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "shape-morph": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "scan-hud": {
+   "hidden_strings": [
+    "targets[].id"
+   ],
+   "guarded_numbers": [
+    "targets[].value"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "gauge_at"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "vector-mass-transfer": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "stores[].amount",
+    "transfer_amount"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "batches",
+     "transfer_window[]"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "cel-contour-boil": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "cutout-pin-assembly": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "caption-impact-rig": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "sticker-peel-callout": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "iso-room-route": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "perspective-neon-run": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "aurora-refraction-panels": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "deco-radial-reveal": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "terminal-raster": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "scroll_rows"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "typing_cadence"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "split-counter-flip": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "end_value",
+    "milestones[].value",
+    "start_value"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "flap_duration",
+     "milestones[].at"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "spotlight-product-reveal": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "iris-silhouette-chase": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "baseline-type-reflow": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "dimension-construction": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "dimension_values.depth",
+    "dimension_values.height",
+    "dimension_values.width"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "board-pin-routing": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "bead-transfer-counts": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "bead_unit",
+    "bin_values[].count",
+    "transfer_order[].count"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "settle_duration"
+    ],
+    "index": [
+     "transfer_order[].from",
+     "transfer_order[].to"
+    ],
+    "simulation_state": []
+   }
+  },
+  "scale-morph-charts": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "domain_bounds[]",
+    "series_values[]"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "iso-transport-network": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "flow_values[].packets",
+    "packet_unit"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [
+     "flow_values[].from",
+     "flow_values[].to",
+     "route_order[]"
+    ],
+    "simulation_state": []
+   }
+  },
+  "constrained-part-section": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "engraved-hatch-growth": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "single-path-identity": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "pictogram-limb-transition": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "perspective-pen-wash": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "stroke-erase-explanation": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "crayon-stroke-fill": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "halftone-evidence-lens": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "paint-ridge-deposition": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "ink-diffusion-front": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "ink-drum-misregister": {
+   "hidden_strings": [
+    "spot_colors[]"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "pigment-pool-drying": {
+   "hidden_strings": [
+    "pigment_colors[]"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "paper-lightbox-parallax": {
+   "hidden_strings": [
+    "layer_shapes[].label"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "page-hinge-popups": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "negative-space-cut": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "screenprint-layer-pull": {
+   "hidden_strings": [
+    "spot_colors[]",
+    "stencil_shapes[].label"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "lead-cell-lightpass": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "woodblock-wave-layers": {
+   "hidden_strings": [
+    "color_blocks[]"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "carved-groove-print": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "stud-lock-assembly": {
+   "hidden_strings": [
+    "blocks[].label"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "pixel-depth-diorama": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "plane_depths[]"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "microgame-state-loop": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": [
+     "avatar_radius",
+     "avatar_route[].x",
+     "avatar_route[].y",
+     "goal.x",
+     "goal.y",
+     "obstacle_layout[].height",
+     "obstacle_layout[].width",
+     "obstacle_layout[].x",
+     "obstacle_layout[].y"
+    ]
+   }
+  },
+  "limited-pose-acting": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "tile-quest-state": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "rubber-limb-cycle": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "cel-pose-camera": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "glass-section-orbit": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "ior",
+    "wall_thickness"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "toon-dialogue-blocking": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "jointed-shadow-performance": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "light_distance",
+    "screen_distance"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "projection-surface-register": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "band_count"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "pointcloud-sweep-measure": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "columns",
+    "rows",
+    "span_x",
+    "span_y"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [
+     "measurement_pair[]"
+    ],
+    "simulation_state": []
+   }
+  },
+  "facet-terrain-growth": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "grid_size",
+    "peak_height",
+    "ridge_bias",
+    "water_level"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "cell-focus-section": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "cell_count",
+    "focus_depth",
+    "optical_radius"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "rigid-body-lightstage": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "light_angle"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "lighttable-register": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "plates[].offset_x",
+    "plates[].offset_y"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "score-reveal-wheel": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "base_score",
+    "segments[].points"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [
+     "selected_index"
+    ],
+    "simulation_state": []
+   }
+  },
+  "hologram-slice-volume": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "radii_x",
+    "radii_y",
+    "radii_z",
+    "section_fraction",
+    "slice_count"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "footage-caption-cuts": {
+   "hidden_strings": [
+    "clip_order[]",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256",
+    "subject_safe_boxes[].clip"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "timelapse-mosaic": {
+   "hidden_strings": [
+    "clip_order[]",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "footage-diagonal-montage": {
+   "hidden_strings": [
+    "clip_order[]",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "broadcast-footage-rundown": {
+   "hidden_strings": [
+    "clip_paths[]",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256",
+    "rundown[].clip"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "archive-footage-gate": {
+   "hidden_strings": [
+    "clip_order[]",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "silent-footage-intertitles": {
+   "hidden_strings": [
+    "clip_order[]",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "liminal-footage-inspection": {
+   "hidden_strings": [
+    "clip_in_out.clip",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "screen-focus-follow": {
+   "hidden_strings": [
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256",
+    "screen_clip.clip"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "georeferenced-footage-track": {
+   "hidden_strings": [
+    "imagery_path",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256"
+   ],
+   "guarded_numbers": [
+    "coordinate_system.origin_easting",
+    "coordinate_system.origin_northing",
+    "route_coordinates[].east",
+    "route_coordinates[].north",
+    "scale_bounds.scale_bar_metres"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "footage-tactical-overlay": {
+   "hidden_strings": [
+    "annotation_paths[].from",
+    "annotation_paths[].to",
+    "clip_path.clip",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256",
+    "subject_tracks[].id"
+   ],
+   "guarded_numbers": [
+    "clip_path.in",
+    "clip_path.out"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "pause_cues[].end",
+     "pause_cues[].start"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "footage-focus-band": {
+   "hidden_strings": [
+    "clip_path.clip",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256"
+   ],
+   "guarded_numbers": [
+    "focus_band.width",
+    "time_remap[].time"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "time_remap[].at"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "media-evidence-compare": {
+   "hidden_strings": [
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256",
+    "media_paths[]"
+   ],
+   "guarded_numbers": [
+    "sync_offsets[]"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "vector-puppet-cause": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [
+     "contact_cues[]"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "field-orbit-ensemble": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "construction-stroke-stack": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [
+     "convergence_time"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "geometric-proof-transform": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "points[].x",
+    "points[].y"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "ui-state-transition-lab": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "progress_values[]"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "event_cues[].at"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "pixel-cellular-ecosystem": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "grid_size.columns",
+    "grid_size.rows",
+    "transition_rules.birth_neighbors"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "tick_cadence"
+    ],
+    "index": [],
+    "simulation_state": [
+     "initial_cells[].state",
+     "initial_cells[].x",
+     "initial_cells[].y",
+     "transition_rules.decay_after",
+     "transition_rules.mature_after"
+    ]
+   }
+  },
+  "ascii-wave-buffer": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "update_regions[].height",
+    "update_regions[].width",
+    "update_regions[].x",
+    "update_regions[].y"
+   ],
+   "exempt_numbers": {
+    "timing": [
+     "tear_cadence"
+    ],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "orbital-shadow-machine": {
+   "hidden_strings": [],
+   "guarded_numbers": [
+    "link_lengths[]"
+   ],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "original-anime-action-arc": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "sand-rake-reformation": {
+   "hidden_strings": [],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "torn-edge-layer-transfer": {
+   "hidden_strings": [
+    "pattern_palette[]"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [
+     "layer_order[]"
+    ],
+    "simulation_state": []
+   }
+  },
+  "licensed-shot-continuity": {
+   "hidden_strings": [
+    "action_cues[].clip",
+    "clip_paths[]",
+    "continuity_pairs[].from",
+    "continuity_pairs[].to",
+    "crop_paths[].clip",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  },
+  "licensed-photo-depth": {
+   "hidden_strings": [
+    "depth_paths[]",
+    "image_paths[]",
+    "media[].id",
+    "media[].kind",
+    "media[].local_path",
+    "media[].material_class",
+    "media[].proxy.pixels[]",
+    "media[].rights.license",
+    "media[].rights.owner",
+    "media[].rights.proof",
+    "media[].rights.verification",
+    "media[].sha256",
+    "region_masks[].depth",
+    "region_masks[].image"
+   ],
+   "guarded_numbers": [],
+   "exempt_numbers": {
+    "timing": [],
+    "index": [],
+    "simulation_state": []
+   }
+  }
+ }
+}

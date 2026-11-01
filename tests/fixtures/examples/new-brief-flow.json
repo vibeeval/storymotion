@@ -1,0 +1,13 @@
+{
+  "schema_version":1,"brand":"sample-mechanism","language":"tr",
+  "title":"Bir iş neden bekler?",
+  "brief":"Yeni brief: temsili bir iş kuyruğunu iki sahneli, veriden üretilen düğüm akışıyla anlat. Önceki kutu/kilit/yüzük fixture'ını oynatma. Ücretli çağrı veya ses yok.",
+  "demo":true,"script":"Bir iş sıraya giriyor. İşlem bitince sıradaki iş başlıyor.",
+  "caption":"Temsili kuyruk akışı. Yeni brief'ten üretilen sessiz yerel açıklayıcı; önceki video fixture'ının tekrar oynatımı değil.",
+  "duration":6,"alignment":"provisional_silent","audio":null,"claims":[],
+  "scenes":[
+    {"id":"arrive","start":0,"end":3,"heading":"Bir iş sıraya giriyor.","action":"flow","nodes":["Yeni iş","Sıra","İşlem"],"from_node":0,"to_node":1,"information":"Gelen iş temsili bekleme düğümüne taşınır.","object_before":"İş giriştedir.","object_after":"İş sıradadır."},
+    {"id":"advance","start":3,"end":6,"heading":"Sıradaki iş başlıyor.","action":"flow","nodes":["Yeni iş","Sıra","İşlem"],"from_node":1,"to_node":2,"information":"Temsili sıra boşalınca iş işlem düğümüne geçer.","object_before":"İş sıradadır.","object_after":"İş işlem düğümündedir."}
+  ],
+  "cues":[{"start":0,"end":2.9,"text":"Bir iş sıraya giriyor."},{"start":3,"end":6,"text":"İşlem bitince sıradaki iş başlıyor."}]
+}

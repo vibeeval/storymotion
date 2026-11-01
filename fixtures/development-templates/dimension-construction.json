@@ -1,0 +1,90 @@
+{
+  "family_id": "dimension-construction",
+  "source_id": "source-lemo-style-blueprint",
+  "cases": [
+    {
+      "name": "A",
+      "spec": {
+        "id": "dimension-construction",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Özgün bir parçanın çizgileri tamamlanırken ölçüler aynı gövdeye kayıtlı kalıyor.",
+          "duration": 8,
+          "narration": "Eksenler, dış çizgi ve ölçüler seçilen sırayla açılıyor. Kesit ilerlediğinde sayısal boyut ile çizimdeki mesafe eşleşiyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4,
+              "text": "Eksenler, dış çizgi ve ölçüler seçilen sırayla açılıyor."
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "Kesit ilerlediğinde sayısal boyut ile çizimdeki mesafe eşleşiyor."
+            }
+          ],
+          "palette": {
+            "background": "#EAF0F4",
+            "ink": "#253D50",
+            "muted": "#526875",
+            "accent": "#315D87"
+          },
+          "dimension_values": {
+            "width": 240,
+            "height": 220,
+            "depth": 100
+          },
+          "section_position": 0.45,
+          "construction_order": [
+            "axes",
+            "outline",
+            "dimension"
+          ],
+          "part_count": 3
+        }
+      }
+    },
+    {
+      "name": "B",
+      "spec": {
+        "id": "dimension-construction",
+        "version": "1.0.0",
+        "parameters": {
+          "title": "Özgün bir parçanın çizgileri tamamlanırken ölçüler ortak gövdeye kayıtlı kalıyor. Yeni düzen.",
+          "duration": 9,
+          "narration": "İkinci örnekte sıra ve ölçüler birlikte değişiyor. Kesit ilerlediğinde sayısal boyut ile çizimdeki mesafe eşleşiyor.",
+          "cues": [
+            {
+              "start": 0,
+              "end": 4.5,
+              "text": "İkinci örnekte sıra ve ölçüler birlikte değişiyor."
+            },
+            {
+              "start": 4.5,
+              "end": 9,
+              "text": "Kesit ilerlediğinde sayısal boyut ile çizimdeki mesafe eşleşiyor."
+            }
+          ],
+          "palette": {
+            "background": "#EAF0F4",
+            "ink": "#253D50",
+            "muted": "#526875",
+            "accent": "#315D87"
+          },
+          "dimension_values": {
+            "width": 340,
+            "height": 180,
+            "depth": 140
+          },
+          "section_position": 0.72,
+          "construction_order": [
+            "dimension",
+            "outline",
+            "axes"
+          ],
+          "part_count": 4
+        }
+      }
+    }
+  ]
+}
